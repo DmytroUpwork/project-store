@@ -235,6 +235,23 @@
   font-size : 0.875rem;
 }
 
+
+
+
+
+
+
+.card-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column
+}
+
+
+
+
+
+
 .ecommerce-application .ecommerce-card .wishlist, .ecommerce-application .ecommerce-card .cart {
   padding : 0.8rem 1rem;
   cursor : pointer;
