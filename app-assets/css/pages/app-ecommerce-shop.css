@@ -215,10 +215,10 @@
   font-weight : 700;
 }
 
-.ecommerce-application .ecommerce-card .item-rating i {
+/* .ecommerce-application .ecommerce-card .item-rating i {
   margin-left : 0.25rem;
   vertical-align : top;
-}
+} */
 
 .ecommerce-application .ecommerce-card .item-name {
   font-weight : 600;
@@ -340,9 +340,9 @@
 .ecommerce-application .grid-view .ecommerce-card .card-content .item-options .wishlist {
   padding : 0.8rem 2rem;
 }
-.ecommerce-application .grid-view .ecommerce-card .card-content .item-options .item-wrapper .item-rating {
+/* .ecommerce-application .grid-view .ecommerce-card .card-content .item-options .item-wrapper .item-rating {
   display : none;
-}
+} */
 .ecommerce-application .grid-view .ecommerce-card .card-content .item-options .item-wrapper .item-price {
   display : none;
 }
@@ -354,10 +354,23 @@
   white-space : nowrap;
   text-overflow : ellipsis;
 }
+
+
+
+
+
 .ecommerce-application .grid-view .ecommerce-card .card-body {
-  padding : 1rem;
-  padding-bottom : 0;
+  padding : 0;
+
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
+
+
+
+
+
 
 .ecommerce-application .list-view {
   display : grid;
@@ -395,9 +408,9 @@
   padding-bottom : 0.5rem;
   border-right : 1px solid #DAE1E7;
 }
-.ecommerce-application .list-view .ecommerce-card .card-content .card-body .item-rating {
+/* .ecommerce-application .list-view .ecommerce-card .card-content .card-body .item-rating {
   display : none;
-}
+} */
 .ecommerce-application .list-view .ecommerce-card .card-content .card-body .item-price {
   display : none;
 }
@@ -419,10 +432,10 @@
 .ecommerce-application .list-view .ecommerce-card .card-content .item-options .item-wrapper {
   position : relative;
 }
-.ecommerce-application .list-view .ecommerce-card .card-content .item-options .item-wrapper .item-rating {
+/* .ecommerce-application .list-view .ecommerce-card .card-content .item-options .item-wrapper .item-rating {
   position : absolute;
   right : 0;
-}
+} */
 .ecommerce-application .list-view .ecommerce-card .card-content .item-options .item-wrapper .item-cost .item-price {
   position : relative;
   top : 55px;
