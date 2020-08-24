@@ -411,6 +411,11 @@ body.fixed-footer footer.footer-dark {
 .main-menu.menu-light .navigation > li {
   padding : 0 15px;
 }
+
+/* .main-menu.menu-light .navigation > li.active {
+  background: #2B7A9D;
+} */
+   
 .main-menu.menu-light .navigation > li > a .label {
   margin-top : 4px;
   margin-right : 5px;
