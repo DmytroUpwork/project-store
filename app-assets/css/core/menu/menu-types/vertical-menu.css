@@ -175,7 +175,7 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expande
   margin-bottom : 1.25rem !important;
 }
 body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navigation li.active a {
-  background : whitesmoke;
+  background : #2B7A9D;
   box-shadow : none;
   color : #565656;
 }
@@ -195,6 +195,7 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navigation 
 body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navigation > li > a > span {
   -webkit-animation : 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadeout;
           animation : 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadeout;
+  padding-left: 20px;
 }
 body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navigation > li > a > span.badge {
   float : none !important;

@@ -14,6 +14,10 @@ html body {
       * Blank page
       */
 }
+hr {
+  border-top: 1px solid rgba(197, 197, 197, 0.5);
+  margin: 0 0 32px;
+}
 html body .content {
   padding : 0;
   position : relative;
@@ -358,8 +362,8 @@ body.fixed-footer footer.footer-dark {
   overflow : hidden;
 }
 .main-menu.menu-light {
-  color : #626262;
-  background : #FFFFFF;
+  color : #fff;
+  background : #205065;
 }
 .main-menu.menu-light .main-menu-header {
   padding : 20px;
@@ -372,9 +376,9 @@ body.fixed-footer footer.footer-dark {
 .main-menu.menu-light .main-menu-header .menu-search:focus {
   border-color : #D9D9D9;
 }
-.main-menu.menu-light .navigation {
+/* .main-menu.menu-light .navigation {
   background : #FFFFFF;
-}
+} */
 .main-menu.menu-light .navigation .navigation-header {
   color : #999999;
   margin : calc(2.2rem - 0.2rem) 0 0.8rem 2.2rem;
@@ -390,7 +394,7 @@ body.fixed-footer footer.footer-dark {
   margin : -7px -7px 0 -7px;
 }
 .main-menu.menu-light .navigation li a {
-  color : #565656;
+  color : #fff;
   padding : 10px 15px 10px 15px;
   line-height : 1.45;
   -webkit-transition : padding 0.35s ease 0s !important;
@@ -426,9 +430,9 @@ body.fixed-footer footer.footer-dark {
   display : none;
 }
 .main-menu.menu-light .navigation > li.active > a {
-  background : -webkit-linear-gradient(332deg, #7367F0, rgba(115, 103, 240, 0.7));
-  background :         linear-gradient(118deg, #7367F0, rgba(115, 103, 240, 0.7));
-  box-shadow : 0 0 10px 1px rgba(115, 103, 240, 0.7);
+  background: -webkit-linear-gradient(270deg, #33B0CE 10%, #0093B7 68.96%);
+  background: linear-gradient(270deg, #33B0CE 10%, #0093B7 68.96%);
+  box-shadow: 0px 0px 6px 1px rgba(0, 147, 183, 0.5);
   color : #FFFFFF;
   font-weight : 400;
   border-radius : 4px;
@@ -730,7 +734,7 @@ body.fixed-footer footer.footer-dark {
   width : 260px;
   height : 5rem;
   position : relative;
-  padding : 0.35rem 1rem 0.3rem 1.64rem;
+  padding : 5px 10px 5px 15px;
   -webkit-transition : 300ms ease all;
           transition : 300ms ease all;
 }
@@ -745,14 +749,46 @@ body.fixed-footer footer.footer-dark {
           align-items : center;
   margin-top : 1.35rem;
 }
-.main-menu .navbar-header .navbar-brand .brand-logo {
-  background : url('../../app-assets/images/logo/vuexy-logo.png') no-repeat;
-  background-position : -65px -54px;
+
+
+
+.main-menu .navbar-header .navbar-brand .button-toggle-open,
+.main-menu .navbar-header .navbar-brand .button-toggle-exit {
   height : 24px;
-  width : 35px;
+  width : 44px;
+  border: none;
+  background: transparent;
+  text-align: -webkit-right;
 }
+
+.main-menu .navbar-header .navbar-brand .button-toggle-open span {
+  height: 2px;
+  width: auto;
+  margin: 3px;
+  background: #EBF0EF;
+  display: block;
+}
+.main-menu .navbar-header .navbar-brand .button-toggle-open span:last-of-type {
+  width: 21px;
+}
+
+.main-menu .navbar-header .navbar-brand .button-toggle-exit span {
+  height: 2px;
+  position: absolute;
+  width: 21px;
+  background: #EBF0EF;
+  display: block;
+}
+.main-menu .navbar-header .navbar-brand .button-toggle-exit span:first-of-type {
+  transform: rotate(45deg);
+}
+.main-menu .navbar-header .navbar-brand .button-toggle-exit span:last-of-type {
+  transform: rotate(-45deg);
+}
+
+
 .main-menu .navbar-header .navbar-brand .brand-text {
-  color : #7367F0;
+  color : #EBF0EF;
   padding-left : 1rem;
   font-weight : 600;
   letter-spacing : 0.01rem;
@@ -765,9 +801,12 @@ body.fixed-footer footer.footer-dark {
           animation : 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
 }
 .main-menu .main-menu-content {
-  height : calc(100% - 6rem) !important;
+  height : calc(100% - 14rem) !important;
   position : relative;
 }
+
+
+
 .main-menu ul {
   list-style : none;
   margin : 0;
