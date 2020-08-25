@@ -349,6 +349,7 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed.menu-flipped .footer {
   }
   body.vertical-layout.vertical-menu-modern.menu-collapsed .app-content, body.vertical-layout.vertical-menu-modern.menu-collapsed .footer {
     margin-left : 50px;
+    padding-bottom: 30px;
   }
   body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu {
     width : 50px;

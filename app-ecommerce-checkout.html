@@ -43,12 +43,10 @@
 </head>
 <!-- END: Head-->
 
-<!-- BEGIN: Body-->
-
 <body class="vertical-layout vertical-menu-modern 2-columns ecommerce-application navbar-floating footer-static   menu-collapsed" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
 
     <!-- BEGIN: Header-->
-    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu floating-nav navbar-light navbar-shadow">
+    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu floating-nav navbar-light">
         <div class="navbar-wrapper">
             <div class="navbar-container content">
                 <div class="navbar-collapse" id="navbar-mobile">
@@ -290,7 +288,7 @@
     <!-- END: Header-->
 
 
-     <!-- BEGIN: Main Menu-->
+    <!-- BEGIN: Main Menu-->
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
         <div class="navbar-header">
             <ul class="nav navbar-nav flex-row">
@@ -316,33 +314,16 @@
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
                 <li class=" nav-item"><a href="page-user-profile.html"><img src="app-assets\images\my_img\icon_my_profile.svg" alt="My profile"> <span class="menu-title" data-i18n="Profile">Мой профиль</span></a>
                 </li>
-                <li class="active"><a href="dashboard-analytics.html"><img src="app-assets\images\my_img\icon_analytics.svg" alt="Analytics"> <span class="menu-item" data-i18n="Analytics">Аналитика</span></a>
+                <li class="active"><a href="index.html"><img src="app-assets\images\my_img\icon_analytics.svg" alt="Analytics"> <span class="menu-item" data-i18n="Analytics">Аналитика</span></a>
                 </li>
-                <li><a href="data-thumb-view.html"><img src="app-assets\images\my_img\icon_products.svg" alt="Products"><span class="menu-item" data-i18n="Products">Товары</span></a>
+                <li><a href="page-products.html"><img src="app-assets\images\my_img\icon_products.svg" alt="Products"><span class="menu-item" data-i18n="Products">Товары</span></a>
                 </li>
                 <li><a href="basket.html"><img src="app-assets\images\my_img\icon_basket.svg" alt="Basket"><span class="menu-item" data-i18n="Basket">Корзина</span></a>
                 </li>
-                <!-- <li><a href="app-ecommerce-details.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Details">Details</span></a>
-                </li>
-                <li><a href="app-ecommerce-wishlist.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Wish List">Wish List</span></a>
-                </li> -->
                 <li><a href="app-ecommerce-checkout.html"><img src="app-assets\images\my_img\icon_orders.svg" alt="Orders"><span class="menu-item" data-i18n="Checkout">Заказы</span></a>
                 </li>
-                
-                <!-- <li class=" nav-item"><a href="#"><i class="feather icon-user"></i><span class="menu-title" data-i18n="User">User</span></a>
-                    <ul class="menu-content">
-                        <li><a href="app-user-list.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="List">List</span></a>
-                        </li>
-                        <li><a href="app-user-view.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="View">View</span></a>
-                        </li>
-                        <li><a href="app-user-edit.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Edit">Edit</span></a>
-                        </li>
-                    </ul>
-                </li> -->
                 <li><a href="data-list-view.html"><img src="app-assets\images\my_img\icon_payouts.svg" alt="Payouts"><span class="menu-item" data-i18n="List View">Выплаты</span></a>
                 </li>
-                <!-- <li><a href="data-thumb-view.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Thumb View">Отправки админ</span></a>
-                </li> -->
                 <li class=" nav-item"><a href="app-chat.html"><i class="feather icon-message-square"></i><span class="menu-title" data-i18n="Chat">Чат</span></a>
                 </li>
             </ul>
@@ -355,27 +336,18 @@
         </div>
     </div>
     <!-- END: Main Menu-->
-
+    
+    
+    
     <!-- BEGIN: Content-->
     <div class="app-content content">
         <div class="content-overlay"></div>
-        <div class="header-navbar-shadow"></div>
         <div class="content-wrapper">
             <div class="content-header row">
                 <div class="content-header-left col-md-9 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-left mb-0">Checkout</h2>
-                            <div class="breadcrumb-wrapper col-12">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
-                                    </li>
-                                    <li class="breadcrumb-item"><a href="#">eCommerce</a>
-                                    </li>
-                                    <li class="breadcrumb-item active">Checkout
-                                    </li>
-                                </ol>
-                            </div>
+                            <h2 class="content-header-title float-left mb-0">Заказы</h2>
                         </div>
                     </div>
                 </div>
@@ -391,7 +363,7 @@
             <div class="content-body">
                 <form action="#" class="icons-tab-steps checkout-tab-steps wizard-circle">
                     <!-- Checkout Place order starts -->
-                    <h6><i class="step-icon step feather icon-shopping-cart"></i>Cart</h6>
+                    <h6><i class="step-icon step feather icon-shopping-cart"></i>Корзина</h6>
                     <fieldset class="checkout-step-1 px-0">
                         <section id="place-order" class="list-view product-checkout">
                             <div class="checkout-items">
@@ -420,11 +392,7 @@
                                         </div>
                                         <div class="item-options text-center">
                                             <div class="item-wrapper">
-                                                <div class="item-rating">
-                                                    <div class="badge badge-primary badge-md">
-                                                        4 <i class="feather icon-star ml-25"></i>
-                                                    </div>
-                                                </div>
+                                                
                                                 <div class="item-cost">
                                                     <h6 class="item-price">
                                                         $39.99
@@ -467,11 +435,7 @@
                                         </div>
                                         <div class="item-options text-center">
                                             <div class="item-wrapper">
-                                                <div class="item-rating">
-                                                    <div class="badge badge-primary badge-md">
-                                                        4 <i class="feather icon-star ml-25"></i>
-                                                    </div>
-                                                </div>
+                                                
                                                 <div class="item-cost">
                                                     <h6 class="item-price">
                                                         $1599.99
@@ -482,10 +446,10 @@
                                                 </div>
                                             </div>
                                             <div class="wishlist remove-wishlist">
-                                                <i class="feather icon-x align-middle"></i> Remove
+                                                <i class="feather icon-x align-middle"></i> Удалить
                                             </div>
                                             <div class="cart remove-wishlist">
-                                                <i class="fa fa-heart-o mr-25"></i> Wishlist
+                                                <i class="fa fa-heart-o mr-25"></i> Список желаний
                                             </div>
                                         </div>
                                     </div>
@@ -516,11 +480,7 @@
                                         </div>
                                         <div class="item-options text-center">
                                             <div class="item-wrapper">
-                                                <div class="item-rating">
-                                                    <div class="badge badge-primary badge-md">
-                                                        4 <i class="feather icon-star ml-25"></i>
-                                                    </div>
-                                                </div>
+                                                
                                                 <div class="item-cost">
                                                     <h6 class="item-price">
                                                         $35
@@ -562,11 +522,7 @@
                                         </div>
                                         <div class="item-options text-center">
                                             <div class="item-wrapper">
-                                                <div class="item-rating">
-                                                    <div class="badge badge-primary badge-md">
-                                                        4 <i class="feather icon-star ml-25"></i>
-                                                    </div>
-                                                </div>
+                                                
                                                 <div class="item-cost">
                                                     <h6 class="item-price">
                                                         $429.99
@@ -611,11 +567,7 @@
                                         </div>
                                         <div class="item-options text-center">
                                             <div class="item-wrapper">
-                                                <div class="item-rating">
-                                                    <div class="badge badge-primary badge-md">
-                                                        4 <i class="feather icon-star ml-25"></i>
-                                                    </div>
-                                                </div>
+                                                
                                                 <div class="item-cost">
                                                     <h6 class="item-price">
                                                         $499.99
@@ -660,11 +612,7 @@
                                         </div>
                                         <div class="item-options text-center">
                                             <div class="item-wrapper">
-                                                <div class="item-rating">
-                                                    <div class="badge badge-primary badge-md">
-                                                        4 <i class="feather icon-star ml-25"></i>
-                                                    </div>
-                                                </div>
+                                                
                                                 <div class="item-cost">
                                                     <h6 class="item-price">
                                                         $49.99
@@ -743,7 +691,7 @@
                                                 <div class="detail-title detail-total">Total</div>
                                                 <div class="detail-amt total-amt">$574</div>
                                             </div>
-                                            <div class="btn btn-primary btn-block place-order">PLACE ORDER</div>
+                                            <div class="btn btn-primary btn-block place-order text-uppercase">Оформить заказ</div>
                                         </div>
                                     </div>
                                 </div>
@@ -753,76 +701,23 @@
                     <!-- Checkout Place order Ends -->
 
                     <!-- Checkout Customer Address Starts -->
-                    <h6><i class="step-icon step feather icon-home"></i>Address</h6>
+                    <h6><i class="step-icon step feather icon-home"></i>Адрес</h6>
                     <fieldset class="checkout-step-2 px-0">
+
+
+
+                        Оформление заказа
+
+
+
                         <section id="checkout-address" class="list-view product-checkout">
                             <div class="card">
-                                <div class="card-header flex-column align-items-start">
-                                    <h4 class="card-title">Add New Address</h4>
-                                    <p class="text-muted mt-25">Be sure to check "Deliver to this address" when you have finished</p>
-                                </div>
-                                <div class="card-content">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group">
-                                                    <label for="checkout-name">Full Name:</label>
-                                                    <input type="text" id="checkout-name" class="form-control required" name="fname">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group">
-                                                    <label for="checkout-number">Mobile Number:</label>
-                                                    <input type="number" id="checkout-number" class="form-control required" name="mnumber">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group">
-                                                    <label for="checkout-apt-number">Flat, House No:</label>
-                                                    <input type="number" id="checkout-apt-number" class="form-control required" name="apt-number">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group">
-                                                    <label for="checkout-landmark">Landmark e.g. near apollo hospital:</label>
-                                                    <input type="text" id="checkout-landmark" class="form-control required" name="landmark">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group">
-                                                    <label for="checkout-city">Town/City:</label>
-                                                    <input type="text" id="checkout-city" class="form-control required" name="city">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group">
-                                                    <label for="checkout-pincode">Pincode:</label>
-                                                    <input type="number" id="checkout-pincode" class="form-control required" name="pincode">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group">
-                                                    <label for="checkout-state">State:</label>
-                                                    <input type="text" id="checkout-state" class="form-control required" name="state">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group">
-                                                    <label for="add-type">Address Type:</label>
-                                                    <select class="form-control" id="add-type">
-                                                        <option>Home</option>
-                                                        <option>Work</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 offset-md-6">
-                                                <div class="btn btn-primary delivery-address float-right">
-                                                    SAVE AND DELIVER HERE
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <form action="/action_page.php">
+                                    <input type="text" name="fname" value="John"><br>
+                                    <input type="text" name="lname" value="Doe"><br>
+                                    <input type="submit" value="Submit">
+                                </form> 
+                                
                             </div>
                             <div class="customer-card">
                                 <div class="card">
@@ -844,10 +739,18 @@
                         </section>
                     </fieldset>
 
+
+
+
+
+
+
+
+
                     <!-- Checkout Customer Address Ends -->
 
                     <!-- Checkout Payment Starts -->
-                    <h6><i class="step-icon step feather icon-credit-card"></i>Payment</h6>
+                    <h6><i class="step-icon step feather icon-credit-card"></i>Оплата</h6>
                     <fieldset class="checkout-step-3 px-0">
                         <section id="checkout-payment" class="list-view product-checkout">
                             <div class="payment-type">
@@ -991,14 +894,6 @@
 
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
-
-    <!-- BEGIN: Footer-->
-    <footer class="footer footer-static footer-light">
-        <p class="clearfix blue-grey lighten-2 mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2020<a class="text-bold-800 grey darken-2" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Pixinvent,</a>All rights Reserved</span><span class="float-md-right d-none d-md-block">Hand-crafted & Made with<i class="feather icon-heart pink"></i></span>
-            <button class="btn btn-primary btn-icon scroll-top" type="button"><i class="feather icon-arrow-up"></i></button>
-        </p>
-    </footer>
-    <!-- END: Footer-->
 
 
     <!-- BEGIN: Vendor JS-->

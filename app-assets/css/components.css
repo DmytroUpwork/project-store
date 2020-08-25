@@ -61,23 +61,29 @@ hr {
   color: #404040;
 }
 
-.table {
+.table-basket,
+.table-responsive-img {
   border-collapse: separate;
   border-spacing: 0;
 }
 
-.table img {
+.table-basket img,
+.table-responsive-img img {
   width: 55px;
   height: 55px;
 }
 
 
 
-.table tr {
+.table-basket tr,
+.table-responsive-img tr {
   background: #fff;
 }
 
-.table th, .table td {
+.table-basket th,
+.table-basket td,
+.table-responsive-img th,
+.table-responsive-img td {
   border-top: 10px solid #F3F3F3;
   padding: 0;
   text-align: center;
@@ -85,7 +91,8 @@ hr {
   font-size: 14px;
 }
 
-.table thead th {
+.table-basket thead th,
+.table-responsive-img thead th {
   border-bottom: 0;
   padding: 11px 10px 8px 10px;
   text-align: center;
