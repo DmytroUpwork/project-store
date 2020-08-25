@@ -188,22 +188,23 @@ hr {
   outline: none;
 }
 
-.btn-сheckout {
+.btn_сheckout_button {
   background: linear-gradient(90.94deg, #0093B7 3.21%, #63CDD7 97.55%), #63CDD7;
   border-radius: 5px;
   margin-top: 9px;
   float: right;
   color: #fff;
   cursor: pointer;
+  position: relative;
 }
 
-.btn-сheckout:after {
+.btn_сheckout_button:after {
   content: '';
   position: absolute;
   z-index: 3;
 }
 
-.btn-сheckout:before {
+.btn_сheckout_button:before {
   position: absolute;
   content: "";
   top: 0;
@@ -219,23 +220,23 @@ hr {
   opacity: 0;
 }
 
-.btn-сheckout:hover {
+.btn_сheckout_button:hover {
   color: #fff;
 }
 
-.btn-сheckout:hover:before {
+.btn_сheckout_button:hover:before {
   opacity: 1;
 }
 
-.btn-сheckout:hover strong {
+.btn_сheckout_button:hover strong {
   opacity: 1;
 }
 
-.btn-сheckout:hover:after {
+.btn_сheckout_button:hover:after {
   opacity: 1;
 }
 
-.btn-сheckout strong {
+.btn_сheckout_button strong {
   position: relative;
   z-index: 3;
 }
