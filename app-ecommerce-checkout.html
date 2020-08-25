@@ -701,7 +701,7 @@
                     <!-- Checkout Place order Ends -->
 
                     <!-- Checkout Customer Address Starts -->
-                    <h6><i class="step-icon step feather icon-home"></i>Адрес</h6>
+                    <h6><i class="step-icon step feather icon-home"></i>Оформление заказа</h6>
                     <fieldset class="checkout-step-2 px-0">
 
 
@@ -712,12 +712,69 @@
 
                         <section id="checkout-address" class="list-view product-checkout">
                             <div class="card">
-                                <form action="/action_page.php">
-                                    <input type="text" name="fname" value="John"><br>
-                                    <input type="text" name="lname" value="Doe"><br>
-                                    <input type="submit" value="Submit">
-                                </form> 
                                 
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="checkout-name">Full Name:</label>
+                                                    <input type="text" id="checkout-name" class="form-control required" name="fname">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="checkout-number">Mobile Number:</label>
+                                                    <input type="number" id="checkout-number" class="form-control required" name="mnumber">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="checkout-apt-number">Flat, House No:</label>
+                                                    <input type="number" id="checkout-apt-number" class="form-control required" name="apt-number">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="checkout-landmark">Landmark e.g. near apollo hospital:</label>
+                                                    <input type="text" id="checkout-landmark" class="form-control required" name="landmark">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="checkout-city">Town/City:</label>
+                                                    <input type="text" id="checkout-city" class="form-control required" name="city">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="checkout-pincode">Pincode:</label>
+                                                    <input type="number" id="checkout-pincode" class="form-control required" name="pincode">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="checkout-state">State:</label>
+                                                    <input type="text" id="checkout-state" class="form-control required" name="state">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="add-type">Address Type:</label>
+                                                    <select class="form-control" id="add-type">
+                                                        <option>Home</option>
+                                                        <option>Work</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 offset-md-6">
+                                                <div class="btn btn-primary delivery-address float-right">
+                                                    SAVE AND DELIVER HERE
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="customer-card">
                                 <div class="card">
