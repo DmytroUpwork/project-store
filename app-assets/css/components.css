@@ -1841,6 +1841,13 @@ body.fixed-footer .main-menu.menu-fixed {
   padding: 1.4rem 1.5rem 1.35rem;
 }
 
+.header-navbar .navbar-container .bookmark-wrapper ul.nav li > a.nav-link:hover {
+  color: #3c6eb9;
+}
+
+
+
+
 .header-navbar .nav-item + .nav-item.dropdown-user {
   padding: 0 20px 4px;
 }

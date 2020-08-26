@@ -63,6 +63,8 @@
                             <li class="nav-item d-none d-lg-block text-uppercase"><a class="nav-link" href="dashboard-analytics.html" data-placement="top">Аналитика</a></li>
                         </ul>
                     </div>
+
+
                     <ul class="nav navbar-nav float-right">
                       <li class="nav-item nav-search"><a class="nav-link nav-link-search"><img src="app-assets\images\my-images\icon-search.svg" alt="Search"></a>
                             <div class="search-input">
@@ -187,23 +189,12 @@
                     </ul>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
     </nav>
+
+
+
+
     <ul class="main-search-list-defaultlist d-none">
         <li class="d-flex align-items-center"><a class="pb-25" href="#">
                 <h6 class="text-primary mb-0">Files</h6>
@@ -400,43 +391,17 @@
         <div class="content-overlay"></div>
         <div class="header-navbar-shadow"></div>
         <div class="content-wrapper">
-            <!-- <div class="content-header row">
-                <div class="content-header-left col-md-9 col-12 mb-2">
-                    <div class="row breadcrumbs-top">
-                        <div class="col-12">
-                            <h2 class="content-header-title float-left mb-0">List View</h2>
-                            <div class="breadcrumb-wrapper col-12">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
-                                    </li>
-                                    <li class="breadcrumb-item"><a href="#">Data List</a>
-                                    </li>
-                                    <li class="breadcrumb-item active">List View
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-header-right text-md-right col-md-3 col-12 d-md-block d-none">
-                    <div class="form-group breadcrum-right">
-                        <div class="dropdown">
-                            <button class="btn-icon btn btn-primary btn-round btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather icon-settings"></i></button>
-                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Chat</a><a class="dropdown-item" href="#">Email</a><a class="dropdown-item" href="#">Calendar</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+            
             <div class="content-body">
                 <!-- Data list view starts -->
-                <section id="data-list-view" class="data-list-view-header">
+                <section id="data-thumb-view" class="data-thumb-view-header">
                     <div class="action-btns d-none">
                         <div class="btn-dropdown mr-1 mb-1">
                             <div class="btn-group dropdown actions-dropodown">
                                 <button type="button" class="btn btn-white px-1 py-1 dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Actions
                                 </button>
-                                <div class="dropdown-menu">
+                                <div class="dropdown-menu dropdown-menu-right">
                                     <a class="dropdown-item" href="#"><i class="feather icon-trash"></i>Delete</a>
                                     <a class="dropdown-item" href="#"><i class="feather icon-archive"></i>Archive</a>
                                     <a class="dropdown-item" href="#"><i class="feather icon-file"></i>Print</a>
@@ -445,13 +410,13 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- DataTable starts -->
+                    <!-- dataTable starts -->
                     <div class="table-responsive">
-                        <table class="table data-list-view">
+                        <table class="table data-thumb-view">
                             <thead>
                                 <tr>
                                     <th></th>
+                                    <th>Image</th>
                                     <th>NAME</th>
                                     <th>CATEGORY</th>
                                     <th>POPULARITY</th>
@@ -463,6 +428,8 @@
                             <tbody>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/apple-watch.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">Apple Watch series 4 GPS</td>
                                     <td class="product-category">Computers</td>
                                     <td>
@@ -485,6 +452,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/magic-mouse.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">Beats HeadPhones</td>
                                     <td class="product-category">Computers</td>
                                     <td>
@@ -507,6 +476,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/iphone-x.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">Altec Lansing - Bluetooth Speaker</td>
                                     <td class="product-category">Audio</td>
                                     <td>
@@ -529,6 +500,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/ipad-pro.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">Aluratek - Bluetooth Audio Receiver</td>
                                     <td class="product-category">Computers</td>
                                     <td>
@@ -551,6 +524,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/jbl-speaker.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">Aluratek - Bluetooth Audio Transmitter</td>
                                     <td class="product-category">Audio</td>
                                     <td>
@@ -573,6 +548,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/beats-headphones.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">Basis - Peak Fitness and Sleep Tracker</td>
                                     <td class="product-category">Fitness</td>
                                     <td>
@@ -595,6 +572,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/homepod.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">Antec - Nano Diamond Thermal Compound</td>
                                     <td class="product-category">Fitness</td>
                                     <td>
@@ -617,6 +596,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/macbook-pro.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">Antec - SmartBean Bluetooth Adapter</td>
                                     <td class="product-category">Computer</td>
                                     <td>
@@ -639,6 +620,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/beats-headphones.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">Beats by Dr. Dre - 3' USB-to-Micro USB Cable</td>
                                     <td class="product-category">Computer</td>
                                     <td>
@@ -661,6 +644,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/jbl-speaker.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">Beats by Dr. Dre - Bike Mount for Pill Speakers</td>
                                     <td class="product-category">Audio</td>
                                     <td>
@@ -683,6 +668,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/apple-watch.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">Bose® - SoundLink® Color Bluetooth Speaker</td>
                                     <td class="product-category">Fitness</td>
                                     <td>
@@ -705,6 +692,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/macbook-pro.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">BRAVEN - Portable Bluetooth Speaker</td>
                                     <td class="product-category">Fitness</td>
                                     <td>
@@ -727,6 +716,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/homepod.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">Craig - Portable Wireless Speaker</td>
                                     <td class="product-category">Computers</td>
                                     <td>
@@ -749,6 +740,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/apple-watch.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">Definitive Technology - Wireless Speaker</td>
                                     <td class="product-category">Fitness</td>
                                     <td>
@@ -771,6 +764,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/beats-headphones.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">Fitbit - Charge HR Activity Tracker + Heart Rate (Large)</td>
                                     <td class="product-category">Audio</td>
                                     <td>
@@ -793,6 +788,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/magic-mouse.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">Fitbit - Flex 1" USB Charging Cable</td>
                                     <td class="product-category">Fitness</td>
                                     <td>
@@ -815,6 +812,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/iphone-x.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">Fitbit - Activity Tracker</td>
                                     <td class="product-category">Fitness</td>
                                     <td>
@@ -837,6 +836,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/ipad-pro.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">Fitbit - Charge Wireless Activity Tracker (Large)</td>
                                     <td class="product-category">Computers</td>
                                     <td>
@@ -859,6 +860,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/apple-watch.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">Craig - Tower Speaker</td>
                                     <td class="product-category">Audio</td>
                                     <td>
@@ -881,6 +884,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/jbl-speaker.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">BRAVEN - Outdoor Speaker</td>
                                     <td class="product-category">Computers</td>
                                     <td>
@@ -903,6 +908,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/homepod.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">Bose® - Bluetooth Speaker Travel Bag</td>
                                     <td class="product-category">Computers</td>
                                     <td>
@@ -925,6 +932,8 @@
                                 </tr>
                                 <tr>
                                     <td></td>
+                                    <td class="product-img"><img src="./app-assets/images/elements/beats-headphones.png" alt="Img placeholder">
+                                    </td>
                                     <td class="product-name">Altec Lansing - Mini H2O Bluetooth Speaker</td>
                                     <td class="product-category">Fitness</td>
                                     <td>
@@ -948,7 +957,7 @@
                             </tbody>
                         </table>
                     </div>
-                    <!-- DataTable ends -->
+                    <!-- dataTable ends -->
 
                     <!-- add new sidebar starts -->
                     <div class="add-new-data-sidebar">
@@ -956,7 +965,7 @@
                         <div class="add-new-data">
                             <div class="div mt-2 px-2 d-flex new-data-title justify-content-between">
                                 <div>
-                                    <h4 class="text-uppercase">List View Data</h4>
+                                    <h4 class="text-uppercase">Thumb View Data</h4>
                                 </div>
                                 <div class="hide-data-sidebar">
                                     <i class="feather icon-x"></i>
@@ -1021,13 +1030,7 @@
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
 
-    <!-- BEGIN: Footer-->
-    <footer class="footer footer-static footer-light">
-        <p class="clearfix blue-grey lighten-2 mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2020<a class="text-bold-800 grey darken-2" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Pixinvent,</a>All rights Reserved</span><span class="float-md-right d-none d-md-block">Hand-crafted & Made with<i class="feather icon-heart pink"></i></span>
-            <button class="btn btn-primary btn-icon scroll-top" type="button"><i class="feather icon-arrow-up"></i></button>
-        </p>
-    </footer>
-    <!-- END: Footer-->
+
 
 
     <!-- BEGIN: Vendor JS-->
