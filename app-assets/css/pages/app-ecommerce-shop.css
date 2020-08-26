@@ -1,10 +1,6 @@
 /*========================================================
         DARK LAYOUT
 =========================================================*/
-.img-fluid {
-  width: 100%;
-  height: 100%;
-}
 .ecommerce-application .content-body {
   position : relative;
 }
@@ -303,6 +299,7 @@
   overflow : hidden;
 }
 .ecommerce-application .grid-view .ecommerce-card .card-content .item-img {
+  padding-top : 0.5rem;
   min-height : 15.85rem;
 }
 .ecommerce-application .grid-view .ecommerce-card .card-content .item-wrapper {
@@ -311,9 +308,9 @@
   display : -ms-flexbox;
   display :         flex;
   -webkit-box-pack : justify;
-  -webkit-justify-content : flex-end;
+  -webkit-justify-content : space-between;
   -ms-flex-pack : justify;
-          justify-content : flex-end;
+          justify-content : space-between;
 }
 .ecommerce-application .grid-view .ecommerce-card .card-content .item-wrapper .item-price {
   position : relative;

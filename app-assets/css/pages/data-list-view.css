@@ -2,10 +2,10 @@
         DARK LAYOUT
 =========================================================*/
 .data-list-view-header .table-responsive .top, .data-thumb-view-header .table-responsive .top {
-  display : -webkit-box;
+  /* display : -webkit-box;
   display : -webkit-flex;
-  display : -ms-flexbox;
-  display :         flex;
+  display : -ms-flexbox; */
+  display :         none;
   -webkit-box-pack : justify;
   -webkit-justify-content : space-between;
   -ms-flex-pack : justify;

@@ -175,7 +175,7 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expande
   margin-bottom : 1.25rem !important;
 }
 body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navigation li.active a {
-  background : #2B7A9D;
+  background : whitesmoke;
   box-shadow : none;
   color : #565656;
 }
@@ -195,7 +195,6 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navigation 
 body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navigation > li > a > span {
   -webkit-animation : 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadeout;
           animation : 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadeout;
-  padding-left: 20px;
 }
 body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navigation > li > a > span.badge {
   float : none !important;
@@ -205,7 +204,7 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navigation 
   float : left;
 }
 body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navigation > li > a i:before {
-  font-size : 1.429rem;
+  font-size : 1.8rem;
 }
 body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .mTSWrapper {
   overflow : visible;
@@ -258,7 +257,6 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed .app-content, body.vert
 
 body.vertical-layout.vertical-menu-modern.menu-collapsed .header-navbar.floating-nav {
   width : calc(100vw - (100vw - 100%) - 4.4rem - 80px);
-  display: none;
 }
 
 body.vertical-layout.vertical-menu-modern.menu-collapsed .header-navbar.navbar-static-top {
@@ -330,9 +328,9 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed.menu-flipped .footer {
 
 @media (max-width: 1199.98px) {
   body.vertical-layout.vertical-menu-modern .main-menu {
-    width : 80px;
-    /* opacity : 0;
-    left : -260px; */
+    width : 0;
+    opacity : 0;
+    left : -260px;
   }
   body.vertical-layout.vertical-menu-modern .main-menu .navigation > li > a > span {
     -webkit-animation : 0.1s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadeout;
@@ -345,14 +343,13 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed.menu-flipped .footer {
     width : 0;
   }
   body.vertical-layout.vertical-menu-modern .content, body.vertical-layout.vertical-menu-modern .footer {
-    margin-left : 50px;
+    margin-left : 0;
   }
   body.vertical-layout.vertical-menu-modern.menu-collapsed .app-content, body.vertical-layout.vertical-menu-modern.menu-collapsed .footer {
-    margin-left : 50px;
-    padding-bottom: 30px;
+    margin-left : 0;
   }
   body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu {
-    width : 50px;
+    width : 0;
   }
 }
 
