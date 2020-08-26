@@ -9,13 +9,16 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>Advance Card - Vuexy - Bootstrap HTML admin template</title>
+    <title>List View - Vuexy - Bootstrap HTML admin template</title>
     <link rel="apple-touch-icon" href="./app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="./app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/tables/datatable/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/file-uploaders/dropzone.min.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/tables/datatable/extensions/dataTables.checkboxes.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -29,7 +32,8 @@
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="./app-assets/css/core/menu/menu-types/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="./app-assets/css/core/colors/palette-gradient.css">
-    <link rel="stylesheet" type="text/css" href="./app-assets/css/pages/dashboard-ecommerce.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/plugins/file-uploaders/dropzone.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/pages/data-list-view.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -53,9 +57,6 @@
                             <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon feather icon-menu"></i></a></li>
                         </ul>
                         <ul class="nav navbar-nav bookmark-icons">
-                            <!-- li.nav-item.mobile-menu.d-xl-none.mr-auto-->
-                            <!--   a.nav-link.nav-menu-main.menu-toggle.hidden-xs(href='#')-->
-                            <!--     i.ficon.feather.icon-menu-->
                             <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-todo.html" data-toggle="tooltip" data-placement="top" title="Todo"><i class="ficon feather icon-check-square"></i></a></li>
                             <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-chat.html" data-toggle="tooltip" data-placement="top" title="Chat"><i class="ficon feather icon-message-square"></i></a></li>
                             <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-email.html" data-toggle="tooltip" data-placement="top" title="Email"><i class="ficon feather icon-mail"></i></a></li>
@@ -290,8 +291,7 @@
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
         <div class="navbar-header">
             <ul class="nav navbar-nav flex-row">
-                <li class="nav-item mr-auto">
-                    <a class="navbar-brand" href="app-ecommerce-shop.html">
+                <li class="nav-item mr-auto"><a class="navbar-brand" href="app-ecommerce-shop.html">
                         <div class="brand-logo"></div>
                         <h2 class="brand-text mb-0">Vuexy</h2>
                     </a></li>
@@ -309,7 +309,9 @@
                         </li>
                     </ul>
                 </li>
-                <li class=" nav-item"><a href="#"><i class="feather icon-credit-card"></i><span class="menu-title" data-i18n="Dashboard">Баланс</span></a>
+                <li class=" nav-item"><a href="page-user-profile.html"><i class="feather icon-user"></i><span class="menu-title" data-i18n="Profile">Мой профиль</span></a>
+                </li>
+                <li class=" nav-item"><a href="index.html"><i class="feather icon-credit-card"></i><span class="menu-title" data-i18n="Dashboard">Баланс</span></a>
                     <ul class="menu-content">
                         <li><a href="dashboard-analytics.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Analytics">Выплаты</span></a>
                         </li>
@@ -319,13 +321,10 @@
                         </li>
                     </ul>
                 </li>
-                <li class=" nav-item"><a href="page-user-profile.html"><i class="feather icon-user"></i><span class="menu-title" data-i18n="Profile">Мой профиль</span></a>
-                </li>
                 <li class=" nav-item"><a href="app-email.html"><i class="feather icon-mail"></i><span class="menu-title" data-i18n="Email">Email</span></a>
                 </li>
                 <li class=" nav-item"><a href="app-chat.html"><i class="feather icon-message-square"></i><span class="menu-title" data-i18n="Chat">Чат</span></a>
                 </li>
-                
                 <li class=" nav-item"><a href="#"><i class="feather icon-shopping-cart"></i><span class="menu-title" data-i18n="Ecommerce">Ecommerce</span></a>
                     <ul class="menu-content">
                         <li><a href="app-ecommerce-shop.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Shop">Товары</span></a>
@@ -356,8 +355,9 @@
                         </li>
                     </ul>
                 </li>
-                
                 <li class=" nav-item"><a href="page-account-settings.html"><i class="feather icon-settings"></i><span class="menu-title" data-i18n="Account Settings">Account Settings</span></a>
+                </li>
+                <li class=" nav-item"><a href="page-knowledge-base.html"><i class="feather icon-info"></i><span class="menu-title" data-i18n="Knowledge Base">Knowledge Base</span></a>
                 </li>
                 <li class=" nav-item"><a href="page-invoice.html"><i class="feather icon-file"></i><span class="menu-title" data-i18n="Invoice">Invoice</span></a>
                 </li>
@@ -365,7 +365,7 @@
                     <ul class="menu-content">
                         <li><a href="auth-login.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Login">Login</span></a>
                         </li>
-                        <li><a href="auth-register.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Register">Register</span></a>
+                        <li><a href="auth-register.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Register">Регистрация</span></a>
                         </li>
                         <li><a href="auth-forgot-password.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Forgot Password">Forgot Password</span></a>
                         </li>
@@ -403,18 +403,18 @@
         <div class="content-overlay"></div>
         <div class="header-navbar-shadow"></div>
         <div class="content-wrapper">
-            <div class="content-header row">
+            <!-- <div class="content-header row">
                 <div class="content-header-left col-md-9 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-left mb-0">Advance Card</h2>
+                            <h2 class="content-header-title float-left mb-0">List View</h2>
                             <div class="breadcrumb-wrapper col-12">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Home</a>
                                     </li>
-                                    <li class="breadcrumb-item"><a href="#">Card</a>
+                                    <li class="breadcrumb-item"><a href="#">Data List</a>
                                     </li>
-                                    <li class="breadcrumb-item active">Advance Card
+                                    <li class="breadcrumb-item active">List View
                                     </li>
                                 </ol>
                             </div>
@@ -425,467 +425,596 @@
                     <div class="form-group breadcrum-right">
                         <div class="dropdown">
                             <button class="btn-icon btn btn-primary btn-round btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather icon-settings"></i></button>
-                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Chat</a><a class="dropdown-item" href="#">Email</a><a class="dropdown-item" href="#">Calendar</a></div>
+                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Chat</a><a class="dropdown-item" href="#">Email</a></div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="content-body">
-                <!-- Basic example and Profile cards section start -->
-                <section id="basic-examples">
-                    <div class="row match-height">
-                        <div class="col-xl-4 col-md-6 col-sm-12">
-                            <div class="card">
-                                <div class="card-content">
-                                    <img class="card-img-top img-fluid" src="./app-assets/images/pages/content-img-1.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5>Vuexy Admin</h5>
-                                        <p class="card-text  mb-0">By Pixinvent Creative Studio</p>
-                                        <span class="card-text">Elite Author</span>
-                                        <div class="card-btns d-flex justify-content-between mt-2">
-                                            <a href="#" class="btn gradient-light-primary text-white">Download</a>
-                                            <a href="#" class="btn btn-outline-primary">View All</a>
-                                        </div>
-                                    </div>
+                <!-- Data list view starts -->
+                <section id="data-list-view" class="data-list-view-header">
+                    <div class="action-btns d-none">
+                        <div class="btn-dropdown mr-1 mb-1">
+                            <div class="btn-group dropdown actions-dropodown">
+                                <button type="button" class="btn btn-white px-1 py-1 dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Actions
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#"><i class="feather icon-trash"></i>Delete</a>
+                                    <a class="dropdown-item" href="#"><i class="feather icon-archive"></i>Archive</a>
+                                    <a class="dropdown-item" href="#"><i class="feather icon-file"></i>Print</a>
+                                    <a class="dropdown-item" href="#"><i class="feather icon-save"></i>Another Action</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-md-6 col-sm-12">
-                            <div class="card">
-                                <div class="card-content">
-                                    <div class="card-body">
-                                        <img class="card-img img-fluid mb-1" src="./app-assets/images/pages/content-img-2.jpg" alt="Card image cap">
-                                        <h5 class="mt-1">Vuexy Admin</h5>
-                                        <p class="card-text">By Pixinvent Creative Studio</p>
-                                        <hr class="my-1">
-                                        <div class="d-flex justify-content-between mt-2">
-                                            <div class="float-left">
-                                                <p class="font-medium-2 mb-0">$ 4785.78</p>
-                                                <p class="">Income</p>
-                                            </div>
-                                            <div class="float-right">
-                                                <p class="font-medium-2 mb-0">12 June 2019</p>
-                                                <p class="">Delivery Date</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6 col-sm-12">
-                            <div class="card">
-                                <div class="card-content">
-                                    <div class="card-body">
-                                        <img class="card-img img-fluid mb-1" src="./app-assets/images/pages/content-img-3.jpg" alt="Card image cap">
-                                        <h5 class="my-1">Vuexy Admin</h5>
-                                        <div class="d-flex justify-content-between">
-                                            <small class="float-left font-weight-bold mb-25" id="example-caption-1">$ 5975</small>
-                                            <small class="float-right  mb-25" id="example-caption-2">$ 8000</small>
-                                        </div>
-                                        <div class="progress progress-bar-primary box-shadow-6">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="75" aria-valuemax="100" style="width:75%" aria-describedby="example-caption-2"></div>
-                                        </div>
-                                        <div class="card-btns d-flex justify-content-between">
-                                            <a href="#" class="btn gradient-light-primary white">Download</a>
-                                            <a href="#" class="btn btn-outline-primary float-right">View All</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Profile Cards Starts -->
-                        <div class="col-xl-4 col-md-6 col-sm-12 profile-card-1">
-                            <div class="card">
-                                <div class="card-header mx-auto">
-                                    <div class="avatar avatar-xl">
-                                        <img class="img-fluid" src="./app-assets/images/portrait/small/avatar-s-12.jpg" alt="img placeholder">
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <div class="card-body text-center">
-                                        <h4>Zoila Legore</h4>
-                                        <p class="">Backend Dev</p>
-                                        <div class="card-btns d-flex justify-content-between">
-                                            <button class="btn gradient-light-primary">Follow</button>
-                                            <button class="btn btn-outline-primary">Message</button>
-                                        </div>
-                                        <hr class="my-2">
-                                        <div class="d-flex justify-content-between">
-                                            <div class="float-left">
-                                                <i class="feather icon-star text-warning mr-50"></i> 4.9
-                                            </div>
-                                            <div class="float-right">
-                                                <i class="feather icon-briefcase text-primary mr-50"></i> 37 Projects
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6 col-sm-12 profile-card-2">
-                            <div class="card">
-                                <div class="card-header mx-auto pb-0">
-                                    <div class="row m-0">
-                                        <div class="col-sm-12 text-center">
-                                            <h4>Zoila Legore</h4>
-                                        </div>
-                                        <div class="col-sm-12 text-center">
-                                            <p class="">Frontend Dev</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <div class="card-body text-center mx-auto">
-                                        <div class="avatar avatar-xl">
-                                            <img class="img-fluid" src="./app-assets/images/portrait/small/avatar-s-12.jpg" alt="img placeholder">
-                                        </div>
-                                        <div class="d-flex justify-content-between mt-2">
-                                            <div class="uploads">
-                                                <p class="font-weight-bold font-medium-2 mb-0">568</p>
-                                                <span class="">Uploads</span>
-                                            </div>
-                                            <div class="followers">
-                                                <p class="font-weight-bold font-medium-2 mb-0">78.6k</p>
-                                                <span class="">Followers</span>
-                                            </div>
-                                            <div class="following">
-                                                <p class="font-weight-bold font-medium-2 mb-0">112</p>
-                                                <span class="">Following</span>
-                                            </div>
-                                        </div>
-                                        <button class="btn gradient-light-primary btn-block mt-2">Follow</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-6 col-sm-12 profile-card-3">
-                            <div class="card">
-                                <div class="card-header mx-auto">
-                                    <div class="avatar avatar-xl">
-                                        <img class="img-fluid" src="./app-assets/images/portrait/small/avatar-s-1.jpg" alt="img placeholder">
-                                    </div>
-                                </div>
-                                <div class="card-content">
-                                    <div class="card-body text-center">
-                                        <h4>Jonell Binion</h4>
-                                        <p class="">Designer</p>
-                                        <div class="d-flex justify-content-between">
-                                            <small class="float-left font-weight-bold" id="example-caption-3">720 Points</small>
-                                            <small class="float-right font-weight-bold" id="example-caption-4">1000</small>
-                                        </div>
-                                        <div class="progress progress-bar-primary box-shadow-6">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="75" aria-valuemax="100" style="width:75%" aria-describedby="example-caption-3"></div>
-                                        </div>
-                                        <div class="card-btns d-flex justify-content-between">
-                                            <button class="btn gradient-light-primary">Follow</button>
-                                            <button class="btn btn-outline-primary">Message</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Profile Cards Ends -->
                     </div>
-                </section>
-                <!-- // Basic example and Profile cards section end -->
 
-                <!-- Overlay Image and Chat Section Starts -->
-                <section id="overlay-image-chat-cards">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="card overlay-img-card text-white">
-                                <img src="./app-assets/images/pages/card-image-6.jpg" class="card-img" alt="card-img-6">
-                                <div class="card-img-overlay overlay-black d-flex flex-column justify-content-between">
-                                    <h5 class="card-title text-white">Beautiful Overlay</h5>
-                                    <div class="card-content">
-                                        Cake sesame snaps cupcake gingerbread danish I love gingerbread. Apple pie pie jujubes chupa chups muffin
-                                        halvah lollipop.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="card overlay-img-card text-white">
-                                <img src="./app-assets/images/pages/card-image-5.jpg" class="card-img" alt="card-img-6">
-                                <div class="card-img-overlay overlay-black">
-                                    <h5 class="font-medium-5 text-white text-center mt-4">Snowy</h5>
-                                    <p class="text-white text-center">New York</p>
-                                    <div class="card-content">
-                                        <div class="d-flex justify-content-around mt-2">
-                                            <div class="icon">
-                                                <i class="feather icon-cloud-snow font-large-5"></i>
-                                            </div>
-                                            <div class="temprature mt-3">
-                                                <p class="font-large-3"> -6 <span class="mt-1">&#176;</span></p>
+                    <!-- DataTable starts -->
+                    <div class="table-responsive">
+                        <table class="table data-list-view">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>NAME</th>
+                                    <th>CATEGORY</th>
+                                    <th>POPULARITY</th>
+                                    <th>ORDER STATUS</th>
+                                    <th>PRICE</th>
+                                    <th>ACTION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">Apple Watch series 4 GPS</td>
+                                    <td class="product-category">Computers</td>
+                                    <td>
+                                        <div class="progress progress-bar-success">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:97%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-warning">
+                                            <div class="chip-body">
+                                                <div class="chip-text">on hold</div>
                                             </div>
                                         </div>
-                                        <div class="card-body">
-                                            <div class="d-flex justify-content-between mt-4">
-                                                <div class="precipitation">
-                                                    <span class="font-medium-3">Precipitation</span>
-                                                </div>
-                                                <div class="degree">
-                                                    <span class="font-medium-3">48%</span>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex justify-content-between my-2">
-                                                <div class="humidity">
-                                                    <span class="font-medium-3">Humidity</span>
-                                                </div>
-                                                <div class="degree">
-                                                    <span class="font-medium-3">60%</span>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex justify-content-between my-2">
-                                                <div class="wind">
-                                                    <span class="font-medium-3">Wind</span>
-                                                </div>
-                                                <div class="degree">
-                                                    <span class="font-medium-3">23 km/h</span>
-                                                </div>
+                                    </td>
+                                    <td class="product-price">$69.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">Beats HeadPhones</td>
+                                    <td class="product-category">Computers</td>
+                                    <td>
+                                        <div class="progress progress-bar-primary">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:83%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-success">
+                                            <div class="chip-body">
+                                                <div class="chip-text">Delivered</div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="card chat-application">
-                                <div class="card-header">
-                                    <h4 class="card-title">Chat</h4>
-                                </div>
-                                <div class="chat-app-window">
-                                    <div class="user-chats">
-                                        <div class="chats">
-                                            <div class="chat chat-left">
-                                                <div class="chat-avatar mt-50">
-                                                    <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
-                                                        <img src="./app-assets/images/portrait/small/avatar-s-2.jpg" alt="avatar" height="40" width="40" />
-                                                    </a>
-                                                </div>
-                                                <div class="chat-body">
-                                                    <div class="chat-content">
-                                                        <p>Cake sesame snaps cupcake gingerbread</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="chat">
-                                                <div class="chat-avatar">
-                                                    <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
-                                                        <img src="./app-assets/images/portrait/small/avatar-s-5.jpg" alt="avatar" height="40" width="40" />
-                                                    </a>
-                                                </div>
-                                                <div class="chat-body">
-                                                    <div class="chat-content">
-                                                        <p>Apple pie pie jujubes chupa chups muffin</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="chat chat-left">
-                                                <div class="chat-avatar mt-50">
-                                                    <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
-                                                        <img src="./app-assets/images/portrait/small/avatar-s-2.jpg" alt="avatar" height="40" width="40" />
-                                                    </a>
-                                                </div>
-                                                <div class="chat-body">
-                                                    <div class="chat-content">
-                                                        <p>Chocolate cake</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="chat">
-                                                <div class="chat-avatar">
-                                                    <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
-                                                        <img src="./app-assets/images/portrait/small/avatar-s-5.jpg" alt="avatar" height="40" width="40" />
-                                                    </a>
-                                                </div>
-                                                <div class="chat-body">
-                                                    <div class="chat-content">
-                                                        <p>Donut sweet pie oat cake dragée fruitcake</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="chat chat-left">
-                                                <div class="chat-avatar mt-50">
-                                                    <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="left" title="" data-original-title="">
-                                                        <img src="./app-assets/images/portrait/small/avatar-s-2.jpg" alt="avatar" height="40" width="40" />
-                                                    </a>
-                                                </div>
-                                                <div class="chat-body">
-                                                    <div class="chat-content">
-                                                        <p>Liquorice chocolate bar jelly beans icing</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="chat">
-                                                <div class="chat-avatar mt-50">
-                                                    <a class="avatar m-0" data-toggle="tooltip" href="#" data-placement="right" title="" data-original-title="">
-                                                        <img src="./app-assets/images/portrait/small/avatar-s-5.jpg" alt="avatar" height="40" width="40" />
-                                                    </a>
-                                                </div>
-                                                <div class="chat-body">
-                                                    <div class="chat-content">
-                                                        <p>Pudding candy</p>
-                                                    </div>
-                                                </div>
+                                    </td>
+                                    <td class="product-price">$69.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">Altec Lansing - Bluetooth Speaker</td>
+                                    <td class="product-category">Audio</td>
+                                    <td>
+                                        <div class="progress progress-bar-warning">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:57%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-danger">
+                                            <div class="chip-body">
+                                                <div class="chip-text">canceled</div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="chat-footer">
-                                        <div class="card-body d-flex justify-content-around pt-0">
-                                            <input type="text" class="form-control mr-50" placeholder="Type your Message">
-                                            <button type="button" class="btn btn-icon btn-primary"><i class="feather icon-navigation"></i></button>
+                                    </td>
+                                    <td class="product-price">$199.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">Aluratek - Bluetooth Audio Receiver</td>
+                                    <td class="product-category">Computers</td>
+                                    <td>
+                                        <div class="progress progress-bar-warning">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:65%"></div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-warning">
+                                            <div class="chip-body">
+                                                <div class="chip-text">on hold</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-price">$29.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">Aluratek - Bluetooth Audio Transmitter</td>
+                                    <td class="product-category">Audio</td>
+                                    <td>
+                                        <div class="progress progress-bar-warning">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:87%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-danger">
+                                            <div class="chip-body">
+                                                <div class="chip-text">canceled</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-price">$199.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">Basis - Peak Fitness and Sleep Tracker</td>
+                                    <td class="product-category">Fitness</td>
+                                    <td>
+                                        <div class="progress progress-bar-primary">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:47%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-warning">
+                                            <div class="chip-body">
+                                                <div class="chip-text">on hold</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-price">$199.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">Antec - Nano Diamond Thermal Compound</td>
+                                    <td class="product-category">Fitness</td>
+                                    <td>
+                                        <div class="progress progress-bar-warning">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:55%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-primary">
+                                            <div class="chip-body">
+                                                <div class="chip-text">pending</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-price">$29.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">Antec - SmartBean Bluetooth Adapter</td>
+                                    <td class="product-category">Computer</td>
+                                    <td>
+                                        <div class="progress progress-bar-warning">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:63%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-danger">
+                                            <div class="chip-body">
+                                                <div class="chip-text">canceled</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-price">$39.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">Beats by Dr. Dre - 3' USB-to-Micro USB Cable</td>
+                                    <td class="product-category">Computer</td>
+                                    <td>
+                                        <div class="progress progress-bar-warning">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:87%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-success">
+                                            <div class="chip-body">
+                                                <div class="chip-text">delivered</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-price">$199.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">Beats by Dr. Dre - Bike Mount for Pill Speakers</td>
+                                    <td class="product-category">Audio</td>
+                                    <td>
+                                        <div class="progress progress-bar-warning">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:40%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-warning">
+                                            <div class="chip-body">
+                                                <div class="chip-text">delivered</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-price">$49.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">Bose® - SoundLink® Color Bluetooth Speaker</td>
+                                    <td class="product-category">Fitness</td>
+                                    <td>
+                                        <div class="progress progress-bar-primary">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:90%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-primary">
+                                            <div class="chip-body">
+                                                <div class="chip-text">pending</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-price">$129.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">BRAVEN - Portable Bluetooth Speaker</td>
+                                    <td class="product-category">Fitness</td>
+                                    <td>
+                                        <div class="progress progress-bar-primary">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:87%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-warning">
+                                            <div class="chip-body">
+                                                <div class="chip-text">on hold</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-price">$199.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">Craig - Portable Wireless Speaker</td>
+                                    <td class="product-category">Computers</td>
+                                    <td>
+                                        <div class="progress progress-bar-danger">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:20%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-danger">
+                                            <div class="chip-body">
+                                                <div class="chip-text">canceled</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-price">$199.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">Definitive Technology - Wireless Speaker</td>
+                                    <td class="product-category">Fitness</td>
+                                    <td>
+                                        <div class="progress progress-bar-primary">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:75%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-primary">
+                                            <div class="chip-body">
+                                                <div class="chip-text">pending</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-price">$399.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">Fitbit - Charge HR Activity Tracker + Heart Rate (Large)</td>
+                                    <td class="product-category">Audio</td>
+                                    <td>
+                                        <div class="progress progress-bar-warning">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:60%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-primary">
+                                            <div class="chip-body">
+                                                <div class="chip-text">pending</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-price">$149.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">Fitbit - Flex 1" USB Charging Cable</td>
+                                    <td class="product-category">Fitness</td>
+                                    <td>
+                                        <div class="progress progress-bar-primary">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:87%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-warning">
+                                            <div class="chip-body">
+                                                <div class="chip-text">on hold</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-price">$14.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">Fitbit - Activity Tracker</td>
+                                    <td class="product-category">Fitness</td>
+                                    <td>
+                                        <div class="progress progress-bar-danger">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:35%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-danger">
+                                            <div class="chip-body">
+                                                <div class="chip-text">canceled</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-price">$99.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">Fitbit - Charge Wireless Activity Tracker (Large)</td>
+                                    <td class="product-category">Computers</td>
+                                    <td>
+                                        <div class="progress progress-bar-primary">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:87%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-primary">
+                                            <div class="chip-body">
+                                                <div class="chip-text">pending</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-price">$129.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">Craig - Tower Speaker</td>
+                                    <td class="product-category">Audio</td>
+                                    <td>
+                                        <div class="progress progress-bar-warning">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:68%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-warning">
+                                            <div class="chip-body">
+                                                <div class="chip-text">on hold</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-price">$69.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">BRAVEN - Outdoor Speaker</td>
+                                    <td class="product-category">Computers</td>
+                                    <td>
+                                        <div class="progress progress-bar-primary">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:97%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-success">
+                                            <div class="chip-body">
+                                                <div class="chip-text">delivered</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-price">$199.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">Bose® - Bluetooth Speaker Travel Bag</td>
+                                    <td class="product-category">Computers</td>
+                                    <td>
+                                        <div class="progress progress-bar-primary">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:89%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-warning">
+                                            <div class="chip-body">
+                                                <div class="chip-text">on hold</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-price">$44.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="product-name">Altec Lansing - Mini H2O Bluetooth Speaker</td>
+                                    <td class="product-category">Fitness</td>
+                                    <td>
+                                        <div class="progress progress-bar-success">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="40" aria-valuemax="100" style="width:87%"></div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="chip chip-success">
+                                            <div class="chip-body">
+                                                <div class="chip-text">delivered</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-price">$199.99</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </section>
-                <!-- Overlay Image and Chat Section Starts -->
+                    <!-- DataTable ends -->
 
-                <!-- Admin and Video Section Starts -->
-                <section id="admin-video">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-12">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4 class="card-title w-100">
-                                        Vuexy Admin
-                                    </h4>
-                                    <p class="">by Pixinvent Creative Studio</p>
-                                    <div class="heading-elements">
-                                        <ul class="list-inline mb-0">
-                                            <li><span><i class="feather icon-more-vertical"></i></span></li>
-                                        </ul>
-                                    </div>
+                    <!-- add new sidebar starts -->
+                    <div class="add-new-data-sidebar">
+                        <div class="overlay-bg"></div>
+                        <div class="add-new-data">
+                            <div class="div mt-2 px-2 d-flex new-data-title justify-content-between">
+                                <div>
+                                    <h4 class="text-uppercase">List View Data</h4>
                                 </div>
-                                <div class="card-content">
-                                    <div class="card-body">
-                                        <img class="img-fluid" src="./app-assets/images/pages/content-img-4.jpg" alt="img placeholder">
-                                        <div class="d-flex justify-content-start mt-2">
-                                            <div class="icon-like mr-2">
-                                                <i class="feather icon-thumbs-up text-success font-medium-5 align-middle"></i>
-                                                <span>368</span>
-                                            </div>
-                                            <div class="icon-comment mr-2">
-                                                <i class="feather icon-message-square font-medium-5 align-middle text-primary"></i>
-                                                <span>341</span>
-                                            </div>
-                                            <div class="icon-dislike">
-                                                <i class="feather icon-thumbs-down font-medium-5 align-middle text-danger"></i>
-                                                <span>53</span>
-                                            </div>
+                                <div class="hide-data-sidebar">
+                                    <i class="feather icon-x"></i>
+                                </div>
+                            </div>
+                            <div class="data-items pb-3">
+                                <div class="data-fields px-2 mt-3">
+                                    <div class="row">
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Name</label>
+                                            <input type="text" class="form-control" id="data-name">
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-category"> Category </label>
+                                            <select class="form-control" id="data-category">
+                                                <option>Audio</option>
+                                                <option>Computers</option>
+                                                <option>Fitness</option>
+                                                <option>Appliance</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-status">Order Status</label>
+                                            <select class="form-control" id="data-status">
+                                                <option>Pending</option>
+                                                <option>Canceled</option>
+                                                <option>Delivered</option>
+                                                <option>On Hold</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-price">Price</label>
+                                            <input type="text" class="form-control" id="data-price">
+                                        </div>
+                                        <div class="col-sm-12 data-field-col data-list-upload">
+                                            <form action="#" class="dropzone dropzone-area" id="dataListUpload">
+                                                <div class="dz-message">Upload Image</div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-8 col-sm-12">
-                            <div class="card overflow-hidden">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/mcixldqDIEQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
+                                <div class="add-data-btn">
+                                    <button class="btn btn-primary">Add Data</button>
+                                </div>
+                                <div class="cancel-data-btn">
+                                    <button class="btn btn-outline-danger">Cancel</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- add new sidebar ends -->
                 </section>
-                <!-- Admin and Video Section Starts -->
-
-                <!-- Timeline Starts -->
-                <section id="timeline-card">
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-12">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4 class="card-title">Left Timeline</h4>
-                                </div>
-                                <div class="card-content">
-                                    <div class="card-body">
-                                        <ul class="activity-timeline timeline-left list-unstyled">
-                                            <li>
-                                                <div class="timeline-icon bg-primary">
-                                                    <i class="feather icon-plus font-medium-2"></i>
-                                                </div>
-                                                <div class="timeline-info">
-                                                    <p class="font-weight-bold">Task Added</p>
-                                                    <span>Bonbon macaroon jelly beans gummi bears jelly lollipop apple</span>
-                                                </div>
-                                                <small class="">25 days ago</small>
-                                            </li>
-                                            <li>
-                                                <div class="timeline-icon bg-warning">
-                                                    <i class="feather icon-alert-circle font-medium-2"></i>
-                                                </div>
-                                                <div class="timeline-info">
-                                                    <p class="font-weight-bold">Task Updated</p>
-                                                    <span>Cupcake gummi bears soufflé caramels candy</span>
-                                                </div>
-                                                <small class="">15 days ago</small>
-                                            </li>
-                                            <li>
-                                                <div class="timeline-icon bg-success">
-                                                    <i class="feather icon-check font-medium-2"></i>
-                                                </div>
-                                                <div class="timeline-info">
-                                                    <p class="font-weight-bold">Task Completed</p>
-                                                    <span>Candy ice cream cake. Halvah gummi bears
-                                                    </span>
-                                                </div>
-                                                <small class="">20 minutes ago</small>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-12">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4 class="card-title"> Right Timeline</h4>
-                                </div>
-                                <div class="card-content">
-                                    <div class="card-body">
-                                        <ul class="activity-timeline timeline-right list-unstyled">
-                                            <li>
-                                                <div class="timeline-icon bg-primary">
-                                                    <i class="feather icon-plus font-medium-2"></i>
-                                                </div>
-                                                <div class="timeline-info">
-                                                    <p class="font-weight-bold">Task Added</p>
-                                                    <span>Bonbon macaroon jelly beans gummi bears jelly lollipop apple</span>
-                                                </div>
-                                                <small class="">25 days ago</small>
-                                            </li>
-                                            <li>
-                                                <div class="timeline-icon bg-warning">
-                                                    <i class="feather icon-alert-circle font-medium-2"></i>
-                                                </div>
-                                                <div class="timeline-info">
-                                                    <p class="font-weight-bold">Task Updated</p>
-                                                    <span>Cupcake gummi bears soufflé caramels candy</span>
-                                                </div>
-                                                <small class="">15 days ago</small>
-                                            </li>
-                                            <li>
-                                                <div class="timeline-icon bg-success">
-                                                    <i class="feather icon-check font-medium-2"></i>
-                                                </div>
-                                                <div class="timeline-info">
-                                                    <p class="font-weight-bold">Task Completed</p>
-                                                    <span>Candy ice cream cake. Halvah gummi bears
-                                                    </span>
-                                                </div>
-                                                <small class="">20 minutes ago</small>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Timeline Ends -->
+                <!-- Data list view end -->
 
             </div>
         </div>
@@ -909,6 +1038,13 @@
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
+    <script src="./app-assets/vendors/js/extensions/dropzone.min.js"></script>
+    <script src="./app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+    <script src="./app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+    <script src="./app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
+    <script src="./app-assets/vendors/js/tables/datatable/buttons.bootstrap.min.js"></script>
+    <script src="./app-assets/vendors/js/tables/datatable/dataTables.select.min.js"></script>
+    <script src="./app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
@@ -918,7 +1054,7 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    <script src="./app-assets/js/scripts/pages/app-chat.js"></script>
+    <script src="./app-assets/js/scripts/ui/data-list-view.js"></script>
     <!-- END: Page JS-->
 
 </body>

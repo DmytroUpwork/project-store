@@ -1,6 +1,14 @@
 /*========================================================
         DARK LAYOUT
 =========================================================*/
+
+@font-face {
+  font-family: "Sansation";
+  src: url("../fonts/sansation/Sansation_Regular.ttf") format("truetype"),
+  url("../fonts/sansation/Sansation_Bold.ttf") format("truetype");
+  /* font-weight: normal;
+  font-style: normal; */
+}
 html {
   font-size : 14px;
   height : 100%;
@@ -10,6 +18,7 @@ html body {
   height : 100%;
   background-color : #F8F8F8;
   direction : ltr;
+  font-family: "Sansation", sans-serif;
   /*
       * Blank page
       */
@@ -23,6 +32,7 @@ html body .content {
           backface-visibility : hidden;
   min-height : calc(100% - 4rem);
   margin-left : 260px;
+  font-family: "Sansation", sans-serif;
 }
 html body .content.app-content {
   overflow : hidden;
@@ -1811,6 +1821,53 @@ body.fixed-footer .main-menu.menu-fixed {
 	Author: PIXINVENT
 	Author URL: http://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
+.header-navbar .navbar-wrapper {
+  height: 40px;
+}
+
+.header-navbar {
+  min-height: 0;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  height: 40px;
+}
+
+.navbar-expand-lg .navbar-nav {
+  align-items: center;
+}
+
+.header-navbar .navbar-container .bookmark-wrapper ul.nav li > a.nav-link {
+  padding: 1.4rem 1.5rem 1.35rem;
+}
+
+.header-navbar .nav-item + .nav-item.dropdown-user {
+  padding: 0 20px 4px;
+}
+
+.header-navbar .navbar-container {
+  padding-left: 0;
+}
+
+.header-navbar .navbar-container ul.nav li a.dropdown-user-link .user-name {
+  margin-bottom: 0;
+}
+
+.header-navbar .navbar-container ul.nav li a.dropdown-user-link img {
+  width: 30px;
+  height: 30px;
+}
+
+
+
+.header-navbar .navbar-container ul.nav li a.nav-link-label {
+  padding: 0;
+}
+
+.header-navbar .navbar-container ul.nav li > a.nav-link {
+  padding: 1.6rem 0rem 1.35rem 0rem;
+}
+
 .navbar-container a.nav-link-search {
   float : left;
 }
@@ -1935,8 +1992,22 @@ body.fixed-footer .main-menu.menu-fixed {
   box-shadow : 0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
 }
 
-.navbar-container .bookmark-icon {
+.navbar-container .bookmark-link {
   cursor : pointer;
+}
+
+.navbar-container .bookmark-link li {
+  display: flex!important;
+  align-items: center;
+}
+
+.navbar-container .bookmark-link li:first-of-type a {
+  font-size: 20px;
+  color: #0093B7!important;
+}
+
+.navbar-container .bookmark-link li a {
+  font-size: 12px;
 }
 
 .navbar-container .dropdown.bookmark-dropdown {
