@@ -1,6 +1,7 @@
 /*========================================================
         DARK LAYOUT
 =========================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 @font-face {
   font-family: "Sansation";
@@ -18,7 +19,8 @@ html body {
   height : 100%;
   background-color : #F8F8F8;
   direction : ltr;
-  font-family: "Sansation", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  /* font-family: "Sansation", sans-serif; */
   /*
       * Blank page
       */
@@ -32,7 +34,8 @@ html body .content {
           backface-visibility : hidden;
   min-height : calc(100% - 4rem);
   margin-left : 260px;
-  font-family: "Sansation", sans-serif;
+  font-family: 'Poppins', sans-serif;
+  /* font-family: "Sansation", sans-serif; */
 }
 html body .content.app-content {
   overflow : hidden;
@@ -1823,58 +1826,21 @@ body.fixed-footer .main-menu.menu-fixed {
 	Author: PIXINVENT
 	Author URL: http://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
-.header-navbar .navbar-wrapper {
-  height: 40px;
-}
 
-.header-navbar {
-  min-height: 0;
-}
-
-.navbar-expand-lg .navbar-collapse {
-  height: 40px;
-}
-
-.navbar-expand-lg .navbar-nav {
+.header-navbar .navbar-container .bookmark-wrapper ul.nav li > a.nav-link,
+.header-navbar .navbar-container ul.nav li > a.nav-link {
+  padding: 0.6rem 0.5rem 0.35rem 1rem!important;
+  height: 100%;
   align-items: center;
-}
-
-.header-navbar .navbar-container .bookmark-wrapper ul.nav li > a.nav-link {
-  padding: 1.4rem 1.5rem 1.35rem;
+  display: flex;
 }
 
 .header-navbar .navbar-container .bookmark-wrapper ul.nav li > a.nav-link:hover {
   color: #3c6eb9;
 }
 
-
-
-
-.header-navbar .nav-item + .nav-item.dropdown-user {
-  padding: 0 20px 4px;
-}
-
-.header-navbar .navbar-container {
-  padding-left: 0;
-}
-
-.header-navbar .navbar-container ul.nav li a.dropdown-user-link .user-name {
-  margin-bottom: 0;
-}
-
-.header-navbar .navbar-container ul.nav li a.dropdown-user-link img {
-  width: 30px;
-  height: 30px;
-}
-
-
-
 .header-navbar .navbar-container ul.nav li a.nav-link-label {
-  padding: 0;
-}
-
-.header-navbar .navbar-container ul.nav li > a.nav-link {
-  padding: 1.6rem 0rem 1.35rem 0rem;
+  padding: 0.6rem 0rem 0.35rem 0.8rem;
 }
 
 .navbar-container a.nav-link-search {
