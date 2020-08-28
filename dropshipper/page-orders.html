@@ -262,25 +262,9 @@
 
                         <h1>Мои заказы</h1>
 
-                        <!-- <div class="top"><div class="actions action-btns"><div class="btn-group dropdown actions-dropodown">
-                                <button type="button" class="btn btn-white px-1 py-1 dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Actions
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#"><i class="feather icon-trash"></i>Delete</a>
-                                    <a class="dropdown-item" href="#"><i class="feather icon-archive"></i>Archive</a>
-                                    <a class="dropdown-item" href="#"><i class="feather icon-file"></i>Print</a>
-                                    <a class="dropdown-item" href="#"><i class="feather icon-save"></i>Another Action</a>
-                                </div>
-                            </div><div class="dt-buttons btn-group"><button class="btn btn-outline-primary" tabindex="0" aria-controls="DataTables_Table_0"><span><i class="feather icon-plus"></i> Add New</span></button> </div></div><div class="action-filters"><div class="dataTables_length" id="DataTables_Table_0_length"><label><select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="custom-select custom-select-sm form-control form-control-sm"><option value="4">4</option><option value="10">10</option><option value="15">15</option><option value="20">20</option></select></label></div><div id="DataTables_Table_0_filter" class="dataTables_filter"><label><input type="search" class="form-control form-control-sm" placeholder="" aria-controls="DataTables_Table_0"></label></div></div></div> -->
-
-
-
-
-
                         
                         
-                        <table class="table data-list-view">
+                        <table class="table data-list-view" id="example">
                             <thead>
                                 <tr>
                                     <th>ДАТА</th>
@@ -296,10 +280,12 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>12 сентября</td>
+                                    <td class="product-date">12 сентября</td>
                                     <td class="product-name">Готовится к отправке</td>
-                                    <td class="product-category">2545 грн</td>
                                     <td class="product-price">254 грн</td>
+
+                                    <td class="product-category">2545 грн</td>
+                                    
 
                                     <td class="product-category">3 товар.</td>
 
@@ -389,18 +375,25 @@
                                         <span class="action-delete"><i class="feather icon-trash"></i></span>
                                     </td>
                                 </tr>
-
-
-
-
-
-
-
-
-
-
-                               
                             </tbody>
+
+
+                            <tfoot>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Position</th>
+                                    <th>Office</th>
+                                    <th>Age</th>
+                                    <th>Start date</th>
+                                    <th>Salary</th>
+                                    <th>Salary</th>
+                                    <th>Salary</th>
+                                </tr>
+                            </tfoot>
+
+
+
+
                         </table>
                     </div>
                     <!-- DataTable ends -->

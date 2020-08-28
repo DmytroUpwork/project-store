@@ -20,26 +20,25 @@ $(document).ready(function() {
       },
     ],
     dom:
-      '<"top"<"actions action-btns"B> <"action-filters"fll>>     <"clear">rt<"bottom" <"actions"> p>',
-    
- 
+      '<"top"<"actions action-btns"B> <"action-filters"fl>>             <"clear">rt<"bottom" <"actions"> p>',
+
     oLanguage: {
       sLengthMenu: "_MENU_",
       sSearch: "",
     },
     aLengthMenu: [
-      [4, 10, 15, 20],
-      [4, 10, 15, 20],
+      [6, 10, 15, 20],
+      [6, 10, 15, 20],
     ],
     select: {
       style: "multi",
     },
     order: [[1, "asc"]],
     bInfo: false,
-    pageLength: 4,
+    pageLength: 6,
     buttons: [
       {
-        text: "<i class='feather icon-plus'></i> Добавить +",
+        text: "Добавить <i class='feather icon-plus'></i>  ",
         action: function () {
           $(this).removeClass("btn-secondary");
           $(".add-new-data").addClass("show");
@@ -52,6 +51,29 @@ $(document).ready(function() {
     ],
     initComplete: function (settings, json) {
       $(".dt-buttons .btn").removeClass("btn-secondary");
+
+      this.api().columns().every( function () {
+        var column = this;
+        var select = $('<select><option value=""></option></select>')
+            .appendTo( $(column.footer()).empty() )
+            .on( 'change', function () {
+                var val = $.fn.dataTable.util.escapeRegex(
+                    $(this).val()
+                );
+
+                column
+                    .search( val ? '^'+val+'$' : '', true, false )
+                    .draw();
+            } );
+
+        column.data().unique().sort().each( function ( d, j ) {
+            select.append( '<option value="'+d+'">'+d+'</option>' )
+        } );
+      });
+
+
+
+
     },
   });
 
