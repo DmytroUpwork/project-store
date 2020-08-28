@@ -79,7 +79,7 @@ html body .content.app-content .content-area-wrapper .content-wrapper {
 }
 html body .content .content-wrapper {
   padding : calc(2.2rem - 0.4rem) 2.2rem 0;
-  margin-top : 6rem;
+  margin-top : 8rem;
 }
 html body .content .content-wrapper .content-header-title {
   font-weight : 500;
@@ -191,6 +191,87 @@ html .pace .pace-progress {
 .app-content.center-layout {
   overflow : hidden;
 }
+
+
+
+
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin: .5em;
+}
+
+
+.header-navbar .navbar-container {
+  padding-left: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .bookmark-wrapper {
+    padding-top: 11px;
+  }
+}
+
+.card-body {
+  padding: 9px 14px 6px 18px;
+  line-height: 37px;
+  border: 1px solid #DFDFDF;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 6px rgba(177, 132, 132, 0.25);
+  border-radius: 5px;
+}
+
+.card-body:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.card-body:hover .card-body__data {
+  color: #4656C7;
+}
+
+
+
+.card-body .card-body__title {
+  font-size: 16px;
+  color: #404040;
+}
+
+.card-body .card-body__data {
+  font-size: 24px;
+  color: #A254A2;
+}
+
+.card-body .card-body__svg {
+  position: absolute;
+  right: 18px;
+  top: 27%;
+  width: 45px;
+  height: 45px;
+  background: rgba(162, 84, 162, 0.2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body:hover .card-body__svg {
+  background: rgba(70, 86, 199, 0.2);
+}
+
+.card-body svg {
+  fill: #A254A2;
+  margin-left: 6px;
+}
+
+.card-body:hover svg {
+  fill: #4656C7;
+}
+
+.content-body {
+  padding-top: 34px;
+}
+
 
 /*
 * Col 3 layout for detached and general type
@@ -419,6 +500,7 @@ body.fixed-footer footer.footer-dark {
 }
 .main-menu.menu-light .navigation > li {
   padding : 0 12px;
+  margin-top: 20px;
 }
 .main-menu.menu-light .navigation > li > a .label {
   margin-top : 4px;
@@ -430,9 +512,9 @@ body.fixed-footer footer.footer-dark {
 }
 .main-menu.menu-light .navigation > li.open > a, .main-menu.menu-light .navigation > li.sidebar-group-active > a {
   color : #fff;
-  background: -webkit-linear-gradient(332deg, #7367F0, rgba(115, 103, 240, 0.7));
-  background: linear-gradient(118deg, #7367F0, rgba(115, 103, 240, 0.7));
-  box-shadow: 0 0 10px 1px rgba(115, 103, 240, 0.7);
+  background: -webkit-linear-gradient(332deg, #A254A2, rgba(228, 62, 154, 0.7));
+  background: linear-gradient(118deg, #A254A2, rgba(228, 62, 154, 0.7));
+  box-shadow: 0 0 10px 1px rgb(255 0 141);
   transition : transform 0.25s ease 0s, -webkit-transform 0.25s ease 0s;
   border-radius : 6px;
   margin-bottom : 7px;
@@ -441,9 +523,9 @@ body.fixed-footer footer.footer-dark {
   display : none;
 }
 .main-menu.menu-light .navigation > li.active > a {
-  background : -webkit-linear-gradient(332deg, #7367F0, rgba(115, 103, 240, 0.7));
-  background :         linear-gradient(118deg, #7367F0, rgba(115, 103, 240, 0.7));
-  box-shadow : 0 0 10px 1px rgba(115, 103, 240, 0.7);
+  background : -webkit-linear-gradient(332deg, #A254A2, rgba(228, 62, 154, 0.7));
+  background :         linear-gradient(118deg, #A254A2, rgba(228, 62, 154, 0.7));
+  box-shadow: 0 0 10px 1px rgb(255 0 141);
   color : #FFFFFF;
   font-weight : 400;
   border-radius : 4px;
@@ -747,9 +829,11 @@ body.fixed-footer footer.footer-dark {
   width : 260px;
   height : 5rem;
   position : relative;
-  padding : 0.35rem 1rem 0.3rem 1.64rem;
+  /* padding : 0.35rem 1rem 0.3rem 1.64rem; */
+  padding: 0.35rem 1rem 0.3rem 1px;
   -webkit-transition : 300ms ease all;
           transition : 300ms ease all;
+  margin-bottom: 45px;
 }
 .main-menu .navbar-header .navbar-brand {
   display : -webkit-box;
@@ -768,7 +852,7 @@ body.fixed-footer footer.footer-dark {
   /* background-position : -65px -54px;
   height : 24px;
   width : 35px; */
-  background: url('../../app-assets/images/my-images/logo_kondi_shop.png') no-repeat;
+  background: url('../../app-assets/images/logo/logo_kondi_shop.png') no-repeat;
   background-position: 0 -3px;
   height: 53px;
   width: 74px;
@@ -1983,8 +2067,9 @@ body.fixed-footer .main-menu.menu-fixed {
 }
 
 .navbar-container .bookmark-link li:first-of-type a {
-  font-size: 20px;
-  color: #0093B7!important;
+  font-size: 24px;
+  color: #A254A2!important;
+  font-weight: bold;
 }
 
 .navbar-container .bookmark-link li a {

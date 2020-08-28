@@ -177,9 +177,9 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expande
   margin-bottom : 1.25rem !important;
 }
 body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navigation li.active a {
-  background : whitesmoke;
+  background : #A254A2;
   box-shadow : none;
-  color : #565656;
+  /* color : #565656; */
 }
 body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navigation {
   overflow : visible;
