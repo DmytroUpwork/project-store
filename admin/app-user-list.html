@@ -9,15 +9,15 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>Product Details - Vuexy - Bootstrap HTML admin template</title>
+    <title>User List - Vuexy - Bootstrap HTML admin template</title>
     <link rel="apple-touch-icon" href="../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/forms/spinner/jquery.bootstrap-touchspin.css">
-    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/extensions/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/ag-grid/ag-grid.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/ag-grid/ag-theme-material.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -31,7 +31,8 @@
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/css/core/colors/palette-gradient.css">
-    <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/app-ecommerce-details.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/app-user.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/aggrid.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -302,53 +303,33 @@
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class=" nav-item"><a href="index.html"><i class="feather icon-home"></i><span class="menu-title" data-i18n="Dashboard">Панель</span><span class="badge badge badge-warning badge-pill float-right mr-2">2</span></a>
-                    <ul class="menu-content">
-                        <li><a href="dashboard-analytics.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Analytics">Аналитика</span></a>
-                        </li>
-                        <li><a href="dashboard-ecommerce.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="eCommerce">eCommerce</span></a>
-                        </li>
-                    </ul>
+                <li class="nav-item"><a href="page-orders.html"><i class="feather icon-mail"></i><span class="menu-title" data-i18n="Orders">Заказы</span></a>
                 </li>
-                <li class=" nav-item"><a href="page-user-profile.html"><i class="feather icon-user"></i><span class="menu-title" data-i18n="Profile">Мой профиль</span></a>
+                <li class=" nav-item"><a href="data-list-despatch.html"><i class="feather icon-circle"></i><span class="menu-title" data-i18n="Despatch">Отправки</span></a>
                 </li>
-                <li class=" nav-item"><a href="index.html"><i class="feather icon-credit-card"></i><span class="menu-title" data-i18n="Dashboard">Баланс</span></a>
-                    <ul class="menu-content">
-                        <li><a href="data-list-payments.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Payments">Выплаты</span></a>
-                        </li>
-                        <li><a href="data-list-sales.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Sales">Продажи</span></a>
-                        </li>
-                        <li><a href="data-list-parish.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Parish">Приходы</span></a>
-                        </li>
-                    </ul>
+                <li class=" nav-item"><a href="data-list-balance.html"><i class="feather icon-credit-card"></i><span class="menu-title" data-i18n="Balance">Баланс</span></a>
                 </li>
-                <li><a href="page-products.html"><i class="feather icon-filter"></i><span class="menu-item" data-i18n="Thumb View">Товары</span></a>
+                <li class=" nav-item"><a href="data-list-payments.html"><i class="feather icon-circle"></i><span class="menu-title" data-i18n="Payments">Выплаты</span></a>
                 </li>
-                <li class=" nav-item"><a href="app-email.html"><i class="feather icon-mail"></i><span class="menu-title" data-i18n="Email">Email</span></a>
+                <li class=' nav-item'><a href="data-list-sales.html"><i class="feather icon-circle"></i><span class="menu-title" data-i18n="Sales">Продажи</span></a>
+                </li>
+                <li class=" nav-item"><a href="data-list-parish.html"><i class="feather icon-circle"></i><span class="menu-title" data-i18n="Parish">Приход</span></a>
+                </li>
+                <li class="active nav-item"><a href="app-user-list.html"><i class="feather icon-circle"></i><span class="menu-title" data-i18n="List">Пользователи</span></a>
+                </li>
+                <li class=" nav-item"><a href="page-products.html"><i class="feather icon-filter"></i><span class="menu-title" data-i18n="Thumb View">Товары</span></a>
+                </li>
+                <li class=" nav-item"><a href="dashboard-analytics.html"><i class="feather icon-circle"></i><span class="menu-title" data-i18n="Analytics">Аналитика</span></a>
                 </li>
                 <li class=" nav-item"><a href="app-chat.html"><i class="feather icon-message-square"></i><span class="menu-title" data-i18n="Chat">Чат</span></a>
                 </li>
-                <li class=" nav-item"><a href="#"><i class="feather icon-shopping-cart"></i><span class="menu-title" data-i18n="Ecommerce">Ecommerce</span></a>
-                    <ul class="menu-content">
-                        <li><a href="app-ecommerce-shop.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Shop">Товары</span></a>
-                        </li>
-                        <li class='active'><a href="app-ecommerce-details.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Details">Details</span></a>
-                        </li>
-                        <li><a href="app-ecommerce-wishlist.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Wish List">Wish List</span></a>
-                        </li>
-                        <li><a href="app-ecommerce-checkout.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Checkout">Корзина</span></a>
-                        </li>
-                    </ul>
+                <li class="nav-item"><a href="page-account-settings.html"><i class="feather icon-settings"></i><span class="menu-title" data-i18n="Settings">Настройки</span></a>
                 </li>
-                <li class=" nav-item"><a href="#"><i class="feather icon-user"></i><span class="menu-title" data-i18n="User">Пользователь</span></a>
-                    <ul class="menu-content">
-                        <li><a href="app-user-list.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="List">List</span></a>
-                        </li>
-                        <li><a href="app-user-view.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="View">View</span></a>
-                        </li>
-                        <li><a href="app-user-edit.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Edit">Edit</span></a>
-                        </li>
-                    </ul>
+            </ul>
+        </div>
+        <div class="navbar-footer">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation"">
+                <li><a href="../index.html"><img src="../app-assets/images/my-images/icon_to_the_store.svg" alt="To the store"><span class="menu-item" data-i18n="Shop">В магазин</span></a>
                 </li>
             </ul>
         </div>
@@ -361,305 +342,123 @@
         <div class="header-navbar-shadow"></div>
         <div class="content-wrapper">
             <div class="content-header row">
-                <div class="content-header-left col-md-9 col-12 mb-2">
-                    <div class="row breadcrumbs-top">
-                        <div class="col-12">
-                            <h2 class="content-header-title float-left mb-0">Product Details</h2>
-                            <div class="breadcrumb-wrapper col-12">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
-                                    </li>
-                                    <li class="breadcrumb-item"><a href="#">eCommerce</a>
-                                    </li>
-                                    <li class="breadcrumb-item"><a href="app-ecommerce-shop.html">Shop</a>
-                                    </li>
-                                    <li class="breadcrumb-item active">Details
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="content-header-right text-md-right col-md-3 col-12 d-md-block d-none">
-                    <div class="form-group breadcrum-right">
-                        <div class="dropdown">
-                            <button class="btn-icon btn btn-primary btn-round btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="feather icon-settings"></i></button>
-                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Chat</a><a class="dropdown-item" href="#">Email</a><a class="dropdown-item" href="#">Calendar</a></div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="content-body">
-                <!-- app ecommerce details start -->
-                <section class="app-ecommerce-details">
+                <!-- users list start -->
+                <section class="users-list-wrapper">
+                    <!-- users filter start -->
                     <div class="card">
-                        <div class="card-body">
-                            <div class="row mb-5 mt-2">
-                                <div class="col-12 col-md-5 d-flex align-items-center justify-content-center mb-2 mb-md-0">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <img src="../app-assets/images/elements/macbook-pro.png" class="img-fluid" alt="product image">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <h5>Canon - EOS 5D Mark IV DSLR Camera with 24-70mm f/4L IS USM Lens
-                                    </h5>
-                                    <p class="text-muted">by Apple</p>
-                                    <div class="ecommerce-details-price d-flex flex-wrap">
-
-                                        <p class="text-primary font-medium-3 mr-1 mb-0">$43.99</p>
-                                        <span class="pl-1 font-medium-3 border-left">
-                                            <i class="feather icon-star text-warning"></i>
-                                            <i class="feather icon-star text-warning"></i>
-                                            <i class="feather icon-star text-warning"></i>
-                                            <i class="feather icon-star text-warning"></i>
-                                            <i class="feather icon-star text-secondary"></i>
-                                        </span>
-                                        <span class="ml-50 text-dark font-medium-1">424 ratings</span>
-                                    </div>
-                                    <hr>
-                                    <p>Shoot professional photos and videos with this Canon EOS 5D Mk V 24-70mm lens kit. A huge 30.4-megapixel
-                                        full-frame sensor delivers outstanding image clarity, and 4K video is possible from this DSLR for powerful
-                                        films. Ultra-precise autofocus and huge ISO ranges give you the images you want from this Canon EOS 5D Mk V
-                                        24-70mm lens kit.</p>
-                                    <p class="font-weight-bold mb-25"> <i class="feather icon-truck mr-50 font-medium-2"></i>Free Shipping
-                                    </p>
-                                    <p class="font-weight-bold"> <i class="feather icon-dollar-sign mr-50 font-medium-2"></i>EMI options available
-                                    </p>
-                                    <hr>
-                                    <div class="form-group">
-                                        <label class="font-weight-bold">Color</label>
-                                        <ul class="list-unstyled mb-0 product-color-options">
-                                            <li class="d-inline-block selected">
-                                                <div class="color-option b-primary">
-                                                    <div class="filloption bg-primary"></div>
-                                                </div>
-                                            </li>
-                                            <li class="d-inline-block">
-                                                <div class="color-option b-success">
-                                                    <div class="filloption bg-success"></div>
-                                                </div>
-                                            </li>
-                                            <li class="d-inline-block">
-                                                <div class="color-option b-danger">
-                                                    <div class="filloption bg-danger"></div>
-                                                </div>
-                                            </li>
-                                            <li class="d-inline-block">
-                                                <div class="color-option b-warning">
-                                                    <div class="filloption bg-warning"></div>
-                                                </div>
-                                            </li>
-                                            <li class="d-inline-block">
-                                                <div class="color-option b-black">
-                                                    <div class="filloption bg-black"></div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <hr>
-                                    <p>Available - <span class="text-success">In stock</span></p>
-
-                                    <div class="d-flex flex-column flex-sm-row">
-                                        <button class="btn btn-primary mr-0 mr-sm-1 mb-1 mb-sm-0"><i class="feather icon-shopping-cart mr-25"></i>ADD TO CART</button>
-                                        <button class="btn btn-outline-danger"><i class="feather icon-heart mr-25"></i>WISHLIST</button>
-                                    </div>
-                                    <hr>
-                                    <button type="button" class="btn btn-icon rounded-circle btn-outline-primary mr-1 mb-1"><i class="feather icon-facebook"></i></button>
-                                    <button type="button" class="btn btn-icon rounded-circle btn-outline-info mr-1 mb-1"><i class="feather icon-twitter"></i></button>
-                                    <button type="button" class="btn btn-icon rounded-circle btn-outline-danger mr-1 mb-1"><i class="feather icon-youtube"></i></button>
-                                    <button type="button" class="btn btn-icon rounded-circle btn-outline-primary mr-1 mb-1"><i class="feather icon-instagram"></i></button>
-                                </div>
+                        <div class="card-header">
+                            <h4 class="card-title">Filters</h4>
+                            <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
+                            <div class="heading-elements">
+                                <ul class="list-inline mb-0">
+                                    <li><a data-action="collapse"><i class="feather icon-chevron-down"></i></a></li>
+                                    <li><a data-action=""><i class="feather icon-rotate-cw users-data-filter"></i></a></li>
+                                    <li><a data-action="close"><i class="feather icon-x"></i></a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="item-features py-5">
-                            <div class="row text-center pt-2">
-                                <div class="col-12 col-md-4 mb-4 mb-md-0 ">
-                                    <div class="w-75 mx-auto">
-                                        <i class="feather icon-award text-primary font-large-2"></i>
-                                        <h5 class="mt-2 font-weight-bold">100% Original</h5>
-                                        <p>Chocolate bar candy canes ice cream toffee. Croissant pie cookie halvah.</p>
-                                    </div>
+                        <div class="card-content collapse show">
+                            <div class="card-body">
+                                <div class="users-list-filter">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-lg-3">
+                                                <label for="users-list-role">Role</label>
+                                                <fieldset class="form-group">
+                                                    <select class="form-control" id="users-list-role">
+                                                        <option value="">All</option>
+                                                        <option value="user">User</option>
+                                                        <option value="staff">Staff</option>
+                                                    </select>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-3">
+                                                <label for="users-list-status">Status</label>
+                                                <fieldset class="form-group">
+                                                    <select class="form-control" id="users-list-status">
+                                                        <option value="">All</option>
+                                                        <option value="Active">Active</option>
+                                                        <option value="Blocked">Blocked</option>
+                                                        <option value="deactivated">Deactivated</option>
+                                                    </select>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-3">
+                                                <label for="users-list-verified">Verified</label>
+                                                <fieldset class="form-group">
+                                                    <select class="form-control" id="users-list-verified">
+                                                        <option value="">All</option>
+                                                        <option value="true">Yes</option>
+                                                        <option value="false">No</option>
+                                                    </select>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-lg-3">
+                                                <label for="users-list-department">Department</label>
+                                                <fieldset class="form-group">
+                                                    <select class="form-control" id="users-list-department">
+                                                        <option value="">All</option>
+                                                        <option value="Sales">Sales</option>
+                                                        <option value="Devlopment">Devlopment</option>
+                                                        <option value="Management">Management</option>
+                                                    </select>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="col-12 col-md-4 mb-4 mb-md-0">
-                                    <div class="w-75 mx-auto">
-                                        <i class="feather icon-clock text-primary font-large-2"></i>
-                                        <h5 class="mt-2 font-weight-bold">10 Day Replacement</h5>
-                                        <p>Marshmallow biscuit donut dragée fruitcake. Jujubes wafer cupcake.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-4 mb-4 mb-md-0">
-                                    <div class="w-75 mx-auto">
-                                        <i class="feather icon-shield text-primary font-large-2"></i>
-                                        <h5 class="mt-2 font-weight-bold">1 Year Warranty</h5>
-                                        <p>Cotton candy gingerbread cake I love sugar plum I love sweet croissant.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="mt-4 mb-2 text-center">
-                                <h2>RELATED PRODUCTS</h2>
-                                <p>People also search for this items</p>
-                            </div>
-                            <div class="swiper-responsive-breakpoints swiper-container px-4 py-2">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide rounded swiper-shadow">
-                                        <div class="item-heading">
-                                            <p class="text-truncate mb-0">
-                                                Bowers Wilkins - CM10 S2 Triple 6-1/2" 3-Way Floorstanding Speaker (Each) - Gloss Black
-                                            </p>
-                                            <p>
-                                                <small>by</small>
-                                                <small>Bowers & Wilkins</small>
-                                            </p>
-                                        </div>
-                                        <div class="img-container w-50 mx-auto my-2 py-75">
-                                            <img src="../app-assets/images/elements/apple-watch.png" class="img-fluid" alt="image">
-                                        </div>
-                                        <div class="item-meta">
-                                            <div class="product-rating">
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-secondary"></i>
-                                            </div>
-                                            <p class="text-primary mb-0">$19.98</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide rounded swiper-shadow">
-                                        <div class="item-heading">
-                                            <p class="text-truncate mb-0">
-                                                Alienware - 17.3" Laptop - Intel Core i7 - 16GB Memory - NVIDIA GeForce GTX 1070 - 1TB Hard Drive +
-                                                128GB Solid State Drive - Silver
-                                            </p>
-                                            <p>
-                                                <small>by</small>
-                                                <small>Alienware</small>
-                                            </p>
-                                        </div>
-                                        <div class="img-container w-50 mx-auto my-2 py-75">
-                                            <img src="../app-assets/images/elements/beats-headphones.png" class="img-fluid" alt="image">
-                                        </div>
-                                        <div class="item-meta">
-                                            <div class="product-rating">
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-secondary"></i>
-                                            </div>
-                                            <p class="text-primary mb-0">$35.98</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide rounded swiper-shadow">
-                                        <div class="item-heading">
-                                            <p class="text-truncate mb-0">
-                                                Canon - EOS 5D Mark IV DSLR Camera with 24-70mm f/4L IS USM Lens
-                                            </p>
-                                            <p>
-                                                <small>by</small>
-                                                <small>Canon</small>
-                                            </p>
-                                        </div>
-                                        <div class="img-container w-50 mx-auto my-3 py-50">
-                                            <img src="../app-assets/images/elements/macbook-pro.png" class="img-fluid" alt="image">
-                                        </div>
-                                        <div class="item-meta">
-                                            <div class="product-rating">
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-secondary"></i>
-                                            </div>
-                                            <p class="text-primary mb-0">$49.98</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide rounded swiper-shadow">
-                                        <div class="item-heading">
-                                            <p class="text-truncate mb-0">
-                                                Apple - 27" iMac with Retina 5K display - Intel Core i7 - 32GB Memory - 2TB Fusion Drive - Silver
-                                            </p>
-                                            <p>
-                                                <small>by</small>
-                                                <small>Apple</small>
-                                            </p>
-                                        </div>
-                                        <div class="img-container w-50 mx-auto my-2 py-75">
-                                            <img src="../app-assets/images/elements/homepod.png" class="img-fluid" alt="image">
-                                        </div>
-                                        <div class="item-meta">
-                                            <div class="product-rating">
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-secondary"></i>
-                                            </div>
-                                            <p class="text-primary mb-0">$29.98</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide rounded swiper-shadow">
-                                        <div class="item-heading">
-                                            <p class="text-truncate mb-0">
-                                                Bowers Wilkins - CM10 S2 Triple 6-1/2" 3-Way Floorstanding Speaker (Each) - Gloss Black
-                                            </p>
-                                            <p>
-                                                <small>by</small>
-                                                <small>Bowers & Wilkins</small>
-                                            </p>
-                                        </div>
-                                        <div class="img-container w-50 mx-auto my-2 py-75">
-                                            <img src="../app-assets/images/elements/magic-mouse.png" class="img-fluid" alt="image">
-                                        </div>
-                                        <div class="item-meta">
-                                            <div class="product-rating">
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-secondary"></i>
-                                            </div>
-                                            <p class="text-primary mb-0">$99.98</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide rounded swiper-shadow">
-                                        <div class="item-heading">
-                                            <p class="text-truncate mb-0">
-                                                Garmin - fenix 3 Sapphire GPS Watch - Silver
-                                            </p>
-                                            <p>
-                                                <small>by</small>
-                                                <small>Garmin</small>
-                                            </p>
-                                        </div>
-                                        <div class="img-container w-50 mx-auto my-2 py-75">
-                                            <img src="../app-assets/images/elements/iphone-x.png" class="img-fluid" alt="image">
-                                        </div>
-                                        <div class="item-meta">
-                                            <div class="product-rating">
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-warning"></i>
-                                                <i class="feather icon-star text-secondary"></i>
-                                            </div>
-                                            <p class="text-primary mb-0">$59.98</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Add Arrows -->
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-
                             </div>
                         </div>
                     </div>
+                    <!-- users filter end -->
+                    <!-- Ag Grid users list section start -->
+                    <div id="basic-examples">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="ag-grid-btns d-flex justify-content-between flex-wrap mb-1">
+                                                <div class="dropdown sort-dropdown mb-1 mb-sm-0">
+                                                    <button class="btn btn-white filter-btn dropdown-toggle border text-dark" type="button" id="dropdownMenuButton6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        1 - 20 of 50
+                                                    </button>
+                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton6">
+                                                        <a class="dropdown-item" href="#">20</a>
+                                                        <a class="dropdown-item" href="#">50</a>
+                                                    </div>
+                                                </div>
+                                                <div class="ag-btns d-flex flex-wrap">
+                                                    <input type="text" class="ag-grid-filter form-control w-50 mr-1 mb-1 mb-sm-0" id="filter-text-box" placeholder="Search...." />
+                                                    <div class="action-btns">
+                                                        <div class="btn-dropdown ">
+                                                            <div class="btn-group dropdown actions-dropodown">
+                                                                <button type="button" class="btn btn-white px-2 py-75 dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    Actions
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item" href="#"><i class="feather icon-trash-2"></i> Delete</a>
+                                                                    <a class="dropdown-item" href="#"><i class="feather icon-clipboard"></i> Archive</a>
+                                                                    <a class="dropdown-item" href="#"><i class="feather icon-printer"></i> Print</a>
+                                                                    <a class="dropdown-item" href="#"><i class="feather icon-download"></i> CSV</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="myGrid" class="aggrid ag-theme-material"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ag Grid users list section end -->
                 </section>
-                <!-- app ecommerce details end -->
+                <!-- users list ends -->
 
             </div>
         </div>
@@ -683,8 +482,7 @@
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
-    <script src="../app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
-    <script src="../app-assets/vendors/js/extensions/swiper.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/ag-grid/ag-grid-community.min.noStyle.js"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
@@ -694,8 +492,7 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    <script src="../app-assets/js/scripts/pages/app-ecommerce-details.js"></script>
-    <script src="../app-assets/js/scripts/forms/number-input.js"></script>
+    <script src="../app-assets/js/scripts/pages/app-user.js"></script>
     <!-- END: Page JS-->
 
 </body>

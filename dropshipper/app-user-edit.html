@@ -60,7 +60,7 @@
                             <!--   a.nav-link.nav-menu-main.menu-toggle.hidden-xs(href='#')-->
                             <!--     i.ficon.feather.icon-menu-->
                             <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-todo.html" data-toggle="tooltip" data-placement="top" title="Todo"><i class="ficon feather icon-check-square"></i></a></li>
-                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-chat.html" data-toggle="tooltip" data-placement="top" title="Chat"><i class="ficon feather icon-message-square"></i></a></li>
+                            <li class="nav-item d-none d-lg-block"><a class="nav-link" href="../app-chat.html" data-toggle="tooltip" data-placement="top" title="Chat"><i class="ficon feather icon-message-square"></i></a></li>
                             <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-email.html" data-toggle="tooltip" data-placement="top" title="Email"><i class="ficon feather icon-mail"></i></a></li>
                             <li class="nav-item d-none d-lg-block"><a class="nav-link" href="app-calender.html" data-toggle="tooltip" data-placement="top" title="Calendar"><i class="ficon feather icon-calendar"></i></a></li>
                         </ul>
@@ -200,7 +200,7 @@
                         <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
                                 <div class="user-nav d-sm-flex d-none"><span class="user-name text-bold-600">John Doe</span><span class="user-status">Available</span></div><span><img class="round" src="../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"></span>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="page-user-profile.html"><i class="feather icon-user"></i> Edit Profile</a><a class="dropdown-item" href="app-email.html"><i class="feather icon-mail"></i> My Inbox</a><a class="dropdown-item" href="app-todo.html"><i class="feather icon-check-square"></i> Task</a><a class="dropdown-item" href="app-chat.html"><i class="feather icon-message-square"></i> Chats</a>
+                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="page-user-profile.html"><i class="feather icon-user"></i> Edit Profile</a><a class="dropdown-item" href="app-email.html"><i class="feather icon-mail"></i> My Inbox</a><a class="dropdown-item" href="app-todo.html"><i class="feather icon-check-square"></i> Task</a><a class="dropdown-item" href="../app-chat.html"><i class="feather icon-message-square"></i> Chats</a>
                                 <div class="dropdown-divider"></div><a class="dropdown-item" href="auth-login.html"><i class="feather icon-power"></i> Logout</a>
                             </div>
                         </li>
@@ -295,7 +295,6 @@
             <ul class="nav navbar-nav flex-row">
                 <li class="nav-item mr-auto"><a class="navbar-brand" href="app-ecommerce-shop.html">
                         <div class="brand-logo"></div>
-                        <h2 class="brand-text mb-0">Vuexy</h2>
                     </a></li>
                 <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary" data-ticon="icon-disc"></i></a></li>
             </ul>
@@ -303,51 +302,31 @@
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class=" nav-item"><a href="index.html"><i class="feather icon-home"></i><span class="menu-title" data-i18n="Dashboard">Панель</span><span class="badge badge badge-warning badge-pill float-right mr-2">2</span></a>
+                <li class="nav-item"><a href="dashboard-analytics.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Analytics">Аналитика</span></a>
+                </li>
+                <li class="nav-item"><a href="page-orders.html"><i class="feather icon-mail"></i><span class="menu-title" data-i18n="Orders">Заказы</span></a>
+                </li>
+                <li class="nav-item"><a href="data-list-balance.html"><i class="feather icon-credit-card"></i><span class="menu-title" data-i18n="Balance">Баланс</span></a>
+                </li>
+                <li class="nav-item"><a href="page-products.html"><i class="feather icon-filter"></i><span class="menu-item" data-i18n="Thumb View">Товары</span></a>
+                </li>
+                <li class=" nav-item"><a href="index.html"><i class="feather icon-user"></i><span class="menu-title" data-i18n="User">Пользователь</span></a>
                     <ul class="menu-content">
-                        <li><a href="dashboard-analytics.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Analytics">Аналитика</span></a>
+                        <li class="active nav-item"><a href="app-user-view.html"><i class="feather icon-user"></i><span class="menu-item" data-i18n="User view">Личный кабинет</span></a>                 
                         </li>
-                        <li><a href="dashboard-ecommerce.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="eCommerce">eCommerce</span></a>
+                        <li class=" nav-item"><a href="page-user-profile.html"><i class="feather icon-user"></i><span class="menu-item" data-i18n="Profile">Мой профиль</span></a>
                         </li>
                     </ul>
                 </li>
-                <li class=" nav-item"><a href="page-user-profile.html"><i class="feather icon-user"></i><span class="menu-title" data-i18n="Profile">Мой профиль</span></a>
+                <li class=" nav-item"><a href="app-ecommerce-checkout.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Checkout">Корзина</span></a>
                 </li>
-                <li class=" nav-item"><a href="index.html"><i class="feather icon-credit-card"></i><span class="menu-title" data-i18n="Dashboard">Баланс</span></a>
-                    <ul class="menu-content">
-                        <li><a href="data-list-payments.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Payments">Выплаты</span></a>
-                        </li>
-                        <li><a href="data-list-sales.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Sales">Продажи</span></a>
-                        </li>
-                        <li><a href="data-list-parish.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Parish">Приходы</span></a>
-                        </li>
-                    </ul>
+                <li class=" nav-item"><a href="../app-chat.html"><i class="feather icon-message-square"></i><span class="menu-title" data-i18n="Chat">Чат</span></a>
                 </li>
-                <li><a href="page-products.html"><i class="feather icon-filter"></i><span class="menu-item" data-i18n="Thumb View">Товары</span></a>
-                </li>
-                <li class=" nav-item"><a href="app-email.html"><i class="feather icon-mail"></i><span class="menu-title" data-i18n="Email">Email</span></a>
-                </li>
-                <li class=" nav-item"><a href="app-chat.html"><i class="feather icon-message-square"></i><span class="menu-title" data-i18n="Chat">Чат</span></a>
-                </li>
-                <li class=" nav-item"><a href="#"><i class="feather icon-shopping-cart"></i><span class="menu-title" data-i18n="Ecommerce">Ecommerce</span></a>
-                    <ul class="menu-content">
-                        <li><a href="app-ecommerce-shop.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Shop">Товары</span></a>
-                        </li>
-                        <li><a href="app-ecommerce-details.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Details">Details</span></a>
-                        </li>
-                        <li><a href="app-ecommerce-wishlist.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Wish List">Wish List</span></a>
-                        </li>
-                        <li><a href="app-ecommerce-checkout.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Checkout">Корзина</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class=" nav-item"><a href="#"><i class="feather icon-user"></i><span class="menu-title" data-i18n="User">Пользователь</span></a>
-                    <ul class="menu-content">
-                        <li><a href="app-user-view.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="View">Профиль</span></a>
-                        </li>
-                        <li><a href="app-user-edit.html"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Edit">Редактирвание</span></a>
-                        </li>
-                    </ul>
+            </ul>
+        </div>
+        <div class="navbar-footer">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation"">
+                <li><a href="../index.html"><img src="../app-assets/images/my-images/icon_to_the_store.svg" alt="To the store"><span class="menu-item" data-i18n="Shop">В магазин</span></a>
                 </li>
             </ul>
         </div>
