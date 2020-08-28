@@ -16,7 +16,7 @@ $(document).ready(function() {
       {
         orderable: true,
         targets: 0,
-        checkboxes: { selectRow: true }
+        // checkboxes: { selectRow: true }
       }
     ],
     dom:
@@ -57,6 +57,17 @@ $(document).ready(function() {
       }
     }, 50);
   });
+
+
+
+
+
+
+
+
+
+
+
 
   // init thumb view datatable
   var dataThumbView = $(".data-thumb-view").DataTable({
