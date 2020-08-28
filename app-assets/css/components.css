@@ -788,7 +788,7 @@ body.fixed-footer footer.footer-dark {
           animation : 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein;
 }
 .main-menu .main-menu-content {
-  height : calc(100% - 6rem) !important;
+  height: calc(100% - 13rem) !important;
   position : relative;
 }
 .main-menu ul {
