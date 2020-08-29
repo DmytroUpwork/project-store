@@ -502,6 +502,9 @@ body.fixed-footer footer.footer-dark {
   padding : 0 12px;
   margin-top: 20px;
 }
+.main-menu.menu-light .navigation > li:last-of-type {
+  margin-bottom: 13px;
+}
 .main-menu.menu-light .navigation > li > a .label {
   margin-top : 4px;
   margin-right : 5px;
@@ -567,9 +570,9 @@ body.fixed-footer footer.footer-dark {
   color : #6C6C6C;
 }
 .main-menu.menu-light .navigation > li ul .active {
-  background : -webkit-linear-gradient(332deg, #7367F0, rgba(115, 103, 240, 0.7));
-  background :         linear-gradient(118deg, #7367F0, rgba(115, 103, 240, 0.7));
-  box-shadow : 0 0 10px 1px rgba(115, 103, 240, 0.7);
+  background: -webkit-linear-gradient(332deg, #A254A2, rgba(228, 62, 154, 0.7));
+background: linear-gradient(118deg, #A254A2, rgba(228, 62, 154, 0.7));
+box-shadow: 0 0 10px 1px rgb(255 0 141);
   border-radius : 4px;
 }
 .main-menu.menu-light .navigation > li ul .active > a {
