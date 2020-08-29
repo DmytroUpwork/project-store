@@ -2,6 +2,8 @@
         DARK LAYOUT
 =========================================================*/
 
+
+
 .data-list-view-header .table-responsive .top, .data-thumb-view-header .table-responsive .top {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11,12 +13,17 @@
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 0 4px;
   margin-bottom: 1rem;
+  align-items: center;
+}
+
+.button-right-table {
+  display: flex;
 }
 
 .data-list-view-header .table-responsive .top .action-btns, .data-thumb-view-header .table-responsive .top .action-btns {
-  margin-top: 1.5rem;
+  /* margin-top: 1.5rem; */
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -39,20 +46,45 @@
 }
 
 .data-list-view-header .table-responsive .top .action-btns .dt-buttons .btn, .data-thumb-view-header .table-responsive .top .action-btns .dt-buttons .btn {
-  padding: 0.9rem 0.938rem;
+  padding: 8px 13px;
+}
+
+.waves-effect {
+  padding: 8px 13px!important;
 }
 
 .data-list-view-header .table-responsive .top .dataTables_length, .data-thumb-view-header .table-responsive .top .dataTables_length {
   display: inline-block;
 }
 
-.data-list-view-header .table-responsive .top .dataTables_length .custom-select, .data-thumb-view-header .table-responsive .top .dataTables_length .custom-select {
-  width: 8.714rem;
-  height: 3rem;
+.filter_wrap {
+  display: flex;
+  align-items: center;
+}
+
+.filter_wrap .AvialbilityStatus,
+.filter_wrap .AccountstatusOption {
+  width: 122px;
+  height: 34px;
   border-radius: 1.428rem;
   border: 1px solid #DAE1E7;
   font-size: 1rem;
-  background-position: calc(100% - 12px) 13px, calc(100% - 20px) 13px, 100% 0;
+  background-position: calc(100% - 12px) 10px, calc(100% - 20px) 13px, 100% 0;
+  padding: 1px 0px 0 13px;
+  margin-left: 15px;
+}
+
+/* .filter_wrap .AccountstatusOption {
+  background: url('../images/logo/logo.png') no-repeat;
+} */
+
+.data-list-view-header .table-responsive .top .dataTables_length .custom-select, .data-thumb-view-header .table-responsive .top .dataTables_length .custom-select {
+  width: 68px;
+  height: 34px;
+  border-radius: 1.428rem;
+  border: 1px solid #DAE1E7;
+  font-size: 1rem;
+  background-position: calc(100% - 12px) 10px, calc(100% - 20px) 13px, 100% 0;
 }
 
 .data-list-view-header .table-responsive .top .dataTables_length .custom-select:focus, .data-thumb-view-header .table-responsive .top .dataTables_length .custom-select:focus {
@@ -61,12 +93,13 @@
 
 .data-list-view-header .table-responsive .top .dataTables_filter, .data-thumb-view-header .table-responsive .top .dataTables_filter {
   display: inline-block;
+  margin-left: auto;
   /* position: absolute;
   left: 600px; */
 }
 
 .data-list-view-header .table-responsive .top .dataTables_filter .form-control, .data-thumb-view-header .table-responsive .top .dataTables_filter .form-control {
-  padding: 1.45rem 2.8rem !important;
+  padding: 16.45px 2.8rem !important;
   border-radius: 1.428rem;
   border: 1px solid #DAE1E7;
 }
@@ -79,8 +112,8 @@
   content: '\e8bd';
   font-family: 'feather';
   position: absolute;
-  left: 1.428rem;
-  top: 0.928rem;
+  left: 186px;
+  top: 10px;
 }
 
 .data-list-view-header .table-responsive .dataTables_wrapper .dataTables_paginate ul.pagination, .data-thumb-view-header .table-responsive .dataTables_wrapper .dataTables_paginate ul.pagination {

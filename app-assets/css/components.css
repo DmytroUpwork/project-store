@@ -3,13 +3,7 @@
 =========================================================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-@font-face {
-  font-family: "Sansation";
-  src: url("../fonts/sansation/Sansation_Regular.ttf") format("truetype"),
-  url("../fonts/sansation/Sansation_Bold.ttf") format("truetype");
-  /* font-weight: normal;
-  font-style: normal; */
-}
+
 html {
   font-size : 14px;
   height : 100%;
@@ -20,7 +14,6 @@ html body {
   background-color : #F8F8F8;
   direction : ltr;
   font-family: 'Poppins', sans-serif;
-  /* font-family: "Sansation", sans-serif; */
   /*
       * Blank page
       */
@@ -35,7 +28,6 @@ html body .content {
   min-height : calc(100% - 4rem);
   margin-left : 260px;
   font-family: 'Poppins', sans-serif;
-  /* font-family: "Sansation", sans-serif; */
 }
 html body .content.app-content {
   overflow : hidden;
@@ -3736,9 +3728,9 @@ table.dataTable tbody tr.selected td, table.dataTable tbody tr.selected th {
   border-bottom : 0;
 }
 
-div.dataTables_wrapper div.dataTables_filter label, div.dataTables_wrapper div.dataTables_length label {
+/* div.dataTables_wrapper div.dataTables_filter label, div.dataTables_wrapper div.dataTables_length label {
   margin-top : 1rem;
-}
+} */
 
 div.dataTables_wrapper div.dataTables_filter select, div.dataTables_wrapper div.dataTables_length select {
   background-position : calc(100% - 3px) 5px, calc(100% - 20px) 13px, 100% 0;

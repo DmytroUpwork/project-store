@@ -330,7 +330,7 @@ label {
   color : #464646;
   font-size : 0.85rem;
   margin-bottom : 0;
-  padding-left : 0.2rem;
+  padding-left : 10.1px;
 }
 
 textarea.form-control {
@@ -442,8 +442,8 @@ textarea.form-control {
 }
 
 select.form-control:not([multiple='multiple']) {
-  background-image : url('../../app-assets/images/pages/arrow-down.png');
-  background-position : calc(100% - 12px) 13px, calc(100% - 20px) 13px, 100% 0;
+  background-image : url('../../app-assets/images/my-images/icon-select.svg');
+  background-position : calc(100% - 12px) 10px, calc(100% - 20px) 13px, 100% 0;
   background-size : 12px 12px, 10px 10px;
   background-repeat : no-repeat;
   -webkit-appearance : none;

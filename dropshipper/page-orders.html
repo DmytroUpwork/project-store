@@ -149,7 +149,6 @@
                 <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary" data-ticon="icon-disc"></i></a></li>
             </ul>
         </div>
-        <div class="shadow-bottom"></div>
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
                 <li class="nav-item"><a href="dashboard-analytics.html"><img src="../app-assets\images\my-images\icon_analytics.svg" alt="Analytics"> <span class="menu-item" data-i18n="Analytics">Аналитика</span></a>
@@ -292,26 +291,29 @@
 
                 <!-- Data list view starts -->
                 <section id="data-list-view" class="data-list-view-header">
-                    <div class="action-btns d-none">
-                        <div class="btn-dropdown mr-1 mb-1">
-                            <div class="btn-group dropdown actions-dropodown">
-                                <button type="button" class="btn btn-white px-1 py-1 dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Actions
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#"><i class="feather icon-trash"></i>Delete</a>
-                                    <a class="dropdown-item" href="#"><i class="feather icon-archive"></i>Archive</a>
-                                    <a class="dropdown-item" href="#"><i class="feather icon-file"></i>Print</a>
-                                    <a class="dropdown-item" href="#"><i class="feather icon-save"></i>Another Action</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
 
                     <!-- DataTable starts -->
                     <div class="table-responsive">
 
                         <h1>Мои заказы</h1>
+
+
+                        <div class="action-btns">
+                            <div class="btn-dropdown mr-1 mb-1">
+                                <div class="btn-group dropdown actions-dropodown">
+                                    <button type="button" class="btn btn-white dropdown-toggle waves-effect waves-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Actions
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#"><i class="feather icon-trash"></i>Delete</a>
+                                        <a class="dropdown-item" href="#"><i class="feather icon-archive"></i>Archive</a>
+                                        <a class="dropdown-item" href="#"><i class="feather icon-file"></i>Print</a>
+                                        <a class="dropdown-item" href="#"><i class="feather icon-save"></i>Another Action</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         
                         
@@ -429,7 +431,7 @@
                             </tbody>
 
 
-                            <tfoot>
+                            <!-- <tfoot>
                                 <tr>
                                     <th>Name</th>
                                     <th>Position</th>
@@ -440,7 +442,7 @@
                                     <th>Salary</th>
                                     <th>Salary</th>
                                 </tr>
-                            </tfoot>
+                            </tfoot> -->
 
 
 

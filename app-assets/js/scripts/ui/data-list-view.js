@@ -20,7 +20,7 @@ $(document).ready(function() {
       },
     ],
     dom:
-      '<"top"<"actions action-btns"B> <"action-filters"fl>>             <"clear">rt<"bottom" <"actions"> p>',
+      '<"top" <"actions action-btns"B>   <"button-right-table" l<"btn-select">f> >             <"clear">rt<"bottom" <"actions"> p>',
 
     oLanguage: {
       sLengthMenu: "_MENU_",
@@ -52,30 +52,35 @@ $(document).ready(function() {
     initComplete: function (settings, json) {
       $(".dt-buttons .btn").removeClass("btn-secondary");
 
-      this.api().columns().every( function () {
-        var column = this;
-        var select = $('<select><option value=""></option></select>')
-            .appendTo( $(column.footer()).empty() )
-            .on( 'change', function () {
-                var val = $.fn.dataTable.util.escapeRegex(
-                    $(this).val()
-                );
+      // this.api()
+      //   .columns()
+      //   .every(function () {
+      //     var column = this;
+      //     var select = $('<select><option value=""></option></select>')
+      //       .appendTo($(column.footer()).empty())
+      //       .on("change", function () {
+      //         var val = $.fn.dataTable.util.escapeRegex($(this).val());
 
-                column
-                    .search( val ? '^'+val+'$' : '', true, false )
-                    .draw();
-            } );
+      //         column.search(val ? "^" + val + "$" : "", true, false).draw();
+      //       });
 
-        column.data().unique().sort().each( function ( d, j ) {
-            select.append( '<option value="'+d+'">'+d+'</option>' )
-        } );
-      });
-
-
-
+      //     column
+      //       .data()
+      //       .unique()
+      //       .sort()
+      //       .each(function (d, j) {
+      //         select.append('<option value="' + d + '">' + d + "</option>");
+      //       });
+      //   });
 
     },
   });
+
+  
+
+  $(".btn-select").wrap(
+    '<div class="filter_wrap"><button class="AccountstatusOption">За 41 день <i class="feather icon-message-square"></i> </button>   <select name="Avialbility" class="AvialbilityStatus form-control searchFilterAdded"><option value="1">Все заказы</option><option value="2">Выполненные</option></select></div>'
+  );
 
   dataListView.on('draw.dt', function(){
     setTimeout(function(){
