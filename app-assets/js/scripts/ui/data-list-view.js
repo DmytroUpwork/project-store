@@ -79,7 +79,7 @@ $(document).ready(function() {
   
 
   $(".btn-select").wrap(
-    '<div class="filter_wrap"><button class="AccountstatusOption">За <span>41</span> дн. <i class="fa fa-calendar"></i> </button>   <select name="Avialbility" class="AvialbilityStatus form-control searchFilterAdded"><option value="1">Все заказы</option><option value="2">Выполненные</option></select></div>'
+    '<div class="filter_wrap"><button class="AccountstatusOption">За <span>41</span> дн. <i class="fa fa-calendar" onclick="closeCalendar()"></i> </button>   <select name="Avialbility" class="AvialbilityStatus form-control searchFilterAdded"><option value="1">Все заказы</option><option value="2">Выполненные</option></select></div>'
   );
 
   dataListView.on('draw.dt', function(){
@@ -204,3 +204,25 @@ $(document).ready(function() {
     $(".dt-checkboxes-cell input, .dt-checkboxes").addClass("mac-checkbox")
   }
 })
+
+
+
+new Vue({
+  components: {
+    demo: FunctionalCalendar,
+  },
+}).$mount("#app");
+
+function closeCalendar() {
+  document.getElementById("app").style.display = "block";
+}
+
+var popup = document.querySelector("#app");
+document.addEventListener("mousedown", function (e) {
+  if (e.target.closest("#app") === null) {
+    popup.style.display = "none";
+  }
+});
+
+
+
