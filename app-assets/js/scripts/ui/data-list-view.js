@@ -79,7 +79,7 @@ $(document).ready(function() {
   
 
   $(".btn-select").wrap(
-    '<div class="filter_wrap"><button class="AccountstatusOption">За 41 день <i class="feather icon-message-square"></i> </button>   <select name="Avialbility" class="AvialbilityStatus form-control searchFilterAdded"><option value="1">Все заказы</option><option value="2">Выполненные</option></select></div>'
+    '<div class="filter_wrap"><button class="AccountstatusOption">За <span>41</span> дн. <i class="fa fa-calendar"></i> </button>   <select name="Avialbility" class="AvialbilityStatus form-control searchFilterAdded"><option value="1">Все заказы</option><option value="2">Выполненные</option></select></div>'
   );
 
   dataListView.on('draw.dt', function(){

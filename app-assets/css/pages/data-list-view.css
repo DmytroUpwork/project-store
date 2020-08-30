@@ -68,15 +68,31 @@
   height: 34px;
   border-radius: 1.428rem;
   border: 1px solid #DAE1E7;
+  background-color: #fff;
   font-size: 1rem;
   background-position: calc(100% - 12px) 10px, calc(100% - 20px) 13px, 100% 0;
   padding: 1px 0px 0 13px;
   margin-left: 15px;
 }
 
-/* .filter_wrap .AccountstatusOption {
-  background: url('../images/logo/logo.png') no-repeat;
-} */
+.filter_wrap .AccountstatusOption {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  cursor: default;
+}
+
+.filter_wrap .AccountstatusOption span,
+.filter_wrap .AccountstatusOption i {
+  padding: 0 5px 0 24px;
+  cursor: pointer;
+}
+
+.filter_wrap .AccountstatusOption span {
+  color: #A254A2;
+  font-weight: bold;
+  padding: 0 3px 0 5px;
+}
 
 .data-list-view-header .table-responsive .top .dataTables_length .custom-select, .data-thumb-view-header .table-responsive .top .dataTables_length .custom-select {
   width: 68px;
