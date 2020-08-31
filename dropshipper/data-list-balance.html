@@ -40,6 +40,9 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <!-- END: Custom CSS-->
 
+    <script src="../vue.js"></script>
+    <script src="../FunctionalCalendar.umd.js"></script>
+
 </head>
 <!-- END: Head-->
 
@@ -320,10 +323,11 @@
                 
                 <!-- Data list view starts -->
                 <section id="data-list-view" class="data-list-view-header">
+                    
                     <!-- DataTable starts -->
                     <div class="table-responsive">
                         
-                            <button type="button" class="btn btn-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button type="button" class="btn dropdown-toggle button-payouts" data-toggle="dropdown">
                                 <h1>Выплаты</h1>
                             </button>
                             <div class="dropdown-menu">
@@ -338,41 +342,18 @@
                         <table class="table data-list-view" id="example">
                             <thead>
                                 <tr>
+                                    <th>НОМЕР</th>
                                     <th>ДАТА</th>
+                                    <th>СУММА</th>
                                     <th>СТАТУС</th>
-                                    <th>СУМА</th>
-                                    <th>ПРИБЫЛЬ</th>
-                                    <th>Кол. товара</th>
-                                    <th>ТТН</th>
-                                    <th>ПРИМЕЧАНИЕ</th>
-                                    <th>№ ЗАКАЗА</th>
-                                    <th>EDIT</th>
+                                    <th>РЕДАК</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>12 сентября</td>
-                                    <td>
-                                        <div class="chip chip-warning">
-                                            <div class="chip-body">
-                                                <div class="chip-text">В пути</div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <!-- <td class="order-being-verified">Проверяется</td> -->
-                                    <td>254 грн</td>
-                                    <td>2545 грн</td>
-                                    <td>3 товар.</td>
-                                    <td>59 0002 3213 5432</td>
-                                    <td>Примичание</td>
                                     <td>1123458</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>12 сентября</td>
+                                    <td>12 Августа</td>
+                                    <td>1000 грн</td>
                                     <td>
                                         <div class="chip chip-success">
                                             <div class="chip-body">
@@ -380,20 +361,31 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <!-- <td class="order-preparing-ship">Готовится к отправке</td> -->
-                                    <td>254 грн</td>
-                                    <td>2545 грн</td>
-                                    <td>3 товар.</td>
-                                    <td>59 0002 3213 5432</td>
-                                    <td>Примичание</td>
-                                    <td>1123458</td>
                                     <td class="product-action">
                                         <span class="action-edit"><i class="feather icon-edit"></i></span>
                                         <span class="action-delete"><i class="feather icon-trash"></i></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>12 сентября</td>
+                                    <td>1123458</td>
+                                    <td>12 Августа</td>
+                                    <td>1000 грн</td>
+                                    <td>
+                                        <div class="chip chip-success">
+                                            <div class="chip-body">
+                                                <div class="chip-text">Выполнен</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1123458</td>
+                                    <td>12 Августа</td>
+                                    <td>1000 грн</td>
                                     <td>
                                         <div class="chip chip-danger">
                                             <div class="chip-body">
@@ -401,20 +393,15 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <!-- <td class="order-being-verified">Проверяется</td> -->
-                                    <td>254 грн</td>
-                                    <td>2545 грн</td>
-                                    <td>3 товар.</td>
-                                    <td>59 0002 3213 5432</td>
-                                    <td>Примичание</td>
-                                    <td>1123458</td>
                                     <td class="product-action">
                                         <span class="action-edit"><i class="feather icon-edit"></i></span>
                                         <span class="action-delete"><i class="feather icon-trash"></i></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>12 сентября</td>
+                                    <td>1123458</td>
+                                    <td>12 Августа</td>
+                                    <td>1000 грн</td>
                                     <td>
                                         <div class="chip chip-primary">
                                             <div class="chip-body">
@@ -422,20 +409,15 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <!-- <td class="order-completed">Выполнен</td> -->
-                                    <td>254 грн</td>
-                                    <td>2545 грн</td>
-                                    <td>3 товар.</td>
-                                    <td>59 0002 3213 5432</td>
-                                    <td>Примичание</td>
-                                    <td>1123458</td>
                                     <td class="product-action">
                                         <span class="action-edit"><i class="feather icon-edit"></i></span>
                                         <span class="action-delete"><i class="feather icon-trash"></i></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>12 сентября</td>
+                                    <td>1123458</td>
+                                    <td>12 Августа</td>
+                                    <td>1000 грн</td>
                                     <td>
                                         <div class="chip chip-primary">
                                             <div class="chip-body">
@@ -443,13 +425,6 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <!-- <td class="order-completed">Выполнен</td> -->
-                                    <td>254 грн</td>
-                                    <td>2545 грн</td>
-                                    <td>3 товар.</td>
-                                    <td>59 0002 3213 5432</td>
-                                    <td>Примичание</td>
-                                    <td>1123458</td>
                                     <td class="product-action">
                                         <span class="action-edit"><i class="feather icon-edit"></i></span>
                                         <span class="action-delete"><i class="feather icon-trash"></i></span>
@@ -530,6 +505,25 @@
 
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
+
+    <!-- BEGIN: Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div id="app">
+                    <demo></demo>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Modal-->
 
 
 

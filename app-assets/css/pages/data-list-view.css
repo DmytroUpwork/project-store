@@ -48,6 +48,24 @@
   border-color: #A254A2;  
 }
 
+.button-payouts {
+  padding: 0;
+  display: flex;
+  padding: 0 20px 0 0;
+  margin-bottom: 20px;
+}
+
+.button-payouts:after {
+  position: absolute;
+  right: 0;
+  top: 45%;
+}
+
+.button-payouts h1 {
+  margin-bottom: 0;
+  
+}
+
 .data-list-view-header .table-responsive .top .action-btns .actions-dropodown .dropdown-toggle, .data-thumb-view-header .table-responsive .top .action-btns .actions-dropodown .dropdown-toggle {
   font-size: 1.125rem;
   font-weight: bold;
@@ -78,7 +96,7 @@
   top: 3px;
 }
 
-.waves-effect {
+.btn-outline-primary.waves-effect {
   padding: 8px 13px!important;
 }
 
