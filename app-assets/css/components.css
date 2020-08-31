@@ -1929,6 +1929,16 @@ body.fixed-footer .main-menu.menu-fixed {
   padding: 0.6rem 0rem 0.35rem 0.8rem;
 }
 
+.img-checkout {
+  width: 42px;
+}
+
+/* .header-navbar .navbar-container ul.nav li a.nav-link-label:last-of-type >img {
+  width: 42px;
+} */
+
+
+
 .navbar-container a.nav-link-search {
   float : left;
 }
