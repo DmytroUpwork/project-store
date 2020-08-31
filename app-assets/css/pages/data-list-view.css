@@ -61,7 +61,7 @@
 }
 
 .data-list-view-header .table-responsive .top .action-btns .dt-buttons .btn, .data-thumb-view-header .table-responsive .top .action-btns .dt-buttons .btn {
-  padding: 0 33px 0 13px;
+  padding: 8px 33px 8px 13px;
   border: 1.5px solid #A254A2;
   letter-spacing: 0.6px;
   text-transform: uppercase;
@@ -499,7 +499,7 @@ table.data-thumb-view.dataTable tbody tr td.product-img img {
   height: 7.857rem;
 }
 
-.dropdown-toggle::after {
+.AccountstatusOption.dropdown-toggle::after {
   display: none;
 }
 
