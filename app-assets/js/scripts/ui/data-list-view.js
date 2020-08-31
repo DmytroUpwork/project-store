@@ -20,7 +20,7 @@ $(document).ready(function() {
       },
     ],
     dom:
-      '<"top" <"actions action-btns"B>   <"button-right-table" l<"btn-select">f> >             <"clear">rt<"bottom" <"actions"> p>',
+      '<"top page-analitics" <"actions action-btns"B>   <"button-right-table" l<"btn-select">f> >             <"clear">rt<"bottom" <"actions"> p>',
 
     oLanguage: {
       sLengthMenu: "_MENU_",
@@ -194,16 +194,21 @@ new Vue({
   },
 }).$mount("#app");
 
-// function closeCalendar() {
-//   document.getElementById("app").style.display = "block";
-// }
 
-// var popup = document.querySelector("#app");
-// document.addEventListener("mousedown", function (e) {
-//   if (e.target.closest("#app") === null) {
-//     popup.style.display = "none";
-//   }
-// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
