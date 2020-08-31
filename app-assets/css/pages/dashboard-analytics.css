@@ -48,11 +48,35 @@
 .AccountstatusOption {
   background: #FFFFFF;
   border-radius: 5px;
-  /* padding: 19px 14px 16px 18px; */
+  padding: 0 12px;
   line-height: 25px;
   border: 1px solid #DFDFDF;
   box-sizing: border-box;
   box-shadow: 0px 0px 6px rgba(177, 132, 132, 0.25);
   border-radius: 5px;
   cursor: pointer;
+}
+
+.AccountstatusOption i {
+  margin-left: 39px;
+}
+
+.AccountstatusOption span {
+  font-weight: bold;
+}
+
+.box-button-modal {
+  margin-bottom: 20px;
+}
+
+.box-button-modal h1 {
+  margin-bottom: 0;
+}
+
+.content-body {
+  padding-top: 20px;
+}
+
+.dropdown-toggle::after {
+  display: none;
 }

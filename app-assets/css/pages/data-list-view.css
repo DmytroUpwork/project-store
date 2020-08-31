@@ -499,6 +499,10 @@ table.data-thumb-view.dataTable tbody tr td.product-img img {
   height: 7.857rem;
 }
 
+.dropdown-toggle::after {
+  display: none;
+}
+
 @media (max-width: 768px) {
   /* #data-list-view .table-responsive .top, #data-thumb-view .table-responsive .top {
     -webkit-box-orient: vertical;
