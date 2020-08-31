@@ -3078,14 +3078,15 @@ input[type='submit'].btn-block, input[type='reset'].btn-block, input[type='butto
   white-space : nowrap;
 }
 .dropdown-toggle::after {
-  display : inline-block;
-  margin-left : 0.255em;
-  vertical-align : 0.255em;
-  content : '';
-  border-top : 0.3em solid;
-  border-right : 0.3em solid transparent;
-  border-bottom : 0;
-  border-left : 0.3em solid transparent;
+  display: inline-block;
+  margin-left: 11px;
+  /* vertical-align: 0.255em; */
+  content: '';
+  border-top: 8.5px solid;
+  border-right: 5.3px solid transparent;
+  border-bottom: 0;
+  border-left: 5.3px solid transparent;
+  color: #A254A2;
 }
 .dropdown-toggle:empty::after {
   margin-left : 0;

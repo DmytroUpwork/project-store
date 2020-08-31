@@ -212,6 +212,7 @@ html .pace .pace-progress {
   box-sizing: border-box;
   box-shadow: 0px 0px 6px rgba(177, 132, 132, 0.25);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .card-body:hover {
@@ -3268,6 +3269,7 @@ body.dark-layout .hide-scroll-top-switch .custom-switch .custom-control-label:be
   width : 24px;
 }
 .chip .chip-body .chip-text {
+  font-size: 10px;
   vertical-align : middle;
   -webkit-align-self : center;
   -ms-flex-item-align : center;

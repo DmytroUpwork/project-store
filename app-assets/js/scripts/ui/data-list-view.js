@@ -59,7 +59,8 @@ $(document).ready(function() {
   
 
   $(".btn-select").wrap(
-    '<div class="filter_wrap"><button class="AccountstatusOption"  data-toggle="modal" data-target="#exampleModal" >За <span>41</span> дн. <i class="fa fa-calendar"></i> </button>   <select name="Avialbility" class="AvialbilityStatus form-control searchFilterAdded"><option value="1">Все заказы</option><option value="2">Выполненные</option></select></div>'
+    '<div class="filter_wrap"><button class="AccountstatusOption"  data-toggle="modal" data-target="#exampleModal" >За <span>41</span> дн. <i class="fa fa-calendar"></i> </button>   <button type="button" class="btn btn-select AvialbilityStatus searchFilterAdded  dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Все заказы</button><div class="dropdown-menu"><a class="dropdown-item" href="#">Выполненные</a><a class="dropdown-item" href="#">В пути</a><a class="dropdown-item" href="#">В ожидании</a><a class="dropdown-item" href="#">Отменен</a></div></div></div>   </div>'
+  // <select name="Avialbility" class="AvialbilityStatus form-control searchFilterAdded"><option value="1">Все заказы</option><option value="2">Выполненные</option> <option value="3">В пути</option> <option value="4">В ожидании</option> <option value="5">Отменен</option></select>
   );
 
   dataListView.on('draw.dt', function(){
