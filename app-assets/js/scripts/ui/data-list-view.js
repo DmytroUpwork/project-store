@@ -196,6 +196,14 @@ new Vue({
 
 
 
+const select = document.querySelector('select');
+select.onchange = () => {
+tabs.querySelector('.tab-balance-active').classList.remove('tab-balance-active');
+tabs.querySelectorAll('.tab')[select.options.selectedIndex].classList.add('tab-balance-active');
+}
+
+
+
 
 
 
