@@ -5243,8 +5243,8 @@ var propsAndData = {
           end: false
         },
         limits: false,
-        minSelDays: 3,
-        maxSelDays: 6,
+        minSelDays: false,
+        maxSelDays: false,
         disabledDates: [],
         disabledDayNames: [],
         dayNames: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'],

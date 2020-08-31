@@ -841,17 +841,17 @@ box-shadow: 0 0 10px 1px rgb(255 0 141);
   -ms-flex-align : center;
           align-items : center;
   /* margin-top : 1.35rem; */
-  margin-top: 10px;
+  margin: 10px 10px 0;
 }
 .main-menu .navbar-header .navbar-brand .brand-logo {
   /* background : url('../../app-assets/images/logo/vuexy-logo.png') no-repeat; */
   /* background-position : -65px -54px;
   height : 24px;
   width : 35px; */
-  background: url('../../app-assets/images/logo/logo_kondi_shop.png') no-repeat;
+  background: url('../../app-assets/images/logo/bot_5.png') no-repeat;
   background-position: 0 -3px;
   height: 53px;
-  width: 74px;
+  width: 52px;
   background-size: cover;
 }
 .main-menu .navbar-header .navbar-brand .brand-text {
@@ -1915,7 +1915,7 @@ body.fixed-footer .main-menu.menu-fixed {
 
 .header-navbar .navbar-container .bookmark-wrapper ul.nav li > a.nav-link,
 .header-navbar .navbar-container ul.nav li > a.nav-link {
-  padding: 0.6rem 0.5rem 0.35rem 1rem!important;
+  padding: 0.6rem 0.5rem 0.35rem 3px!important;
   height: 100%;
   align-items: center;
   display: flex;

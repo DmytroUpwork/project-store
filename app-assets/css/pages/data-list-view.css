@@ -258,7 +258,7 @@
 }
 
 table.data-list-view.dataTable, table.data-thumb-view.dataTable {
-  border-spacing: 0 8px;
+  border-spacing: 0 14px;
   /* padding: 0 0.7rem; */
   margin-top: 0!important;
 }

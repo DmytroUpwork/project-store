@@ -4341,6 +4341,7 @@ input[type='submit'].btn-block, input[type='reset'].btn-block, input[type='butto
     -webkit-flex-basis : auto;
     -ms-flex-preferred-size : auto;
             flex-basis : auto;
+    padding: 0 11px;
   }
   .navbar-expand-lg .navbar-toggler {
     display : none;
