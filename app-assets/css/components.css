@@ -206,8 +206,8 @@ html .pace .pace-progress {
 }
 
 .card-body {
-  padding: 9px 14px 6px 18px;
-  line-height: 37px;
+  padding: 19px 14px 16px 18px;
+  line-height: 25px;
   border: 1px solid #DFDFDF;
   box-sizing: border-box;
   box-shadow: 0px 0px 6px rgba(177, 132, 132, 0.25);
@@ -219,26 +219,26 @@ html .pace .pace-progress {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.card-body:hover .card-body__data {
+/* .card-body:hover .card-body__data {
   color: #4656C7;
-}
+} */
 
 
 
 .card-body .card-body__title {
   font-size: 16px;
-  color: #404040;
+  color: #777777;
 }
 
 .card-body .card-body__data {
   font-size: 24px;
-  color: #A254A2;
+  /* color: #A254A2; */
 }
 
 .card-body .card-body__svg {
   position: absolute;
   right: 18px;
-  top: 27%;
+  top: 24%;
   width: 45px;
   height: 45px;
   background: rgba(162, 84, 162, 0.2);
@@ -248,18 +248,18 @@ html .pace .pace-progress {
   align-items: center;
 }
 
-.card-body:hover .card-body__svg {
+/* .card-body:hover .card-body__svg {
   background: rgba(70, 86, 199, 0.2);
-}
+} */
 
 .card-body svg {
   fill: #A254A2;
   margin-left: 6px;
 }
 
-.card-body:hover svg {
+/* .card-body:hover svg {
   fill: #4656C7;
-}
+} */
 
 .content-body {
   padding-top: 34px;
