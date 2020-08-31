@@ -52,26 +52,6 @@ $(document).ready(function() {
     initComplete: function (settings, json) {
       $(".dt-buttons .btn").removeClass("btn-secondary");
 
-      // this.api()
-      //   .columns()
-      //   .every(function () {
-      //     var column = this;
-      //     var select = $('<select><option value=""></option></select>')
-      //       .appendTo($(column.footer()).empty())
-      //       .on("change", function () {
-      //         var val = $.fn.dataTable.util.escapeRegex($(this).val());
-
-      //         column.search(val ? "^" + val + "$" : "", true, false).draw();
-      //       });
-
-      //     column
-      //       .data()
-      //       .unique()
-      //       .sort()
-      //       .each(function (d, j) {
-      //         select.append('<option value="' + d + '">' + d + "</option>");
-      //       });
-      //   });
 
     },
   });
@@ -79,7 +59,7 @@ $(document).ready(function() {
   
 
   $(".btn-select").wrap(
-    '<div class="filter_wrap"><button class="AccountstatusOption">За <span>41</span> дн. <i class="fa fa-calendar" onclick="closeCalendar()"></i> </button>   <select name="Avialbility" class="AvialbilityStatus form-control searchFilterAdded"><option value="1">Все заказы</option><option value="2">Выполненные</option></select></div>'
+    '<div class="filter_wrap"><button class="AccountstatusOption"  data-toggle="modal" data-target="#exampleModal" >За <span>41</span> дн. <i class="fa fa-calendar"></i> </button>   <select name="Avialbility" class="AvialbilityStatus form-control searchFilterAdded"><option value="1">Все заказы</option><option value="2">Выполненные</option></select></div>'
   );
 
   dataListView.on('draw.dt', function(){
@@ -213,16 +193,16 @@ new Vue({
   },
 }).$mount("#app");
 
-function closeCalendar() {
-  document.getElementById("app").style.display = "block";
-}
+// function closeCalendar() {
+//   document.getElementById("app").style.display = "block";
+// }
 
-var popup = document.querySelector("#app");
-document.addEventListener("mousedown", function (e) {
-  if (e.target.closest("#app") === null) {
-    popup.style.display = "none";
-  }
-});
+// var popup = document.querySelector("#app");
+// document.addEventListener("mousedown", function (e) {
+//   if (e.target.closest("#app") === null) {
+//     popup.style.display = "none";
+//   }
+// });
 
 
 
