@@ -241,19 +241,62 @@ html .pace .pace-progress {
   top: 24%;
   width: 45px;
   height: 45px;
-  background: rgba(162, 84, 162, 0.2);
+  /* background: rgba(162, 84, 162, 0.2); */
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.card-body .card-body__svg.card-body__svg_blue {
+  background: rgba(70, 86, 199, 0.2);
+}
+
+.card-body .card-body__svg.card-body__svg_blue svg {
+  fill: #4c8fe1;
+}
+
+.card-body .card-body__svg.card-body__svg_turquoise {
+  background: rgba(40, 199, 111, 0.2);
+}
+
+.card-body .card-body__svg.card-body__svg_turquoise svg {
+  fill: #2fd177;
+}
+
+.card-body .card-body__svg.card-body__svg_pink {
+  background: rgba(234, 87, 88, 0.2);
+}
+
+.card-body .card-body__svg.card-body__svg_pink svg {
+  fill: #ea6fd5;
+}
+
+.card-body .card-body__svg.card-body__svg_orange {
+  background: rgba(255, 169, 87, 0.2);
+}
+
+.card-body .card-body__svg.card-body__svg_orange svg {
+  fill: #ffa22f;
+}
+
+.card-body .card-body__svg.card-body__svg_violet {
+  background: rgba(162, 84, 162, 0.2);
+}
+
+.card-body .card-body__svg.card-body__svg_violet svg {
+  fill: #e57bff;
+}
+
+ 
+
+
 /* .card-body:hover .card-body__svg {
   background: rgba(70, 86, 199, 0.2);
 } */
 
 .card-body svg {
-  fill: #A254A2;
+  /* fill: #A254A2; */
   margin-left: 6px;
 }
 
