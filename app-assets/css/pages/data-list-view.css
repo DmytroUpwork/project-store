@@ -656,8 +656,18 @@ table.data-thumb-view.dataTable tbody tr td.product-img img {
 
 
 
-table.data-list-dispatch.dataTable thead th:last-of-type {
+table.data-list-dispatch.dataTable thead th:last-of-type,
+table.data-list-user.dataTable thead th:last-of-type {
   opacity: 0;
+}
+
+
+.data-list-user .AvialbilityStatus,
+.data-list-user .AccountstatusOption {
+  display: none;
+}
+.data-list-user .admin-table-color {
+  color: #A254A2;
 }
 
 

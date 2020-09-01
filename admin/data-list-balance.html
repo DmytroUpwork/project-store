@@ -243,9 +243,6 @@
         <div class="content-wrapper">
             
             <div class="content-body">
-                
-                
-
                 <form>
                     <div class="select-wrapper">
                         <select name="select">
@@ -258,42 +255,8 @@
                             <img src="../app-assets\images\my-images\icon-select.svg" alt="Checkout" width="14">
                         </div>
                     </div>
-                    
                 </form>
-
-
-                    <div id="tabs">
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+                <div id="tabs">
                         <!-- Вкладка Баланс -->
                         <div class="tab-balance-active tab">
                             <!-- Data list view starts -->
@@ -384,13 +347,9 @@
                                 </div>
                             </section>
                             <!-- Data list view end -->
-
-
                             <h1>Список пользователей</h1>
-                            
-                            
                             <!-- Data list view starts -->
-                            <section id="data-list-view" class="data-list-view-header">
+                            <section id="data-list-view" class="data-list-view-header data-list-user">
                                 <div class="action-btns">
                                     <div class="btn-dropdown mr-1 mb-1">
                                         <div class="btn-group dropdown actions-dropodown">
@@ -408,7 +367,7 @@
                                 </div>
                                 <!-- DataTable starts -->
                                 <div class="table-responsive">
-                                    <table class="table data-list-view" id="example">
+                                    <table class="table data-list-view data-list-user" id="example">
                                         <thead>
                                             <tr>
                                                 <th>ФОТО</th>
@@ -579,49 +538,6 @@
                             <!-- Data list view end -->
                         </div>
                         <!-- Конец: Вкладка Баланс -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                         
                         <!-- Вкладка Выплаты -->
                         <div class="tab">
@@ -713,59 +629,116 @@
                                 </div>
                             </section>
                             <!-- Data list view end -->
+                            <h1>Список выплат</h1>
                             <!-- Data list view starts -->
                             <section id="data-list-view" class="data-list-view-header">
                                 <!-- DataTable starts -->
                                 <div class="table-responsive">
-                                    <table class="table data-list-view" id="example">
-                                        <thead>
-                                            <tr>
-                                                <th>Дата продажи</th>
-                                                <th>Номер заказа</th>
-                                                <th>Кол. товаров</th>
-                                                <th>Общая сума заказа</th>
-                                                <th>Прибыль</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>12 Августа</td>
-                                                <td>1123458</td>
-                                                <td>3 шт.</td>
-                                                <td>1000 грн</td>
-                                                <td>750 грн</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12 Августа</td>
-                                                <td>1123458</td>
-                                                <td>3 шт.</td>
-                                                <td>1000 грн</td>
-                                                <td>750 грн</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12 Августа</td>
-                                                <td>1123458</td>
-                                                <td>3 шт.</td>
-                                                <td>1000 грн</td>
-                                                <td>750 грн</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12 Августа</td>
-                                                <td>1123458</td>
-                                                <td>3 шт.</td>
-                                                <td>1000 грн</td>
-                                                <td>750 грн</td>
-                                            </tr>
-                                            <tr>
-                                                <td>12 Августа</td>
-                                                <td>1123458</td>
-                                                <td>3 шт.</td>
-                                                <td>1000 грн</td>
-                                                <td>750 грн</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                    <table class="table data-list-view  data-list-user" id="example">
+                            <thead>
+                                <tr>
+                                    <th>ДАТА</th>
+                                    <th>СТАТУС</th>
+                                    <th>СУММА</th>
+                                    <th>ПОЛЬЗОВАТЕЛЬ</th>
+                                    <th>НОМЕР</th>
+                                    <th>ПРИМЕЧАНИЕ</th>
+                                    <th>EDIT</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>12 сентября</td>
+                                    <td>
+                                        <div class="chip chip-warning">
+                                            <div class="chip-body">
+                                                <div class="chip-text">В пути</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>254 грн</td>
+                                    <td>Jenyafomin</td>
+                                    <td>1123458</td>
+                                    <td>Примечание</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>12 сентября</td>
+                                    <td>
+                                        <div class="chip chip-success">
+                                            <div class="chip-body">
+                                                <div class="chip-text">Выполнен</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>254 грн</td>
+                                    <td>Jenyafomin</td>
+                                    <td>1123458</td>
+                                    <td>Примечание</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>12 сентября</td>
+                                    <td>
+                                        <div class="chip chip-danger">
+                                            <div class="chip-body">
+                                                <div class="chip-text">Отменен</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>254 грн</td>
+                                    <td>Jenyafomin</td>
+                                    <td>1123458</td>
+                                    <td>Примечание</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>12 сентября</td>
+                                    <td>
+                                        <div class="chip chip-primary">
+                                            <div class="chip-body">
+                                                <div class="chip-text">В ожидании</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>254 грн</td>
+                                    <td>Jenyafomin</td>
+                                    <td>1123458</td>
+                                    <td>Примечание</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>12 сентября</td>
+                                    <td>
+                                        <div class="chip chip-warning">
+                                            <div class="chip-body">
+                                                <div class="chip-text">В пути</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>254 грн</td>
+                                    <td>Jenyafomin</td>
+                                    <td>1123458</td>
+                                    <td>Примечание</td>
+                                    <td class="product-action">
+                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                        <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                                 <!-- DataTable ends -->
                                 <!-- add new sidebar starts -->
                                 <div class="add-new-data-sidebar">
@@ -922,96 +895,85 @@
                                 </div>
                             </section>
                             <!-- Data list view end -->
+                            <h1>Список продаж</h1>
                             <!-- Data list view starts -->
                             <section id="data-list-view" class="data-list-view-header">
                                 <!-- DataTable starts -->
                                 <div class="table-responsive">
-                                    <table class="table data-list-view" id="example">
+                                    <table class="table data-list-view data-list-user" id="example">
                                         <thead>
                                             <tr>
-                                                <th>НОМЕР</th>
-                                                <th>ДАТА</th>
-                                                <th>СУММА</th>
-                                                <th>СТАТУС</th>
-                                                <th>РЕДАК</th>
+                                                <th>ДАТА ПРОДАЖИ</th>
+                                                <th>ИМЯ ПОЛЬЗОВ.</th>
+                                                <th>СУММА ЗАКАЗА</th>
+                                                <th>ПРИБЫЛЬ ДШ</th>
+                                                <th>ПРИБЫЛЬ</th>
+                                                <th>№ ЗАКАЗА</th>
+                                                <th>ТОВАРОВ</th>
+                                                <th>Edit</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>1123458</td>
                                                 <td>12 Августа</td>
-                                                <td>1000 грн</td>
-                                                <td>
-                                                    <div class="chip chip-success">
-                                                        <div class="chip-body">
-                                                            <div class="chip-text">Выполнен</div>
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                                <td>Jenyafomin</td>
+                                                <td>3500 грн</td>
+                                                <td>750 грн</td>
+                                                <td>640 грн</td>
+                                                <td class="admin-table-color">1123458</td>
+                                                <td class="admin-table-color">3 шт.</td>
                                                 <td class="product-action">
                                                     <span class="action-edit"><i class="feather icon-edit"></i></span>
                                                     <span class="action-delete"><i class="feather icon-trash"></i></span>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>1123458</td>
                                                 <td>12 Августа</td>
-                                                <td>1000 грн</td>
-                                                <td>
-                                                    <div class="chip chip-success">
-                                                        <div class="chip-body">
-                                                            <div class="chip-text">Выполнен</div>
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                                <td>Jenyafomin</td>
+                                                <td>3500 грн</td>
+                                                <td>750 грн</td>
+                                                <td>640 грн</td>
+                                                <td class="admin-table-color">1123458</td>
+                                                <td class="admin-table-color">3 шт.</td>
                                                 <td class="product-action">
                                                     <span class="action-edit"><i class="feather icon-edit"></i></span>
                                                     <span class="action-delete"><i class="feather icon-trash"></i></span>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>1123458</td>
                                                 <td>12 Августа</td>
-                                                <td>1000 грн</td>
-                                                <td>
-                                                    <div class="chip chip-danger">
-                                                        <div class="chip-body">
-                                                            <div class="chip-text">Отменен</div>
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                                <td>Jenyafomin</td>
+                                                <td>3500 грн</td>
+                                                <td>750 грн</td>
+                                                <td>640 грн</td>
+                                                <td class="admin-table-color">1123458</td>
+                                                <td class="admin-table-color">3 шт.</td>
                                                 <td class="product-action">
                                                     <span class="action-edit"><i class="feather icon-edit"></i></span>
                                                     <span class="action-delete"><i class="feather icon-trash"></i></span>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>1123458</td>
                                                 <td>12 Августа</td>
-                                                <td>1000 грн</td>
-                                                <td>
-                                                    <div class="chip chip-primary">
-                                                        <div class="chip-body">
-                                                            <div class="chip-text">В ожидании</div>
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                                <td>Jenyafomin</td>
+                                                <td>3500 грн</td>
+                                                <td>750 грн</td>
+                                                <td>640 грн</td>
+                                                <td class="admin-table-color">1123458</td>
+                                                <td class="admin-table-color">3 шт.</td>
                                                 <td class="product-action">
                                                     <span class="action-edit"><i class="feather icon-edit"></i></span>
                                                     <span class="action-delete"><i class="feather icon-trash"></i></span>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>1123458</td>
                                                 <td>12 Августа</td>
-                                                <td>1000 грн</td>
-                                                <td>
-                                                    <div class="chip chip-primary">
-                                                        <div class="chip-body">
-                                                            <div class="chip-text">В ожидании</div>
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                                <td>Jenyafomin</td>
+                                                <td>3500 грн</td>
+                                                <td>750 грн</td>
+                                                <td>640 грн</td>
+                                                <td class="admin-table-color">1123458</td>
+                                                <td class="admin-table-color">3 шт.</td>
                                                 <td class="product-action">
                                                     <span class="action-edit"><i class="feather icon-edit"></i></span>
                                                     <span class="action-delete"><i class="feather icon-trash"></i></span>
@@ -1085,6 +1047,42 @@
                             <!-- Data list view end -->
                         </div>
                         <!-- Конец: Вкладка Продажи -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         
                         <!-- Пополнение баланса -->
                         <div class="tab">
@@ -1176,26 +1174,44 @@
                                 </div>
                             </section>
                             <!-- Data list view end -->
-                            
+                            <h1>Список пополнений</h1>
                             <!-- Data list view starts -->
                             <section id="data-list-view" class="data-list-view-header">
                                 <!-- DataTable starts -->
                                 <div class="table-responsive">
-                                    <table class="table data-list-view" id="example">
+                                    <table class="table data-list-view data-list-user" id="example">
                                         <thead>
                                             <tr>
-                                                <th>НОМЕР</th>
                                                 <th>ДАТА</th>
-                                                <th>СУММА</th>
                                                 <th>СТАТУС</th>
-                                                <th>РЕДАК</th>
+                                                <th>СУММА</th>
+                                                <th>ПОЛЬЗОВАТЕЛЬ</th>
+                                                <th>НОМЕР</th>
+                                                <th>ПРИМЕЧАНИЕ</th>
+                                                <th>Edit</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>1123458</td>
                                                 <td>12 Августа</td>
-                                                <td>1000 грн</td>
+                                                <td>
+                                                    <div class="chip chip-warning">
+                                                        <div class="chip-body">
+                                                            <div class="chip-text">Подтвержден</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>3500 грн</td>
+                                                <td>Jenyafomin</td>
+                                                <td>1123458</td>
+                                                <td>Примечание</td>
+                                                <td class="product-action">
+                                                    <span class="action-edit"><i class="feather icon-edit"></i></span>
+                                                    <span class="action-delete"><i class="feather icon-trash"></i></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>12 Августа</td>
                                                 <td>
                                                     <div class="chip chip-success">
                                                         <div class="chip-body">
@@ -1203,31 +1219,17 @@
                                                         </div>
                                                     </div>
                                                 </td>
+                                                <td>3500 грн</td>
+                                                <td>Jenyafomin</td>
+                                                <td>1123458</td>
+                                                <td>Примечание</td>
                                                 <td class="product-action">
                                                     <span class="action-edit"><i class="feather icon-edit"></i></span>
                                                     <span class="action-delete"><i class="feather icon-trash"></i></span>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>1123458</td>
                                                 <td>12 Августа</td>
-                                                <td>1000 грн</td>
-                                                <td>
-                                                    <div class="chip chip-success">
-                                                        <div class="chip-body">
-                                                            <div class="chip-text">Выполнен</div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="product-action">
-                                                    <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                                    <span class="action-delete"><i class="feather icon-trash"></i></span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>1123458</td>
-                                                <td>12 Августа</td>
-                                                <td>1000 грн</td>
                                                 <td>
                                                     <div class="chip chip-danger">
                                                         <div class="chip-body">
@@ -1235,15 +1237,17 @@
                                                         </div>
                                                     </div>
                                                 </td>
+                                                <td>3500 грн</td>
+                                                <td>Jenyafomin</td>
+                                                <td>1123458</td>
+                                                <td>Примечание</td>
                                                 <td class="product-action">
                                                     <span class="action-edit"><i class="feather icon-edit"></i></span>
                                                     <span class="action-delete"><i class="feather icon-trash"></i></span>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>1123458</td>
                                                 <td>12 Августа</td>
-                                                <td>1000 грн</td>
                                                 <td>
                                                     <div class="chip chip-primary">
                                                         <div class="chip-body">
@@ -1251,15 +1255,17 @@
                                                         </div>
                                                     </div>
                                                 </td>
+                                                <td>3500 грн</td>
+                                                <td>Jenyafomin</td>
+                                                <td>1123458</td>
+                                                <td>Примечание</td>
                                                 <td class="product-action">
                                                     <span class="action-edit"><i class="feather icon-edit"></i></span>
                                                     <span class="action-delete"><i class="feather icon-trash"></i></span>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>1123458</td>
                                                 <td>12 Августа</td>
-                                                <td>1000 грн</td>
                                                 <td>
                                                     <div class="chip chip-primary">
                                                         <div class="chip-body">
@@ -1267,6 +1273,10 @@
                                                         </div>
                                                     </div>
                                                 </td>
+                                                <td>3500 грн</td>
+                                                <td>Jenyafomin</td>
+                                                <td>1123458</td>
+                                                <td>Примечание</td>
                                                 <td class="product-action">
                                                     <span class="action-edit"><i class="feather icon-edit"></i></span>
                                                     <span class="action-delete"><i class="feather icon-trash"></i></span>
