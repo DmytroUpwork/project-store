@@ -522,87 +522,156 @@ $(window).on("load", function(){
 
     avgsessionChart.render();
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // Sales  Chart
     // -----------------------------
 
    var salesavgChartoptions = {
-      chart: {
-        height: 270,
-        toolbar: { show: false },
-        type: 'line',
-        dropShadow: {
-            enabled: true,
-            top: 20,
-            left: 2,
-            blur: 6,
-            opacity: 0.20
-        },
-      },
-      stroke: {
-          curve: 'smooth',
-          width: 4,
-      },
-      grid: {
-          borderColor: $label_color,
-      },
-      legend: {
-          show: false,
-      },
-     colors: [$purple],
-      fill: {
-          type: 'gradient',
-          gradient: {
-              shade: 'dark',
-              inverseColors: false,
-              gradientToColors: [$primary],
-              shadeIntensity: 1,
-              type: 'horizontal',
-              opacityFrom: 1,
-              opacityTo: 1,
-              stops: [0, 100, 100, 100]
-          },
-      },
-      markers: {
-          size: 0,
-          hover: {
-              size: 5
-          }
-      },
-      xaxis: {
-          labels: {
-              style: {
-                  colors: $strok_color,
-              }
-          },
-          axisTicks: {
-              show: false,
-          },
-          categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-          axisBorder: {
-              show: false,
-          },
-          tickPlacement: 'on'
-      },
-      yaxis: {
-          tickAmount: 5,
-          labels: {
-              style: {
-                  color: $strok_color,
-              },
-              formatter: function(val) {
-                  return val > 999 ? (val / 1000).toFixed(1) + 'k' : val;
-              }
-          }
-      },
-      tooltip: {
-          x: { show: false }
-      },
-      series: [{
-            name: "Sales",
-            data: [140, 180, 150, 205, 160, 295, 125, 255, 205, 305, 240, 295]
-        }],
+     chart: {
+       height: 270,
+       toolbar: { show: false },
+       type: "line",
+       dropShadow: {
+         enabled: false,
+         top: 20,
+         left: 2,
+         blur: 6,
+         opacity: 0.2,
+       },
+     },
+     stroke: {
+       curve: "smooth",
+       width: 4,
+     },
 
-    }
+     grid: {
+       show: true,
+       borderColor: "#90A4AE",
+       strokeDashArray: 0,
+       position: "back",
+       xaxis: {
+         lines: {
+           show: false,
+         },
+       },
+       yaxis: {
+         lines: {
+           show: false,
+         },
+       },
+       row: {
+         colors: undefined,
+         opacity: 0.5,
+       },
+       column: {
+         colors: undefined,
+         opacity: 0.5,
+       },
+     },
+
+     legend: {
+       show: false,
+     },
+     colors: [$purple],
+     fill: {
+       type: "gradient",
+       gradient: {
+         shade: "dark",
+         inverseColors: false,
+         gradientToColors: [$primary],
+         shadeIntensity: 1,
+         type: "horizontal",
+         opacityFrom: 1,
+         opacityTo: 1,
+         stops: [0, 100, 100, 100],
+       },
+     },
+     markers: {
+       size: 0,
+       hover: {
+         size: 5,
+       },
+     },
+     xaxis: {
+       labels: {
+         style: {
+           colors: $strok_color,
+         },
+       },
+       //    tickAmount: 2,
+       axisTicks: {
+         show: true,
+         //   offsetX: -30,
+       },
+       categories: [
+         "11 сентября",
+         "14 сентября",
+         "11 сентября",
+         "11 сентября",
+         "11 сентября",
+         "11 сентября",
+         "11 сентября",
+         "11 сентября",
+         "11 сентября",
+         "11 сентября",
+         "11 сентября",
+         "11 сентября",
+       ],
+       axisBorder: {
+         show: true,
+       },
+       tickPlacement: "on",
+     },
+
+     //
+
+     yaxis: {
+       tickAmount: 7,
+       labels: {
+         style: {
+           color: $strok_color,
+         },
+         formatter: function (val) {
+           return val > 999 ? (val / 1000).toFixed(1) + "k" : val;
+         },
+       },
+       axisBorder: {
+         show: true,
+         color: "#78909C",
+         offsetX: 0,
+         offsetY: 0,
+       },
+       axisTicks: {
+         show: true,
+         offsetY: -30,
+       },
+     },
+
+     tooltip: {
+       x: { show: false },
+     },
+     series: [
+       {
+         name: "Sales",
+         data: [0, 4, 5, 2, 1, 7, 3, 5, 3, 7, 4],
+       },
+     ],
+   };
 
    var salesavgChart = new ApexCharts(
         document.querySelector("#sales-line-chart"),
@@ -610,6 +679,36 @@ $(window).on("load", function(){
     );
 
     salesavgChart.render();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     // Client Retention Chart
     // ----------------------------------
