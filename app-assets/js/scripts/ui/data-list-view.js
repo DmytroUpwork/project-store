@@ -9,6 +9,7 @@
 
 $(document).ready(function() {
   "use strict"
+
   // init list view datatable
   var dataListView = $(".data-list-view").DataTable({
     responsive: false,
@@ -54,6 +55,57 @@ $(document).ready(function() {
     },
   });
 
+  // init list view datatable
+  var dataListView = $(".data-list-dispatch").DataTable({
+    responsive: false,
+    columnDefs: [
+      {
+        orderable: true,
+        targets: 0,
+        checkboxes: { selectRow: true }
+      },
+    ],
+    dom:
+      '<"top page-analitics" <"actions action-btns"B>   <"button-right-table" l<"btn-calendar"><"btn-select">f> >             <"clear">rt<"bottom" <"actions"> p>',
+
+    oLanguage: {
+      sLengthMenu: "_MENU_",
+      sSearch: "",
+    },
+    aLengthMenu: [
+      [6, 10, 15, 20],
+      [6, 10, 15, 20],
+    ],
+    select: {
+      style: "multi",
+    },
+    order: [[1, "asc"]],
+    bInfo: false,
+    pageLength: 6,
+    buttons: [
+      {
+        text: "Добавить <i class='feather icon-plus'></i>  ",
+        action: function () {
+          $(this).removeClass("btn-secondary");
+          $(".add-new-data").addClass("show");
+          $(".overlay-bg").addClass("show");
+          $("#data-name, #data-price").val("");
+          $("#data-category, #data-status").prop("selectedIndex", 0);
+        },
+        className: "btn-outline-primary",
+      },
+    ],
+    initComplete: function (settings, json) {
+      $(".dt-buttons .btn").removeClass("btn-secondary");
+    },
+  });
+
+
+
+
+
+
+
   $(".btn-calendar").wrap(
     '<div class="filter_wrap"><button class="AccountstatusOption dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">За <span>41</span> дн. <i class="fa fa-calendar"></i> </button><div class="dropdown-menu"><a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">21 апреля</a><a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">30 июня</a></div>   </div></div></div>   </div>'
     // <select name="Avialbility" class="AvialbilityStatus form-control searchFilterAdded"><option value="1">Все заказы</option><option value="2">Выполненные</option> <option value="3">В пути</option> <option value="4">В ожидании</option> <option value="5">Отменен</option></select>
@@ -62,7 +114,7 @@ $(document).ready(function() {
 
   $(".btn-select").wrap(
     // '<div class="filter_wrap">   <button type="button" class="btn btn-select AvialbilityStatus searchFilterAdded  dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Все заказы</><div class="dropdown-menu"><a class="dropdown-item" href="#">Выполненные</a><a class="dropdown-item" href="#">В пути</a><a class="dropdown-item" href="#">В ожидании</a><a class="dropdown-item" href="#">Отменен</a></div></div></div>   </div>'
-    '<div class="filter_wrap"><select name="Avialbility" class="AvialbilityStatus form-control searchFilterAdded"><option value="1">Все заказы</option><option value="2">Выполненные</option> <option value="3">В пути</option> <option value="4">В ожидании</option> <option value="5">Отменен</option></select></div>'
+    '<div class="filter_wrap"><select name="Avialbility" class="AvialbilityStatus form-control searchFilterAdded"><option value="1">Статус</option><option value="2">Выполненные</option> <option value="3">В пути</option> <option value="4">В ожидании</option> <option value="5">Отменен</option></select></div>'
   );
 
   dataListView.on('draw.dt', function(){
