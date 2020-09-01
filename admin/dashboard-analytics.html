@@ -335,11 +335,20 @@
 
                     <div class="row">
                         <div class="col-12">
-                            <div class="card">
+                            <div class="card box-chart">
                                 <div class="card-header d-flex justify-content-between">
                                     <h4 class="card-title">График заказов</h4>
-                                    <h3><i class="feather icon-settings text-muted cursor-pointer"></i></h3>
+
+                                    <select name="Avialbility" class="form-control">
+                                        <option value="0">По дням</option>
+                                        <option value="1">По неделям</option> 
+                                        <option value="2">По месяцам</option>
+                                    </select>
+
+
                                 </div>
+
+
                                 <div class="card-content">
                                     <div class="card-body pb-0">
                                         <div id="sales-line-chart"></div>

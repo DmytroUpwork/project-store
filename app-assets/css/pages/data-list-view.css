@@ -674,7 +674,10 @@ table.data-list-user.dataTable thead th:last-of-type {
 
 
 
-
+.box-chart .form-control {
+  width: 128px;
+  margin: 20px 0;
+}
 
 
 
