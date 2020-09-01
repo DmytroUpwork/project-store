@@ -5231,7 +5231,7 @@ var propsAndData = {
         withTimePicker: false,
         isMultiple: true,
         calendarsCount: 2,
-        isSeparately: false,
+        isSeparately: true,
         isModal: false,
         isTypeable: false,
         changeMonthFunction: false,
