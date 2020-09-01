@@ -3703,19 +3703,21 @@ table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTa
   padding-right : inherit;
 }
 table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:before {
-  font-family : 'feather';
+  display: none;
+  /* font-family : 'feather';
   content : '\e845';
   padding-right : 0.3rem;
   font-size : 0.7rem;
   left : 0;
-  top : 0.9rem;
+  top : 0.9rem; */
 }
 table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after {
-  font-family : 'feather';
+  display: none;
+  /* font-family : 'feather';
   content : '\e842';
   font-size : 0.7rem;
   left : 0;
-  top : 1.3rem;
+  top : 1.3rem; */
 }
 table.dataTable.table-striped tbody tr:nth-of-type(even) {
   background-color : #F8F8F8;
@@ -3731,10 +3733,13 @@ table.dataTable.complex-headers thead th, table.dataTable.complex-headers thead 
   border-right : 1px solid #DAE1E7;
 }
 table.dataTable tbody tr.selected {
-  background-color : rgba(115, 103, 240, 0.05) !important;
+  background: #FFF3FF!important;
+  border: 1px solid #A254A2!important;
+
+  /* background-color : rgba(115, 103, 240, 0.05) !important; */
   color : #A254A2 !important;
   box-shadow : 0 0 1px 0 #A254A2 !important;
-  border-radius : 5px;
+  border-radius : 5px!important;
 }
 table.dataTable tbody tr.selected td, table.dataTable tbody tr.selected th {
   border-bottom : 0;
