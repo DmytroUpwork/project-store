@@ -9,7 +9,7 @@
     <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>Forgot Password - Vuexy - Bootstrap HTML admin template</title>
+    <title>Register Page - Vuexy - Bootstrap HTML admin template</title>
     <link rel="apple-touch-icon" href="../app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/ico/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
@@ -51,34 +51,57 @@
             </div>
             <div class="content-body">
                 <section class="row flexbox-container">
-                    <div class="col-xl-7 col-md-9 col-10 d-flex justify-content-center px-0">
+                    <div class="col-xl-8 col-10 d-flex justify-content-center">
                         <div class="card bg-authentication rounded-0 mb-0">
                             <div class="row m-0">
-                                <div class="col-lg-6 d-lg-block d-none text-center align-self-center">
-                                    <img src="../app-assets/images/pages/forgot-password.png" alt="branding logo">
+                                <div class="col-lg-6 d-lg-block d-none text-center align-self-center pl-0 pr-3 py-0">
+                                    <img src="../app-assets/images/pages/register.jpg" alt="branding logo">
                                 </div>
                                 <div class="col-lg-6 col-12 p-0">
-                                    <div class="card rounded-0 mb-0 px-2 py-1">
-                                        <div class="card-header pb-1">
+                                    <div class="card rounded-0 mb-0 p-2">
+                                        <div class="card-header pt-50 pb-1">
                                             <div class="card-title">
-                                                <h4 class="mb-0">Recover your password</h4>
+                                                <h4 class="mb-0">Регистрация</h4>
                                             </div>
                                         </div>
-                                        <p class="px-2 mb-0">Please enter your email address and we'll send you instructions on how to reset your password.</p>
+                                        <p class="px-2">Заполните форму ниже, чтобы создать новую учетную запись.</p>
                                         <div class="card-content">
-                                            <div class="card-body">
+                                            <div class="card-body pt-0">
                                                 <form action="index.html">
                                                     <div class="form-label-group">
-                                                        <input type="email" id="inputEmail" class="form-control" placeholder="Email">
+                                                        <input type="text" id="inputName" class="form-control" placeholder="Имя" required>
+                                                        <label for="inputName">Имя</label>
+                                                    </div>
+                                                    <div class="form-label-group">
+                                                        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
                                                         <label for="inputEmail">Email</label>
                                                     </div>
+                                                    <div class="form-label-group">
+                                                        <input type="password" id="inputPassword" class="form-control" placeholder="Пароль" required>
+                                                        <label for="inputPassword">Пароль</label>
+                                                    </div>
+                                                    <div class="form-label-group">
+                                                        <input type="password" id="inputConfPassword" class="form-control" placeholder="Повторить пароль" required>
+                                                        <label for="inputConfPassword">Повторить пароль</label>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="col-12">
+                                                            <fieldset class="checkbox">
+                                                                <div class="vs-checkbox-con vs-checkbox-primary">
+                                                                    <input type="checkbox" checked>
+                                                                    <span class="vs-checkbox">
+                                                                        <span class="vs-checkbox--check">
+                                                                            <i class="vs-icon feather icon-check"></i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="">Я принимаю условия соглашения</span>
+                                                                </div>
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                    <a href="auth-login.html" class="btn btn-outline-primary float-left btn-inline mb-50 mt-3">Логин</a>
+                                                    <button type="submit" class="btn btn-primary float-right btn-inline mb-50 mt-3">Зарегистрироваться</a>
                                                 </form>
-                                                <div class="float-md-left d-block mb-1">
-                                                    <a href="auth-login.html" class="btn btn-outline-primary btn-block px-75">Back to Login</a>
-                                                </div>
-                                                <div class="float-md-right d-block mb-1">
-                                                    <a href="#" class="btn btn-primary btn-block px-75">Recover Password</a>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -86,11 +109,10 @@
                             </div>
                         </div>
                     </div>
-            </div>
-            </section>
+                </section>
 
+            </div>
         </div>
-    </div>
     </div>
     <!-- END: Content-->
 
