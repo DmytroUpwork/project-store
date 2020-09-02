@@ -201,7 +201,7 @@ html .pace .pace-progress {
 
 @media screen and (max-width: 992px) {
   .bookmark-wrapper {
-    padding-top: 11px;
+    padding-left: 11px;
   }
 }
 
@@ -228,6 +228,10 @@ html .pace .pace-progress {
 .card-body .card-body__title {
   font-size: 16px;
   color: #777777;
+  width: calc(100% - 36px);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .card-body .card-body__data {
@@ -241,7 +245,7 @@ html .pace .pace-progress {
   top: 24%;
   width: 45px;
   height: 45px;
-  /* background: rgba(162, 84, 162, 0.2); */
+  background: rgba(162, 84, 162, 0.2);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -520,11 +524,14 @@ body.fixed-footer footer.footer-dark {
   margin : -7px -7px 0 -7px;
 }
 .main-menu.menu-light .navigation li a {
-  color : #fff;
+  color : #EBF0EF;
   padding : 10px 15px 10px 15px;
   line-height : 1.45;
   -webkit-transition : padding 0.35s ease 0s !important;
           transition : padding 0.35s ease 0s !important;
+}
+.main-menu.menu-light .navigation li a span {
+  margin-left: 20px;
 }
 .main-menu.menu-light .navigation li a span.menu-sub-title {
   color : #AFAFAF;

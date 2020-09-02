@@ -79,7 +79,8 @@
 
 .select-wrapper {
   position: relative;
-  width: 180px;
+  display: inline-block;
+  /* width: 180px; */
   margin: 20px 0;
   border: none;
 }
@@ -89,10 +90,10 @@
 } */
 
 .select-wrapper select {
-  font-size: 23px;
+  font-size: 29px;
   text-overflow: ellipsis;
-  width: 180px;
-  height: 28px;
+  /* width: 180px; */
+  height: 37px;
   padding: 0 20px 0 7px;
   background: transparent;
   border: 0;

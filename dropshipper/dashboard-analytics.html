@@ -137,7 +137,7 @@
                         <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
                             <div class="user-nav d-sm-flex d-none"><span class="user-name text-bold-600">Женя Фомин</span><span class="user-status">Онлайн</span></div><span><img class="round" src="../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"></span>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="page-user-profile.html"><i class="feather icon-user"></i>Мой профиль</a>
+                            <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="../page-user-profile.html"><i class="feather icon-user"></i>Мой профиль</a>
                                 <div class="dropdown-divider"></div><a class="dropdown-item" href="../auth-login.html"><i class="feather icon-power"></i>Выход</a>
                             </div>
                         </li>
@@ -159,28 +159,21 @@
                 <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary" data-ticon="icon-disc"></i></a></li>
             </ul>
         </div>
-        <div class="shadow-bottom"></div>
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class="active nav-item"><a href="dashboard-analytics.html"><img src="../app-assets\images\my-images\icon_analytics.svg" alt="Analytics"> <span class="menu-item" data-i18n="Analytics">Аналитика</span></a>
+                <li class="nav-item"><a href="page-orders.html"><img src="../app-assets\images\my-images\icon_orders.svg" alt="Orders"><span class="menu-title" data-i18n="Orders">Заказы</span></a>
                 </li>
-                <li class="nav-item"><a href="page-orders.html"><img src="../app-assets\images\my-images\icon_orders.svg" alt="Orders"> <span class="menu-title" data-i18n="Orders">Заказы</span></a>
+                <li class=" nav-item"><a href="data-list-despatch.html"><img src="../app-assets\images\my-images\icon-menu-dispatch.svg" alt="Dispatch"><span class="menu-title" data-i18n="Dispatch">Отправки</span></a>
                 </li>
-                <li class="nav-item"><a href="data-list-balance.html"><img src="../app-assets\images\my-images\icon_payouts.svg" alt="Payouts"><span class="menu-title" data-i18n="Balance">Баланс</span></a>
+                <li class=" nav-item"><a href="data-list-balance.html"><img src="../app-assets\images\my-images\icon_payouts.svg" alt="Payouts"><span class="menu-title" data-i18n="Balance">Баланс</span></a>
                 </li>
-                <li class="nav-item"><a href="page-products.html"><img src="../app-assets\images\my-images\icon_products.svg" alt="Orders"><span class="menu-item" data-i18n="Thumb View">Товары</span></a>
+                <li class=" nav-item"><a href="page-products.html"><img src="../app-assets\images\my-images\icon_products.svg" alt="Orders"><span class="menu-title" data-i18n="Thumb View">Товары</span></a>
                 </li>
-                <li class=" nav-item"><a href="index.html"><img src="../app-assets\images\my-images\icon_my_profile.svg" alt="My profile"><span class="menu-title" data-i18n="User">Пользователь</span></a>
-                    <ul class="menu-content">
-                        <li class=" nav-item"><a href="app-user-view.html"><i class="feather icon-user"></i><span class="menu-item" data-i18n="User view">Личный кабинет</span></a>                 
-                        </li>
-                        <li class=" nav-item"><a href="page-user-profile.html"><i class="feather icon-user"></i><span class="menu-item" data-i18n="Profile">Мой профиль</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class=" nav-item"><a href="../app-ecommerce-checkout.html"><img src="../app-assets\images\my-images\icon_basket.svg" alt="Basket"><span class="menu-item" data-i18n="Checkout">Корзина</span></a>
+                <li class="active nav-item"><a href="dashboard-analytics.html"><img src="../app-assets\images\my-images\icon_analytics.svg" alt="Analytics"><span class="menu-title" data-i18n="Analytics">Аналитика</span></a>
                 </li>
                 <li class=" nav-item"><a href="../app-chat.html"><i class="feather icon-message-square"></i><span class="menu-title" data-i18n="Chat">Чат</span></a>
+                </li>
+                <li class="nav-item"><a href="page-account-settings.html"><img src="../app-assets\images\my-images\icon-menu-customization.svg" alt="Customization"><span class="menu-title" data-i18n="Settings">Настройки</span></a>
                 </li>
             </ul>
         </div>
@@ -215,10 +208,10 @@
                         <div class="col-md-6 col-xl-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="card-body__data">35 шт.</div> 
-                                    <div class="card-body__title text-uppercase">всего заказов</div>
+                                    <div class="card-body__data">3400 грн.</div> 
+                                    <div class="card-body__title">Заработано</div>
                                     
-                                    <div class="card-body__svg">
+                                    <div class="card-body__svg card-body__svg_turquoise">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <rect width="24" height="24" fill="url(#pattern0)"/>
                                         <rect width="24" height="24" style="mix-blend-mode:lighten"/>
@@ -236,10 +229,10 @@
                         <div class="col-md-6 col-xl-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="card-body__data">20 шт.</div>
-                                    <div class="card-body__title text-uppercase">в процессе</div>
+                                    <div class="card-body__data">1000 грн.</div>
+                                    <div class="card-body__title">Выплачено</div>
                                      
-                                    <div class="card-body__svg">
+                                    <div class="card-body__svg card-body__svg_blue">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <rect width="24" height="24" fill="url(#pattern0)"/>
                                         <rect width="24" height="24" style="mix-blend-mode:lighten"/>
@@ -257,10 +250,10 @@
                         <div class="col-md-6 col-xl-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="card-body__data">10 шт.</div> 
-                                    <div class="card-body__title text-uppercase">выполненных</div>
+                                    <div class="card-body__data">2400 грн</div> 
+                                    <div class="card-body__title">Бонусы</div>
                                     
-                                    <div class="card-body__svg">
+                                    <div class="card-body__svg card-body__svg_orange">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <rect width="24" height="24" fill="url(#pattern0)"/>
                                         <rect width="24" height="24" style="mix-blend-mode:lighten"/>
@@ -278,9 +271,9 @@
                         <div class="col-md-6 col-xl-4">                          
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="card-body__data">5 шт.</div> 
-                                    <div class="card-body__title text-uppercase">возвратов</div>
-                                    <div class="card-body__svg">
+                                    <div class="card-body__data">115 шт.</div> 
+                                    <div class="card-body__title">Заказов за 31дн.</div>
+                                    <div class="card-body__svg card-body__svg_turquoise">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <rect width="24" height="24" fill="url(#pattern0)"/>
                                         <rect width="24" height="24" style="mix-blend-mode:lighten"/>
@@ -298,10 +291,10 @@
                         <div class="col-md-6 col-xl-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="card-body__data">20 шт.</div>
-                                    <div class="card-body__title text-uppercase">в процессе</div>
+                                    <div class="card-body__data">80%</div>
+                                    <div class="card-body__title">Процент забраных</div>
                                      
-                                    <div class="card-body__svg">
+                                    <div class="card-body__svg card-body__svg_blue">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <rect width="24" height="24" fill="url(#pattern0)"/>
                                         <rect width="24" height="24" style="mix-blend-mode:lighten"/>
@@ -320,9 +313,9 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="card-body__data">10 шт.</div> 
-                                    <div class="card-body__title text-uppercase">выполненных</div>
+                                    <div class="card-body__title">Заказов в процессе</div>
                                     
-                                    <div class="card-body__svg">
+                                    <div class="card-body__svg card-body__svg_orange">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <rect width="24" height="24" fill="url(#pattern0)"/>
                                         <rect width="24" height="24" style="mix-blend-mode:lighten"/>
@@ -342,11 +335,20 @@
 
                     <div class="row">
                         <div class="col-12">
-                            <div class="card">
+                            <div class="card box-chart">
                                 <div class="card-header d-flex justify-content-between">
                                     <h4 class="card-title">График заказов</h4>
-                                    <h3><i class="feather icon-settings text-muted cursor-pointer"></i></h3>
+
+                                    <select name="Avialbility" class="form-control">
+                                        <option value="0">По дням</option>
+                                        <option value="1">По неделям</option> 
+                                        <option value="2">По месяцам</option>
+                                    </select>
+
+
                                 </div>
+
+
                                 <div class="card-content">
                                     <div class="card-body pb-0">
                                         <div id="sales-line-chart"></div>
