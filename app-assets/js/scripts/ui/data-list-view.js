@@ -247,7 +247,9 @@ $(document).ready(function() {
   if (navigator.userAgent.indexOf("Mac OS X") != -1) {
     $(".dt-checkboxes-cell input, .dt-checkboxes").addClass("mac-checkbox")
   }
-})
+});
+
+
 
 
 
@@ -264,6 +266,22 @@ select.onchange = () => {
 tabs.querySelector('.tab-balance-active').classList.remove('tab-balance-active');
 tabs.querySelectorAll('.tab')[select.options.selectedIndex].classList.add('tab-balance-active');
 }
+
+
+
+
+
+
+
+
+
+$('.toggle-product-data-list').click(function(){
+    $(".table-product-data-list").toggle().toggleClass("active-visible");
+});
+
+$('.toggle-data-ttn').click(function(){
+    $(".data-ttn").toggle().toggleClass("active-visible");
+});
 
 
 
