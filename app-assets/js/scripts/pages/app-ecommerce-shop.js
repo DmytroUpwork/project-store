@@ -152,6 +152,14 @@ $(document).ready(function () {
     $(".box-blank-template").css("display", "block");
   });
 
+  var $new_template_add = $('.box-blank-template').clone(true);
+		$('.blank-template').click(function() {
+		  $(this).before($new_template_add.clone(true));
+		});
+		$(document).on('click', '.remove-wishlist', function() {
+		  $(this).closest(".box-blank-template").remove();
+		});
+
   // checkout quantity counter
   var quantityCounter = $(".quantity-counter"),
     CounterMin = 1,
