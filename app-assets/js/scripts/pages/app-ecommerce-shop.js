@@ -148,6 +148,10 @@ $(document).ready(function () {
     })
   }
 
+  $(".blank-template").on("click", function () {
+    $(".box-blank-template").css("display", "block");
+  });
+
   // checkout quantity counter
   var quantityCounter = $(".quantity-counter"),
     CounterMin = 1,
@@ -182,4 +186,10 @@ $(window).on("resize", function () {
     $(".sidebar-shop").removeClass("show");
     $(".shop-content-overlay").removeClass("show");
   }
+
+  
+
+
+
+
 });

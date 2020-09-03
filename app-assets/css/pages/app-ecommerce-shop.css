@@ -1,6 +1,14 @@
 /*========================================================
         DARK LAYOUT
 =========================================================*/
+
+.blank-template {
+  position: absolute;
+  top: -158px;
+  left: 146px;
+}
+
+
 .ecommerce-application .content-body {
   position : relative;
 }
