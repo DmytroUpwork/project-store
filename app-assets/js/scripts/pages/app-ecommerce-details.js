@@ -40,6 +40,6 @@ $(document).ready(function () {
   })
 });
 
-$(".toggle-box-recommended-products").click(function () {
-  $(".box-recommended-products").toggle();
-});
+// $(".toggle-box-recommended-products").click(function () {
+//   $(".box-recommended-products").toggle();
+// });
