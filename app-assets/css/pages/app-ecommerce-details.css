@@ -86,3 +86,10 @@
 .product-color-options .selected .b-black {
   border-color : #22292F;
 }
+
+.box-recommended-products {
+  display: none;
+}
+
+
+

@@ -403,6 +403,10 @@
           align-items : center;
   height : 100%;
 }
+
+.ecommerce-application .list-view .ecommerce-card .card-content .item-img a img {
+  max-width: 201px;
+}
 .ecommerce-application .list-view .ecommerce-card .card-content .card-body {
   padding : 1rem;
   padding-bottom : 0.5rem;
@@ -477,8 +481,9 @@
 .ecommerce-application .checkout-items .ecommerce-card .card-content .item-quantity .quantity-title {
   margin-bottom : 0.5rem;
 }
+
 .ecommerce-application .checkout-items .ecommerce-card .card-content .item-quantity .quantity-counter-wrapper {
-  margin-left : -10px;
+  width: 169px;
 }
 
 .ecommerce-application .checkout-items .ecommerce-card .card-content .delivery-date, .ecommerce-application .checkout-items .ecommerce-card .card-content .offers {

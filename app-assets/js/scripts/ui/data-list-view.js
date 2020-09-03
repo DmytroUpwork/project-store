@@ -271,10 +271,6 @@ tabs.querySelectorAll('.tab')[select.options.selectedIndex].classList.add('tab-b
 
 
 
-
-
-
-
 $('.toggle-product-data-list').click(function(){
     $(".table-product-data-list").toggle().toggleClass("active-visible");
 });

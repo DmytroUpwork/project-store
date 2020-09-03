@@ -38,4 +38,8 @@ $(document).ready(function () {
     $this = $(this);
     $this.addClass('selected').siblings().removeClass('selected');
   })
-})
+});
+
+$(".toggle-box-recommended-products").click(function () {
+  $(".box-recommended-products").toggle();
+});
