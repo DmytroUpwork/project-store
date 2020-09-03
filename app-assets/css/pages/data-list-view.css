@@ -190,6 +190,7 @@
   align-items: center;
 }
 
+.filter_wrap .AvialbilityStatus_users,
 .filter_wrap .AvialbilityStatus,
 .filter_wrap .AccountstatusOption {
   width: 122px;
@@ -662,6 +663,9 @@ table.data-list-user.dataTable thead th:last-of-type {
   opacity: 0;
 }
 
+.data-list-not-user .AvialbilityStatus_users {
+  display: none;
+}
 
 .data-list-user .AvialbilityStatus,
 .data-list-user .AccountstatusOption {

@@ -114,7 +114,7 @@ $(document).ready(function() {
 
   $(".btn-select").wrap(
     // '<div class="filter_wrap">   <button type="button" class="btn btn-select AvialbilityStatus searchFilterAdded  dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Все заказы</><div class="dropdown-menu"><a class="dropdown-item" href="#">Выполненные</a><a class="dropdown-item" href="#">В пути</a><a class="dropdown-item" href="#">В ожидании</a><a class="dropdown-item" href="#">Отменен</a></div></div></div>   </div>'
-    '<div class="filter_wrap"><select name="Avialbility" class="AvialbilityStatus form-control searchFilterAdded"><option value="1">Статус</option><option value="2">Выполненные</option> <option value="3">В пути</option> <option value="4">В ожидании</option> <option value="5">Отменен</option></select></div>'
+    '<div class="filter_wrap">  <select name="Avialbility" class="AvialbilityStatus_users form-control searchFilterAdded"><option value="0">Дропшипер</option><option value="1">Клиент</option> <option value="2">Заблокирован</option> <option value="3">На подтверждении</option></select>   <select name="Avialbility" class="AvialbilityStatus form-control searchFilterAdded"><option value="0">Статус</option><option value="1">Выполненные</option> <option value="2">В пути</option> <option value="3">В ожидании</option> <option value="4">Отменен</option></select></div>'
   );
 
   dataListView.on('draw.dt', function(){
