@@ -444,7 +444,22 @@
   }
 }
 
+.color-violet {
+  color: #A254A2
+}
 
+.input-price {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-color: #fb00ff;
+}
+
+:focus {
+  outline: none;
+  border-color: #fb00ff;
+}
 
 
 
