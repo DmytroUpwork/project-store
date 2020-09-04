@@ -412,9 +412,45 @@
   height : 100%;
 }
 
-.ecommerce-application .list-view .ecommerce-card .card-content .item-img a img {
-  max-width: 201px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ecommerce-application .list-view .ecommerce-card .card-content .item-img {
+  padding-left: 0;
 }
+
+@media screen and (max-width: 1440px) {
+  .ecommerce-application .list-view .ecommerce-card .card-content .item-img a img {
+    padding-left: 1rem;
+    max-width: 201px;
+  }
+}
+
+
+
+
+
+
+
+
 .ecommerce-application .list-view .ecommerce-card .card-content .card-body {
   padding : 1rem;
   padding-bottom : 0.5rem;
