@@ -273,7 +273,7 @@
 }
 
 .ecommerce-application .ecommerce-card .wishlist {
-  background-color : #F6F6F6;
+  background-color : #fff;
   color : #2C2C2C;
   -webkit-user-select : none;
      -moz-user-select : none;
@@ -307,7 +307,7 @@
   overflow : hidden;
 }
 .ecommerce-application .grid-view .ecommerce-card .card-content .item-img {
-  padding-top : 0.5rem;
+  /* padding-top : 0.5rem; */
   min-height : 15.85rem;
 }
 .ecommerce-application .grid-view .ecommerce-card .card-content .item-wrapper {
@@ -339,6 +339,47 @@
       -ms-flex-wrap : wrap;
           flex-wrap : wrap;
 }
+
+.price-card-shop {
+  position: relative;
+}
+
+.price-card-shop span {
+  position: sticky;
+  color: #b0c3c7;
+}
+
+.price-card-shop span:after {
+  content: '';
+  background: #ccc2c2;
+  display: block;
+  width: calc(100% + 16px);
+  left: -8px;
+  position: absolute;
+  height: 3px;
+}
+
+.shoe-size-card-shop {
+  position: absolute;
+  background-position: calc(100% - 12px) 14px, calc(100% - 20px) 10px, 100% 0 !important;
+  height: 100%;
+  right: 0;
+  top: 0;
+  width: 29%;
+  border-radius: 0;
+  border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 .ecommerce-application .grid-view .ecommerce-card .card-content .item-options .cart, .ecommerce-application .grid-view .ecommerce-card .card-content .item-options .wishlist {
   -webkit-box-flex : 1;
   -webkit-flex-grow : 1;
@@ -474,9 +515,9 @@
 /* .ecommerce-application .list-view .ecommerce-card .card-content .card-body .item-rating {
   display : none;
 } */
-.ecommerce-application .list-view .ecommerce-card .card-content .card-body .item-price {
+/* .ecommerce-application .list-view .ecommerce-card .card-content .card-body .item-price {
   display : none;
-}
+} */
 .ecommerce-application .list-view .ecommerce-card .card-content .card-body .item-name {
   margin-bottom : 0.25rem;
   font-size : 0.95rem;
