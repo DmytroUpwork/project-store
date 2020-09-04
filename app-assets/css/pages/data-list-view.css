@@ -488,6 +488,10 @@ table.data-list-dispatch.dataTable tbody tr, table.data-thumb-view.dataTable tbo
   border-radius: 5px;
 }
 
+table.data-list-view.dataTable tbody tr img {
+  border-radius: 50%;
+}
+
 
 
 
@@ -542,6 +546,10 @@ tr:not(.bg-first-td) td table tr td {
   background-color: #fff;
   padding: 0;
   height: 50px;
+}
+
+tr:not(.bg-first-td) td table tr td:first-of-type {
+  padding-left: 28px!important;
 }
 
 /* tr:not(.bg-first-td) td:not(:first-of-type) {
