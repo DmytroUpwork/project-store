@@ -504,6 +504,17 @@ table.data-list-dispatch.dataTable tbody tr, table.data-thumb-view.dataTable tbo
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 table.data-list-view.dataTable tbody > tr.data-ttn,
 table.data-list-view.dataTable tbody > tr.table-product-data-list {
   width: calc(100% + 755px);
@@ -593,6 +604,106 @@ table.data-list-view.dataTable tbody tr.table-product-data-list > td:nth-child(6
 table.data-list-view.dataTable tbody tr.table-product-data-list > td:nth-child(7) {
   left: 89.5%;
 }
+
+table.data-list-view.dataTable tbody > tr.data-ttn,
+table.data-list-view.dataTable tbody > tr.table-product-data-list {
+  width: calc(100% + 755px);
+  position: relative;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 4px 20px 0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  display: none;
+}
+
+table.data-list-view.dataTable tbody > tr.table-product-data-list {
+  margin-bottom: 2px;
+}
+
+
+
+.toggle-product-data-list:hover,
+.toggle-data-ttn:hover {
+  color: #ef00ff;
+}
+
+
+
+.active-visible {
+  display: block!important;
+}
+
+table.data-list-view.dataTable tbody > tr.data-ttn {
+  margin-bottom: 14px;
+}
+
+table.data-list-view.dataTable tbody tr.data-ttn > td,
+table.data-list-view.dataTable tbody > tr.table-product-data-list > td {
+  position: absolute;
+}
+
+table.data-list-view.dataTable tbody tr.data-ttn > td:nth-child(1) {
+  left: 1%;
+}
+
+table.data-list-view.dataTable tbody tr.data-ttn > td:nth-child(2) {
+  left: 31%;
+}
+
+table.data-list-view.dataTable tbody tr.data-ttn > td:nth-child(3) {
+  left: 57%;
+}
+
+table.data-list-view.dataTable tbody tr.data-ttn > td:nth-child(4) {
+  left: 83%;
+}
+
+
+
+
+
+table.data-list-view.dataTable tbody tr.table-product-data-list > td:nth-child(1) {
+  left: 1%;
+}
+
+table.data-list-view.dataTable tbody tr.table-product-data-list > td:nth-child(2) {
+  left: 13%;
+  padding: 0;
+}
+
+table.data-list-view.dataTable tbody tr.table-product-data-list > td:nth-child(3) {
+  left: 25%;
+}
+
+table.data-list-view.dataTable tbody tr.table-product-data-list > td:nth-child(4) {
+  left: 35%;
+}
+
+table.data-list-view.dataTable tbody tr.table-product-data-list > td:nth-child(5) {
+  left: 57%;
+}
+
+table.data-list-view.dataTable tbody tr.table-product-data-list > td:nth-child(6) {
+  left: 76%;
+}
+
+table.data-list-view.dataTable tbody tr.table-product-data-list > td:nth-child(7) {
+  left: 89.5%;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
