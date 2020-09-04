@@ -58,6 +58,9 @@ $(".data-list-view").each(function () {
   $(this).data("dataTableObject", table);
 });
 
+
+
+
 $(".data-list-view tbody").on("click", "td.toggle-data-ttn", function () {
     var table = $(this).closest("table").data("dataTableObject");
     var tr = $(this).closest("tr");
@@ -67,19 +70,21 @@ $(".data-list-view tbody").on("click", "td.toggle-data-ttn", function () {
       row.child.hide();
       tr.removeClass("shown");
     } else {
-      row.child(forma()).show();
+      row.child(formatDataTtn()).show();
       tr.addClass("shown");
     }
   }
 );
-function forma() {
+function formatDataTtn() {
   return (
-      "<tr>" +
-      "<td>Фомин Евгений Александрович</td>" +
-      "<td>+380931233322</td>" +
-      "<td>Город</td>" +
-      "<td>123 отделение</td>" +
-      "</tr>" 
+    '<table cellpadding="5" cellspacing="0" border="0" style=" border-collapse: separate !important; border-spacing: 0 14px; width: 81%;">' +
+    "<tr>" +
+    "<td class='td-list-toggle'>Фомин Евгений Александрович</td>" +
+    "<td class='td-list-toggle'>+380931233322</td>" +
+    "<td class='td-list-toggle'>Город</td>" +
+    "<td class='td-list-toggle'>123 отделение</td>" +
+    "</tr>" +
+    "</table>"
   );
 }
 
@@ -94,77 +99,55 @@ $(".data-list-view tbody").on("click", "td.toggle-product-data-list", function (
     row.child.hide();
     tr.removeClass("shown");
   } else {
-    row.child(format()).show();
+    row.child(formatProductDataList()).show();
     tr.addClass("shown");
   }
 });
-function format() {
+function formatProductDataList() {
   return (
-    '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
+    '<table cellpadding="5" cellspacing="0" border="0" style=" border-collapse: separate !important; border-spacing: 0 14px; width: 81%;">' +
     "<tr>" +
-    "<td>1500</td>" +
+    "<td class='td-list-toggle'>1500</td>" +
     "<td>" +
     '<div class="photo-table">\
               <img class="" src="../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="50" width="50">\
           </div>' +
     "</td>" +
-    "<td>Тапочки</td>" +
-    "<td>37 размер</td>" +
-    "<td>750 грн.</td>" +
-    "<td>500 грн.</td>" +
-    "<td>250 грн.</td>" +
+    "<td class='td-list-toggle'>Тапочки</td>" +
+    "<td class='td-list-toggle'>37 размер</td>" +
+    "<td class='td-list-toggle'>750 грн.</td>" +
+    "<td class='td-list-toggle'>500 грн.</td>" +
+    "<td class='td-list-toggle'>250 грн.</td>" +
     "</tr>" +
     "<tr>" +
-    "<td>1500</td>" +
-    "<td>" +
+    "<td class='td-list-toggle'>1500</td>" +
+    "<td class='td-list-toggle'>" +
     '<div class="photo-table">\
               <img class="" src="../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="50" width="50">\
           </div>' +
     "</td>" +
-    "<td>Тапочки</td>" +
-    "<td>37 размер</td>" +
-    "<td>750 грн.</td>" +
-    "<td>500 грн.</td>" +
-    "<td>250 грн.</td>" +
+    "<td class='td-list-toggle'>Тапочки</td>" +
+    "<td class='td-list-toggle'>37 размер</td>" +
+    "<td class='td-list-toggle'>750 грн.</td>" +
+    "<td class='td-list-toggle'>500 грн.</td>" +
+    "<td class='td-list-toggle'>250 грн.</td>" +
     "</tr>" +
     "<tr>" +
-    "<td>1500</td>" +
-    "<td>" +
+    "<td class='td-list-toggle'>1500</td>" +
+    "<td class='td-list-toggle'>" +
     '<div class="photo-table">\
               <img class="" src="../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="50" width="50">\
           </div>' +
     "</td>" +
-    "<td>Тапочки</td>" +
-    "<td>37 размер</td>" +
-    "<td>750 грн.</td>" +
-    "<td>500 грн.</td>" +
-    "<td>250 грн.</td>" +
+    "<td class='td-list-toggle'>Тапочки</td>" +
+    "<td class='td-list-toggle'>37 размер</td>" +
+    "<td class='td-list-toggle'>750 грн.</td>" +
+    "<td class='td-list-toggle'>500 грн.</td>" +
+    "<td class='td-list-toggle'>250 грн.</td>" +
     "</tr>" +
     "</table>"
   );
-}
-
-
-
-// function format() {
-//   // `d` is the original data object for the row
-//   return (
-//     '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
-//     "<tr>" +
-//     "<td>Full name:</td>" +
-//     "<td>Something</td>" +
-//     "</tr>" +
-//     "<tr>" +
-//     "<td>Extension number:</td>" +
-//     "<td>Something</td>" +
-//     "</tr>" +
-//     "<tr>" +
-//     "<td>Extra info:</td>" +
-//     "<td>And any further details here (images etc)...</td>" +
-//     "</tr>" +
-//     "</table>"
-//   );
-// }
+};
 
 
 
