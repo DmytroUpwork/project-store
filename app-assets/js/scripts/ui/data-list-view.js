@@ -10,8 +10,8 @@
 $(document).ready(function() {
   "use strict"
 
-  // init list view datatable
-  var dataListView = $(".data-list-view").DataTable({
+$(".data-list-view").each(function () {
+  var table = $(this).DataTable({
     responsive: false,
     columnDefs: [
       {
@@ -20,6 +20,7 @@ $(document).ready(function() {
         // checkboxes: { selectRow: true }
       },
     ],
+
     dom:
       '<"top page-analitics" <"actions action-btns"B>   <"button-right-table" l<"btn-calendar"><"btn-select">f> >             <"clear">rt<"bottom" <"actions"> p>',
 
@@ -54,6 +55,132 @@ $(document).ready(function() {
       $(".dt-buttons .btn").removeClass("btn-secondary");
     },
   });
+  $(this).data("dataTableObject", table);
+});
+
+$(".data-list-view tbody").on("click", "td.toggle-data-ttn", function () {
+    var table = $(this).closest("table").data("dataTableObject");
+    var tr = $(this).closest("tr");
+    var row = table.row(tr);
+
+    if (row.child.isShown()) {
+      row.child.hide();
+      tr.removeClass("shown");
+    } else {
+      row.child(forma()).show();
+      tr.addClass("shown");
+    }
+  }
+);
+function forma() {
+  return (
+      "<tr>" +
+      "<td>Фомин Евгений Александрович</td>" +
+      "<td>+380931233322</td>" +
+      "<td>Город</td>" +
+      "<td>123 отделение</td>" +
+      "</tr>" 
+  );
+}
+
+
+
+$(".data-list-view tbody").on("click", "td.toggle-product-data-list", function () {
+  var table = $(this).closest("table").data("dataTableObject");
+  var tr = $(this).closest("tr");
+  var row = table.row(tr);
+
+  if (row.child.isShown()) {
+    row.child.hide();
+    tr.removeClass("shown");
+  } else {
+    row.child(format()).show();
+    tr.addClass("shown");
+  }
+});
+function format() {
+  return (
+    '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
+    "<tr>" +
+    "<td>1500</td>" +
+    "<td>" +
+    '<div class="photo-table">\
+              <img class="" src="../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="50" width="50">\
+          </div>' +
+    "</td>" +
+    "<td>Тапочки</td>" +
+    "<td>37 размер</td>" +
+    "<td>750 грн.</td>" +
+    "<td>500 грн.</td>" +
+    "<td>250 грн.</td>" +
+    "</tr>" +
+    "<tr>" +
+    "<td>1500</td>" +
+    "<td>" +
+    '<div class="photo-table">\
+              <img class="" src="../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="50" width="50">\
+          </div>' +
+    "</td>" +
+    "<td>Тапочки</td>" +
+    "<td>37 размер</td>" +
+    "<td>750 грн.</td>" +
+    "<td>500 грн.</td>" +
+    "<td>250 грн.</td>" +
+    "</tr>" +
+    "<tr>" +
+    "<td>1500</td>" +
+    "<td>" +
+    '<div class="photo-table">\
+              <img class="" src="../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="50" width="50">\
+          </div>' +
+    "</td>" +
+    "<td>Тапочки</td>" +
+    "<td>37 размер</td>" +
+    "<td>750 грн.</td>" +
+    "<td>500 грн.</td>" +
+    "<td>250 грн.</td>" +
+    "</tr>" +
+    "</table>"
+  );
+}
+
+
+
+// function format() {
+//   // `d` is the original data object for the row
+//   return (
+//     '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
+//     "<tr>" +
+//     "<td>Full name:</td>" +
+//     "<td>Something</td>" +
+//     "</tr>" +
+//     "<tr>" +
+//     "<td>Extension number:</td>" +
+//     "<td>Something</td>" +
+//     "</tr>" +
+//     "<tr>" +
+//     "<td>Extra info:</td>" +
+//     "<td>And any further details here (images etc)...</td>" +
+//     "</tr>" +
+//     "</table>"
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   // init list view datatable
   var dataListView = $(".data-list-dispatch").DataTable({
@@ -278,22 +405,3 @@ $('.toggle-product-data-list').click(function(){
 $('.toggle-data-ttn').click(function(){
     $(".data-ttn").toggle().toggleClass("active-visible");
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

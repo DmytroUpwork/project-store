@@ -478,19 +478,6 @@ table.data-list-dispatch.dataTable thead .dt-checkboxes-select-all input:checked
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 table.data-list-view.dataTable tbody tr, table.data-thumb-view.dataTable tbody tr,
 table.data-list-dispatch.dataTable tbody tr, table.data-thumb-view.dataTable tbody tr {
   background-color: #FFFFFF;
@@ -501,6 +488,37 @@ table.data-list-dispatch.dataTable tbody tr, table.data-thumb-view.dataTable tbo
   border-radius: 5px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+td.details-control {
+    background: url('../resources/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('../resources/details_close.png') no-repeat center center;
+}
 
 
 
