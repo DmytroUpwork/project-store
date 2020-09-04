@@ -148,10 +148,6 @@ $(document).ready(function () {
     })
   }
 
-  $(".blank-template").on("click", function () {
-    $(".box-blank-template").css("display", "block");
-  });
-
   var $new_template_add = $('.box-blank-template').clone(true);
 		$('.blank-template').click(function() {
 		  $(this).before($new_template_add.clone(true));
