@@ -141,3 +141,10 @@ select#ecommerce-price-options {
 }
 
 
+.box-recommended-products {
+  display: none;
+}
+
+/* .active-carousel {
+  display: block;
+} */

@@ -6,14 +6,16 @@
 //  Author URL: http://www.themeforest.net/user/pixinvent
 // ================================================================================================
 $(document).ready(function () {
-  var mySwiper14 = new Swiper('.swiper-responsive-breakpoints', {
+  var mySwiper14 = new Swiper(".swiper-responsive-breakpoints", {
     slidesPerView: 5,
     spaceBetween: 55,
     // init: false,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
+    observer: true,
+    observeParents: true,
     breakpoints: {
       1600: {
         slidesPerView: 4,
@@ -30,16 +32,21 @@ $(document).ready(function () {
       768: {
         slidesPerView: 1,
         spaceBetween: 55,
-      }
-    }
+      },
+    },
   });
   // product color options
   $(".product-color-options li").on("click", function () {
     $this = $(this);
     $this.addClass('selected').siblings().removeClass('selected');
-  })
+  });
+
+  $(".toggle-carousel").click(function () {
+    $(".box-recommended-products").toggle().toggleClass("active-carousel");
+  });
+
+
 });
 
-// $(".toggle-box-recommended-products").click(function () {
-//   $(".box-recommended-products").toggle();
-// });
+
+
