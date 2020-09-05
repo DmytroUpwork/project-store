@@ -95,6 +95,9 @@ p {
   font-size: 17px;
 }
 
+
+
+
 .card-body {
   background: #fff;
   overflow: hidden;
@@ -141,7 +144,6 @@ select#ecommerce-price-options {
   margin-bottom: 14px;
   cursor: pointer;
 }
-
 
 .box-recommended-products {
   display: none;

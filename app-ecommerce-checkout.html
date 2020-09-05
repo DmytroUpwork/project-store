@@ -183,30 +183,6 @@
     </div>
     <!-- END: Main Menu-->
 
-    <!-- <form action="#" method="get">
-                                                <label for="name" class='p-0 quantity-title'>Код товара:</label>
-                                                <input type="text" id="name" name="name" required
-                                                    minlength="4" maxlength="8" size="10">
-                                                    <div class="input-group quantity-counter-wrapper">
-                                                    <select class="price-options form-control">
-                                                        <option selected>Размеры</option>
-                                                        <option value="1">36</option>
-                                                        <option value="2">37</option>
-                                                        <option value="3">38</option>
-                                                        <option value="4">39</option>
-                                                        <option value="5">40</option>
-                                                        <option value="6">41</option>
-                                                        <option value="1">42</option>
-                                                        <option value="2">43</option>
-                                                        <option value="3">44</option>
-                                                        <option value="4">45</option>
-                                                        <option value="5">46</option>
-                                                        <option value="6">47</option>
-                                                    </select>
-                                                </div>
-                                                <button type="submit">Поиск</button>
-                                            </form> -->
-
     <!-- BEGIN: Content-->
     <div class="app-content content">
         <div class="content-overlay"></div>
@@ -227,96 +203,94 @@
 
 
 
-                                <button type="text" class='btn btn-primary ml-50 mb-50 waves-effect waves-light blank-template'>Добавить товар</button>
+                                <button type="button" class='btn btn-primary ml-50 mb-50 waves-effect waves-light blank-template' data-toggle="modal" data-target="#default">Добавить товар</button>
+
+
 
 
                                 
 
 
-                                <div class="card ecommerce-card box-blank-template">
+                                
+
+
+                                <div class="card ecommerce-card">
                                     <div class="card-content">
                                         <div class="item-img text-center">
-                                            <a href="app-ecommerce-details.html">
-                                                <img src="./app-assets\images\my-images\img\Screenshot_10.jpg" alt="img-placeholder">
-                                            </a>
+                                            <img src="./app-assets\images\my-images\img\Screenshot_10.jpg" alt="img-placeholder" class='img-card-checkout'>
                                         </div>
                                         <div class="card-body">
                                             <div class="item-name">
-                                                <a href="app-ecommerce-details.html">Schtosen / Ботинки</a>
-                                                <span></span>
-                                                <p class="item-company">Категория <span class="company-name">Зимняя обувь</span></p>
-                                                <p class="stock-status-in">В наличии</p>
-                                                
-                                                <label for='input-code-product' class="text-dark font-medium-2 pl-0">Код товара: </span>
-                                                <input type="number" id='input-code-product' placeholder="Введите код товара" class="input-price">
-                                                
+                                                <h3 class="ml-0 mb-1"><strong>Кросовки Nike Human beans</strong> 
+                                                </h3>
+                                                <h6 class='mb-0 ml-0'>Зимняя обувь</h6>
+                                                <p class="mb-25"><span class="mr-2">254758</span></p>
+
+                                                <h6 class="stock-status-in ml-0">В наличии</h6>
+
+                                                <h6 class="mb-50 ml-0">Размер обуви:</h6>
+                                                <select class="form-control" id="ecommerce-price-options">
+                                                    <option selected>36</option>
+                                                    <option value="1">37</option>
+                                                    <option value="2">38</option>
+                                                    <option value="3">39</option>
+                                                    <option value="4">40</option>
+                                                    <option value="5">41</option>
+                                                    <option value="6">42</option>
+                                                    <option value="7">43</option>
+                                                    <option value="8">44</option>
+                                                    <option value="9">45</option>
+                                                </select>
 
                                                 <div>
-                                                    <p class="pt-1">Таблица размеров</p>
+                                                    <h6 class="mb-0 ml-0">Описание:</h6>
+                                                    <p>
+                                                        Цвет: красный. Материал: Кожа. <br>
+                                                        Производитель: Украина.  
+                                                    </p>
+                                                    
                                                 </div>
+
                                                 <div>
-                                                    <label class="" data-characteristic-id="30371454" data-size-name="36">
-                                                        <span>36</span>
-                                                        <input id="size" name="size" type="radio" value="30371454">
-                                                        <i></i>
-                                                        <b></b>
-                                                    </label>
-                                                    <label class="" data-characteristic-id="30371455" data-size-name="37">
-                                                        <span>37</span>
-                                                        <input id="size" name="size" type="radio" value="30371455">
-                                                        <i></i>
-                                                        <b></b>
-                                                    </label>
-                                                    <label class="" data-characteristic-id="30371456" data-size-name="38">
-                                                        <span>38</span>
-                                                        <input id="size" name="size" type="radio" value="30371456">
-                                                        <i></i>
-                                                        <b></b>
-                                                    </label>
-                                                    <label class="" data-characteristic-id="30371457" data-size-name="39">
-                                                        <span>39</span>
-                                                        <input id="size" name="size" type="radio" value="30371457">
-                                                        <i></i>
-                                                        <b></b>
-                                                    </label>
-                                                    <label class="" data-characteristic-id="30371458" data-size-name="40">
-                                                        <span>40</span>
-                                                        <input id="size" name="size" type="radio" value="30371458">
-                                                        <i></i>
-                                                        <b></b>
-                                                    </label>
-                                                    <label class="" data-characteristic-id="30371459" data-size-name="41">
-                                                        <span>41</span>
-                                                        <input id="size" name="size" type="radio" value="30371459">
-                                                        <i></i>
-                                                        <b></b>
-                                                    </label>
+                                                    <span class="mr-2">36 - 24,5 см</span><span>36 - 24,5 см </span> 
+                                                    <br>
+                                                    <span class="mr-2">36 - 24,5 см</span><span>36 - 24,5 см</span>
+                                                    <br>
+                                                    <span class="mr-2">36 - 24,5 см</span><span>36 - 24,5 см </span>
                                                 </div>
+                                                
+                                               
+                                                
+
+                                                
                                                         
                                                 
                                             </div>
-                                            <p class="delivery-date">Примерное время дставки, среда, 25 апр.</p>
-                                            <p class="offers">17% скидка Доступны 4 предложения</p>
+                                            
                                         </div>
                                         <div class="item-options text-center">
                                             <div class="item-wrapper">
-                                                <div class="item-rating">
+                                                <div class="item-rating mb-2">
                                                     <div class="badge badge-primary badge-md">
-                                                        4 <i class="feather icon-star ml-25"></i>
+                                                        <i class="feather icon-repeat"></i>
                                                     </div>
                                                 </div>
-                                                <div class="item-cost">
-                                                    <h6 class="item-price">
-                                                        Цена - <span class="color-violet">750грн.</span>
-                                                    </h6>
-                                                    <p class="shipping">
-                                                        <i class="feather icon-shopping-cart"></i> Бесплатная доставка
-                                                    </p>
-                                                </div>
                                             </div>
-                                            <div class="wishlist remove-wishlist">
-                                                <i class="feather icon-x align-middle"></i> Удалить
+
+                                            <div class="item-cost">
+                                                <h6 class="item-price">
+                                                    Цена - <span class="color-violet">750грн.</span>
+                                                </h6>
                                             </div>
+
+                                            <div class="mb-2">
+                                                <input type="text" name="fname" placeholder="Цена для клиента" class="input-price">
+                                            </div>
+                                                
+
+                                            <button type="button" class='btn waves-effect waves-light text-uppercase button-toggle-product' data-dismiss="modal">
+                                                Удалить
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -611,6 +585,26 @@
         </div>
     </div>
     <!-- END: Content-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="default" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h4 class="modal-title text-uppercase" id="myModalLabel1"> Напишите код товара</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center pb-0">
+                    <input type="text" name="fname" placeholder="пример: 12345" class="input-number-modal">
+                </div>
+                <div class="modal-footer justify-content-center border-0">
+                    <button type="button" class='btn btn-primary waves-effect waves-light text-uppercase button-toggle-product button-toggle-product-modal' data-dismiss="modal">Добавить товар +</button>                                            
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
