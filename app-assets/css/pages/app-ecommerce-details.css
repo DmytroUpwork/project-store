@@ -91,22 +91,43 @@
   color: #A254A2
 }
 
+.ecommerce-details-price > span:nth-child(2) {
+  border-left: 2px solid #bcbcbc;
+  display: block;
+}
+
 .input-price {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-color: #fb00ff;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #bcbcbc;
+  font-size: 17px;
+  max-width: 172px;
+}
+.input-price:focus {
+  border-color: #cd2bb9
 }
 
-:focus {
-  outline: none;
-  border-color: #fb00ff;
+::-webkit-input-placeholder {
+   text-align: center;
 }
 
-/* .box-recommended-products {
-  display: none;
-} */
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
 
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
+
+select#ecommerce-price-options {
+  max-width: 59px;
+  max-height: 32px;
+  padding: 0 0 0 10px;
+  margin-bottom: 14px;
+}
 
 
