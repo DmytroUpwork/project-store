@@ -91,6 +91,16 @@
   color: #A254A2
 }
 
+p {
+  font-size: 17px;
+}
+
+.card-body {
+  background: #fff;
+  overflow: hidden;
+  border: none;
+}
+
 .ecommerce-details-price > span:nth-child(2) {
   border-left: 2px solid #bcbcbc;
   display: block;
