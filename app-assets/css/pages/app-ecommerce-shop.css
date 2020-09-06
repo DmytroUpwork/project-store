@@ -256,10 +256,17 @@ h6 {
 .card-content {
   height: 100%;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-
+.img-shop-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -23px;
+  left: 0;
+}
 
 
 
@@ -291,6 +298,7 @@ h6 {
 .ecommerce-application .ecommerce-card .cart {
   background-color : #A254A2;
   color : #FFFFFF;
+  /* width: 49%; */
 }
 .ecommerce-application .ecommerce-card .cart .view-in-cart {
   color : #FFFFFF;
@@ -302,10 +310,20 @@ h6 {
 
 .ecommerce-application .grid-view {
   display : grid;
-  grid-template-columns : 1fr 1fr 1fr;
+  grid-template-columns : 1fr 1fr 1fr 1fr;
   -webkit-column-gap : 28px;
      -moz-column-gap : 28px;
           column-gap : 28px;
+}
+@media screen and (max-width: 1674px) {
+  .ecommerce-application .grid-view {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .ecommerce-application .grid-view {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .ecommerce-application .grid-view .ecommerce-card {
   overflow : hidden;
@@ -327,11 +345,23 @@ h6 {
 
 
 
+
+
+
 .ecommerce-application .grid-view .ecommerce-card .card-content .item-wrapper .item-price {
   position: absolute;
   right: 20px;
-  bottom: 51px;
+  top: -24px; 
+  font-weight: bold;
 }
+
+
+
+
+
+
+
+
 
 .modal-header .close {
   position: absolute !important;
@@ -356,6 +386,7 @@ h6 {
   -webkit-flex-wrap : wrap;
       -ms-flex-wrap : wrap;
           flex-wrap : wrap;
+  position: relative;
 }
 
 .price-card-shop {
@@ -379,15 +410,18 @@ h6 {
 
 .shoe-size-card-shop {
   position: absolute;
-  background-position: calc(100% - 12px) 14px, calc(100% - 20px) 10px, 100% 0 !important;
-  height: 100%;
+  background-position: calc(100% - 7px) 10px, calc(100% - 20px) 10px, 100% 0 !important;
   right: 0;
-  top: 0;
-  width: 29%;
+  left: 0;
+  margin: 0 auto;
+  top: 3px;
   border-radius: 0;
   border: 0;
+  font-size: 20px;
 }
-
+ .shoe-size-card-shop:focus {
+  box-shadow: none!important;
+}
 
 
 
@@ -406,6 +440,7 @@ h6 {
 }
 .ecommerce-application .grid-view .ecommerce-card .card-content .item-options .wishlist {
   padding : 0.8rem 2rem;
+  /* width: 50%; */
 }
 /* .ecommerce-application .grid-view .ecommerce-card .card-content .item-options .item-wrapper .item-rating {
   display : none;
