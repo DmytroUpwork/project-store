@@ -318,8 +318,9 @@ html .pace .pace-progress {
 */
 @media (min-width: 992px) {
   body .content-right {
-    width : calc(100vw - (100vw - 100%) - 260px);
-    float : right;
+    width : calc(100vw);
+    /* width : calc(100vw - (100vw - 100%) - 260px);
+    float : right; */
   }
   body .content-left {
     width : calc(100vw - (100vw - 100%) - 260px);
