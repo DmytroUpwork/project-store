@@ -117,6 +117,9 @@ p {
   font-size: 17px;
   max-width: 172px;
 }
+.input-price:hover {
+  border-color: #cd2bb9
+}
 .input-price:focus {
   border-color: #cd2bb9
 }
