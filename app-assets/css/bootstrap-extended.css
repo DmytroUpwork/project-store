@@ -2663,8 +2663,9 @@ body[data-col='1-column'] .header-navbar.floating-nav {
   font-size : 1rem;
   font-family : 'Montserrat', Helvetica, Arial, serif;
   background-color : transparent;
-  padding : 0.5rem 0 0.5rem 1rem !important;
-  border-left : 1px solid #D6DCE1;
+  padding : 0 !important;
+  margin-bottom: 11px;
+  /* border-left : 1px solid #D6DCE1; */
   border-radius : 0;
   /* .breadcrumb-item:first-child{
         a{
@@ -2683,7 +2684,7 @@ body[data-col='1-column'] .header-navbar.floating-nav {
   padding-left : 0;
 }
 .breadcrumb .breadcrumb-item + .breadcrumb-item:before {
-  content : '\e847';
+  content : '/';
   font-family : 'feather';
   color : #626262;
 }
