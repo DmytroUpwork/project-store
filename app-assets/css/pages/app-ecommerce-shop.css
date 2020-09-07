@@ -251,14 +251,14 @@ h6 {
 
 
 
-.card-content {
+.card-content-shop {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.card-content .item-options {
+.card-content-shop .item-options {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease 0s;
@@ -274,7 +274,7 @@ h6 {
   bottom: 0;
 }
 
-.card-content:hover .item-options {
+.card-content-shop:hover .item-options {
   pointer-events: auto;
   opacity: 1;
   transition: opacity 0.2s ease 0s;
