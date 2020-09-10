@@ -62,10 +62,9 @@
   padding-left: 10px;
 }
 
-.btn {
+.pull-right {
   padding: 6px 12px;
   line-height: 1.42857143;
-  border: 1px solid transparent;
 }
 
 .btn-danger {
