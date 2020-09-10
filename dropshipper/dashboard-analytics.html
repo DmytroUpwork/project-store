@@ -12,6 +12,8 @@
     <title>Kondi-shop | WEB магазин обуви</title>
     <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/favicon.ico">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/datatables.min.css">
@@ -165,16 +167,6 @@
                 </li>
                 <li class="nav-item"><a href="data-list-balance.html"><img src="../app-assets\images\my-images\icon_payouts.svg" alt="Payouts"><span class="menu-title" data-i18n="Balance">Баланс</span></a>
                 </li>
-                <!-- <li class="active nav-item"><a href="data-list-balance.html"><img src="../app-assets\images\my-images\icon_payouts.svg" alt="My profile"><span class="menu-title" data-i18n="Balance">Баланс</span></a>
-                    <ul class="menu-content">
-                        <li class=" nav-item"><a href="data-list-balance.html#tab-balance-active"><i class="feather icon-user"></i><span class="menu-item" data-i18n="User view">Выплаты</span></a>                 
-                        </li>
-                        <li class=" nav-item"><a href="data-list-balance.html#tab-balance-active"><i class="feather icon-user"></i><span class="menu-item" data-i18n="Profile">Продажи</span></a>
-                        </li>
-                        <li class=" nav-item"><a href="data-list-balance.html#tab-balance-active"><i class="feather icon-user"></i><span class="menu-item" data-i18n="Profile">Пополнение баланса</span></a>
-                        </li>
-                    </ul>
-                </li> -->
                 <li class="nav-item"><a href="page-products.html"><img src="../app-assets\images\my-images\icon_products.svg" alt="Orders"><span class="menu-item" data-i18n="Thumb View">Товары</span></a>
                 </li>
                 <li class=" nav-item"><a href="index.html"><img src="../app-assets\images\my-images\icon_my_profile.svg" alt="My profile"><span class="menu-title" data-i18n="User">Пользователь</span></a>
@@ -352,11 +344,15 @@
                             <div class="card box-chart">
                                 <div class="card-header d-flex justify-content-between">
                                     <h4 class="card-title">График заказов</h4>
-                                    <select name="Avialbility" class="form-control">
-                                        <option value="0">По дням</option>
-                                        <option value="1">По неделям</option> 
-                                        <option value="2">По месяцам</option>
-                                    </select>
+                                    <form>
+                                        <div class="select-wrapper select-analytics">
+                                            <select class="form-control selectpicker">
+                                                <option value="0">По дням</option>
+                                                <option value="1">По неделям</option>
+                                                <option value="2">По месяцам</option>
+                                            </select>
+                                        </div>
+                                    </form>
                                 </div>
                                 <div class="card-content">
                                     <div class="card-body pb-0">
@@ -502,8 +498,15 @@
     <script src="../app-assets/vendors/js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
 
+    
+
     <!-- BEGIN: Page Vendor JS-->
     <script src="../app-assets/vendors/js/charts/apexcharts.min.js"></script>
+
+    <script src="../app-assets/js/scripts/cards/card-analytics.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
 
 
     <script src="../app-assets/vendors/js/extensions/dropzone.min.js"></script>
@@ -515,6 +518,8 @@
     <script src="../app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
     <!-- END: Page Vendor JS-->
 
+    
+
     <!-- BEGIN: Theme JS-->
     <script src="../app-assets/js/core/app-menu.js"></script>
     <script src="../app-assets/js/core/app.js"></script>
@@ -522,9 +527,17 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
+    
+
+    
+
+
+
     <script src="../app-assets/js/scripts/ui/data-list-view.js"></script>
-    <script src="../app-assets/js/scripts/cards/card-analytics.js"></script>
+    
     <!-- END: Page JS-->
+
+    
 
 </body>
 <!-- END: Body-->

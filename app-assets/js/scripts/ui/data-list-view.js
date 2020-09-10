@@ -150,21 +150,6 @@ function formatProductDataList() {
 };
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   // init list view datatable
   var dataListView = $(".data-list-dispatch").DataTable({
     responsive: false,
@@ -222,13 +207,13 @@ function formatProductDataList() {
   );
   $(".btn-select").wrap(
     '<div class="filter_wrap">\
-      <select name="Avialbility" class="AvialbilityStatus_users form-control searchFilterAdded">\
+      <select name="Avialbility" class="AvialbilityStatus_users form-control searchFilterAdded selectpicker">\
         <option value="0">Дропшипер</option>\
         <option value="1">Клиент</option>\
         <option value="2">Заблокирован</option>\
         <option value="3">На подтверждении</option>\
       </select>\
-      <select name="Avialbility" class="AvialbilityStatus form-control searchFilterAdded">\
+      <select name="Avialbility" class="AvialbilityStatus form-control searchFilterAdded selectpicker">\
         <option value="0">Статус</option><option value="1">Выполненные</option>\
         <option value="2">В пути</option> <option value="3">В ожидании</option>\
         <option value="4">Отменен</option>\
@@ -243,15 +228,6 @@ function formatProductDataList() {
       }
     }, 50);
   });
-
-
-
-
-
-
-
-
-
 
 
 
@@ -369,6 +345,14 @@ new Vue({
   },
 }).$mount("#app");
 
+$(".toggle-product-data-list").click(function () {
+  $(".table-product-data-list").toggle().toggleClass("active-visible");
+});
+
+$(".toggle-data-ttn").click(function () {
+  $(".data-ttn").toggle().toggleClass("active-visible");
+});
+
 
 
 const select = document.querySelector('select');
@@ -377,14 +361,3 @@ tabs.querySelector('.tab-balance-active').classList.remove('tab-balance-active')
 tabs.querySelectorAll('.tab')[select.options.selectedIndex].classList.add('tab-balance-active');
 }
 
-
-
-
-
-$('.toggle-product-data-list').click(function(){
-    $(".table-product-data-list").toggle().toggleClass("active-visible");
-});
-
-$('.toggle-data-ttn').click(function(){
-    $(".data-ttn").toggle().toggleClass("active-visible");
-});

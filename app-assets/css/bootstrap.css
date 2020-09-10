@@ -3727,7 +3727,7 @@ input[type='submit'].btn-block, input[type='reset'].btn-block, input[type='butto
   line-height : 1.25;
   color : #4E5154;
   vertical-align : middle;
-  background : url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 4 5\'%3e%3cpath fill=\'%231e1e1e\' d=\'M2 0L0 2h4zm0 5L0 3h4z\'/%3e%3c/svg%3e') no-repeat right 0.7rem center/8px 10px;
+  /* background : url('data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 4 5\'%3e%3cpath fill=\'%231e1e1e\' d=\'M2 0L0 2h4zm0 5L0 3h4z\'/%3e%3c/svg%3e') no-repeat right 0.7rem center/8px 10px; */
   background-color : #FFFFFF;
   border : 1px solid rgba(0, 0, 0, 0.2);
   border-radius : 5px;

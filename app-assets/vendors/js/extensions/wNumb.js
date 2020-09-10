@@ -164,6 +164,7 @@ var
 		// All done.
 		return output;
 	}
+	
 
 	// Accept a sting as input, output decoded number.
 	function formatFrom ( decimals, thousand, mark, prefix, postfix, encoder, decoder, negativeBefore, negative, edit, undo, input ) {

@@ -546,22 +546,6 @@ select#ecommerce-price-options {
   line-height: 16px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .img-card-checkout {
   height: 100%;
 }
@@ -578,8 +562,6 @@ select#ecommerce-price-options {
     padding-left: 0;
   }
 }
-
-
 
 @media screen and (max-width: 1440px) {
   .ecommerce-application .list-view .ecommerce-card .card-content .item-img a img {
@@ -671,12 +653,6 @@ select#ecommerce-price-options {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-
-
-
-
-
-
 
 .ecommerce-application .list-view .ecommerce-card .card-content .card-body {
   padding : 1rem;

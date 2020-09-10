@@ -4,6 +4,8 @@
 
 
 
+
+
 .data-list-view-header .table-responsive .top, .data-thumb-view-header .table-responsive .top {
   display: -webkit-box;
   display: -webkit-flex;
@@ -80,29 +82,49 @@
 .select-wrapper {
   position: relative;
   display: inline-block;
-  /* width: 180px; */
   margin: 20px 0;
   border: none;
 }
 
-/* .select-wrapper:hover {
-  box-shadow: 0px 0px 3px gray;
-} */
+.open>.dropdown-toggle.btn-default {
+  color: #333;
+  background-color: transparent;
+  border-color: transparent;
+}
 
-.select-wrapper select {
-  font-size: 29px;
+
+.btn-default {
+  color: #333;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  /* font-size: 29px; */
   text-overflow: ellipsis;
-  /* width: 180px; */
-  height: 37px;
+  /* height: 37px; */
   padding: 0 20px 0 7px;
-  background: transparent;
-  border: 0;
   appearance: none;
-  /* remove arrow        */
   -webkit-appearance: none;
-  /* remove arrow Chrome */
   -moz-appearance: none;
-  /* remove arrow FF     */
+}
+
+.toggle-tabs>.dropdown-toggle {
+  padding-right: 18px;
+  font-size: 29px;
+}
+
+.toggle-tabs>.dropdown-toggle:after {
+  vertical-align: 3px;
+}
+
+.dropdown-menu {
+  margin: 15px 0 0;
+}
+
+.btn .caret {
+  display: none;
+}
+
+.dropdown-toggle::after {
+  margin-left: 0;
 }
 
 .select-wrapper select:focus {
@@ -118,6 +140,32 @@
   z-index: -9999;
   right: 4px;
   bottom: 5px;
+}
+
+.bootstrap-select .dropdown-toggle:focus {
+  outline: none!important;
+  outline: none!important;
+  outline-offset: -2px;
+}
+
+
+
+
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: #f5f5f5;
 }
 
 
@@ -190,9 +238,22 @@
   align-items: center;
 }
 
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 11px;
+  content: '';
+  border-top: 8.5px solid;
+  border-right: 5.3px solid transparent;
+  border-bottom: 0;
+  border-left: 5.3px solid transparent;
+  color: #A254A2;
+}
+
+
 .filter_wrap .AvialbilityStatus_users,
 .filter_wrap .AvialbilityStatus,
-.filter_wrap .AccountstatusOption {
+.filter_wrap .AccountstatusOption,
+.select-analytics>.btn-group.bootstrap-select {
   width: 122px;
   height: 34px;
   border-radius: 1.428rem;
@@ -200,10 +261,16 @@
   background-color: #fff;
   font-size: 1rem;
   background-position: calc(100% - 12px) 10px, calc(100% - 20px) 13px, 100% 0;
-  padding: 1px 0px 0 13px;
-  margin-left: 15px;
+  padding: 0.6rem;
+  margin-left: 15px !important;
   text-align: inherit;
 }
+
+.select-analytics>.btn-group.bootstrap-select {
+  width: auto;
+}
+
+
 
 .filter_wrap .AccountstatusOption {
   display: flex;
@@ -491,29 +558,6 @@ table.data-list-dispatch.dataTable tbody tr, table.data-thumb-view.dataTable tbo
 table.data-list-view.dataTable tbody tr img {
   border-radius: 50%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 td.details-control {
@@ -930,12 +974,12 @@ table.data-list-user.dataTable thead th:last-of-type {
 }
 
 .data-list-not-user .AvialbilityStatus_users {
-  display: none;
+  display: none !important;
 }
 
 .data-list-user .AvialbilityStatus,
 .data-list-user .AccountstatusOption {
-  display: none;
+  display: none !important;
 }
 .data-list-user .admin-table-color {
   color: #A254A2;

@@ -12,6 +12,8 @@
     <title>Kondi-shop | WEB магазин обуви</title>
     <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/favicon.ico">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/datatables.min.css">
@@ -334,12 +336,15 @@
                             <div class="card box-chart">
                                 <div class="card-header d-flex justify-content-between">
                                     <h4 class="card-title">График заказов</h4>
-
-                                    <select name="Avialbility" class="form-control">
-                                        <option value="0">По дням</option>
-                                        <option value="1">По неделям</option> 
-                                        <option value="2">По месяцам</option>
-                                    </select>
+                                    <form>
+                                        <div class="select-wrapper select-analytics">
+                                            <select class="form-control selectpicker">
+                                                <option value="0">По дням</option>
+                                                <option value="1">По неделям</option>
+                                                <option value="2">По месяцам</option>
+                                            </select>
+                                        </div>
+                                    </form>
                                 </div>
                                 <div class="card-content">
                                     <div class="card-body pb-0">
@@ -487,6 +492,11 @@
     <script src="../app-assets/vendors/js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
 
+    <script src="../app-assets/js/scripts/cards/card-analytics.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+
     <!-- BEGIN: Page Vendor JS-->
     <script src="../app-assets/vendors/js/charts/apexcharts.min.js"></script>
 
@@ -508,7 +518,6 @@
 
     <!-- BEGIN: Page JS-->
     <script src="../app-assets/js/scripts/ui/data-list-view.js"></script>
-    <script src="../app-assets/js/scripts/cards/card-analytics.js"></script>
     <!-- END: Page JS-->
 
 </body>

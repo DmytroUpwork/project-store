@@ -12,6 +12,8 @@
     <title>Kondi-shop | WEB магазин обуви</title>
     <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/favicon.ico">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/datatables.min.css">
@@ -379,13 +381,13 @@
                         <div class="btn-dropdown mr-1 mb-1">
                             <div class="btn-group dropdown actions-dropodown">
                                 <button type="button" class="btn btn-white dropdown-toggle waves-effect waves-light btn-outline-primary text-uppercase" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Actions
+                                    Действия
                                 </button>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#"><i class="feather icon-trash"></i>Delete</a>
-                                    <a class="dropdown-item" href="#"><i class="feather icon-archive"></i>Archive</a>
-                                    <a class="dropdown-item" href="#"><i class="feather icon-file"></i>Print</a>
-                                    <a class="dropdown-item" href="#"><i class="feather icon-save"></i>Another Action</a>
+                                    <a class="dropdown-item" href="#"><i class="feather icon-save"></i>Сгенерировать ТТН</a>
+                                    <a class="dropdown-item" href="#"><i class="feather icon-file"></i>Распечатать ТТН</a>
+                                    <a class="dropdown-item" href="#"><i class="feather icon-trash"></i>Удалить</a>
+                                    <!-- <a class="dropdown-item" href="#"><i class="feather icon-save"></i>Another Action</a> -->
                                 </div>
                             </div>
                         </div>
@@ -400,7 +402,7 @@
                                 <th>КЛИЕНТ</th>
                                 <th>СУММА</th>
                                 <th>ПРИБЫЛЬ</th>
-                                <th>ТОВАРОВ</th>
+                                <th>КОД ТОВАРА</th>
                                 <th>ТТН</th>
                                 <th>№ ЗАКАЗА</th>
                                 <th>ПРИМЕЧАНИЕ</th>
@@ -420,8 +422,8 @@
                                 <td>Jenyafomin</td>
                                 <td>2545 грн</td>
                                 <td>750 грн</td>
-                                <td class='toggle-product-data-list'>3 товар.</td>
-                                <td class="toggle-data-ttn">59 0002 3213 5431</td>
+                                <td>8326</td>
+                                <td class="toggle-data-ttn">59 0003 1234 1234</td>
                                 <td>1123458</td>
                                 <td>Примечание</td>
                                 <td class="product-action">
@@ -443,7 +445,7 @@
                                 <td>Jenyafomin</td>
                                 <td>2545 грн</td>
                                 <td>750 грн</td>
-                                <td class='toggle-product-data-list'>3 товар.</td>
+                                <td>1034, 1036</td>
                                 <td class="toggle-data-ttn">59 0002 3213 5431</td>
                                 <td>1123458</td>
                                 <td>Примечание</td>
@@ -466,7 +468,7 @@
                                 <td>Jenyafomin</td>
                                 <td>2545 грн</td>
                                 <td>750 грн</td>
-                                <td class='toggle-product-data-list'>3 товар.</td>
+                                <td>2457</td>
                                 <td class="toggle-data-ttn">59 0002 3213 5431</td>
                                 <td>1123458</td>
                                 <td>Примечание</td>
@@ -489,7 +491,7 @@
                                 <td>Jenyafomin</td>
                                 <td>2545 грн</td>
                                 <td>750 грн</td>
-                                <td class='toggle-product-data-list'>3 товар.</td>
+                                <td>1035, 1074</td>
                                 <td class="toggle-data-ttn">59 0002 3213 5431</td>
                                 <td>1123458</td>
                                 <td>Примечание</td>
@@ -512,7 +514,7 @@
                                 <td>Jenyafomin</td>
                                 <td>2545 грн</td>
                                 <td>750 грн</td>
-                                <td class='toggle-product-data-list'>3 товар.</td>
+                                <td>7432</td>
                                 <td class="toggle-data-ttn">59 0002 3213 5431</td>
                                 <td>1123458</td>
                                 <td>Примечание</td>
@@ -532,7 +534,7 @@
                         <div class="add-new-data">
                             <div class="div mt-2 px-2 d-flex new-data-title justify-content-between">
                                 <div>
-                                    <h4 class="text-uppercase">List View Data</h4>
+                                    <h4 class="text-uppercase">Редактирование</h4>
                                 </div>
                                 <div class="hide-data-sidebar">
                                     <i class="feather icon-x"></i>
@@ -542,45 +544,88 @@
                                 <div class="data-fields px-2 mt-3">
                                     <div class="row">
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-name">Name</label>
+                                            <label for="data-category"> Статус </label>
+                                            <select class="form-control" id="data-category">
+                                                <option>Проверяется</option>
+                                                <option>Готов к отправке</option>
+                                                <option>Выполнен</option>
+                                                <option>Отказ</option>
+                                                <option>Отмена</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Пользователь</label>
+                                            <input type="text" class="form-control" id="data-name">
+                                        </div>
+                                        
+                                        
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-price">Предоплата (Оплачено)</label>
+                                            <input type="text" class="form-control" id="data-price">
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <h3>Информация получателя</h3>
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-price">ТТН</label>
+                                            <input type="text" class="form-control" id="data-price">
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">ФИО</label>
                                             <input type="text" class="form-control" id="data-name">
                                         </div>
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-category"> Category </label>
-                                            <select class="form-control" id="data-category">
-                                                <option>Audio</option>
-                                                <option>Computers</option>
-                                                <option>Fitness</option>
-                                                <option>Appliance</option>
-                                            </select>
+                                            <label for="data-name">Номер телефона</label>
+                                            <input type="text" class="form-control" id="data-name">
                                         </div>
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-status">Order Status</label>
-                                            <select class="form-control" id="data-status">
-                                                <option>Pending</option>
-                                                <option>Canceled</option>
-                                                <option>Delivered</option>
-                                                <option>On Hold</option>
-                                            </select>
+                                            <label for="data-name">Город</label>
+                                            <input type="text" class="form-control" id="data-name">
                                         </div>
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-price">Price</label>
-                                            <input type="text" class="form-control" id="data-price">
+                                            <label for="data-name">Отделение</label>
+                                            <input type="text" class="form-control" id="data-name">
                                         </div>
-                                        <div class="col-sm-12 data-field-col data-list-upload">
+                                        
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Примечание</label>
+                                            <input type="text" class="form-control" id="data-name">
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <h3>Товары</h3>
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            
+                                            <label for="data-name">Код товара</label>
+                                            <input type="text" class="form-control" id="data-name">
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Цена для клиента</label>
+                                            <input type="text" class="form-control" id="data-name">
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Опт цена</label>
+                                            <input type="text" class="form-control" id="data-name">
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Размер</label>
+                                            <input type="text" class="form-control" id="data-name">
+                                        </div>
+                                        
+                                        <!-- <div class="col-sm-12 data-field-col data-list-upload">
                                             <form action="#" class="dropzone dropzone-area" id="dataListUpload">
                                                 <div class="dz-message">Upload Image</div>
                                             </form>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
                             <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
                                 <div class="add-data-btn">
-                                    <button class="btn btn-primary">Add Data</button>
+                                    <button class="btn btn-primary">ПОДТВЕРДИТЬ</button>
                                 </div>
                                 <div class="cancel-data-btn">
-                                    <button class="btn btn-outline-danger">Cancel</button>
+                                    <button class="btn btn-outline-danger">ОТМЕНИТЬ</button>
                                 </div>
                             </div>
                         </div>
@@ -618,6 +663,9 @@
     <!-- BEGIN: Vendor JS-->
     <script src="../app-assets/vendors/js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
 
     <!-- BEGIN: Page Vendor JS-->
     <script src="../app-assets/vendors/js/extensions/dropzone.min.js"></script>

@@ -41,17 +41,19 @@ $(document).ready(function () {
   var slider = document.getElementById("price-slider");
   if (slider) {
     noUiSlider.create(slider, {
-      start: [51, 5000],
+      start: [0, 3000],
       direction: direction,
       connect: true,
       tooltips: [true, true],
       format: wNumb({
         decimals: 0,
+        postfix: "грн.",
       }),
+      
       range: {
-        "min": 51,
-        "max": 5000
-      }
+        min: 0,
+        max: 3000,
+      },
     });
   }
   // for select in ecommerce header

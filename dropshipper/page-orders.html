@@ -12,6 +12,8 @@
     <title>Kondi-shop | WEB магазин обуви</title>
     <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/favicon.ico">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/datatables.min.css">
@@ -166,16 +168,6 @@
                 </li>
                 <li class="nav-item"><a href="data-list-balance.html"><img src="../app-assets\images\my-images\icon_payouts.svg" alt="Payouts"><span class="menu-title" data-i18n="Balance">Баланс</span></a>
                 </li>
-                <!-- <li class="active nav-item"><a href="data-list-balance.html"><img src="../app-assets\images\my-images\icon_payouts.svg" alt="My profile"><span class="menu-title" data-i18n="Balance">Баланс</span></a>
-                    <ul class="menu-content">
-                        <li class=" nav-item"><a href="data-list-balance.html#tab-balance-active"><i class="feather icon-user"></i><span class="menu-item" data-i18n="User view">Выплаты</span></a>                 
-                        </li>
-                        <li class=" nav-item"><a href="data-list-balance.html#tab-balance-active"><i class="feather icon-user"></i><span class="menu-item" data-i18n="Profile">Продажи</span></a>
-                        </li>
-                        <li class=" nav-item"><a href="data-list-balance.html#tab-balance-active"><i class="feather icon-user"></i><span class="menu-item" data-i18n="Profile">Пополнение баланса</span></a>
-                        </li>
-                    </ul>
-                </li> -->
                 <li class="nav-item"><a href="page-products.html"><img src="../app-assets\images\my-images\icon_products.svg" alt="Orders"><span class="menu-item" data-i18n="Thumb View">Товары</span></a>
                 </li>
                 <li class=" nav-item"><a href="index.html"><img src="../app-assets\images\my-images\icon_my_profile.svg" alt="My profile"><span class="menu-title" data-i18n="User">Пользователь</span></a>
@@ -301,24 +293,6 @@
                     <!-- DataTable starts -->
                     <div class="table-responsive">
                         <h1>Мои заказы</h1>
-                        <div class="action-btns">
-                            <div class="btn-dropdown mr-1 mb-1">
-                                <div class="btn-group dropdown actions-dropodown">
-                                    <button type="button" class="btn btn-white dropdown-toggle waves-effect waves-light btn-outline-primary text-uppercase" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Actions
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#"><i class="feather icon-trash"></i>Delete</a>
-                                        <a class="dropdown-item" href="#"><i class="feather icon-archive"></i>Archive</a>
-                                        <a class="dropdown-item" href="#"><i class="feather icon-file"></i>Print</a>
-                                        <a class="dropdown-item" href="#"><i class="feather icon-save"></i>Another Action</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
                         <table class="table data-list-view event-table" id="example">
                             <thead>
                                 <tr>
@@ -326,7 +300,7 @@
                                     <th>СТАТУС</th>
                                     <th>СУМА</th>
                                     <th>ПРИБЫЛЬ</th>
-                                    <th>Кол. товара</th>
+                                    <th>КОД товара</th>
                                     <th>ТТН</th>
                                     <th>ПРИМЕЧАНИЕ</th>
                                     <th>№ ЗАКАЗА</th>
@@ -335,7 +309,7 @@
                             </thead>
                             <tbody>
                                 <tr class='bg-first-td'>
-                                    <td class='bg-first-td'>12 сентября</td>
+                                    <td class='bg-first-td'>9 сентября</td>
                                     <td>
                                         <div class="chip chip-warning">
                                             <div class="chip-body">
@@ -343,19 +317,19 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td>254 грн</td>
-                                    <td>2545 грн</td>
-                                    <td class='toggle-product-data-list'>3 товар.</td>
+                                    <td>3000 грн</td>
+                                    <td>750 грн</td>
+                                    <td class='toggle-product-data-list'>12564, 14568</td>
                                     <td class="toggle-data-ttn">59 0002 3213 5431</td>
                                     <td>Примечание</td>
                                     <td>1123458</td>
                                     <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-refresh"><i class="fa fa-refresh"></i></span>                     
+                                        <span class="action-edit"><i class="fa fa-refresh"></i></span>
+                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span>                      -->
                                     </td>
                                 </tr>
                                 <tr class='bg-first-td'>
-                                    <td class='bg-first-td'>12 сентября</td>
+                                    <td class='bg-first-td'>10 сентября</td>
                                     <td>
                                         <div class="chip chip-success">
                                             <div class="chip-body">
@@ -363,19 +337,19 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td>254 грн</td>
-                                    <td>2545 грн</td>
-                                    <td class='toggle-product-data-list'>3 товар.</td>
+                                    <td>550 грн</td>
+                                    <td>150 грн</td>
+                                    <td class='toggle-product-data-list'>1024</td>
                                     <td class="toggle-data-ttn">59 0002 3213 5432</td>
-                                    <td>Примечание</td>
+                                    <td>Клиент отказался</td>
                                     <td>1123458</td>
                                     <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-refresh"><i class="fa fa-refresh"></i></span>
+                                        <span class="action-edit"><i class="fa fa-refresh"></i></span>
+                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
                                     </td>
                                 </tr>
                                 <tr class='bg-first-td'>
-                                    <td class='bg-first-td'>12 сентября</td>
+                                    <td class='bg-first-td'>11 сентября</td>
                                     <td>
                                         <div class="chip chip-danger">
                                             <div class="chip-body">
@@ -383,15 +357,15 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td>254 грн</td>
-                                    <td>2545 грн</td>
-                                    <td class='toggle-product-data-list'>3 товар.</td>
+                                    <td>880 грн</td>
+                                    <td>280 грн</td>
+                                    <td class='toggle-product-data-list'>41254.</td>
                                     <td class="toggle-data-ttn">59 0002 3213 5432</td>
-                                    <td>Примечание</td>
+                                    <td>-</td>
                                     <td>1123458</td>
                                     <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-refresh"><i class="fa fa-refresh"></i></span>
+                                        <span class="action-edit"><i class="fa fa-refresh"></i></span>
+                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
                                     </td>
                                 </tr>
                                 <tr class='bg-first-td'>
@@ -403,19 +377,19 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td>254 грн</td>
-                                    <td>2545 грн</td>
-                                    <td class='toggle-product-data-list'>3 товар.</td>
+                                    <td>2300 грн</td>
+                                    <td>850 грн</td>
+                                    <td class='toggle-product-data-list'>32145,8321,3214</td>
                                     <td class="toggle-data-ttn">59 0002 3213 5432</td>
-                                    <td>Примечание</td>
+                                    <td>-</td>
                                     <td>1123458</td>
                                     <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-refresh"><i class="fa fa-refresh"></i></span>
+                                        <span class="action-edit"><i class="fa fa-refresh"></i></span>
+                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
                                     </td>
                                 </tr>
                                 <tr class='bg-first-td'>
-                                    <td class='bg-first-td'>12 сентября</td>
+                                    <td class='bg-first-td'>13 сентября</td>
                                     <td>
                                         <div class="chip chip-primary">
                                             <div class="chip-body">
@@ -423,15 +397,15 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td>254 грн</td>
-                                    <td>2545 грн</td>
-                                    <td class='toggle-product-data-list'>3 товар.</td>
+                                    <td>350 грн</td>
+                                    <td>50 грн</td>
+                                    <td class='toggle-product-data-list'>23142</td>
                                     <td class="toggle-data-ttn">59 0002 3213 5432</td>
-                                    <td>Примечание</td>
+                                    <td>Проверка на длинный текст примечания. Посмтри как будет</td>
                                     <td>1123458</td>
                                     <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <span class="action-refresh"><i class="fa fa-refresh"></i></span>
+                                        <span class="action-edit"><i class="fa fa-refresh"></i></span>
+                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
                                     </td>
                                 </tr>
                             </tbody>
@@ -445,7 +419,7 @@
                         <div class="add-new-data">
                             <div class="div mt-2 px-2 d-flex new-data-title justify-content-between">
                                 <div>
-                                    <h4 class="text-uppercase">List View Data</h4>
+                                    <h4 class="text-uppercase">Обмен</h4>
                                 </div>
                                 <div class="hide-data-sidebar">
                                     <i class="feather icon-x"></i>
@@ -455,50 +429,56 @@
                                 <div class="data-fields px-2 mt-3">
                                     <div class="row">
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-name">Name</label>
-                                            <input type="text" class="form-control" id="data-name">
+                                            <label for="data-name">Код товара</label>
+                                            <input type="text-area" class="form-control" id="data-name" placeholder="11345" value="36" disabled>
+                                        </div>
+                                        
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Предыдущий размер</label>
+                                            <input type="text-area" class="form-control" id="data-name" placeholder="38" value="36" disabled>
                                         </div>
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-category"> Category </label>
-                                            <select class="form-control" id="data-category">
-                                                <option>Audio</option>
-                                                <option>Computers</option>
-                                                <option>Fitness</option>
-                                                <option>Appliance</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-sm-12 data-field-col">
-                                            <label for="data-status">Order Status</label>
+                                            <label for="data-status">Выберите новый размер</label>
                                             <select class="form-control" id="data-status">
-                                                <option>Pending</option>
-                                                <option>Canceled</option>
-                                                <option>Delivered</option>
-                                                <option>On Hold</option>
+                                                <option>36</option>
+                                                <option>37</option>
+                                                <option>38</option>
+                                                <option>39</option>
                                             </select>
                                         </div>
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-price">Price</label>
+                                            <label for="data-price">Цена для клиента</label>
+                                            <input type="text" class="form-control" id="data-price" value="">
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-status">Оплата</label>
+                                            <select class="form-control" id="data-status">
+                                                <option>Оплатить на карту</option>
+                                                <option>Снять с личного счета</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-price">Примечание</label>
                                             <input type="text" class="form-control" id="data-price">
                                         </div>
-                                        <div class="col-sm-12 data-field-col data-list-upload">
-                                            <form action="#" class="dropzone dropzone-area" id="dataListUpload">
-                                                <div class="dz-message">Upload Image</div>
-                                            </form>
-                                        </div>
+                                        
+                                       
                                     </div>
                                 </div>
                             </div>
                             <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
                                 <div class="add-data-btn">
-                                    <button class="btn btn-primary">Add Data</button>
+                                    <button class="btn btn-primary">Подтвердить</button>
                                 </div>
                                 <div class="cancel-data-btn">
-                                    <button class="btn btn-outline-danger">Cancel</button>
+                                    <button class="btn btn-outline-danger">Отменить</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- add new sidebar ends -->
+                </section>
+                <!-- Data list view end -->
                 </section>
                 <!-- Data list view end -->
             </div>
@@ -531,6 +511,9 @@
     <!-- BEGIN: Vendor JS-->
     <script src="../app-assets/vendors/js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
 
     <!-- BEGIN: Page Vendor JS-->
     <script src="../app-assets/vendors/js/extensions/dropzone.min.js"></script>
