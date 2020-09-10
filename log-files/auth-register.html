@@ -59,13 +59,61 @@
                                     <div class="card rounded-0 mb-0 p-2">
                                         <div class="card-header pt-50 pb-1">
                                             <div class="card-title">
-                                                <h4 class="mb-0">Регистрация</h4>
+                                                <h4 class="mb-0 ml-0">Регистрация</h4>
                                             </div>
                                         </div>
                                         <p class="px-2">Заполните форму ниже, чтобы создать новую учетную запись.</p>
-                                        <div class="card-content">
-                                            <div class="card-body pt-0">
-                                                <form action="index.html">
+
+
+
+
+                                        <!-- Categories Starts -->
+                                <div id="form-registration">
+                                    
+
+
+                                    <ul class="list-unstyled categories-list d-flex justify-content-center">
+                                        <li class='mr-1'>
+                                            <span class="vs-radio-con vs-radio-primary py-25">
+                                                <input type="radio" name="category-filter" value="form1" onChange="Selected(this)" checked>
+                                                <span class="vs-radio">
+                                                    <span class="vs-radio--border"></span>
+                                                    <span class="vs-radio--circle"></span>
+                                                </span>
+                                                <span class="ml-25">Пользователь</span>
+                                            </span>
+                                        </li>
+                                        <li class='ml-1'>
+                                            <span class="vs-radio-con vs-radio-primary py-25">
+                                                <input type="radio" name="category-filter" value="form2" onChange="Selected(this)">
+                                                <span class="vs-radio">
+                                                    <span class="vs-radio--border"></span>
+                                                    <span class="vs-radio--circle"></span>
+                                                </span>
+                                                <span class="ml-25">Дропшипер</span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Categories Ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+                                      
+                                   
+
+
+                                            <div id="form1" class="card-body pt-2">
+                                                <form action="">
                                                     <div class="form-label-group">
                                                         <input type="text" id="inputName" class="form-control" placeholder="Имя" required>
                                                         <label for="inputName">Имя</label>
@@ -101,8 +149,95 @@
                                                     <button type="submit" class="btn btn-primary float-right btn-inline mb-50 mt-3">Зарегистрироваться</a>
                                                 </form>
                                             </div>
-                                        </div>
-                                    </div>
+
+                                            <div id="form2" class="card-body deactive pt-2">
+                                                <form action="">
+                                                    <div class="form-label-group">
+                                                        <input type="text" id="inputName" class="form-control" placeholder="Имя" required>
+                                                        <label for="inputName">Имя</label>
+                                                    </div>
+                                                    <div class="form-label-group">
+                                                        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
+                                                        <label for="inputEmail">Email</label>
+                                                    </div>
+                                                    <div class="form-label-group">
+                                                        <input type="text" id="inputNumber" class="form-control phone" placeholder="Номер телефона" required>
+                                                        <label for="inputNumber">Номер телефона</label>
+                                                    </div>
+                                                    <div class="form-label-group">
+                                                        <input type="text" id="inputTextOrganization" class="form-control" placeholder="Название организации" required>
+                                                        <label for="inputTextOrganization">Название организации</label>
+                                                    </div>
+
+
+
+                                                    
+                                                <div class="form-label-group dynamic_fields">
+                                                    <div class="example_student">
+                                                        <div class="table">
+                                                            <div class="cell"><input class="form-control" type="text" name="name[]"/></div>
+                                                            <div class="cell">
+                                                                <button class="js-remove pull-right btn btn-danger">-</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="students"></div>
+
+                                                    <button class="js-add pull-right btn btn-success">+</button>
+                                                </div>
+
+
+                                                    <!-- <div class="form-label-group template_clone">
+                                                        <input type="text" id="inputTextLink" class="form-control" placeholder="Ссылки на интернет платформы" required>
+                                                        <label for="inputTextLink">Ссылки на интернет платформы</label>
+                                                        <button type="button" class='button_template_new' style="position: absolute; right: 20%; top: 0;">Добавить</button>
+                                                        <button type="button" class='but_hover_remove' style="position: absolute; right: 0; top: 0; background: red">Удалить</button>
+                                                    </div> -->
+
+
+
+
+
+                                                    <div class="form-label-group">
+                                                        <input type="password" id="inputPassword" class="form-control" placeholder="Пароль" required>
+                                                        <label for="inputPassword">Пароль</label>
+                                                    </div>
+                                                    <div class="form-label-group">
+                                                        <input type="password" id="inputConfPassword" class="form-control" placeholder="Повторить пароль" required>
+                                                        <label for="inputConfPassword">Повторить пароль</label>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="col-12">
+                                                            <fieldset class="checkbox">
+                                                                <div class="vs-checkbox-con vs-checkbox-primary">
+                                                                    <input type="checkbox" checked>
+                                                                    <span class="vs-checkbox">
+                                                                        <span class="vs-checkbox--check">
+                                                                            <i class="vs-icon feather icon-check"></i>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span class="">Я принимаю условия соглашения</span>
+                                                                </div>
+                                                            </fieldset>
+                                                        </div>
+                                                    </div>
+                                                    <a href="auth-login.html" class="btn btn-outline-primary float-left btn-inline mb-50 mt-3">Логин</a>
+                                                    <button type="submit" class="btn btn-primary float-right btn-inline mb-50 mt-3">Зарегистрироваться</a>
+                                                </form>
+                                            </div>
+
+
+
+
+
+
+                                        
+
+
+
+
+                                    
                                 </div>
                             </div>
                         </div>
@@ -119,6 +254,10 @@
     <script src="../app-assets/vendors/js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
 
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    
+    
     <!-- BEGIN: Page Vendor JS-->
     <!-- END: Page Vendor JS-->
 
@@ -127,6 +266,7 @@
     <script src="../app-assets/js/core/app.js"></script>
     <script src="../app-assets/js/scripts/components.js"></script>
     <!-- END: Theme JS-->
+    
 
 
 </body>

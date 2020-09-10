@@ -66,3 +66,66 @@
     $(this).closest('.chip').remove();
   })
 })(window, document, jQuery);
+
+
+
+
+
+function hideAllBlock() {
+  document.getElementById("form1").style.display = "none";
+  document.getElementById("form2").style.display = "none";
+}
+
+function Selected(a) {
+  hideAllBlock();
+  document.getElementById(a.value).style.display = "block";
+}
+
+$(".phone").mask("+38(999)999-99-99");
+
+
+// var $new_template_add = $(".template_clone").clone(true);
+// $(".button_template_new").click(function () {
+//   $(this).before($new_template_add.clone(true));
+// });
+// $(document).on("click", ".but_hover_remove", function () {
+//   $(this).closest(".template_clone, .template_clone").remove();
+// });
+
+
+
+// определение кнопки добавления
+var button_add = document.querySelector( '.dynamic_fields .js-add' );
+
+// ожидание клика на кнопку .add
+button_add.addEventListener( 'click', function () {
+
+  // определение блока, содержащего элементы
+  var students = document.querySelector( '.dynamic_fields .students' );
+
+  // клонирование образцового элемента
+  var element = document.querySelector( '.example_student' ).cloneNode( true );
+
+  // добавление класса к клонированному элементу
+  element.classList.add( 'student' );
+
+  // удаление класса из клонированного элемента
+  element.classList.remove( 'example_student' );
+
+  // добавление нового элемента к списку
+  students.appendChild( element );
+} );
+
+// ожидание клика по документу
+document.addEventListener( 'click', function ( el ) {
+
+  // если клик был по элементу, который содержит класс remove
+  if ( el.target && el.target.classList.contains( 'js-remove' ) ) {
+
+    // определение прародительского блока, содержащего кнопку
+    var child = el.target.closest( '.table' );
+
+    // удаление элемента списка
+    child.parentNode.removeChild( child );
+  }
+} );
