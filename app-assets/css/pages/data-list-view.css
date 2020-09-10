@@ -999,6 +999,10 @@ table.data-list-user.dataTable thead th:last-of-type {
   color: #fff;
 }
 
+.selected a:hover span {
+  color: #000;
+}
+
 
 .box-chart .form-control {
   width: 128px;
