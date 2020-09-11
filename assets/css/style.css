@@ -9,3 +9,12 @@ NOTE:
 ------
 PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
 WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+::-webkit-scrollbar {
+	width: 4px;
+	background-color: #D6D6D6;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 2px;
+	background-color: #A254A2;
+}

@@ -1466,8 +1466,17 @@ button, html [type='button'], [type='reset'], [type='submit'] {
           transform : scale(1, 1);
   opacity : 1;
   display : block;
-  overflow: visible!important;
+  /* overflow: visible!important; */
 }
+
+.show > .dropdown-menu .dropup {
+  display: none;
+}
+
+.dropup .btn, .dropup .btn.dropdown-toggle {
+  padding: 0 !important;
+}
+
 
 .bootstrap-select.btn-group .dropdown-menu.inner:before {
   display: none;
@@ -1510,7 +1519,7 @@ button, html [type='button'], [type='reset'], [type='submit'] {
   background-color : #CCCCCC;
 }
 
-.dropup {
+/* .dropup {
   position : relative;
 }
 .dropup .btn, .dropup .btn.dropdown-toggle {
@@ -1519,12 +1528,12 @@ button, html [type='button'], [type='reset'], [type='submit'] {
 .dropup .btn.dropdown-toggle.dropdown-toggle-split {
   padding : 0.85rem 1rem;
   border-color : rgba(255, 255, 255, 0.2) !important;
-}
-.dropup .dropdown-toggle::after {
+} */
+/* .dropup .dropdown-toggle::after {
   content : '\e845' !important;
   vertical-align : 0.05rem;
-}
-.dropup .dropdown-menu::before {
+} */
+/* .dropup .dropdown-menu::before {
   content : '';
   position : absolute;
   bottom : -0.714rem;
@@ -1548,7 +1557,7 @@ button, html [type='button'], [type='reset'], [type='submit'] {
 .dropup .dropdown-submenu .dropdown-menu {
   bottom : auto;
   top : 0;
-}
+} */
 
 .dropleft .btn, .dropleft .btn.dropdown-toggle {
   padding : 0.85rem 1.5rem;

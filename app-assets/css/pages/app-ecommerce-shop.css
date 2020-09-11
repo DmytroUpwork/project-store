@@ -217,11 +217,22 @@ h6 {
 }
 
 .ecommerce-application .ecommerce-card:hover {
-  -webkit-transform : translateY(-5px);
+  /* -webkit-transform : translateY(-5px);
       -ms-transform : translateY(-5px);
-          transform : translateY(-5px);
+          transform : translateY(-5px); */
   box-shadow : 0 4px 25px 0 rgba(0, 0, 0, 0.25);
 }
+
+.ecommerce-application .ecommerce-card img {
+  transition: 0.5s;
+}
+
+.ecommerce-application .ecommerce-card:hover img {
+  -webkit-transform : scale(1.1);
+      -ms-transform : scale(1.1);
+          transform : scale(1.1);
+}
+
 
 .ecommerce-application .ecommerce-card .item-price {
   /* font-weight : 700; */
@@ -310,8 +321,7 @@ h6 {
 .ecommerce-application .ecommerce-card .cart {
   background-color : #A254A2;
   color : #FFFFFF;
-  width: 83px;
-  /* width: 49%; */
+  width: 25%;
 }
 .ecommerce-application .ecommerce-card .cart .view-in-cart {
   color : #FFFFFF;
@@ -407,7 +417,8 @@ h6 {
   width: 60px;
   height: 60px;
   bottom: 9px;
-  right: 143px;
+  left: 99px;
+  /* left: 123px; */
 }
 
 .price-card-shop > .selectpicker {
@@ -486,13 +497,15 @@ h6 {
 }
 
 .item-cost {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   width: 100%;
   position: relative;
-  padding-right: 95px;
+  padding-right: 73px;
   padding-left: 26px;
+  /* padding-right: 95px;
+  padding-left: 26px; */
 }
 
 .price-card-shop > .form-control {
@@ -500,11 +513,11 @@ h6 {
 }
 
 .item-cost > p {
-  position: absolute;
-  font-size: 12px;
+  font-size: 10px;
   color: #A254A2;
-  right: 52px;
-  top: -1px;
+ 
+  margin-bottom: -6px;
+  margin-left: 16px;
 }
 
 
