@@ -26,14 +26,12 @@
 
 
 .dynamic_fields {
-  min-height: 200px;
+  min-height: 120px;
 }
 
-.example_student {
+.box-link-internet-platform {
   display: none;
 }
-
-
 
 .pull-right {
   float: right;
@@ -44,11 +42,11 @@
   width: 100%;
 }
 
-.student {
+.link-internet-platform-add {
   position: relative;
 }
 
-.student:last-child .table {
+.link-internet-platform-add:last-child .table {
   padding-bottom: 0;
 }
 

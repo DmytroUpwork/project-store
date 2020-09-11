@@ -100,32 +100,24 @@ var button_add = document.querySelector( '.dynamic_fields .js-add' );
 // ожидание клика на кнопку .add
 button_add.addEventListener( 'click', function () {
 
-  // определение блока, содержащего элементы
-  var students = document.querySelector( '.dynamic_fields .students' );
+  var students = document.querySelector( '.dynamic_fields .link-internet-platform' );
 
-  // клонирование образцового элемента
-  var element = document.querySelector( '.example_student' ).cloneNode( true );
+  var element = document.querySelector( '.box-link-internet-platform' ).cloneNode( true );
 
-  // добавление класса к клонированному элементу
-  element.classList.add( 'student' );
+  element.classList.add( 'link-internet-platform-add' );
 
-  // удаление класса из клонированного элемента
-  element.classList.remove( 'example_student' );
+  element.classList.remove("box-link-internet-platform");
 
-  // добавление нового элемента к списку
   students.appendChild( element );
+  
 } );
 
 // ожидание клика по документу
 document.addEventListener( 'click', function ( el ) {
-
-  // если клик был по элементу, который содержит класс remove
   if ( el.target && el.target.classList.contains( 'js-remove' ) ) {
-
-    // определение прародительского блока, содержащего кнопку
     var child = el.target.closest( '.table' );
-
-    // удаление элемента списка
-    child.parentNode.removeChild( child );
+    child.parentNode.removeChild(child);
   }
 } );
+
+
