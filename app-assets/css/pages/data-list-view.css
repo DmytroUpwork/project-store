@@ -240,7 +240,7 @@
 
 .dropdown-toggle::after {
   display: inline-block;
-  margin-left: 11px;
+  /* margin-left: 11px; */
   content: '';
   border-top: 8.5px solid;
   border-right: 5.3px solid transparent;
@@ -270,7 +270,9 @@
   width: auto;
 }
 
-
+.toggle-exchange-data-list:hover {
+  color: #A254A2;
+}
 
 .filter_wrap .AccountstatusOption {
   display: flex;

@@ -150,6 +150,135 @@ function formatProductDataList() {
 };
 
 
+
+
+
+
+
+
+
+
+
+$(".data-list-view tbody").on("click", "td.toggle-exchange-data-list", function () {
+  var table = $(this).closest("table").data("dataTableObject");
+  var tr = $(this).closest("tr");
+  var row = table.row(tr);
+
+  if (row.child.isShown()) {
+    row.child.hide();
+    tr.removeClass("shown");
+  } else {
+    row.child(formatExchange()).show();
+    tr.addClass("shown");
+  }
+});
+function formatExchange() {
+  return (
+    '<table cellpadding="5" cellspacing="0" border="0" style=" border-collapse: separate !important; border-spacing: 0 14px; width: auto;">' +
+    "<tr>" +
+    "<td class='td-list-toggle'>1500</td>" +
+    "<td>" +
+    '<div class="photo-table">\
+              <img class="" src="../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="50" width="50">\
+          </div>' +
+    "</td>" +
+    "<td class='td-list-toggle'>Тапочки</td>" +
+    "<td class='td-list-toggle'>37 размер</td>" +
+    "<td class='td-list-toggle'>750 грн.</td>" +
+    "<td class='td-list-toggle'>500 грн.</td>" +
+    "<td>\
+      <div class='chip chip-danger'>\
+        <div class='chip-body'>\
+          <div class='chip-text'>ВОЗВРАТ</div>\
+        </div>\
+      </div>\
+    </td>" +
+    "<td>\
+      <div class='chip chip-warning'>\
+        <div class='chip-body'>\
+          <div class='chip-text'>В пути</div>\
+        </div>\
+      </div>\
+    </td>" +
+    "<td class='td-list-toggle'> 59 0003 5343 3453</td>" +
+    "</tr>" +
+    "<tr>" +
+    "<td class='td-list-toggle'>1500</td>" +
+    "<td class='td-list-toggle'>" +
+    '<div class="photo-table">\
+              <img class="" src="../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="50" width="50">\
+          </div>' +
+    "</td>" +
+    "<td class='td-list-toggle'>Тапочки</td>" +
+    "<td class='td-list-toggle'>37 размер</td>" +
+    "<td class='td-list-toggle'>750 грн.</td>" +
+    "<td class='td-list-toggle'>500 грн.</td>" +
+    "<td>\
+      <div class='chip chip-warning'>\
+        <div class='chip-body'>\
+          <div class='chip-text'>ОБМЕН</div>\
+        </div>\
+      </div>\
+    </td>" +
+    "<td>\
+      <div class='chip chip-success'>\
+        <div class='chip-body'>\
+          <div class='chip-text'>Выполнен</div>\
+        </div>\
+      </div>\
+    </td>" +
+    "<td class='td-list-toggle'> 59 0003 5343 3453</td>" +
+    "</tr>" +
+    "<tr>" +
+    "<td class='td-list-toggle'>1500</td>" +
+    "<td>" +
+    '<div class="photo-table">\
+              <img class="" src="../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="50" width="50">\
+          </div>' +
+    "</td>" +
+    "<td class='td-list-toggle'>Тапочки</td>" +
+    "<td class='td-list-toggle'>37 размер</td>" +
+    "<td class='td-list-toggle'>750 грн.</td>" +
+    "<td class='td-list-toggle'>500 грн.</td>" +
+    "<td>\
+      <div class='chip chip-danger'>\
+        <div class='chip-body'>\
+          <div class='chip-text'>ВОЗВРАТ</div>\
+        </div>\
+      </div>\
+    </td>" +
+    "<td>\
+      <div class='chip chip-warning'>\
+        <div class='chip-body'>\
+          <div class='chip-text'>ОБМЕН</div>\
+        </div>\
+      </div>\
+    </td>" +
+    "<td class='td-list-toggle'> 59 0003 5343 3453</td>" +
+    "</tr>" +
+    "</table>"
+  );
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   // init list view datatable
   var dataListView = $(".data-list-dispatch").DataTable({
     responsive: false,

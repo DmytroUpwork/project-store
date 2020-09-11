@@ -257,6 +257,8 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
+  position: relative
 }
 
 .card-content-shop .item-options {
@@ -336,6 +338,9 @@ h6 {
     grid-template-columns: 1fr 1fr;
   }
 }
+/* .ecommerce-application .grid-view .ecommerce-card {
+  overflow : hidden;
+} */
 .ecommerce-application .grid-view .ecommerce-card {
   overflow : hidden;
 }
@@ -392,31 +397,37 @@ h6 {
   display : none;
 }
 
+.box-card {
+  position: relative;
+}
+
 
 .price-card-shop {
-  position: relative;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 9px;
+  right: 143px;
 }
 
 .price-card-shop > .selectpicker {
   position: absolute;
-background-position: calc(100% - 7px) 10px, calc(100% - 20px) 10px, 100% 0 !important;
-right: 0;
-
-/* left: 0;
-  margin: 0 auto; */
-
-top: 3px;
-border-radius: 0;
-border: 0;
-font-size: 20px;
+  background-position: calc(100% - 7px) 10px, calc(100% - 20px) 10px, 100% 0 !important;
+  right: 0;
+  top: 3px;
+  border-radius: 0;
+  border: 0;
+  font-size: 20px;
 }
+
+
 
 .price-card-shop span {
   position: sticky;
-  color: #b0c3c7;
+  font-size: 20px;
 }
 
-.price-card-shop span:after {
+/* .price-card-shop span:after {
   content: '';
   background: #ccc2c2;
   display: block;
@@ -424,7 +435,7 @@ font-size: 20px;
   left: -8px;
   position: absolute;
   height: 3px;
-}
+} */
 
 .shoe-size-card-shop {
   position: absolute;
@@ -480,13 +491,19 @@ font-size: 20px;
   justify-content: center;
   width: 100%;
   position: relative;
+  padding-right: 95px;
+  padding-left: 26px;
+}
+
+.price-card-shop > .form-control {
+  background-color: transparent;
 }
 
 .item-cost > p {
   position: absolute;
   font-size: 12px;
   color: #A254A2;
-  right: 0;
+  right: 52px;
   top: -1px;
 }
 
