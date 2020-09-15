@@ -6,6 +6,7 @@
 //  Author URL: http://www.themeforest.net/user/pixinvent
 // ================================================================================================
 $(document).ready(function () {
+
   var mySwiper14 = new Swiper(".swiper-responsive-breakpoints", {
     slidesPerView: 5,
     spaceBetween: 55,
@@ -35,6 +36,11 @@ $(document).ready(function () {
       },
     },
   });
+
+
+
+
+  
   // product color options
   $(".product-color-options li").on("click", function () {
     $this = $(this);

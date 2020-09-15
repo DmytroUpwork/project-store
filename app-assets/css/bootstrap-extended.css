@@ -415,7 +415,8 @@ textarea.form-control {
 }
 
 .form-control.form-control-sm {
-  padding : 0.6rem;
+  /* padding : 0.6rem; */
+  padding: 0.6rem 0 0.6rem 0.6rem;
 }
 .form-control.form-control-sm::-webkit-input-placeholder {
   font-size : 0.7rem;

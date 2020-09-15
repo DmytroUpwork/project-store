@@ -76,3 +76,24 @@
   background-color: #5cb85c;
   border-color: #4cae4c;
 }
+
+.button-history-back {
+  position: absolute;
+  right: 54px;
+  top: 40px;
+}
+
+.button-history-back span {
+  position: absolute;
+  border-bottom: 2px solid #A254A2;
+  width: 23px;
+  display: block;
+}
+
+.button-history-back span:last-of-type {
+  transform: rotate(45deg);
+}
+
+.button-history-back span:first-of-type {
+  transform: rotate(-45deg);
+}

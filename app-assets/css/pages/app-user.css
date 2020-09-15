@@ -55,3 +55,8 @@
 .page-users-edit .users-avatar-shadow {
   box-shadow : 2px 4px 14px 0 rgba(34, 41, 47, 0.4);
 }
+
+.bootstrap-select.form-control {
+  border: 1px solid #D9D9D9;
+  padding: 9.8px;
+}

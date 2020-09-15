@@ -137,14 +137,79 @@ p {
    text-align: center; 
 }
 
-select#ecommerce-price-options {
+/* select#ecommerce-price-options {
   max-width: 59px;
   max-height: 32px;
   padding: 0 0 0 10px;
   margin-bottom: 14px;
   cursor: pointer;
+} */
+
+:not(.input-group) > .bootstrap-select.form-control:not([class*="col-"]) {
+  width: 50px;
+  border: 1px solid;
+  padding: 5px;
 }
 
-.box-recommended-products {
+
+.bootstrap-select.form-control .btn {
+  padding: 0;
+}
+
+.bootstrap-select .dropdown-menu li:hover {
+  background: #f0ecec;
+}
+
+.bootstrap-select .dropdown-menu li a {
+  color: #000;
+}
+
+.bootstrap-select .dropdown-menu li:hover a {
+  color: #484848;
+}
+
+.bootstrap-select .dropdown-menu li a span.text {
+  width: 100%;
+  text-align: center;
+  padding: 7px 10px;
+}
+
+.bootstrap-select .dropdown-menu li.selected {
+  background: #A254A2;
+}
+
+.bootstrap-select .dropdown-menu li.selected a {
+  color: #fff;
+}
+
+.show > .dropdown-menu {
+  height: 161px !important;
+}
+
+.btn-secondary {
+  border-color: #9AA9B7 !important;
+  background-color: #edebeb!important;
+  color: #626262 !important;
+}
+
+.btn-secondary:hover {
+  color: #626262 !important;
+}
+
+
+
+.bootstrap-select .dropdown-toggle:focus {
+  outline: none!important;
+  outline: none!important;
+  outline-offset: none;
+}
+
+
+.modal-detail > .modal-dialog {
+  max-width: calc(100% - 40px);
+}
+
+.customer-cvv {
   display: none;
 }
+

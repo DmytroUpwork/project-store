@@ -12,6 +12,8 @@
     <title>Kondi-shop | WEB магазин обуви</title>
     <link rel="shortcut icon" type="image/x-icon" href="../app-assets/images/favicon.ico">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/css/plugins/forms/validation/form-validation.css">
@@ -31,6 +33,7 @@
     <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/css/core/colors/palette-gradient.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/app-user.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/data-list-view.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -165,8 +168,6 @@
                     <ul class="menu-content">
                         <li class="active nav-item"><a href="app-user-view.html"><i class="feather icon-user"></i><span class="menu-item" data-i18n="User view">Личный кабинет</span></a>                 
                         </li>
-                        <li class=" nav-item"><a href="page-user-profile.html"><i class="feather icon-user"></i><span class="menu-item" data-i18n="Profile">Мой профиль</span></a>
-                        </li>
                     </ul>
                 </li>
                 <li class=" nav-item"><a href="../app-ecommerce-checkout.html"><img src="../app-assets\images\my-images\icon_basket.svg" alt="Basket"><span class="menu-item" data-i18n="Checkout">Корзина</span></a>
@@ -201,17 +202,17 @@
                                 <ul class="nav nav-tabs mb-3" role="tablist">
                                     <li class="nav-item">
                                         <a class="nav-link d-flex align-items-center active" id="account-tab" data-toggle="tab" href="#account" aria-controls="account" role="tab" aria-selected="true">
-                                            <i class="feather icon-user mr-25"></i><span class="d-none d-sm-block">Account</span>
+                                            <i class="feather icon-user mr-25"></i><span class="d-none d-sm-block">Аккаунт</span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link d-flex align-items-center" id="information-tab" data-toggle="tab" href="#information" aria-controls="information" role="tab" aria-selected="false">
-                                            <i class="feather icon-info mr-25"></i><span class="d-none d-sm-block">Information</span>
+                                            <i class="feather icon-info mr-25"></i><span class="d-none d-sm-block">Информация</span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link d-flex align-items-center" id="social-tab" data-toggle="tab" href="#social" aria-controls="social" role="tab" aria-selected="false">
-                                            <i class="feather icon-share-2 mr-25"></i><span class="d-none d-sm-block">Social</span>
+                                            <i class="feather icon-share-2 mr-25"></i><span class="d-none d-sm-block">Компании</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -225,9 +226,9 @@
                                             <div class="media-body mt-50">
                                                 <h4 class="media-heading">Angelo Sashington</h4>
                                                 <div class="col-12 d-flex mt-1 px-0">
-                                                    <a href="#" class="btn btn-primary d-none d-sm-block mr-75">Change</a>
+                                                    <a href="#" class="btn btn-primary d-none d-sm-block mr-75">Изменить</a>
                                                     <a href="#" class="btn btn-primary d-block d-sm-none mr-75"><i class="feather icon-edit-1"></i></a>
-                                                    <a href="#" class="btn btn-outline-danger d-none d-sm-block">Remove</a>
+                                                    <a href="#" class="btn btn-outline-danger d-none d-sm-block">Удалить</a>
                                                     <a href="#" class="btn btn-outline-danger d-block d-sm-none"><i class="feather icon-trash-2"></i></a>
                                                 </div>
                                             </div>
@@ -239,8 +240,8 @@
                                                 <div class="col-12 col-sm-6">
                                                     <div class="form-group">
                                                         <div class="controls">
-                                                            <label>Username</label>
-                                                            <input type="text" class="form-control" placeholder="Username" value="adoptionism744" required data-validation-required-message="This username field is required">
+                                                            <label>Имя пользователя</label>
+                                                            <input type="text" class="form-control" placeholder="Имя пользователя" value="adoptionism744" required data-validation-required-message="This username field is required">
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
@@ -260,7 +261,7 @@
 
                                                     <div class="form-group">
                                                         <label>Status</label>
-                                                        <select class="form-control">
+                                                        <select class="form-control selectpicker">
                                                             <option>Active</option>
                                                             <option>Blocked</option>
                                                             <option>deactivated</option>
@@ -268,7 +269,7 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <label>Role</label>
-                                                        <select class="form-control">
+                                                        <select class="form-control selectpicker">
                                                             <option>Admin</option>
                                                             <option>User</option>
                                                             <option>Staff</option>
@@ -361,9 +362,9 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1">
-                                                    <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Save
-                                                        Changes</button>
-                                                    <button type="reset" class="btn btn-outline-warning">Reset</button>
+                                                    <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">
+                                                        Сохранить</button>
+                                                    <button type="reset" class="btn btn-outline-warning">Удалить</button>
                                                 </div>
                                             </div>
                                         </form>
@@ -400,7 +401,7 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <label>Languages</label>
-                                                        <select class="form-control" id="users-language-select2" multiple="multiple">
+                                                        <select class="form-control selectpicker" id="users-language-select2" multiple="multiple">
                                                             <option value="English" selected>English</option>
                                                             <option value="Spanish">Spanish</option>
                                                             <option value="French">French</option>
@@ -538,57 +539,39 @@
                                                 <div class="col-12 col-sm-6">
 
                                                     <fieldset>
-                                                        <label>Twitter</label>
+                                                        <label>Название компании</label>
                                                         <div class="input-group mb-75">
-                                                            <div class="input-group-prepend">
-                                                                <span class="input-group-text feather icon-twitter" id="basic-addon3"></span>
-                                                            </div>
-                                                            <input type="text" class="form-control" value="https://www.twitter.com/adoptionism744" placeholder="https://www.twitter.com/" aria-describedby="basic-addon3">
+                                                            <input type="text" class="form-control" value="" placeholder="" aria-describedby="basic-addon3">
                                                         </div>
-
-                                                        <label>Facebook</label>
+                                                        <label>Название компании</label>
                                                         <div class="input-group mb-75">
-                                                            <div class="input-group-prepend">
-                                                                <span class="input-group-text feather icon-facebook" id="basic-addon4"></span>
-                                                            </div>
-                                                            <input type="text" class="form-control" value="https://www.facebook.com/adoptionism664" placeholder="https://www.facebook.com/" aria-describedby="basic-addon4">
+                                                            <input type="text" class="form-control" value="" placeholder="" aria-describedby="basic-addon3">
                                                         </div>
-                                                        <label>Instagram</label>
+                                                        <label>Название компании</label>
                                                         <div class="input-group mb-75">
-                                                            <div class="input-group-prepend">
-                                                                <span class="input-group-text feather icon-instagram" id="basic-addon5"></span>
-                                                            </div>
-                                                            <input type="text" class="form-control" value="https://www.instagram.com/adopt-ionism744" placeholder="https://www.instagram.com/" aria-describedby="basic-addon5">
+                                                            <input type="text" class="form-control" value="" placeholder="" aria-describedby="basic-addon3">
                                                         </div>
                                                     </fieldset>
                                                 </div>
                                                 <div class="col-12 col-sm-6">
-                                                    <label>Github</label>
+                                                    <label>Магазин 1</label>
                                                     <div class="input-group mb-75">
-                                                        <div class="input-group-prepend">
-                                                            <span class="input-group-text feather icon-github" id="basic-addon9"></span>
-                                                        </div>
-                                                        <input type="text" class="form-control" value="https://www.github.com/madop818" placeholder="https://www.github.com/" aria-describedby="basic-addon9">
+                                                        <input type="text" class="form-control" value="" placeholder="" aria-describedby="basic-addon9">
                                                     </div>
-                                                    <label>Codepen</label>
+                                                    <label>Магазин 2</label>
                                                     <div class="input-group mb-75">
-                                                        <div class="input-group-prepend">
-                                                            <span class="input-group-text feather icon-codepen" id="basic-addon12"></span>
-                                                        </div>
-                                                        <input type="text" class="form-control" value="https://www.codepen.com/adoptism243" placeholder="https://www.codepen.com/" aria-describedby="basic-addon12">
+                                                        <input type="text" class="form-control" value="" placeholder="" aria-describedby="basic-addon12">
                                                     </div>
-                                                    <label>Slack</label>
+                                                    <label>Магазин 3</label>
                                                     <div class="input-group mb-75">
-                                                        <div class="input-group-prepend">
-                                                            <span class="input-group-text feather icon-slack" id="basic-addon11"></span>
-                                                        </div>
-                                                        <input type="text" class="form-control" value="@adoptionism744" placeholder="https://www.slack.com/" aria-describedby="basic-addon11">
+                                                        <input type="text" class="form-control" value="" placeholder="" aria-describedby="basic-addon11">
                                                     </div>
                                                 </div>
                                                 <div class="col-12 d-flex flex-sm-row flex-column justify-content-end mt-1">
-                                                    <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">Save
-                                                        Changes</button>
-                                                    <button type="reset" class="btn btn-outline-warning">Reset</button>
+                                                    <button type="submit" class="btn btn-primary glow mb-1 mb-sm-0 mr-0 mr-sm-1">
+                                                        Сохранить
+                                                    </button>
+                                                    <button type="reset" class="btn btn-outline-warning">Сбросить</button>
                                                 </div>
                                             </div>
                                         </form>
@@ -609,18 +592,13 @@
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
 
-    <!-- BEGIN: Footer-->
-    <footer class="footer footer-static footer-light">
-        <p class="clearfix blue-grey lighten-2 mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2020<a class="text-bold-800 grey darken-2" href="https://1.envato.market/pixinvent_portfolio" target="_blank">Pixinvent,</a>All rights Reserved</span><span class="float-md-right d-none d-md-block">Hand-crafted & Made with<i class="feather icon-heart pink"></i></span>
-            <button class="btn btn-primary btn-icon scroll-top" type="button"><i class="feather icon-arrow-up"></i></button>
-        </p>
-    </footer>
-    <!-- END: Footer-->
-
 
     <!-- BEGIN: Vendor JS-->
     <script src="../app-assets/vendors/js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
 
     <!-- BEGIN: Page Vendor JS-->
     <script src="../app-assets/vendors/js/forms/select/select2.full.min.js"></script>

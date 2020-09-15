@@ -298,9 +298,19 @@ h6 {
   padding : 0.8rem 1rem;
   cursor : pointer;
   font-weight : 600;
-  font-size : 0.875rem;
+  font-size: 10px;
   text-transform : uppercase;
 }
+
+@media screen and (max-width: 620px) and (min-width: 580px) {
+  .ecommerce-application .ecommerce-card .wishlist, .ecommerce-application .ecommerce-card .cart {
+    font-size : 0.675rem;
+  }
+}
+
+
+
+
 .ecommerce-application .ecommerce-card .wishlist i, .ecommerce-application .ecommerce-card .cart i {
   font-size : 1rem;
   margin-right : 0.25rem;
@@ -322,6 +332,7 @@ h6 {
   background-color : #A254A2;
   color : #FFFFFF;
   width: 25%;
+  /* letter-spacing: 2.5px; */
 }
 .ecommerce-application .ecommerce-card .cart .view-in-cart {
   color : #FFFFFF;
@@ -416,7 +427,7 @@ h6 {
   position: absolute;
   width: 60px;
   height: 60px;
-  bottom: 9px;
+  bottom: 7px;
   left: 99px;
   /* left: 123px; */
 }
@@ -433,9 +444,14 @@ h6 {
 
 
 
-.price-card-shop span {
+.price-card-shop span:not(.bs-caret) {
   position: sticky;
   font-size: 20px;
+  padding-left: 7px;
+}
+
+.price-card-shop span.bs-caret {
+  padding-top: 7px;
 }
 
 /* .price-card-shop span:after {
@@ -687,7 +703,8 @@ select#ecommerce-price-options {
 }
 
 .button-toggle-product:hover {
-  background: #ded5d5;
+  /* background: #ded5d5; */
+  box-shadow: 0 8px 25px -8px #6C757D;
 }
 
 

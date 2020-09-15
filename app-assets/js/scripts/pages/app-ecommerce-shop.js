@@ -178,18 +178,24 @@ $(document).ready(function () {
   // remove items from wishlist page
   $(".remove-wishlist , .move-cart").on("click", function () {
     $(this).closest(".ecommerce-card").remove();
-  })
-})
+  });
+
+
+
+  $(".box-payment-information-show").on("click", function () {
+    $('.customer-cvv').show();
+  });
+
+  $(".box-payment-information-hide").on("click", function () {
+    $('.customer-cvv').hide();
+  });
+
+
+});
 // on window resize hide sidebar
 $(window).on("resize", function () {
   if ($(window).outerWidth() >= 991) {
     $(".sidebar-shop").removeClass("show");
     $(".shop-content-overlay").removeClass("show");
   }
-
-  
-
-
-
-
 });
