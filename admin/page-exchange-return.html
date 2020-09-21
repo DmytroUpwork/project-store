@@ -34,6 +34,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="../app-assets/css/core/colors/palette-gradient.css"> -->
     <link rel="stylesheet" type="text/css" href="../app-assets/css/plugins/file-uploaders/dropzone.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/data-list-view.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets\css\pages\exchange-return.css">
 
 
     <link rel="stylesheet" type="text/css" href="../app-assets\table.css">
@@ -161,29 +162,27 @@
             </ul>
         </div>
         <div class="main-menu-content">
-            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">            
-                <li class=" nav-item"><a href="page-orders.html"><img src="../app-assets\images\my-images\icon_orders.svg" alt="Orders"> <span class="menu-title" data-i18n="Orders">Заказы</span></a>
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item"><a href="dashboard-analytics.html"><img src="../app-assets\images\my-images\icon_analytics.svg" alt="Analytics"><span class="menu-title" data-i18n="Analytics">Аналитика</span></a>
                 </li>
-                <li class="active nav-item"><a href="page-exchange-return.html"><img src="../app-assets\images\my-images\icon_orders.svg" alt="exchange"> <span class="menu-title" data-i18n="Exchange">Возвраты &#47; Обмены</span></a>
+                <li class=" nav-item"><a href="page-orders.html"><img src="../app-assets\images\my-images\icon_orders.svg" alt="Orders"><span class="menu-title" data-i18n="Orders">Заказы</span></a>
                 </li>
-                <li class="nav-item"><a href="data-list-balance.html"><img src="../app-assets\images\my-images\icon_payouts.svg" alt="Payouts"><span class="menu-title" data-i18n="Balance">Баланс</span></a>
+                <li class="active nav-item"><a href="page-exchange-return.html"><img src="../app-assets\images\my-images\icon_orders.svg" alt="exchange"> <span class="menu-title" data-i18n="Exchange">Возвраты / Обмены</span></a>
                 </li>
-                <li class="nav-item"><a href="page-products.html"><img src="../app-assets\images\my-images\icon_products.svg" alt="Orders"><span class="menu-item" data-i18n="Thumb View">Товары</span></a>
+                <li class=" nav-item"><a href="data-list-despatch.html"><img src="../app-assets\images\my-images\icon-menu-dispatch.svg" alt="Dispatch"><span class="menu-title" data-i18n="Dispatch">Отправки</span></a>
                 </li>
-                <li class="nav-item"><a href="dashboard-analytics.html"><img src="../app-assets\images\my-images\icon_analytics.svg" alt="Analytics"> <span class="menu-item" data-i18n="Analytics">Аналитика</span></a>
+                <li class=" nav-item"><a href="data-list-balance.html"><img src="../app-assets\images\my-images\icon_payouts.svg" alt="Payouts"><span class="menu-title" data-i18n="Balance">Баланс</span></a>
                 </li>
-                <li class=" nav-item"><a href="index.html"><img src="../app-assets\images\my-images\icon_my_profile.svg" alt="My profile"><span class="menu-title" data-i18n="User">Пользователь</span></a>
-                    <ul class="menu-content">
-                        <li class=" nav-item"><a href="app-user-view.html"><i class="feather icon-user"></i><span class="menu-item" data-i18n="User view">Личный кабинет</span></a>                 
-                        </li>
-                        <li class=" nav-item"><a href="page-user-profile.html"><i class="feather icon-user"></i><span class="menu-item" data-i18n="Profile">Мой профиль</span></a>
-                        </li>
-                    </ul>
+                <li class=" nav-item"><a href="data-list-users.html"><img src="../app-assets\images\my-images\icon-menu-users.svg" alt="Menu users"><span class="menu-title" data-i18n="Menu users">Пользователи</span></a>
                 </li>
-                <li class=" nav-item"><a href="../app-ecommerce-checkout.html"><img src="../app-assets\images\my-images\icon_basket.svg" alt="Basket"><span class="menu-item" data-i18n="Checkout">Корзина</span></a>
+                
+                <li class=" nav-item"><a href="page-products.html"><img src="../app-assets\images\my-images\icon_products.svg" alt="Orders"><span class="menu-title" data-i18n="Thumb View">Товары</span></a>
+                </li>
+                <li class="nav-item"><a href="page-account-settings.html"><img src="../app-assets\images\my-images\icon-menu-customization.svg" alt="Customization"><span class="menu-title" data-i18n="Settings">Настройки</span></a>
                 </li>
                 <li class=" nav-item"><a href="app-chat.html"><i class="feather icon-message-square"></i><span class="menu-title" data-i18n="Chat">Чат</span></a>
                 </li>
+                
             </ul>
         </div>
         <div class="navbar-footer">
@@ -292,6 +291,20 @@
                 
                 <!-- Data list view starts -->
                 <section id="data-list-view" class="data-list-view-header data-list-not-user">
+                    <div class="action-btns">
+                        <div class="btn-dropdown mr-1 mb-1">
+                            <div class="btn-group dropdown actions-dropodown">
+                                <button type="button" class="btn btn-white dropdown-toggle waves-effect waves-light btn-outline-primary text-uppercase" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Действия
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#"><i class="feather icon-save"></i>Сгенерировать ТТН</a>
+                                    <a class="dropdown-item" href="#"><i class="feather icon-file"></i>Распечатать ТТН</a>
+                                    <a class="dropdown-item" href="#"><i class="feather icon-trash"></i>Удалить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- DataTable starts -->
                     <div class="table-responsive">
                         <h1>Мои обмены &#47; возвраты</h1>
@@ -332,10 +345,21 @@
                                     <td>-800 грн</td>
                                     <td>75 грн</td>
                                     <td>1123458</td> 
-                                    <td class='toggle-exchange-data-list'>111434</td>
+                                    <td>111434</td>
                                     <td class="product-action">
-                                        <span class="action-edit"><i class="fa fa-refresh"></i></span>
-                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span>                      -->
+                                        <div class="btn-group dropdown action-refresh">
+                                            <button type="button" class="btn-toggle-list dropdown-toggle pl-25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-edit"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item action-edit action-edit-add" href="#!"><i class="feather icon-save"></i>Отредактировать</a>
+                                                <a class="dropdown-item toggle-data-ttn" href="#!"><i class="feather icon-save"></i>Инф получателя</a>
+                                                <a class="dropdown-item toggle-product-data-list" href="#!"><i class="feather icon-save"></i>Инф товара</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-save"></i>Сгенерировать ТТН (?)</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-file"></i>Распечатать ТТН (?)</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-trash"></i>Удалить</a>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr class='bg-first-td'>
@@ -359,10 +383,21 @@
                                     <td>-800 грн</td>
                                     <td>75 грн</td>
                                     <td>1123458</td> 
-                                    <td class='toggle-exchange-data-list'>111434</td>
+                                    <td>111434</td>
                                     <td class="product-action">
-                                        <span class="action-edit"><i class="fa fa-refresh"></i></span>
-                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
+                                        <div class="btn-group dropdown action-refresh">
+                                            <button type="button" class="btn-toggle-list dropdown-toggle pl-25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-edit"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item action-edit action-edit-add" href="#!"><i class="feather icon-save"></i>Отредактировать</a>
+                                                <a class="dropdown-item toggle-data-ttn" href="#!"><i class="feather icon-save"></i>Инф получателя</a>
+                                                <a class="dropdown-item toggle-product-data-list" href="#!"><i class="feather icon-save"></i>Инф товара</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-save"></i>Сгенерировать ТТН (?)</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-file"></i>Распечатать ТТН (?)</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-trash"></i>Удалить</a>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr class='bg-first-td'>
@@ -386,10 +421,21 @@
                                     <td>-800 грн</td>
                                     <td>75 грн</td>
                                     <td>1123458</td> 
-                                    <td class='toggle-exchange-data-list'>111434</td>
+                                    <td>111434</td>
                                     <td class="product-action">
-                                        <span class="action-edit"><i class="fa fa-refresh"></i></span>
-                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
+                                        <div class="btn-group dropdown action-refresh">
+                                            <button type="button" class="btn-toggle-list dropdown-toggle pl-25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-edit"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item action-edit action-edit-add" href="#!"><i class="feather icon-save"></i>Отредактировать</a>
+                                                <a class="dropdown-item toggle-data-ttn" href="#!"><i class="feather icon-save"></i>Инф получателя</a>
+                                                <a class="dropdown-item toggle-product-data-list" href="#!"><i class="feather icon-save"></i>Инф товара</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-save"></i>Сгенерировать ТТН (?)</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-file"></i>Распечатать ТТН (?)</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-trash"></i>Удалить</a>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr class='bg-first-td'>
@@ -413,10 +459,21 @@
                                     <td>-800 грн</td>
                                     <td>75 грн</td>
                                     <td>1123458</td> 
-                                    <td class='toggle-exchange-data-list'>111434</td>
+                                    <td>111434</td>
                                     <td class="product-action">
-                                        <span class="action-edit"><i class="fa fa-refresh"></i></span>
-                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
+                                        <div class="btn-group dropdown action-refresh">
+                                            <button type="button" class="btn-toggle-list dropdown-toggle pl-25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-edit"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item action-edit action-edit-add" href="#!"><i class="feather icon-save"></i>Отредактировать</a>
+                                                <a class="dropdown-item toggle-data-ttn" href="#!"><i class="feather icon-save"></i>Инф получателя</a>
+                                                <a class="dropdown-item toggle-product-data-list" href="#!"><i class="feather icon-save"></i>Инф товара</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-save"></i>Сгенерировать ТТН (?)</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-file"></i>Распечатать ТТН (?)</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-trash"></i>Удалить</a>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr class='bg-first-td'>
@@ -440,11 +497,22 @@
                                     <td>-800 грн</td>
                                     <td>75 грн</td>
                                     <td>1123458</td> 
-                                    <td class='toggle-exchange-data-list'>111434</td>
+                                    <td>111434</td>
                                     
                                     <td class="product-action">
-                                        <span class="action-edit"><i class="fa fa-refresh"></i></span>
-                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
+                                        <div class="btn-group dropdown action-refresh">
+                                            <button type="button" class="btn-toggle-list dropdown-toggle pl-25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-edit"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item action-edit action-edit-add" href="#!"><i class="feather icon-save"></i>Отредактировать</a>
+                                                <a class="dropdown-item toggle-data-ttn" href="#!"><i class="feather icon-save"></i>Инф получателя</a>
+                                                <a class="dropdown-item toggle-product-data-list" href="#!"><i class="feather icon-save"></i>Инф товара</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-save"></i>Сгенерировать ТТН (?)</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-file"></i>Распечатать ТТН (?)</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-trash"></i>Удалить</a>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
@@ -452,72 +520,192 @@
                     </div>
                     <!-- DataTable ends -->
 
+
+
                     <!-- add new sidebar starts -->
                     <div class="add-new-data-sidebar">
-                        <div class="overlay-bg"></div>
-                        <div class="add-new-data">
+                        <div class="overlay-bg overlay-bg-add"></div>
+                        <div class="add-new-data add-new-data-add">
                             <div class="div mt-2 px-2 d-flex new-data-title justify-content-between">
                                 <div>
-                                    <h4 class="text-uppercase">Обмен</h4>
+                                    <h4 class="text-uppercase">Редактирование полей</h4>
                                 </div>
                                 <div class="hide-data-sidebar">
                                     <i class="feather icon-x"></i>
                                 </div>
                             </div>
-                            <div class="data-items pb-3">
+                            <div class="data-items_3 pb-3">
                                 <div class="data-fields px-2 mt-3">
                                     <div class="row">
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-name">Код товара</label>
-                                            <input type="text-area" class="form-control" id="data-name" placeholder="11345" value="36" disabled>
+                                            <h3>Общая информация заказа</h3>
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Номер заказа</label>
+                                            <input type="text" class="form-control" id="data-name" placeholder='12345' disabled>
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-category"> Статус </label>
+                                            <select class="form-control selectpicker" id="data-category">
+                                                <option>Проверяется</option>
+                                                <option>Готов к отправке</option>
+                                                <option>Выполнен</option>
+                                                <option>Отказ</option>
+                                                <option>Отмена</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-category"> Категория </label>
+                                            <select class="form-control selectpicker" id="data-category">
+                                                <option>Обмен</option>
+                                                <option>Возврат</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-price">Доставка (Оплачено)</label>
+                                            <input type="text" class="form-control" id="data-price" placeholder='50 грн.' >
+                                        </div>
+                                        
+
+                                        <hr>
+
+                                        <div class="col-sm-12 data-field-col mt-3">
+                                            <h3>Информация получателя</h3>
+                                        </div>
+
+                                        
+
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">ФИО</label>
+                                            <input type="text" class="form-control" id="data-name">
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-price">Номер телефона</label>
+                                            <input type="text" class="form-control" id="data-price" placeholder='+380634488133' >
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-price">Город</label>
+                                            <input type="text" class="form-control" id="data-price" placeholder='Одесса' >
+                                        </div>
+
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-price">Отделение</label>
+                                            <input type="text" class="form-control" id="data-price" placeholder='45' >
+                                        </div>
+
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-price">Примечание</label>
+                                            <input type="text" class="form-control" id="data-price" placeholder='Примечание' >
+                                        </div>
+
+
+                                        <hr>
+
+                                        <div class="col-sm-12 data-field-col mt-3">
+                                            <h3>Товары</h3>
                                         </div>
                                         
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-name">Предыдущий размер</label>
-                                            <input type="text-area" class="form-control" id="data-name" placeholder="38" value="36" disabled>
+                                            <label for="data-name">Код товара</label>
+                                            <input type="text" class="form-control" id="data-name"  placeholder='1023' >
                                         </div>
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-status">Выберите новый размер</label>
+                                            <label for="data-status">Размер</label>
                                             <select class="form-control selectpicker" id="data-status">
                                                 <option>36</option>
                                                 <option>37</option>
-                                                <option>38</option>
+                                                <option>40</option>
                                                 <option>39</option>
                                             </select>
                                         </div>
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-price">Цена для клиента</label>
-                                            <input type="text" class="form-control" id="data-price" value="">
+                                            <label for="data-name">Цена клинету</label>
+                                            <input type="text" class="form-control" id="data-name"  placeholder='750 грн' >
                                         </div>
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-status">Оплата</label>
-                                            <select class="form-control selectpicker" id="data-status">
-                                                <option>Оплатить на карту</option>
-                                                <option>Снять с личного счета</option>
+                                            <label for="data-name">Цена Опта</label>
+                                            <input type="text" class="form-control" id="data-name"  placeholder='500 грн' >
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-price">ТТН</label>
+                                            <input type="text" class="form-control" id="data-price">
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-category"> Статус </label>
+                                            <select class="form-control selectpicker" id="data-category">
+                                                <option>Проверяется</option>
+                                                <option>Готов к отправке</option>
+                                                <option>Выполнен</option>
+                                                <option>Отказ</option>
+                                                <option>Отмена</option>
                                             </select>
                                         </div>
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-price">Примечание</label>
+                                            <label for="data-category"> Категория </label>
+                                            <select class="form-control selectpicker" id="data-category">
+                                                <option>Обмен</option>
+                                                <option>Возврат</option>
+                                            </select>
+                                        </div>
+
+                                        <hr>
+
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Код товара</label>
+                                            <input type="text" class="form-control" id="data-name"  placeholder='1023' >
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-status">Размер</label>
+                                            <select class="form-control selectpicker" id="data-status">
+                                                <option>36</option>
+                                                <option>37</option>
+                                                <option>40</option>
+                                                <option>39</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Цена клинету</label>
+                                            <input type="text" class="form-control" id="data-name"  placeholder='750 грн' >
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Цена Опта</label>
+                                            <input type="text" class="form-control" id="data-name"  placeholder='500 грн' >
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-price">ТТН</label>
                                             <input type="text" class="form-control" id="data-price">
                                         </div>
-                                        
-                                       
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-category"> Статус </label>
+                                            <select class="form-control selectpicker" id="data-category">
+                                                <option>Проверяется</option>
+                                                <option>Готов к отправке</option>
+                                                <option>Выполнен</option>
+                                                <option>Отказ</option>
+                                                <option>Отмена</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-category"> Категория </label>
+                                            <select class="form-control selectpicker" id="data-category">
+                                                <option>Обмен</option>
+                                                <option>Возврат</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
                                 <div class="add-data-btn">
-                                    <button class="btn btn-primary">Подтвердить</button>
+                                    <button class="btn btn-primary">ПОДТВЕРДИТЬ</button>
                                 </div>
                                 <div class="cancel-data-btn">
-                                    <button class="btn btn-outline-danger">Отменить</button>
+                                    <button class="btn btn-outline-danger">ОТМЕНИТЬ</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- add new sidebar ends -->
-                </section>
-                <!-- Data list view end -->
                 </section>
                 <!-- Data list view end -->
             </div>
@@ -571,7 +759,7 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    <script src="../app-assets/js/scripts/ui/data-list-view.js"></script>
+    <script src="../app-assets\js\scripts\ui\scroll-perfect-excange-return.js"></script>
     <!-- END: Page JS-->
 
 </body>

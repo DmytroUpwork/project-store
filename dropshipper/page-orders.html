@@ -32,6 +32,7 @@
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/css/plugins/file-uploaders/dropzone.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets\css\pages\page-balance.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/data-list-view.css">
 
 
@@ -159,25 +160,18 @@
                 <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary" data-ticon="icon-disc"></i></a></li>
             </ul>
         </div>
+        <div class="shadow-bottom"></div>
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class="nav-item"><a href="dashboard-analytics.html"><img src="../app-assets\images\my-images\icon_analytics.svg" alt="Analytics"> <span class="menu-item" data-i18n="Analytics">Аналитика</span></a>
+                <li class=" nav-item"><a href="dashboard-analytics.html"><img src="../app-assets\images\my-images\icon_analytics.svg" alt="Analytics"> <span class="menu-item" data-i18n="Analytics">Аналитика</span></a>
                 </li>
                 <li class="active nav-item"><a href="page-orders.html"><img src="../app-assets\images\my-images\icon_orders.svg" alt="Orders"> <span class="menu-title" data-i18n="Orders">Заказы</span></a>
                 </li>
-                <li class=" nav-item"><a href="page-exchange-return.html"><img src="../app-assets\images\my-images\icon_orders.svg" alt="exchange"> <span class="menu-title" data-i18n="Exchange">Возвраты / Обмены</span></a>
+                <li class="nav-item"><a href="page-exchange-return.html"><img src="../app-assets\images\my-images\icon_orders.svg" alt="exchange"> <span class="menu-title" data-i18n="Exchange">Возвраты / Обмены</span></a>
                 </li>
-                <li class="nav-item"><a href="data-list-balance.html"><img src="../app-assets\images\my-images\icon_payouts.svg" alt="Payouts"><span class="menu-title" data-i18n="Balance">Баланс</span></a>
+                <li class=" nav-item"><a href="data-list-balance.html"><img src="../app-assets\images\my-images\icon_payouts.svg" alt="Payouts"><span class="menu-title" data-i18n="Balance">Баланс</span></a>
                 </li>
-                <li class="nav-item"><a href="page-products.html"><img src="../app-assets\images\my-images\icon_products.svg" alt="Orders"><span class="menu-item" data-i18n="Thumb View">Товары</span></a>
-                </li>
-                <li class=" nav-item"><a href="index.html"><img src="../app-assets\images\my-images\icon_my_profile.svg" alt="My profile"><span class="menu-title" data-i18n="User">Пользователь</span></a>
-                    <ul class="menu-content">
-                        <li class=" nav-item"><a href="app-user-view.html"><i class="feather icon-user"></i><span class="menu-item" data-i18n="User view">Личный кабинет</span></a>                 
-                        </li>
-                    </ul>
-                </li>
-                <li class=" nav-item"><a href="../app-ecommerce-checkout.html"><img src="../app-assets\images\my-images\icon_basket.svg" alt="Basket"><span class="menu-item" data-i18n="Checkout">Корзина</span></a>
+                <li class="nav-item"><a href="app-user-view.html"><img src="../app-assets\images\my-images\icon_my_profile.svg" alt="Orders"><span class="menu-item" data-i18n="Thumb View">Мой профиль</span></a>
                 </li>
                 <li class=" nav-item"><a href="app-chat.html"><i class="feather icon-message-square"></i><span class="menu-title" data-i18n="Chat">Чат</span></a>
                 </li>
@@ -286,12 +280,14 @@
                     </div>
                 </section>
                 <!-- Dashboard Ecommerce ends -->
-                
+                <h1>Мои заказы</h1>
                 <!-- Data list view starts -->
-                <section id="data-list-view" class="data-list-view-header data-list-not-user">
+                <section id="data-list-view" class="data-list-view-header data-list-not-user data-list-not-btn">
+                    <div class="action-btns">
+                        <a class="btn-outline-primary link-checkout" href="../app-ecommerce-checkout.html">Добавить <i class='feather icon-plus'></i></a>
+                    </div>
                     <!-- DataTable starts -->
                     <div class="table-responsive">
-                        <h1>Мои заказы</h1>
                         <table class="table data-list-view event-table" id="example">
                             <thead>
                                 <tr>
@@ -318,15 +314,32 @@
                                     </td>
                                     <td>3000 грн</td>
                                     <td>750 грн</td>
-                                    <td class='toggle-product-data-list'>12564, 14568</td>
-                                    <td class="toggle-data-ttn">59 0002 3213 5431</td>
+                                    <td>12564, 14568</td>
+                                    <td>59 0002 3213 5431</td>
                                     <td>Примечание</td>
                                     <td>1123458</td>
                                     <td class="product-action">
-                                        <span class="action-edit"><i class="fa fa-refresh"></i></span>
-                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span>                      -->
+                                        <div class="btn-group dropdown action-refresh">
+                                            <button type="button" class="btn-toggle-list dropdown-toggle pl-25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-edit"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item toggle-data-ttn" href="#!"><i class="feather icon-save"></i>Инф получателя</a>
+                                                <a class="dropdown-item toggle-product-data-list" href="#!"><i class="feather icon-save"></i>Инф товара</a>
+                                                
+                                                <a class="dropdown-item action-edit action-edit-return" href="#!"><i class="feather icon-save"></i>Подтвердить бронь</a>
+                                                <a class="dropdown-item action-edit action-edit-add" href="#!"><i class="feather icon-save"></i>Возврат</a>
+                                                <a class="dropdown-item action-edit action-edit-exchange" href="#!"><i class="feather icon-save"></i>Обмен</a>
+
+                                                <!-- add-new-data-exchange -->
+                                                
+    
+                                                
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
+
                                 <tr class='bg-first-td'>
                                     <td class='bg-first-td'>10 сентября</td>
                                     <td>
@@ -338,15 +351,30 @@
                                     </td>
                                     <td>550 грн</td>
                                     <td>150 грн</td>
-                                    <td class='toggle-product-data-list'>1024</td>
-                                    <td class="toggle-data-ttn">59 0002 3213 5432</td>
+                                    <td>1024</td>
+                                    <td>59 0002 3213 5432</td>
                                     <td>Клиент отказался</td>
                                     <td>1123458</td>
                                     <td class="product-action">
-                                        <span class="action-edit"><i class="fa fa-refresh"></i></span>
-                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
+                                        <div class="btn-group dropdown action-refresh">
+                                            <button type="button" class="btn-toggle-list dropdown-toggle pl-25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-edit"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item toggle-data-ttn" href="#!"><i class="feather icon-save"></i>Инф получателя</a>
+                                                <a class="dropdown-item toggle-product-data-list" href="#!"><i class="feather icon-save"></i>Инф товара</a>
+                                                
+                                                <a class="dropdown-item action-edit action-edit-return" href="#!"><i class="feather icon-save"></i>Подтвердить бронь</a>
+                                                <a class="dropdown-item action-edit action-edit-add" href="#!"><i class="feather icon-save"></i>Возврат</a>
+                                                <a class="dropdown-item action-edit action-edit-exchange" href="#!"><i class="feather icon-save"></i>Обмен</a>
+                                                
+    
+                                                
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
+
                                 <tr class='bg-first-td'>
                                     <td class='bg-first-td'>11 сентября</td>
                                     <td>
@@ -358,13 +386,27 @@
                                     </td>
                                     <td>880 грн</td>
                                     <td>280 грн</td>
-                                    <td class='toggle-product-data-list'>41254.</td>
-                                    <td class="toggle-data-ttn">59 0002 3213 5432</td>
+                                    <td>41254.</td>
+                                    <td>59 0002 3213 5432</td>
                                     <td>-</td>
                                     <td>1123458</td>
                                     <td class="product-action">
-                                        <span class="action-edit"><i class="fa fa-refresh"></i></span>
-                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
+                                        <div class="btn-group dropdown action-refresh">
+                                            <button type="button" class="btn-toggle-list dropdown-toggle pl-25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-edit"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item toggle-data-ttn" href="#!"><i class="feather icon-save"></i>Инф получателя</a>
+                                                <a class="dropdown-item toggle-product-data-list" href="#!"><i class="feather icon-save"></i>Инф товара</a>
+                                                
+                                                <a class="dropdown-item action-edit action-edit-return" href="#!"><i class="feather icon-save"></i>Подтвердить бронь</a>
+                                                <a class="dropdown-item action-edit action-edit-add" href="#!"><i class="feather icon-save"></i>Возврат</a>
+                                                <a class="dropdown-item action-edit action-edit-exchange" href="#!"><i class="feather icon-save"></i>Обмен</a>
+                                                
+    
+                                                
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr class='bg-first-td'>
@@ -378,13 +420,27 @@
                                     </td>
                                     <td>2300 грн</td>
                                     <td>850 грн</td>
-                                    <td class='toggle-product-data-list'>32145,8321,3214</td>
-                                    <td class="toggle-data-ttn">59 0002 3213 5432</td>
+                                    <td>32145,8321,3214</td>
+                                    <td>59 0002 3213 5432</td>
                                     <td>-</td>
                                     <td>1123458</td>
                                     <td class="product-action">
-                                        <span class="action-edit"><i class="fa fa-refresh"></i></span>
-                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
+                                        <div class="btn-group dropdown action-refresh">
+                                            <button type="button" class="btn-toggle-list dropdown-toggle pl-25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-edit"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item toggle-data-ttn" href="#!"><i class="feather icon-save"></i>Инф получателя</a>
+                                                <a class="dropdown-item toggle-product-data-list" href="#!"><i class="feather icon-save"></i>Инф товара</a>
+                                                
+                                                <a class="dropdown-item action-edit action-edit-return" href="#!"><i class="feather icon-save"></i>Подтвердить бронь</a>
+                                                <a class="dropdown-item action-edit action-edit-add" href="#!"><i class="feather icon-save"></i>Возврат</a>
+                                                <a class="dropdown-item action-edit action-edit-exchange" href="#!"><i class="feather icon-save"></i>Обмен</a>
+                                                
+    
+                                                
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr class='bg-first-td'>
@@ -398,27 +454,39 @@
                                     </td>
                                     <td>350 грн</td>
                                     <td>50 грн</td>
-                                    <td class='toggle-product-data-list'>23142</td>
-                                    <td class="toggle-data-ttn">59 0002 3213 5432</td>
+                                    <td>23142</td>
+                                    <td>59 0002 3213 5432</td>
                                     <td>Проверка на длинный текст примечания. Посмтри как будет</td>
                                     <td>1123458</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="fa fa-refresh"></i></span>
-                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
+                                     <td class="product-action">
+                                        <div class="btn-group dropdown action-refresh">
+                                            <button type="button" class="btn-toggle-list dropdown-toggle pl-25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-edit"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item toggle-data-ttn" href="#!"><i class="feather icon-save"></i>Инф получателя</a>
+                                                <a class="dropdown-item toggle-product-data-list" href="#!"><i class="feather icon-save"></i>Инф товара</a>
+                                                
+                                                <a class="dropdown-item action-edit action-edit-return" href="#!"><i class="feather icon-save"></i>Подтвердить бронь</a>
+                                                <a class="dropdown-item action-edit action-edit-add" href="#!"><i class="feather icon-save"></i>Возврат</a>
+                                                <a class="dropdown-item action-edit action-edit-exchange" href="#!"><i class="feather icon-save"></i>Обмен</a>
+                                                
+    
+                                                
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
                     <!-- DataTable ends -->
-
                     <!-- add new sidebar starts -->
                     <div class="add-new-data-sidebar">
-                        <div class="overlay-bg"></div>
-                        <div class="add-new-data">
+                        <div class="overlay-bg overlay-bg-return"></div>
+                        <div class="add-new-data add-new-data-return">
                             <div class="div mt-2 px-2 d-flex new-data-title justify-content-between">
                                 <div>
-                                    <h4 class="text-uppercase">Обмен</h4>
+                                    <h4 class="text-uppercase">Подтверждение брони</h4>
                                 </div>
                                 <div class="hide-data-sidebar">
                                     <i class="feather icon-x"></i>
@@ -428,41 +496,53 @@
                                 <div class="data-fields px-2 mt-3">
                                     <div class="row">
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-name">Код товара</label>
-                                            <input type="text-area" class="form-control" id="data-name" placeholder="11345" value="36" disabled>
-                                        </div>
-                                        
-                                        <div class="col-sm-12 data-field-col">
-                                            <label for="data-name">Предыдущий размер</label>
-                                            <input type="text-area" class="form-control" id="data-name" placeholder="38" value="36" disabled>
+                                            <h3>Данные получателя</h3>
                                         </div>
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-status">Выберите новый размер</label>
-                                            <select class="form-control selectpicker" id="data-status">
-                                                <option>36</option>
-                                                <option>37</option>
-                                                <option>38</option>
-                                                <option>39</option>
-                                            </select>
+                                            <label for="data-name">ФИО</label>
+                                            <input type="text-area" class="form-control" id="data-name" placeholder="11345" value="Илона Ярослав" >
                                         </div>
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-price">Цена для клиента</label>
-                                            <input type="text" class="form-control" id="data-price" value="">
+                                            <label for="data-name">Номер телефона</label>
+                                            <input type="text-area" class="form-control" id="data-name" placeholder="38" value="+380634488133" >
                                         </div>
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-status">Оплата</label>
-                                            <select class="form-control selectpicker" id="data-status">
-                                                <option>Оплатить на карту</option>
+                                            <label for="data-name">Город</label>
+                                            <input type="text-area" class="form-control" id="data-name" placeholder="11345" value="Одесса" >
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Номер отделения</label>
+                                            <input type="text-area" class="form-control" id="data-name" placeholder="38" value="36" >
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Примечание</label>
+                                            <input type="text-area" class="form-control" id="data-name" placeholder="38" value="36" >
+                                        </div>
+                                        <hr>
+                                        <div class="col-sm-12 data-field-col">
+                                            <h3>Оплата</h3>
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-category"> Способ оплаты </label>
+                                            <select class="form-control selectpicker" id="data-category">
                                                 <option>Снять с личного счета</option>
+                                                <option>Оплата на карту</option>
                                             </select>
                                         </div>
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-price">Примечание</label>
-                                            <input type="text" class="form-control" id="data-price">
+                                            <label for="data-name">Сума предоплаты</label>
+                                            <input type="text-area" class="form-control" id="data-name" placeholder="38" value="150 грн" disabled>
                                         </div>
-                                        
-                                       
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Сума предоплаты</label>
+                                            <input type="text-area" class="form-control" id="data-name" placeholder="4149 6293 9393 0938 Ф Е" >
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Дата, время и имя отправителя</label>
+                                            <input type="text-area" class="form-control" id="data-name" placeholder="4149 6293 9393 0938 Ф Е" >
+                                        </div>
                                     </div>
+                                    
                                 </div>
                             </div>
                             <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
@@ -474,10 +554,251 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="overlay-bg overlay-bg-add"></div>
+                        <div class="add-new-data add-new-data-add">
+                            <div class="div mt-2 px-2 d-flex new-data-title justify-content-between">
+                                <div>
+                                    <h4 class="text-uppercase">Возврат</h4>
+                                </div>
+                                <div class="hide-data-sidebar">
+                                    <i class="feather icon-x"></i>
+                                </div>
+                            </div>
+                            <div class="data-items_3 pb-3">
+                                <div class="data-fields px-2 mt-3">
+                                    <div class="row">
+                                        <div class="col-sm-6 data-field-col">
+                                            <strong>1 Товар</strong> 
+                                        </div>
+                                        <div class="col-sm-6 data-field-col">
+                                            <span class="vs-checkbox-con vs-checkbox-primary ">
+                                                <span class="mr-2">Вернуть товар</span>
+                                                    <input type="checkbox" value="false">
+                                                    <span class="vs-checkbox">
+                                                        <span class="vs-checkbox--check">
+                                                            <i class="vs-icon feather icon-check"></i>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Код товара</label>
+                                            <input type="text-area" class="form-control" id="data-name" placeholder="11345" value="1234" disabled>
+                                        </div>
+                                        
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Предыдущий размер</label>
+                                            <input type="text-area" class="form-control" id="data-name" placeholder="38" value="36" disabled>
+                                        </div>
+                                        
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-price">Цена для клиента</label>
+                                            <input type="text" class="form-control" id="data-price" value="750 грн" disabled>
+                                        </div>
+                                        
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-price">Цена Опта</label>
+                                            <input type="text" class="form-control" id="data-price" value="500 грн" disabled>
+                                        </div>
+                                        
+                                        <hr>
+                                        <div class="col-sm-6 data-field-col">
+                                            <strong>2 Товар</strong> 
+                                        </div>
+                                        <div class="col-sm-6 data-field-col">
+                                            <span class="vs-checkbox-con vs-checkbox-primary ">
+                                                <span class="mr-2">Вернуть товар</span>
+                                                    <input type="checkbox" value="false">
+                                                    <span class="vs-checkbox">
+                                                        <span class="vs-checkbox--check">
+                                                            <i class="vs-icon feather icon-check"></i>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Код товара</label>
+                                            <input type="text-area" class="form-control" id="data-name" placeholder="11345" value="1234" disabled>
+                                        </div>
+                                        
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Предыдущий размер</label>
+                                            <input type="text-area" class="form-control" id="data-name" placeholder="38" value="36" disabled>
+                                        </div>
+                                        
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-price">Цена для клиента</label>
+                                            <input type="text" class="form-control" id="data-price" value="750 грн" disabled>
+                                        </div>
+                                        
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-price">Цена Опта</label>
+                                            <input type="text" class="form-control" id="data-price" value="500 грн" disabled>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
+                                <div class="add-data-btn">
+                                    <button class="btn btn-primary">ПОДТВЕРДИТЬ</button>
+                                </div>
+                                <div class="cancel-data-btn">
+                                    <button class="btn btn-outline-danger">ОТМЕНИТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="overlay-bg overlay-bg-exchange"></div>
+                        <div class="add-new-data add-new-data-exchange">
+                            <div class="div mt-2 px-2 d-flex new-data-title justify-content-between">
+                                <div>
+                                    <h4 class="text-uppercase">Обмен</h4>
+                                </div>
+                                <div class="hide-data-sidebar">
+                                    <i class="feather icon-x"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="data-items_1 pb-3">
+                                <div class="data-fields px-2 mt-3">
+                                    <div class="row">
+                                        <div class="col-sm-6 data-field-col">
+                                            <strong>1 Товар</strong> 
+                                        </div>
+                                        <div class="col-sm-6 data-field-col">
+                                            <span class="vs-checkbox-con vs-checkbox-primary ">
+                                                <span class="mr-2">Обменять товар</span>
+                                                    <input type="checkbox" value="false">
+                                                    <span class="vs-checkbox">
+                                                        <span class="vs-checkbox--check">
+                                                            <i class="vs-icon feather icon-check"></i>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="col-sm-6 data-field-col">
+                                            <label for="data-name">Код товара</label>
+                                            <input type="text-area" class="form-control" id="data-name" placeholder="11345" value="36" disabled>
+                                        </div>
+                                        <div class="col-sm-6 data-field-col">
+                                            <label for="data-name">Код товара</label>
+                                            <div class="input-group">
+                                                <input type="text-area" class="form-control" id="data-name" value="42321" placeholder="11345">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text feather icon-repeat" id="basic-addon4"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 data-field-col">
+                                            <label for="data-name">Предыдущий размер</label>
+                                            <input type="text-area" class="form-control" id="data-name" placeholder="38" value="36" disabled>
+                                        </div>
+                                        <div class="col-sm-6 data-field-col">
+                                            <label for="data-status">Выберите новый размер</label>
+                                            <select class="form-control selectpicker" id="data-status">
+                                                <option>36</option>
+                                                <option>37</option>
+                                                <option>38</option>
+                                                <option>39</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6 data-field-col">
+                                            <label for="data-price">Цена для клиента</label>
+                                            <input type="text" class="form-control" id="data-price" value="750 Грн" disabled>
+                                        </div>
+                                        <div class="col-sm-6 data-field-col">
+                                            <label for="data-price">Цена для клиента</label>
+                                            <input type="text" class="form-control" id="data-price" value="">
+                                        </div>
+                                        <div class="col-sm-6 data-field-col">
+                                            <label for="data-price">Цена Опта</label>
+                                            <input type="text" class="form-control" id="data-price" value="500 грн" disabled>
+                                        </div>
+                                        <div class="col-sm-6 data-field-col">
+                                            <label for="data-price">Цена Опта</label>
+                                            <input type="text" class="form-control" id="data-price" value="550 грн" disabled>
+                                        </div>
+                                    </div>
+                                    <hr class="mt-5 mb-5"> 
+                                    <div class="row">
+                                        <div class="col-sm-6 data-field-col">
+                                            <strong>2 Товар</strong> 
+                                        </div>
+                                        <div class="col-sm-6 data-field-col">
+                                            <span class="vs-checkbox-con vs-checkbox-primary ">
+                                                <span class="mr-2">Обменять товар</span>
+                                                    <input type="checkbox" value="false">
+                                                    <span class="vs-checkbox">
+                                                        <span class="vs-checkbox--check">
+                                                            <i class="vs-icon feather icon-check"></i>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        <div class="col-sm-6 data-field-col">
+                                            <label for="data-name">Код товара</label>
+                                            <input type="text-area" class="form-control" id="data-name" placeholder="11345" value="36" disabled>
+                                        </div>
+                                        <div class="col-sm-6 data-field-col">
+                                            <label for="data-name">Код товара</label>
+                                            <div class="input-group">
+                                                <input type="text-area" class="form-control" id="data-name" value="42321" placeholder="11345">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text feather icon-repeat" id="basic-addon4"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 data-field-col">
+                                            <label for="data-name">Предыдущий размер</label>
+                                            <input type="text-area" class="form-control" id="data-name" placeholder="38" value="36" disabled>
+                                        </div>
+                                        <div class="col-sm-6 data-field-col">
+                                            <label for="data-status">Выберите новый размер</label>
+                                            <select class="form-control selectpicker" id="data-status">
+                                                <option>36</option>
+                                                <option>37</option>
+                                                <option>38</option>
+                                                <option>39</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-6 data-field-col">
+                                            <label for="data-price">Цена для клиента</label>
+                                            <input type="text" class="form-control" id="data-price" value="750 Грн" disabled>
+                                        </div>
+                                        <div class="col-sm-6 data-field-col">
+                                            <label for="data-price">Цена для клиента</label>
+                                            <input type="text" class="form-control" id="data-price" value="">
+                                        </div>
+                                        <div class="col-sm-6 data-field-col">
+                                            <label for="data-price">Цена Опта</label>
+                                            <input type="text" class="form-control" id="data-price" value="500 грн" disabled>
+                                        </div>
+                                        <div class="col-sm-6 data-field-col">
+                                            <label for="data-price">Цена Опта</label>
+                                            <input type="text" class="form-control" id="data-price" value="550 грн" disabled>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
+                                <div class="add-data-btn">
+                                    <button class="btn btn-primary">Подтвердить</button>
+                                </div>
+                                <div class="cancel-data-btn">
+                                    <button class="btn btn-outline-danger">Отменить</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- add new sidebar ends -->
-                </section>
-                <!-- Data list view end -->
                 </section>
                 <!-- Data list view end -->
             </div>

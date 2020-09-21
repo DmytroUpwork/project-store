@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html class="loading" lang="ru">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="PIXINVENT">
+    <title>Kondi-shop | WEB магазин обуви</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./app-assets/images/favicon.ico">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/extensions/nouislider.min.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/ui/prism.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/forms/select/select2.min.css"> -->
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/bootstrap-extended.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./app-assets/css/colors.css"> -->
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/components.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/dark-layout.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/semi-dark-layout.css"> -->
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./app-assets/css/core/colors/palette-gradient.css"> -->
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/plugins/extensions/noui-slider.min.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets\css\pages\page-delivery.css">
+    <link rel="stylesheet" type="text/css" href="./app-assets/css/pages/data-list-view.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern content-left-sidebar chat-application navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="content-left-sidebar">
+
+  <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu floating-nav">
+        <div class="navbar-wrapper">
+          <div class="navbar-container content">
+            <div class="navbar-collapse" id="navbar-mobile">
+                <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+                  <ul class="nav navbar-nav">
+                      <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon feather icon-menu"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+    </nav>
+    <!-- END: Header-->
+    
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mr-auto"><a class="navbar-brand" href="app-ecommerce-shop.html">
+                        <div class="brand-logo"></div>
+                    </a></li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary" data-ticon="icon-disc"></i></a></li>
+            </ul>
+        </div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=' nav-item'><a href="index.html"><img src="./app-assets\images\my-images\icon_products.svg" alt="Orders"><span class="menu-item" data-i18n="Shop">Товары</span></a>
+                </li>
+                <li class=" nav-item"><a href="app-ecommerce-details.html"><i class="fa fa-shopping-bag"></i><span class="menu-item" data-i18n="Details">О продукте</span></a>
+                </li>
+                <li class=" nav-item"><a href="app-ecommerce-checkout.html"><img src="./app-assets\images\my-images\icon_basket.svg" alt="Basket"><span class="menu-item" data-i18n="Checkout">Корзина</span></a>
+                </li>
+                <li class='nav-item mt-5'><a href="admin/page-orders.html"><i class="fa fa-cogs"></i><span class="menu-item" data-i18n="Shop">Админ</span></a>
+                </li>
+                <li class='nav-item'><a href="./dropshipper\dashboard-analytics.html"><i class="fa fa-cogs"></i><span class="menu-item" data-i18n="Shop">ДШ панель</span></a>
+                </li>
+                <li class='nav-item'><a href="./user/page-orders.html"><i class="fa fa-cogs"></i><span class="menu-item" data-i18n="Shop">Панель пользователя</span></a>
+                </li>
+                <li class='nav-item mt-5'><a href="admin/page-orders.html"><i class="fa fa-cogs"></i><span class="menu-item" data-i18n="Shop">О нас</span></a>
+                </li>
+                <li class='active nav-item'><a href="page-delivery.html"><i class="fa fa-cogs"></i><span class="menu-item" data-i18n="Shop">Дропшипинг</span></a>
+                </li>
+                <li class='nav-item'><a href="admin/page-orders.html"><i class="fa fa-cogs"></i><span class="menu-item" data-i18n="Shop">Контакты</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-footer">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation"">
+                <li><a href="./log-files\auth-login.html"><i class="fa fa-cogs"></i><span class="menu-item" data-i18n="Shop">Войти</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+    
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+      <section class="what-is-dropshipping">
+        <div class="row">
+          <div class="col-lg-5 mb-5">
+            <h1>Что такое Дропшипинг?</h1>
+            <p class="mb-3">
+              Простыми словами -это посредничество . Между поставщиком (то есть мы) и продавцом (то есть вы).
+              Вы продвигаете наш товар в своём интернет-магазине (Инстаграмм , вконтакте, фейсбуке,пром ... и т д)
+            </p>
+            <div class="d-flex">
+              <a href="!#" class="link-dropshipping">
+                Стать дропшипером
+              </a>
+              <a href="#!" class="link-learn-more">
+                Узнать больше
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="card">
+              <div class="card-body p-0">
+                <img src="./app-assets\images\my-images\img-dropshipping\img_1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="work-with-us">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body p-0">
+                  <img src="./app-assets\images\my-images\img-dropshipping\img_2.jpg" alt="">
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-6 pl-3">
+            <h1>Как выстраивается работа с нами?</h1>
+              <div class="d-flex mb-2">
+                <div>
+                  <span class="label-color label-color-violet">1</span>
+                </div>
+                <p>
+                  Вы находите клиента на нашу обувь
+                </p>
+              </div>
+              <div class="d-flex mb-2">
+                <div>
+                  <span class="label-color label-color-orange">2</span>
+                </div>
+                <p>
+                  Оставляете заявку в личном кабинете на сайте
+                </p>
+              </div>
+              <div class="d-flex mb-2">
+                <div>
+                  <span class="label-color label-color-green">3</span>
+                </div>
+                <p>
+                  Мы отправляем заказ вашему покупателю
+                </p>
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      <section class="account-features">
+        <h1 class="text-center">
+          Какие возможности дает наш Личный кабинет
+        </h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <span class="label-color label-color-violet">1</span>
+                  <h2>Отслеживание заказов</h2>
+                  <p>
+                    Где заказ, когда он был выполнен, общая стоимость заказа и много другой полезной информации
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <span class="label-color label-color-blue">2</span>
+                  <h2>Бронирование</h2>
+                  <p>
+                    Вы самостоятельнос сможете забронировать любую пару на 3 часа.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <span class="label-color label-color-light-blue">3</span>
+                  <h2>Бонусы</h2>
+                  <p>
+                    За каждый выполненый заказ будут начислены бонусы. Ими вы можете оплатить доставку или же просто перевести на карту
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <span class="label-color label-color-light-green">4</span>
+                  <h2>Бухгалтерия</h2>
+                  <p>
+                    Вся ваша бухгалтерия находится у вас перед глазами ( вам не нужно вести дневник и переживать , что вы что-то пропустили или забыли)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <span class="label-color label-color-light-orange">5</span>
+                  <h2>Аналитика</h2>
+                  <p>
+                    За любой временной диапозон вы можете посмотреть сколько заказов вы сделали, сколько выполнили, топ продаваемых товаром и многое другое.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <span class="label-color label-color-red">6</span>
+                  <h2>Выгрузка товаров</h2>
+                  <p>
+                    Выгрузка товаров (фото, текст) в пару кликов в самые популярные Соц. сети: Инстаграм, Фейсбук, ВК.Экономьте своё время!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+      <section class="terms-of-cooperation">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1>Условия сотрудничества</h1>
+              <div class="d-flex mb-2">
+                <div class="mr-2">
+                  <span class="label-color label-color-violet">1</span>
+                </div>
+                <p>
+                  Минимальная предоплата 150 грн либо 100% оплата 
+                </p>
+              </div>
+              <div class="d-flex mb-2">
+                <div class="mr-2">
+                  <span class="label-color label-color-blue">2</span>
+                </div>
+                <p>
+                  ОПТ от 1 пары, при условии размещения нашего ассортимента в Вашем магазине или социальных сетях.
+                </p>
+              </div>
+              <div class="d-flex mb-2">
+                <div class="mr-2">
+                  <span class="label-color label-color-light-blue">3</span>
+                </div>
+                <p>
+                  Доставка по Украине Новой почтой, Укр.Почта,. За границу через Укр.Почту
+                </p>
+              </div>
+              <div class="d-flex mb-2">
+                <div class="mr-2">
+                  <span class="label-color label-color-green">4</span>
+                </div>
+                <p>
+                  Все посылки хранятся на отделении 5 дней, после этого автоматически возвращаются назад,
+                  если Ваш клиент не успел забрать посылку - он оплачивает транспортные услуги в обе стороны.
+                </p>
+              </div>
+              <div class="d-flex mb-2">
+                <div class="mr-2">
+                  <span class="label-color label-color-orange">5</span>
+                </div>
+                <p>
+                  Обувь под заказ обмену и возврату не подлежат!
+                </p>
+              </div>
+              <div class="d-flex mb-2">
+                <div class="mr-2">
+                  <span class="label-color label-color-light-orange">6</span>
+                </div>
+                <p>
+                  Претензии по браку принимаются только на Новой почте с заполненным актом осмотра груза.
+                   Если клиент забрал посылку , претензии по браку или комплектации не принимаются. 
+                   ОБЯЗАТЕЛЬНО СООБЩАЙТЕ ЭТО КЛИЕНТУ.
+                </p>
+              </div>
+              <div class="d-flex mb-2">
+                <div class="mr-2">
+                  <span class="label-color label-color-red">7</span>
+                </div>
+                <p>
+                  График отправок: 6 дней в неделю если заказ оформлен до 15:00 посылка уезжает день в день . 
+                  Заказ оформленный после 15:00 уезжает на следующий день.
+                </p>
+              </div>
+          </div>
+          <div class="col-lg-6 pt-5">
+            <div class="card mt-5">
+                <div class="card-body p-0">
+                  <img src="./app-assets\images\my-images\img-dropshipping\img_3.jpg" alt="">
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="ready-start-partnership">
+        <div>
+          <h1>Готовы начать сотрудничество?</h1>
+          <a href="!#" class="link-dropshipping ml-5">
+            Зарегистрироваться
+          </a>
+        </div>
+      </section>
+    </div>
+    <!-- END: Content-->
+    
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+    
+    <!-- BEGIN: Vendor JS-->
+    <script src="./app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+    
+    <!-- BEGIN: Theme JS-->
+    <script src="./app-assets/js/core/app-menu.js"></script>
+    <script src="./app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+</body>
+<!-- END: Body-->
+
+</html>

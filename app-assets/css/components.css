@@ -205,6 +205,16 @@ html .pace .pace-progress {
   }
 }
 
+.card:not(.ecommerce-card) {
+  transition: 0.5s;
+}
+
+.card:not(.ecommerce-card):hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  transform: translateY(-4px);
+}
+
+
 .card-body {
   padding: 19px 14px 16px 18px;
   line-height: 25px;
@@ -214,15 +224,6 @@ html .pace .pace-progress {
   border-radius: 5px;
   cursor: pointer;
 }
-
-.card-body:hover {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-}
-
-/* .card-body:hover .card-body__data {
-  color: #4656C7;
-} */
-
 
 
 .card-body .card-body__title {

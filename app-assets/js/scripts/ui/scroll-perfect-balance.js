@@ -61,9 +61,6 @@ $(".data-list-view").each(function () {
 
 
 
-
-
-
 $(".data-list-view tbody").on("click", ".toggle-data-ttn", function () {
     var table = $(this).closest("table").data("dataTableObject");
     var tr = $(this).closest("tr");
@@ -500,11 +497,23 @@ function formatExchange() {
     $("#data-category, #data-status").prop("selectedIndex", 0)
   })
 
+  // new PerfectScrollbar(".data-items");
+  // new PerfectScrollbar(".data-items_1");
 
   new PerfectScrollbar(".data-items_3");
-  new PerfectScrollbar(".data-items");
-  new PerfectScrollbar(".data-items_1");
+  new PerfectScrollbar(".data-items_4");
+  new PerfectScrollbar(".data-items_5");
+  new PerfectScrollbar(".data-items_6");
+  new PerfectScrollbar(".data-items_7");
+  new PerfectScrollbar(".data-items_8");
+  new PerfectScrollbar(".data-items_9");
+  new PerfectScrollbar(".data-items_10");
   
+
+  // new PerfectScrollbar(".data-items_3");
+  // new PerfectScrollbar(".data-items_4");
+  // new PerfectScrollbar(".data-items_5");
+  // new PerfectScrollbar(".data-items_6");
 
  
   

@@ -158,24 +158,26 @@
         </div>
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class="nav-item"><a href="dashboard-analytics.html"><img src="../app-assets\images\my-images\icon_analytics.svg" alt="Analytics"><span class="menu-title" data-i18n="Analytics">Аналитика</span></a>
+                </li>
                 <li class="nav-item"><a href="page-orders.html"><img src="../app-assets\images\my-images\icon_orders.svg" alt="Orders"><span class="menu-title" data-i18n="Orders">Заказы</span></a>
                 </li>
                 <li class=" nav-item"><a href="page-exchange-return.html"><img src="../app-assets\images\my-images\icon_orders.svg" alt="exchange"> <span class="menu-title" data-i18n="Exchange">Возвраты / Обмены</span></a>
                 </li>
                 <li class="active nav-item"><a href="data-list-despatch.html"><img src="../app-assets\images\my-images\icon-menu-dispatch.svg" alt="Dispatch"><span class="menu-title" data-i18n="Dispatch">Отправки</span></a>
                 </li>
-                <li class=" nav-item"><a href="data-list-users.html"><img src="../app-assets\images\my-images\icon-menu-users.svg" alt="Menu users"><span class="menu-title" data-i18n="Menu users">Пользователи</span></a>
-                </li>
                 <li class=" nav-item"><a href="data-list-balance.html"><img src="../app-assets\images\my-images\icon_payouts.svg" alt="Payouts"><span class="menu-title" data-i18n="Balance">Баланс</span></a>
                 </li>
+                <li class=" nav-item"><a href="data-list-users.html"><img src="../app-assets\images\my-images\icon-menu-users.svg" alt="Menu users"><span class="menu-title" data-i18n="Menu users">Пользователи</span></a>
+                </li>
+                
                 <li class=" nav-item"><a href="page-products.html"><img src="../app-assets\images\my-images\icon_products.svg" alt="Orders"><span class="menu-title" data-i18n="Thumb View">Товары</span></a>
-                </li>
-                <li class="nav-item"><a href="dashboard-analytics.html"><img src="../app-assets\images\my-images\icon_analytics.svg" alt="Analytics"><span class="menu-title" data-i18n="Analytics">Аналитика</span></a>
-                </li>
-                <li class=" nav-item"><a href="app-chat.html"><i class="feather icon-message-square"></i><span class="menu-title" data-i18n="Chat">Чат</span></a>
                 </li>
                 <li class="nav-item"><a href="page-account-settings.html"><img src="../app-assets\images\my-images\icon-menu-customization.svg" alt="Customization"><span class="menu-title" data-i18n="Settings">Настройки</span></a>
                 </li>
+                <li class=" nav-item"><a href="app-chat.html"><i class="feather icon-message-square"></i><span class="menu-title" data-i18n="Chat">Чат</span></a>
+                </li>
+                
             </ul>
         </div>
         <div class="navbar-footer">
@@ -286,28 +288,30 @@
                 
                 <!-- Data list view starts -->
                 <section id="data-list-view" class="data-list-view-header data-list-not-user">
-                    <!-- DataTable starts -->
-                    <div class="table-responsive">
-                        <h1>Список отправок</h1>
-                        <div class="action-btns">
-                            <div class="btn-dropdown mr-1 mb-1">
-                                <div class="btn-group dropdown actions-dropodown">
-                                    <button type="button" class="btn btn-white dropdown-toggle waves-effect waves-light btn-outline-primary text-uppercase" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        ДЕЙСТВИЯ
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#"><i class="feather icon-save"></i>Сгенерировать ТТН</a>
-                                        <a class="dropdown-item" href="#"><i class="feather icon-file"></i>Распечатать ТТН</a>
-                                        <a class="dropdown-item" href="#"><i class="feather icon-trash"></i>Удалить</a>
-                                        <a class="dropdown-item" href="#"><i class="feather icon-trash"></i>Отменить</a>
-                                    </div>
+                    
+                    
+                    <div class="action-btns">
+                        <div class="btn-dropdown mr-1 mb-1">
+                            <div class="btn-group dropdown actions-dropodown">
+                                <button type="button" class="btn btn-white dropdown-toggle waves-effect waves-light btn-outline-primary text-uppercase" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    ДЕЙСТВИЯ
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#"><i class="feather icon-save"></i>Сгенерировать ТТН</a>
+                                    <a class="dropdown-item" href="#"><i class="feather icon-file"></i>Распечатать ТТН</a>
+                                    <a class="dropdown-item" href="#"><i class="feather icon-trash"></i>Удалить</a>
+                                    <a class="dropdown-item" href="#"><i class="feather icon-trash"></i>Отменить</a>
                                 </div>
                             </div>
                         </div>
-                        <table class="table data-list-dispatch" id="example">
+                    </div>
+                    <!-- DataTable starts -->
+                    <div class="table-responsive">
+                        <h1>Список отправок</h1>
+                        <table class="table data-list-view event-table" id="example">
                             <thead>
                                 <tr>
-                                    <th></th>
+                                    
                                     <th>ДАТА</th>
                                     <th>СТАТУС</th>
                                     <th>КЛИЕНТ</th>
@@ -321,9 +325,9 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td></td>
-                                    <td>12 сентября</td>
+                                <tr class='bg-first-td'>
+                                   
+                                    <td class='bg-first-td'>12 сентября</td>
                                     <td>
                                         <div class="chip chip-warning">
                                             <div class="chip-body">
@@ -340,15 +344,24 @@
                                     <td>1795 грн</td>
                                     <td>Примечание</td>
                                     <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
-                                        <!-- Иконка: Корзина мусора -->
-                                        <!-- <span class="action-refresh"><i class="feather icon-trash"></i></span> -->
+                                        <div class="btn-group dropdown action-refresh">
+                                            <button type="button" class="btn-toggle-list dropdown-toggle pl-25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-edit"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item action-edit action-edit-add" href="#!"><i class="feather icon-save"></i>Отредактировать</a>
+                                                <a class="dropdown-item toggle-data-ttn" href="#!"><i class="feather icon-save"></i>Инф получателя</a>
+                                                <a class="dropdown-item toggle-product-data-list" href="#!"><i class="feather icon-save"></i>Инф товара</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-save"></i>Сгенерировать ТТН</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-file"></i>Распечатать ТТН</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-trash"></i>Удалить</a>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>12 сентября</td>
+                                <tr class='bg-first-td'>
+                                   
+                                    <td class='bg-first-td'>12 сентября</td>
                                     <td>
                                         <div class="chip chip-success">
                                             <div class="chip-body">
@@ -365,15 +378,24 @@
                                     <td>1795 грн</td>
                                     <td>Примечание</td>
                                     <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
-                                        <!-- Иконка: Корзина мусора -->
-                                        <!-- <span class="action-refresh"><i class="feather icon-trash"></i></span> -->
+                                        <div class="btn-group dropdown action-refresh">
+                                            <button type="button" class="btn-toggle-list dropdown-toggle pl-25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-edit"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item action-edit action-edit-add" href="#!"><i class="feather icon-save"></i>Отредактировать</a>
+                                                <a class="dropdown-item toggle-data-ttn" href="#!"><i class="feather icon-save"></i>Инф получателя</a>
+                                                <a class="dropdown-item toggle-product-data-list" href="#!"><i class="feather icon-save"></i>Инф товара</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-save"></i>Сгенерировать ТТН </a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-file"></i>Распечатать ТТН</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-trash"></i>Удалить</a>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>12 сентября</td>
+                                <tr class='bg-first-td'>
+                                   
+                                    <td class='bg-first-td'>12 сентября</td>
                                     <td>
                                         <div class="chip chip-danger">
                                             <div class="chip-body">
@@ -391,15 +413,24 @@
                                     <td>Примечание</td>
                                     
                                     <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
-                                        <!-- Иконка: Корзина мусора -->
-                                        <!-- <span class="action-refresh"><i class="feather icon-trash"></i></span> -->
+                                        <div class="btn-group dropdown action-refresh">
+                                            <button type="button" class="btn-toggle-list dropdown-toggle pl-25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-edit"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item action-edit action-edit-add" href="#!"><i class="feather icon-save"></i>Отредактировать</a>
+                                                <a class="dropdown-item toggle-data-ttn" href="#!"><i class="feather icon-save"></i>Инф получателя</a>
+                                                <a class="dropdown-item toggle-product-data-list" href="#!"><i class="feather icon-save"></i>Инф товара</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-save"></i>Сгенерировать ТТН</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-file"></i>Распечатать ТТН</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-trash"></i>Удалить</a>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>12 сентября</td>
+                                <tr class='bg-first-td'>
+                                    
+                                    <td class='bg-first-td'>12 сентября</td>
                                     <td>
                                         <div class="chip chip-primary">
                                             <div class="chip-body">
@@ -416,15 +447,24 @@
                                     <td>1795 грн</td>
                                     <td>Примечание</td>
                                     <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
-                                        <!-- Иконка: Корзина мусора -->
-                                        <!-- <span class="action-refresh"><i class="feather icon-trash"></i></span> -->
+                                        <div class="btn-group dropdown action-refresh">
+                                            <button type="button" class="btn-toggle-list dropdown-toggle pl-25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-edit"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item action-edit action-edit-add" href="#!"><i class="feather icon-save"></i>Отредактировать</a>
+                                                <a class="dropdown-item toggle-data-ttn" href="#!"><i class="feather icon-save"></i>Инф получателя</a>
+                                                <a class="dropdown-item toggle-product-data-list" href="#!"><i class="feather icon-save"></i>Инф товара</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-save"></i>Сгенерировать ТТН</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-file"></i>Распечатать ТТН </a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-trash"></i>Удалить</a>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>12 сентября</td>
+                                <tr class='bg-first-td'>
+                                  
+                                    <td class='bg-first-td'>12 сентября</td>
                                     <td>
                                         <div class="chip chip-primary">
                                             <div class="chip-body">
@@ -441,10 +481,19 @@
                                     <td>1795 грн</td>
                                     <td>Примечание</td>
                                     <td class="product-action">
-                                        <span class="action-edit"><i class="feather icon-edit"></i></span>
-                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
-                                        <!-- Иконка: Корзина мусора -->
-                                        <!-- <span class="action-refresh"><i class="feather icon-trash"></i></span> -->
+                                        <div class="btn-group dropdown action-refresh">
+                                            <button type="button" class="btn-toggle-list dropdown-toggle pl-25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-edit"></i>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item action-edit action-edit-add" href="#!"><i class="feather icon-save"></i>Отредактировать</a>
+                                                <a class="dropdown-item toggle-data-ttn" href="#!"><i class="feather icon-save"></i>Инф получателя</a>
+                                                <a class="dropdown-item toggle-product-data-list" href="#!"><i class="feather icon-save"></i>Инф товара</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-save"></i>Сгенерировать ТТН </a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-file"></i>Распечатать ТТН </a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-trash"></i>Удалить</a>
+                                            </div>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
@@ -454,19 +503,26 @@
 
                     <!-- add new sidebar starts -->
                     <div class="add-new-data-sidebar">
-                        <div class="overlay-bg"></div>
-                        <div class="add-new-data">
+                        <div class="overlay-bg overlay-bg-add"></div>
+                        <div class="add-new-data add-new-data-add">
                             <div class="div mt-2 px-2 d-flex new-data-title justify-content-between">
                                 <div>
-                                    <h4 class="text-uppercase">Редактирование</h4>
+                                    <h4 class="text-uppercase">Редактирование полей</h4>
                                 </div>
                                 <div class="hide-data-sidebar">
                                     <i class="feather icon-x"></i>
                                 </div>
                             </div>
-                            <div class="data-items pb-3">
+                            <div class="data-items_3 pb-3">
                                 <div class="data-fields px-2 mt-3">
                                     <div class="row">
+                                        <div class="col-sm-12 data-field-col">
+                                            <h3>Общая информация заказа</h3>
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Номер заказа</label>
+                                            <input type="text" class="form-control" id="data-name" placeholder='12345'>
+                                        </div>
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-category"> Статус </label>
                                             <select class="form-control selectpicker" id="data-category">
@@ -478,62 +534,95 @@
                                             </select>
                                         </div>
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-name">Пользователь</label>
-                                            <input type="text" class="form-control" id="data-name">
-                                        </div>
-                                        
-                                        
-                                        <div class="col-sm-12 data-field-col">
                                             <label for="data-price">Предоплата (Оплачено)</label>
-                                            <input type="text" class="form-control" id="data-price">
+                                            <input type="text" class="form-control" id="data-price" placeholder='750 грн.' >
                                         </div>
-                                        <div class="col-sm-12 data-field-col">
+                                        
+
+                                        <hr>
+
+                                        <div class="col-sm-12 data-field-col mt-3">
                                             <h3>Информация получателя</h3>
                                         </div>
-                                        <div class="col-sm-12 data-field-col">
-                                            
-                                            <label for="data-name">ФИО</label>
-                                            <input type="text" class="form-control" id="data-name">
-                                        </div>
-                                        <div class="col-sm-12 data-field-col">
-                                            <label for="data-name">Номер телефона</label>
-                                            <input type="text" class="form-control" id="data-name">
-                                        </div>
-                                        <div class="col-sm-12 data-field-col">
-                                            <label for="data-name">Город</label>
-                                            <input type="text" class="form-control" id="data-name">
-                                        </div>
-                                        <div class="col-sm-12 data-field-col">
-                                            <label for="data-name">Отделение</label>
-                                            <input type="text" class="form-control" id="data-name">
-                                        </div>
+
                                         <div class="col-sm-12 data-field-col">
                                             <label for="data-price">ТТН</label>
                                             <input type="text" class="form-control" id="data-price">
                                         </div>
+
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-name">Примечание</label>
+                                            <label for="data-name">ФИО</label>
                                             <input type="text" class="form-control" id="data-name">
                                         </div>
                                         <div class="col-sm-12 data-field-col">
+                                            <label for="data-price">Номер телефона</label>
+                                            <input type="text" class="form-control" id="data-price" placeholder='+380634488133' >
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-price">Город</label>
+                                            <input type="text" class="form-control" id="data-price" placeholder='Одесса' >
+                                        </div>
+
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-price">Отделение</label>
+                                            <input type="text" class="form-control" id="data-price" placeholder='45' >
+                                        </div>
+
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-price">Примечание</label>
+                                            <input type="text" class="form-control" id="data-price" placeholder='Примечание' >
+                                        </div>
+
+
+                                        <hr>
+
+                                        <div class="col-sm-12 data-field-col mt-3">
                                             <h3>Товары</h3>
                                         </div>
                                         <div class="col-sm-12 data-field-col">
-                                            
                                             <label for="data-name">Код товара</label>
-                                            <input type="text" class="form-control" id="data-name">
+                                            <input type="text" class="form-control" id="data-name"  placeholder='1023' >
                                         </div>
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-name">Цена для клиента</label>
-                                            <input type="text" class="form-control" id="data-name">
+                                            <label for="data-status">Размер</label>
+                                            <select class="form-control selectpicker" id="data-status">
+                                                <option>36</option>
+                                                <option>37</option>
+                                                <option>40</option>
+                                                <option>39</option>
+                                            </select>
                                         </div>
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-name">Опт цена</label>
-                                            <input type="text" class="form-control" id="data-name">
+                                            <label for="data-name">Цена клинету</label>
+                                            <input type="text" class="form-control" id="data-name"  placeholder='750 грн' >
                                         </div>
                                         <div class="col-sm-12 data-field-col">
-                                            <label for="data-name">Размер</label>
-                                            <input type="text" class="form-control" id="data-name">
+                                            <label for="data-name">Цена Опта</label>
+                                            <input type="text" class="form-control" id="data-name"  placeholder='500 грн' >
+                                        </div>
+
+                                        <hr>
+
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Код товара</label>
+                                            <input type="text" class="form-control" id="data-name"  placeholder='1023' >
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-status">Размер</label>
+                                            <select class="form-control selectpicker" id="data-status">
+                                                <option>36</option>
+                                                <option>37</option>
+                                                <option>40</option>
+                                                <option>39</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Цена клинету</label>
+                                            <input type="text" class="form-control" id="data-name"  placeholder='750 грн' >
+                                        </div>
+                                        <div class="col-sm-12 data-field-col">
+                                            <label for="data-name">Цена Опта</label>
+                                            <input type="text" class="form-control" id="data-name"  placeholder='500 грн' >
                                         </div>
                                     </div>
                                 </div>
@@ -592,7 +681,7 @@
     <script src="../app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
     <script src="../app-assets/vendors/js/tables/datatable/buttons.bootstrap.min.js"></script>
     <script src="../app-assets/vendors/js/tables/datatable/dataTables.select.min.js"></script>
-    <script src="../app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
+    <!-- <script src="../app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script> -->
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->

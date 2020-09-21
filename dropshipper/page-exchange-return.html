@@ -33,6 +33,7 @@
     <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
     <!-- <link rel="stylesheet" type="text/css" href="../app-assets/css/core/colors/palette-gradient.css"> -->
     <link rel="stylesheet" type="text/css" href="../app-assets/css/plugins/file-uploaders/dropzone.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets\css\pages\page-balance.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/data-list-view.css">
 
 
@@ -160,25 +161,18 @@
                 <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary" data-ticon="icon-disc"></i></a></li>
             </ul>
         </div>
+        <div class="shadow-bottom"></div>
         <div class="main-menu-content">
-            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">              
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item"><a href="dashboard-analytics.html"><img src="../app-assets\images\my-images\icon_analytics.svg" alt="Analytics"> <span class="menu-item" data-i18n="Analytics">Аналитика</span></a>
+                </li>
                 <li class=" nav-item"><a href="page-orders.html"><img src="../app-assets\images\my-images\icon_orders.svg" alt="Orders"> <span class="menu-title" data-i18n="Orders">Заказы</span></a>
                 </li>
-                <li class="active nav-item"><a href="page-exchange-return.html"><img src="../app-assets\images\my-images\icon_orders.svg" alt="exchange"> <span class="menu-title" data-i18n="Exchange">Возвраты &#47; Обмены</span></a>
+                <li class="active nav-item"><a href="page-exchange-return.html"><img src="../app-assets\images\my-images\icon_orders.svg" alt="exchange"> <span class="menu-title" data-i18n="Exchange">Возвраты / Обмены</span></a>
                 </li>
-                <li class="nav-item"><a href="data-list-balance.html"><img src="../app-assets\images\my-images\icon_payouts.svg" alt="Payouts"><span class="menu-title" data-i18n="Balance">Баланс</span></a>
+                <li class=" nav-item"><a href="data-list-balance.html"><img src="../app-assets\images\my-images\icon_payouts.svg" alt="Payouts"><span class="menu-title" data-i18n="Balance">Баланс</span></a>
                 </li>
-                <li class="nav-item"><a href="page-products.html"><img src="../app-assets\images\my-images\icon_products.svg" alt="Orders"><span class="menu-item" data-i18n="Thumb View">Товары</span></a>
-                </li>
-                <li class="nav-item"><a href="dashboard-analytics.html"><img src="../app-assets\images\my-images\icon_analytics.svg" alt="Analytics"> <span class="menu-item" data-i18n="Analytics">Аналитика</span></a>
-                </li>
-                <li class=" nav-item"><a href="index.html"><img src="../app-assets\images\my-images\icon_my_profile.svg" alt="My profile"><span class="menu-title" data-i18n="User">Пользователь</span></a>
-                    <ul class="menu-content">
-                        <li class=" nav-item"><a href="app-user-view.html"><i class="feather icon-user"></i><span class="menu-item" data-i18n="User view">Личный кабинет</span></a>                 
-                        </li>
-                    </ul>
-                </li>
-                <li class=" nav-item"><a href="../app-ecommerce-checkout.html"><img src="../app-assets\images\my-images\icon_basket.svg" alt="Basket"><span class="menu-item" data-i18n="Checkout">Корзина</span></a>
+                <li class="nav-item"><a href="app-user-view.html"><img src="../app-assets\images\my-images\icon_my_profile.svg" alt="Orders"><span class="menu-item" data-i18n="Thumb View">Мой профиль</span></a>
                 </li>
                 <li class=" nav-item"><a href="app-chat.html"><i class="feather icon-message-square"></i><span class="menu-title" data-i18n="Chat">Чат</span></a>
                 </li>
@@ -206,7 +200,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="card-body__data">35 шт.</div> 
-                                    <div class="card-body__title text-uppercase">всего заказов</div>
+                                    <div class="card-body__title text-uppercase">всего возвратов</div>
                                     <div class="card-body__svg">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <rect width="24" height="24" fill="url(#pattern0)"/>
@@ -226,7 +220,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="card-body__data">20 шт.</div>
-                                    <div class="card-body__title text-uppercase">в процессе</div>
+                                    <div class="card-body__title text-uppercase">Всего обменов</div>
                                      
                                     <div class="card-body__svg">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -247,7 +241,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="card-body__data">10 шт.</div> 
-                                    <div class="card-body__title text-uppercase">выполненных</div>
+                                    <div class="card-body__title text-uppercase">В процессе</div>
                                     
                                     <div class="card-body__svg">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -268,7 +262,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="card-body__data">5 шт.</div> 
-                                    <div class="card-body__title text-uppercase">возвратов</div>
+                                    <div class="card-body__title text-uppercase">Выполненых</div>
                                     <div class="card-body__svg">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                         <rect width="24" height="24" fill="url(#pattern0)"/>
@@ -289,7 +283,8 @@
                 <!-- Dashboard Ecommerce ends -->
                 
                 <!-- Data list view starts -->
-                <section id="data-list-view" class="data-list-view-header data-list-not-user">
+                <section id="data-list-view" class="data-list-view-header data-list-not-user data-list-not-btn">
+                    
                     <!-- DataTable starts -->
                     <div class="table-responsive">
                         <h1>Мои обмены &#47; возвраты</h1>
@@ -305,7 +300,6 @@
                                     <th>Оплачено доставки</th>
                                     <th>№ ЗАЯВКИ</th>
                                     <th>№ Заказа</th>
-                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -330,11 +324,7 @@
                                     <td>-800 грн</td>
                                     <td>75 грн</td>
                                     <td>1123458</td> 
-                                    <td class='toggle-exchange-data-list'>111434</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="fa fa-refresh"></i></span>
-                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span>                      -->
-                                    </td>
+                                    <td>111434</td>
                                 </tr>
                                 <tr class='bg-first-td'>
                                     <td class='bg-first-td'>10 сентября</td>
@@ -357,11 +347,7 @@
                                     <td>-800 грн</td>
                                     <td>75 грн</td>
                                     <td>1123458</td> 
-                                    <td class='toggle-exchange-data-list'>111434</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="fa fa-refresh"></i></span>
-                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
-                                    </td>
+                                    <td>111434</td>
                                 </tr>
                                 <tr class='bg-first-td'>
                                     <td class='bg-first-td'>11 сентября</td>
@@ -384,11 +370,7 @@
                                     <td>-800 грн</td>
                                     <td>75 грн</td>
                                     <td>1123458</td> 
-                                    <td class='toggle-exchange-data-list'>111434</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="fa fa-refresh"></i></span>
-                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
-                                    </td>
+                                    <td>111434</td>
                                 </tr>
                                 <tr class='bg-first-td'>
                                     <td class='bg-first-td'>12 сентября</td>
@@ -411,11 +393,7 @@
                                     <td>-800 грн</td>
                                     <td>75 грн</td>
                                     <td>1123458</td> 
-                                    <td class='toggle-exchange-data-list'>111434</td>
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="fa fa-refresh"></i></span>
-                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
-                                    </td>
+                                    <td>111434</td>
                                 </tr>
                                 <tr class='bg-first-td'>
                                     <td class='bg-first-td'>13 сентября</td>
@@ -438,84 +416,19 @@
                                     <td>-800 грн</td>
                                     <td>75 грн</td>
                                     <td>1123458</td> 
-                                    <td class='toggle-exchange-data-list'>111434</td>
-                                    
-                                    <td class="product-action">
-                                        <span class="action-edit"><i class="fa fa-refresh"></i></span>
-                                        <!-- <span class="action-refresh"><i class="fa fa-refresh"></i></span> -->
-                                    </td>
+                                    <td>111434</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     <!-- DataTable ends -->
 
-                    <!-- add new sidebar starts -->
-                    <div class="add-new-data-sidebar">
-                        <div class="overlay-bg"></div>
-                        <div class="add-new-data">
-                            <div class="div mt-2 px-2 d-flex new-data-title justify-content-between">
-                                <div>
-                                    <h4 class="text-uppercase">Обмен</h4>
-                                </div>
-                                <div class="hide-data-sidebar">
-                                    <i class="feather icon-x"></i>
-                                </div>
-                            </div>
-                            <div class="data-items pb-3">
-                                <div class="data-fields px-2 mt-3">
-                                    <div class="row">
-                                        <div class="col-sm-12 data-field-col">
-                                            <label for="data-name">Код товара</label>
-                                            <input type="text-area" class="form-control" id="data-name" placeholder="11345" value="36" disabled>
-                                        </div>
-                                        
-                                        <div class="col-sm-12 data-field-col">
-                                            <label for="data-name">Предыдущий размер</label>
-                                            <input type="text-area" class="form-control" id="data-name" placeholder="38" value="36" disabled>
-                                        </div>
-                                        <div class="col-sm-12 data-field-col">
-                                            <label for="data-status">Выберите новый размер</label>
-                                            <select class="form-control selectpicker" id="data-status">
-                                                <option>36</option>
-                                                <option>37</option>
-                                                <option>38</option>
-                                                <option>39</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-sm-12 data-field-col">
-                                            <label for="data-price">Цена для клиента</label>
-                                            <input type="text" class="form-control" id="data-price" value="">
-                                        </div>
-                                        <div class="col-sm-12 data-field-col">
-                                            <label for="data-status">Оплата</label>
-                                            <select class="form-control selectpicker" id="data-status">
-                                                <option>Оплатить на карту</option>
-                                                <option>Снять с личного счета</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-sm-12 data-field-col">
-                                            <label for="data-price">Примечание</label>
-                                            <input type="text" class="form-control" id="data-price">
-                                        </div>
-                                        
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
-                                <div class="add-data-btn">
-                                    <button class="btn btn-primary">Подтвердить</button>
-                                </div>
-                                <div class="cancel-data-btn">
-                                    <button class="btn btn-outline-danger">Отменить</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- add new sidebar ends -->
-                </section>
-                <!-- Data list view end -->
+
+
+                   
+
+                    
+
                 </section>
                 <!-- Data list view end -->
             </div>

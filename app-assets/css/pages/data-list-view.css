@@ -38,6 +38,34 @@
   margin-right: 15px;
 }
 
+
+.link-checkout {
+  padding: 5px 33px 5px 13px;
+  border: 1.5px solid #A254A2;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  position: absolute;
+  margin: 1px 0 0 4px;
+}
+
+.link-checkout > i{
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  font-size: 19px;
+}
+
+@media screen and (max-width: 736px) {
+  .link-checkout {
+    position: relative;
+  }
+  .action-btns {
+    margin-bottom: 20px;
+  }
+}
+
 .btn-outline-primary:not(:disabled):not(.disabled):active {
   color: #FFFFFF!important;
   background-color: #A254A2;
@@ -122,6 +150,10 @@
 .btn .caret {
   display: none;
 }
+
+/* .show {
+  transform: none!important;
+} */
 
 /* .dropdown-toggle::after {
   margin-left: -3px;
@@ -399,6 +431,40 @@
   position: relative;
 }
 
+
+/* .add-new-data-sidebar .add-new-data-exchange .data-items {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  height: calc(100% - 10rem);
+  position: relative;
+} */
+
+.add-new-data-sidebar .add-new-data-return .data-items,
+.add-new-data-sidebar .add-new-data-exchange .data-items_1,
+.add-new-data-sidebar .add-new-data-add .data-items_3,
+.add-new-data-sidebar .add-new-data-add .data-items_4,
+.add-new-data-sidebar .add-new-data-add .data-items_5,
+.add-new-data-sidebar .add-new-data-return .data-items_6,
+.add-new-data-sidebar .add-new-data-exchange .data-items_7,
+.add-new-data-sidebar .add-new-data-add .data-items_8,
+.add-new-data-sidebar .add-new-data-return .data-items_9,
+.add-new-data-sidebar .add-new-data-exchange .data-items_10 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+  height: calc(100% - 10rem) !important;
+  position: relative !important;
+  overflow: hidden;
+  overflow-anchor: none;
+  -ms-overflow-style: none;
+  touch-action: auto;
+}
+
+.data-field-col {
+  margin-top: 1.25rem;
+}
+
+.data-field-col > strong {
+  font-size: 17px;
+}
+
 .data-list-view-header .add-new-data-sidebar .add-new-data .data-items .data-field-col, .data-thumb-view-header .add-new-data-sidebar .add-new-data .data-items .data-field-col {
   margin-top: 1.25rem;
 }
@@ -420,20 +486,20 @@
 }
 
 table.data-list-view.dataTable, table.data-thumb-view.dataTable,
-table.data-list-dispatch.dataTable, table.data-thumb-view.dataTable {
+table.data-list-view-order.dataTable, table.data-thumb-view.dataTable {
   border-spacing: 0 14px;
   padding: 0 0.7rem;
   margin-top: 0!important;
 }
 
 table.data-list-view.dataTable thead th, table.data-thumb-view.dataTable thead th,
-table.data-list-dispatch.dataTable thead th, table.data-thumb-view.dataTable thead th {
+table.data-list-view-order.dataTable thead th, table.data-thumb-view.dataTable thead th {
   /* padding: 0.714rem 1.785rem; */
   font-weight: 600;
 }
 
 table.data-list-view.dataTable thead th input:focus, table.data-thumb-view.dataTable thead th input:focus,
-table.data-list-dispatch.dataTable thead th input:focus, table.data-thumb-view.dataTable thead th input:focus {
+table.data-list-view-order.dataTable thead th input:focus, table.data-thumb-view.dataTable thead th input:focus {
   outline: 0;
 }
 
@@ -442,32 +508,32 @@ table.data-list-dispatch.dataTable thead th input:focus, table.data-thumb-view.d
 } */
 
 table.data-list-view.dataTable thead .sorting_asc, table.data-list-view.dataTable thead .sorting_desc, table.data-list-view.dataTable thead .sorting, table.data-thumb-view.dataTable thead .sorting_asc, table.data-thumb-view.dataTable thead .sorting_desc, table.data-thumb-view.dataTable thead .sorting,
-table.data-list-dispatch.dataTable thead .sorting_asc, table.data-list-dispatch.dataTable thead .sorting_desc, table.data-list-dispatch.dataTable thead .sorting, table.data-thumb-view.dataTable thead .sorting_asc, table.data-thumb-view.dataTable thead .sorting_desc, table.data-thumb-view.dataTable thead .sorting {
+table.data-list-view-order.dataTable thead .sorting_asc, table.data-list-view-order.dataTable thead .sorting_desc, table.data-list-view-order.dataTable thead .sorting, table.data-thumb-view.dataTable thead .sorting_asc, table.data-thumb-view.dataTable thead .sorting_desc, table.data-thumb-view.dataTable thead .sorting {
   padding-right: inherit;
 }
 
 table.data-list-view.dataTable thead .sorting_asc:before, table.data-list-view.dataTable thead .sorting_desc:before, table.data-list-view.dataTable thead .sorting:before, table.data-thumb-view.dataTable thead .sorting_asc:before, table.data-thumb-view.dataTable thead .sorting_desc:before, table.data-thumb-view.dataTable thead .sorting:before,
-table.data-list-dispatch.dataTable thead .sorting_asc:before, table.data-list-dispatch.dataTable thead .sorting_desc:before, table.data-list-dispatch.dataTable thead .sorting:before, table.data-thumb-view.dataTable thead .sorting_asc:before, table.data-thumb-view.dataTable thead .sorting_desc:before, table.data-thumb-view.dataTable thead .sorting:before {
+table.data-list-view-order.dataTable thead .sorting_asc:before, table.data-list-view-order.dataTable thead .sorting_desc:before, table.data-list-view-order.dataTable thead .sorting:before, table.data-thumb-view.dataTable thead .sorting_asc:before, table.data-thumb-view.dataTable thead .sorting_desc:before, table.data-thumb-view.dataTable thead .sorting:before {
   font-size: 0.7rem;
   left: 0.857rem;
   top: 0.642rem;
 }
 
 table.data-list-view.dataTable thead .sorting_asc:after, table.data-list-view.dataTable thead .sorting_desc:after, table.data-list-view.dataTable thead .sorting:after, table.data-thumb-view.dataTable thead .sorting_asc:after, table.data-thumb-view.dataTable thead .sorting_desc:after, table.data-thumb-view.dataTable thead .sorting:after,
-table.data-list-dispatch.dataTable thead .sorting_asc:after, table.data-list-dispatch.dataTable thead .sorting_desc:after, table.data-list-dispatch.dataTable thead .sorting:after, table.data-thumb-view.dataTable thead .sorting_asc:after, table.data-thumb-view.dataTable thead .sorting_desc:after, table.data-thumb-view.dataTable thead .sorting:after {
+table.data-list-view-order.dataTable thead .sorting_asc:after, table.data-list-view-order.dataTable thead .sorting_desc:after, table.data-list-view-order.dataTable thead .sorting:after, table.data-thumb-view.dataTable thead .sorting_asc:after, table.data-thumb-view.dataTable thead .sorting_desc:after, table.data-thumb-view.dataTable thead .sorting:after {
   font-size: 0.7rem;
   left: 0.857rem;
   top: 1.071rem;
 }
 
 table.data-list-view.dataTable thead .dt-checkboxes-select-all input, table.data-thumb-view.dataTable thead .dt-checkboxes-select-all input,
-table.data-list-dispatch.dataTable thead .dt-checkboxes-select-all input, table.data-thumb-view.dataTable thead .dt-checkboxes-select-all input {
+table.data-list-view-order.dataTable thead .dt-checkboxes-select-all input, table.data-thumb-view.dataTable thead .dt-checkboxes-select-all input {
   width: 0;
   position: relative;
 }
 
 table.data-list-view.dataTable thead .dt-checkboxes-select-all input:before, table.data-thumb-view.dataTable thead .dt-checkboxes-select-all input:before,
-table.data-list-dispatch.dataTable thead .dt-checkboxes-select-all input:before, table.data-thumb-view.dataTable thead .dt-checkboxes-select-all input:before {
+table.data-list-view-order.dataTable thead .dt-checkboxes-select-all input:before, table.data-thumb-view.dataTable thead .dt-checkboxes-select-all input:before {
   border: 2px solid #B4B4B4;
   content: '';
   width: 1.071rem;
@@ -487,7 +553,7 @@ table.data-list-dispatch.dataTable thead .dt-checkboxes-select-all input:before,
 }
 
 table.data-list-view.dataTable thead .dt-checkboxes-select-all input:after, table.data-thumb-view.dataTable thead .dt-checkboxes-select-all input:after,
-table.data-list-dispatch.dataTable thead .dt-checkboxes-select-all input:after, table.data-thumb-view.dataTable thead .dt-checkboxes-select-all input:after {
+table.data-list-view-order.dataTable thead .dt-checkboxes-select-all input:after, table.data-thumb-view.dataTable thead .dt-checkboxes-select-all input:after {
   background-color: #7367F0;
   border: 2px solid #7367F0;
   font-family: 'feather';
@@ -513,14 +579,14 @@ table.data-list-dispatch.dataTable thead .dt-checkboxes-select-all input:after, 
 }
 
 table.data-list-view.dataTable thead .dt-checkboxes-select-all input:active:checked:after, table.data-thumb-view.dataTable thead .dt-checkboxes-select-all input:active:checked:after,
-table.data-list-dispatch.dataTable thead .dt-checkboxes-select-all input:active:checked:after, table.data-thumb-view.dataTable thead .dt-checkboxes-select-all input:active:checked:after {
+table.data-list-view-order.dataTable thead .dt-checkboxes-select-all input:active:checked:after, table.data-thumb-view.dataTable thead .dt-checkboxes-select-all input:active:checked:after {
   -webkit-transform: translate(3px);
   -ms-transform: translate(3px);
   transform: translate(3px);
 }
 
 table.data-list-view.dataTable thead .dt-checkboxes-select-all input:checked:before, table.data-thumb-view.dataTable thead .dt-checkboxes-select-all input:checked:before,
-table.data-list-dispatch.dataTable thead .dt-checkboxes-select-all input:checked:before, table.data-thumb-view.dataTable thead .dt-checkboxes-select-all input:checked:before {
+table.data-list-view-order.dataTable thead .dt-checkboxes-select-all input:checked:before, table.data-thumb-view.dataTable thead .dt-checkboxes-select-all input:checked:before {
   border: 2px solid #7367F0;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
@@ -528,7 +594,7 @@ table.data-list-dispatch.dataTable thead .dt-checkboxes-select-all input:checked
 }
 
 table.data-list-view.dataTable thead .dt-checkboxes-select-all input:checked:after, table.data-thumb-view.dataTable thead .dt-checkboxes-select-all input:checked:after,
-table.data-list-dispatch.dataTable thead .dt-checkboxes-select-all input:checked:after, table.data-thumb-view.dataTable thead .dt-checkboxes-select-all input:checked:after {
+table.data-list-view-order.dataTable thead .dt-checkboxes-select-all input:checked:after, table.data-thumb-view.dataTable thead .dt-checkboxes-select-all input:checked:after {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   opacity: 1;
@@ -541,7 +607,8 @@ table.data-list-dispatch.dataTable thead .dt-checkboxes-select-all input:checked
 
 
 table.data-list-view.dataTable tbody tr, table.data-thumb-view.dataTable tbody tr,
-table.data-list-dispatch.dataTable tbody tr, table.data-thumb-view.dataTable tbody tr {
+table.data-list-view-order.dataTable tbody tr, table.data-thumb-view.dataTable tbody tr,
+table.data-list-view-order.dataTable tbody tr {
   background-color: #FFFFFF;
   box-shadow: rgba(0, 0, 0, 0.05) 0 4px 20px 0;
   cursor: pointer;
@@ -790,29 +857,8 @@ table.data-list-view.dataTable tbody tr.table-product-data-list > td:nth-child(7
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-table.data-list-view.dataTable tbody tr:hover, table.data-thumb-view.dataTable tbody tr:hover,
-table.data-list-dispatch.dataTable tbody tr:hover, table.data-thumb-view.dataTable tbody tr:hover {
+table.data-list-view.dataTable tbody tr:hover:not(.active-list-tr), table.data-thumb-view.dataTable tbody tr:hover:not(.active-list-tr),
+table.data-list-view-order.dataTable tbody tr:hover:not(.active-list-tr), table.data-thumb-view.dataTable tbody tr:hover:not(.active-list-tr) {
   -webkit-transform: translateY(-4px);
   -ms-transform: translateY(-4px);
   transform: translateY(-4px);
@@ -821,53 +867,53 @@ table.data-list-dispatch.dataTable tbody tr:hover, table.data-thumb-view.dataTab
 }
 
 table.data-list-view.dataTable tbody tr td:first-child, table.data-thumb-view.dataTable tbody tr td:first-child,
-table.data-list-dispatch.dataTable tbody tr td:first-child, table.data-thumb-view.dataTable tbody tr td:first-child {
+table.data-list-view-order.dataTable tbody tr td:first-child, table.data-thumb-view.dataTable tbody tr td:first-child {
   padding-left: 1rem;
   border-top-left-radius: 0.5rem!important;
   border-bottom-left-radius: 0.5rem!important;
 }
 
 table.data-list-view.dataTable tbody tr td:last-child, table.data-thumb-view.dataTable tbody tr td:last-child,
-table.data-list-dispatch.dataTable tbody tr td:last-child, table.data-thumb-view.dataTable tbody tr td:last-child {
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+table.data-list-view-order.dataTable tbody tr td:last-child, table.data-thumb-view.dataTable tbody tr td:last-child {
+  border-top-right-radius: 0.5rem!important;
+  border-bottom-right-radius: 0.5rem!important;
 }
 
 table.data-list-view.dataTable tbody tr.selected td, table.data-thumb-view.dataTable tbody tr.selected td,
-table.data-list-dispatch.dataTable tbody tr.selected td, table.data-thumb-view.dataTable tbody tr.selected td {
+table.data-list-view-order.dataTable tbody tr.selected td, table.data-thumb-view.dataTable tbody tr.selected td {
   border-radius: 0;
 }
 
 table.data-list-view.dataTable tbody td, table.data-thumb-view.dataTable tbody td,
-table.data-list-dispatch.dataTable tbody td, table.data-thumb-view.dataTable tbody td {
+table.data-list-view-order.dataTable tbody td, table.data-thumb-view.dataTable tbody td {
   padding: 16px;
   border: none;
   vertical-align: middle;
 }
 
 table.data-list-view.dataTable tbody td input:focus, table.data-thumb-view.dataTable tbody td input:focus,
-table.data-list-dispatch.dataTable tbody td input:focus, table.data-thumb-view.dataTable tbody td input:focus {
+table.data-list-view-order.dataTable tbody td input:focus, table.data-thumb-view.dataTable tbody td input:focus {
   outline: 0;
 }
 
 table.data-list-view.dataTable tbody td.product-name, table.data-thumb-view.dataTable tbody td.product-name,
-table.data-list-dispatch.dataTable tbody td.product-name, table.data-thumb-view.dataTable tbody td.product-name {
+table.data-list-view-order.dataTable tbody td.product-name, table.data-thumb-view.dataTable tbody td.product-name {
   font-weight: 500;
 }
 
 table.data-list-view.dataTable tbody td:focus, table.data-thumb-view.dataTable tbody td:focus,
-table.data-list-dispatch.dataTable tbody td:focus, table.data-thumb-view.dataTable tbody td:focus {
+table.data-list-view-order.dataTable tbody td:focus, table.data-thumb-view.dataTable tbody td:focus {
   outline: 0;
 }
 
 table.data-list-view.dataTable tbody td.dt-checkboxes-cell input, table.data-thumb-view.dataTable tbody td.dt-checkboxes-cell input,
-table.data-list-dispatch.dataTable tbody td.dt-checkboxes-cell input, table.data-thumb-view.dataTable tbody td.dt-checkboxes-cell input {
+table.data-list-view-order.dataTable tbody td.dt-checkboxes-cell input, table.data-thumb-view.dataTable tbody td.dt-checkboxes-cell input {
   width: 0;
   position: relative;
 }
 
 table.data-list-view.dataTable tbody td.dt-checkboxes-cell input:before, table.data-thumb-view.dataTable tbody td.dt-checkboxes-cell input:before,
-table.data-list-dispatch.dataTable tbody td.dt-checkboxes-cell input:before, table.data-thumb-view.dataTable tbody td.dt-checkboxes-cell input:before {
+table.data-list-view-order.dataTable tbody td.dt-checkboxes-cell input:before, table.data-thumb-view.dataTable tbody td.dt-checkboxes-cell input:before {
   border: 2px solid #B4B4B4;
   position: absolute;
   left: -8px;
@@ -885,7 +931,7 @@ table.data-list-dispatch.dataTable tbody td.dt-checkboxes-cell input:before, tab
 }
 
 table.data-list-view.dataTable tbody td.dt-checkboxes-cell input:after, table.data-thumb-view.dataTable tbody td.dt-checkboxes-cell input:after,
-table.data-list-dispatch.dataTable tbody td.dt-checkboxes-cell input:after, table.data-thumb-view.dataTable tbody td.dt-checkboxes-cell input:after {
+table.data-list-view-order.dataTable tbody td.dt-checkboxes-cell input:after, table.data-thumb-view.dataTable tbody td.dt-checkboxes-cell input:after {
   background-color: #7367F0;
   font-family: 'feather';
   content: '\e83f';
@@ -908,14 +954,14 @@ table.data-list-dispatch.dataTable tbody td.dt-checkboxes-cell input:after, tabl
 }
 
 table.data-list-view.dataTable tbody td.dt-checkboxes-cell input:active:checked:after, table.data-thumb-view.dataTable tbody td.dt-checkboxes-cell input:active:checked:after,
-table.data-list-dispatch.dataTable tbody td.dt-checkboxes-cell input:active:checked:after, table.data-thumb-view.dataTable tbody td.dt-checkboxes-cell input:active:checked:after {
+table.data-list-view-order.dataTable tbody td.dt-checkboxes-cell input:active:checked:after, table.data-thumb-view.dataTable tbody td.dt-checkboxes-cell input:active:checked:after {
   -webkit-transform: translate(3px);
   -ms-transform: translate(3px);
   transform: translate(3px);
 }
 
 table.data-list-view.dataTable tbody td.dt-checkboxes-cell input:checked:before, table.data-thumb-view.dataTable tbody td.dt-checkboxes-cell input:checked:before,
-table.data-list-dispatch.dataTable tbody td.dt-checkboxes-cell input:checked:before, table.data-thumb-view.dataTable tbody td.dt-checkboxes-cell input:checked:before {
+table.data-list-view-order.dataTable tbody td.dt-checkboxes-cell input:checked:before, table.data-thumb-view.dataTable tbody td.dt-checkboxes-cell input:checked:before {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
@@ -925,7 +971,7 @@ table.data-list-dispatch.dataTable tbody td.dt-checkboxes-cell input:checked:bef
 }
 
 table.data-list-view.dataTable tbody td.dt-checkboxes-cell input:checked:after, table.data-thumb-view.dataTable tbody td.dt-checkboxes-cell input:checked:after,
-table.data-list-dispatch.dataTable tbody td.dt-checkboxes-cell input:checked:after, table.data-thumb-view.dataTable tbody td.dt-checkboxes-cell input:checked:after {
+table.data-list-view-order.dataTable tbody td.dt-checkboxes-cell input:checked:after, table.data-thumb-view.dataTable tbody td.dt-checkboxes-cell input:checked:after {
   opacity: 1;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -935,7 +981,7 @@ table.data-list-dispatch.dataTable tbody td.dt-checkboxes-cell input:checked:aft
 }
 
 table.data-list-view.dataTable tbody td .progress, table.data-thumb-view.dataTable tbody td .progress,
-table.data-list-dispatch.dataTable tbody td .progress, table.data-thumb-view.dataTable tbody td .progress {
+table.data-list-view-order.dataTable tbody td .progress, table.data-thumb-view.dataTable tbody td .progress {
   margin-bottom: 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
 }
@@ -947,12 +993,12 @@ table.data-thumb-view.dataTable tbody tr td {
 }
 
 table.data-list-view.dataTable tbody td.order-completed,
-table.data-list-dispatch.dataTable tbody td.order-completed {
+table.data-list-view-order.dataTable tbody td.order-completed {
   color: #2BB549;
 }
 
 table.data-list-view.dataTable tbody td.order-preparing-ship,
-table.data-list-dispatch.dataTable tbody td.order-preparing-ship {
+table.data-list-view-order.dataTable tbody td.order-preparing-ship {
   color: #A254A2;
 }
 
@@ -963,7 +1009,7 @@ table.data-thumb-view.dataTable tbody tr td.product-img img {
 
 
 
-/* table.data-list-dispatch.dataTable thead th:last-of-type,
+/* table.data-list-view-order.dataTable thead th:last-of-type,
 table.data-list-user.dataTable thead th:last-of-type {
   opacity: 0;
 } */
@@ -1081,4 +1127,24 @@ _:-ms-lang(x) .table-responsive .top .dataTables_filter .form-control:after, .da
 .data-list-view .mac-checkbox, .data-thumb-view .mac-checkbox {
   -webkit-appearance: none;
   top: -10px;
+}
+
+.input-group-text {
+  background-color: #A254A2;
+  color: #fff;
+}
+
+.btn-toggle-list {
+  border: none;
+  background: transparent;
+}
+
+.action-refresh > .dropdown-toggle:after {
+  display: none;
+}
+
+hr {
+  width: 100%;
+  margin-top: 56px;
+  border-top: 2px solid rgba(34, 41, 47, 0.1);
 }

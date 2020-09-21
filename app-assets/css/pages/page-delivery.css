@@ -1,0 +1,206 @@
+.header-navbar {
+  background: transparent;
+}
+@media screen and (max-width: 1200px) {
+  .header-navbar.floating-nav {
+    background: transparent;
+    width: 51px!important;
+    min-height: 51px;
+    border: 1px solid;
+  }
+}
+.navbar-expand-lg .navbar-collapse {
+  padding: 0 11px 0 6.5px;
+}
+.header-navbar .navbar-container ul.nav li a.menu-toggle i {
+  font-size: 30px;
+}
+.label-color {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+.label-color-violet {
+  background: rgba(162, 84, 162, 0.35);
+  color: #A254A2;
+}
+.label-color-orange {
+  background: rgba(255, 184, 0, 0.35);
+  color: #FFB800;
+}
+.label-color-green {
+  background: rgba(43, 181, 73, 0.35);
+  color: #2BB549;
+}
+.label-color-blue {
+  background: rgba(88, 102, 197, 0.3);
+  color: #5866C5;
+}
+.label-color-light-blue {
+  background: rgba(99, 205, 215, 0.3);;
+  color: #0093B7;
+}
+.label-color-light-green {
+  background: rgba(40, 199, 111, 0.3);
+  color: #2BB549;
+}
+.label-color-light-orange {
+  background: rgba(254, 178, 73, 0.3);
+  color: #FEB249;
+}
+.label-color-red {
+  background: rgba(206, 68, 68, 0.3);
+  color: #CE4444;
+}
+.app-content img {
+  width: 100%;
+}
+.app-content h1 {
+  margin: 17px 0 25px 0;
+  color: #404040;
+}
+.app-content p {
+  color: #777777;
+}
+.app-content .link-dropshipping, .app-content .link-learn-more {
+  padding: 11px 10px;
+  border-radius: 5px;
+  letter-spacing: 0.8px;
+}
+.app-content .link-dropshipping:hover, .app-content .link-learn-more:hover {
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1);
+}
+.app-content .link-dropshipping {
+  background: #A254A2;
+  color: #fff;
+  margin-right: 30px;
+  border: none;
+}
+.app-content .link-learn-more {
+  border: 1px solid #555555;
+  color: #555555;
+}
+.app-content .card, .app-content .card-body {
+  border-radius: 15px;
+}
+.app-content .card-body {
+  overflow: hidden;
+}
+
+section.what-is-dropshipping {
+  padding: 250px 48px 250px 143px;
+  background: #EEEEEE;
+}
+@media screen and (max-width: 1280px) {
+  section.what-is-dropshipping {
+    padding: 250px 48px 250px 48px;
+  }
+}
+@media screen and (max-width: 992px) {
+  section.what-is-dropshipping {
+    padding: 80px 48px 60px 48px;
+  }
+}
+
+section.work-with-us {
+  padding: 250px 48px 250px 48px;
+  background: #fff;
+}
+@media screen and (max-width: 992px) {
+  section.work-with-us {
+    padding: 60px 48px 60px 48px;
+    background: #fff;
+  }
+  section.work-with-us .row .col-lg-6:first-of-type {
+    order: 1;
+    margin-top: 50px;
+  }
+}
+.work-with-us p {
+  margin-top: 10px;
+}
+.work-with-us .label-color {
+  margin: 0 28px 0 17px;
+}
+
+section.account-features {
+  padding: 146px 0;
+  background: #EEEEEE;
+}
+@media screen and (max-width: 992px) {
+  section.account-features {
+    padding: 60px 0;
+  }
+}
+section.account-features .col-lg-4 {
+  margin-bottom: 30px;
+}
+section.account-features .card {
+  height: 100%;
+  margin-bottom: 30px;
+}
+section.account-features .label-color {
+  width: 55px;
+  height: 55px;
+}
+section.account-features h1 {
+  margin-bottom: 65px;
+}
+section.account-features .container {
+  width: calc(100% - 224px);
+}
+@media screen and (max-width: 578px) {
+  section.account-features .container {
+    width: calc(100% - 40px);
+  }
+}
+section.account-features .label-color {
+  margin: 0 auto 20px;
+}
+
+section.terms-of-cooperation {
+  padding: 122px 40px 122px 60px;
+  background: #fff;
+}
+@media screen and (max-width: 992px) {
+  section.terms-of-cooperation {
+    padding: 60px 40px 60px 60px;
+  }
+}
+section.terms-of-cooperation h1 {
+  margin: 17px 0 25px 61px;
+}
+section.terms-of-cooperation p {
+  margin-top: 10px;
+}
+
+section.ready-start-partnership {
+  padding: 72px 40px 83px 40px;
+  background: #EEEEEE;
+}
+section.ready-start-partnership div {
+  display: flex;
+  justify-content: center;
+}
+section.ready-start-partnership h1 {
+  line-height: 42px;
+  margin: 0;
+}
+@media screen and (max-width: 760px) {
+  section.ready-start-partnership div {
+    display: block;
+    text-align: center;
+  }
+  section.ready-start-partnership h1 {
+    margin-bottom: 60px;
+  }
+}
+
+
+
+

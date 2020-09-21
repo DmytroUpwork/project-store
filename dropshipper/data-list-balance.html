@@ -35,6 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/css/core/colors/palette-gradient.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/css/plugins/file-uploaders/dropzone.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets\css\pages\page-balance.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/data-list-view.css">
     <!-- END: Page CSS-->
 
@@ -166,23 +167,15 @@
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class="nav-item"><a href="dashboard-analytics.html"><img src="../app-assets\images\my-images\icon_analytics.svg" alt="Analytics"> <span class="menu-item" data-i18n="Analytics">Аналитика</span></a>
+                <li class=" nav-item"><a href="dashboard-analytics.html"><img src="../app-assets\images\my-images\icon_analytics.svg" alt="Analytics"> <span class="menu-item" data-i18n="Analytics">Аналитика</span></a>
                 </li>
-                <li class="nav-item"><a href="page-orders.html"><img src="../app-assets\images\my-images\icon_orders.svg" alt="Orders"> <span class="menu-title" data-i18n="Orders">Заказы</span></a>
+                <li class=" nav-item"><a href="page-orders.html"><img src="../app-assets\images\my-images\icon_orders.svg" alt="Orders"> <span class="menu-title" data-i18n="Orders">Заказы</span></a>
                 </li>
-                <li class=" nav-item"><a href="page-exchange-return.html"><img src="../app-assets\images\my-images\icon_orders.svg" alt="exchange"> <span class="menu-title" data-i18n="Exchange">Возвраты / Обмены</span></a>
+                <li class="nav-item"><a href="page-exchange-return.html"><img src="../app-assets\images\my-images\icon_orders.svg" alt="exchange"> <span class="menu-title" data-i18n="Exchange">Возвраты / Обмены</span></a>
                 </li>
                 <li class="active nav-item"><a href="data-list-balance.html"><img src="../app-assets\images\my-images\icon_payouts.svg" alt="Payouts"><span class="menu-title" data-i18n="Balance">Баланс</span></a>
                 </li>
-                <li class="nav-item"><a href="page-products.html"><img src="../app-assets\images\my-images\icon_products.svg" alt="Orders"><span class="menu-item" data-i18n="Thumb View">Товары</span></a>
-                </li>
-                <li class=" nav-item"><a href="index.html"><img src="../app-assets\images\my-images\icon_my_profile.svg" alt="My profile"><span class="menu-title" data-i18n="User">Пользователь</span></a>
-                    <ul class="menu-content">
-                        <li class=" nav-item"><a href="app-user-view.html"><i class="feather icon-user"></i><span class="menu-item" data-i18n="User view">Личный кабинет</span></a>                 
-                        </li>
-                    </ul>
-                </li>
-                <li class=" nav-item"><a href="../app-ecommerce-checkout.html"><img src="../app-assets\images\my-images\icon_basket.svg" alt="Basket"><span class="menu-item" data-i18n="Checkout">Корзина</span></a>
+                <li class="nav-item"><a href="app-user-view.html"><img src="../app-assets\images\my-images\icon_my_profile.svg" alt="Orders"><span class="menu-item" data-i18n="Thumb View">Мой профиль</span></a>
                 </li>
                 <li class=" nav-item"><a href="app-chat.html"><i class="feather icon-message-square"></i><span class="menu-title" data-i18n="Chat">Чат</span></a>
                 </li>
@@ -412,14 +405,14 @@
                                 </table>
                             </div>
                             <!-- DataTable ends -->
-
                             <!-- add new sidebar starts -->
                             <div class="add-new-data-sidebar">
-                                <div class="overlay-bg"></div>
-                                <div class="add-new-data">
+                                
+                                <div class="overlay-bg overlay-bg-add"></div>
+                                <div class="add-new-data add-new-data-add">
                                     <div class="div mt-2 px-2 d-flex new-data-title justify-content-between">
                                         <div>
-                                            <h4 class="text-uppercase">Добавить Выплату</h4>
+                                            <h4 class="text-uppercase"></h4>
                                         </div>
                                         <div class="hide-data-sidebar">
                                             <i class="feather icon-x"></i>
@@ -429,24 +422,23 @@
                                         <div class="data-fields px-2 mt-3">
                                             <div class="row">
                                                 <div class="col-sm-12 data-field-col">
-                                                    <label for="data-name">Сумма для выплаты</label>
-                                                    <input type="text" class="form-control" id="data-name">
-                                                </div>
-                                             
-                                                <div class="col-sm-12 data-field-col">
-                                                    <label for="data-price">Примечание</label>
-                                                    <input type="text" class="form-control" id="data-price">
+                                                    <label for="data-name">Сумма</label>
+                                                    <input type="text-area" class="form-control" id="data-name" placeholder="11345" value="1234" >
                                                 </div>
                                                 
+                                                <div class="col-sm-12 data-field-col">
+                                                    <label for="data-name">Примечание</label>
+                                                    <input type="text-area" class="form-control" id="data-name" placeholder="38" value="36" >
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
                                         <div class="add-data-btn">
-                                            <button class="btn btn-primary">Add Data</button>
+                                            <button class="btn btn-primary">ПОДТВЕРДИТЬ</button>
                                         </div>
                                         <div class="cancel-data-btn">
-                                            <button class="btn btn-outline-danger">Cancel</button>
+                                            <button class="btn btn-outline-danger">ОТМЕНИТЬ</button>
                                         </div>
                                     </div>
                                 </div>
@@ -460,7 +452,7 @@
                     <!-- Вкладка продажи -->
                     <div class="tab">
                         <!-- Data list view starts -->
-                        <section id="data-list-view" class="data-list-view-header data-list-not-user">
+                        <section id="data-list-view" class="data-list-view-header data-list-not-user data-list-not-btn">
                             <!-- DataTable starts -->
                             <div class="table-responsive">
                                 <table class="table data-list-view" id="example">
@@ -513,67 +505,6 @@
                                 </table>
                             </div>
                             <!-- DataTable ends -->
-
-                            <!-- add new sidebar starts -->
-                            <div class="add-new-data-sidebar">
-                                <div class="overlay-bg"></div>
-                                <div class="add-new-data">
-                                    <div class="div mt-2 px-2 d-flex new-data-title justify-content-between">
-                                        <div>
-                                            <h4 class="text-uppercase">List View Data</h4>
-                                        </div>
-                                        <div class="hide-data-sidebar">
-                                            <i class="feather icon-x"></i>
-                                        </div>
-                                    </div>
-                                    <div class="data-items pb-3">
-                                        <div class="data-fields px-2 mt-3">
-                                            <div class="row">
-                                                <div class="col-sm-12 data-field-col">
-                                                    <label for="data-name">Name</label>
-                                                    <input type="text" class="form-control" id="data-name">
-                                                </div>
-                                                <div class="col-sm-12 data-field-col">
-                                                    <label for="data-category"> Category </label>
-                                                    <select class="form-control selectpicker" id="data-category">
-                                                        <option>Audio</option>
-                                                        <option>Computers</option>
-                                                        <option>Fitness</option>
-                                                        <option>Appliance</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-sm-12 data-field-col">
-                                                    <label for="data-status">Order Status</label>
-                                                    <select class="form-control selectpicker" id="data-status">
-                                                        <option>Pending</option>
-                                                        <option>Canceled</option>
-                                                        <option>Delivered</option>
-                                                        <option>On Hold</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-sm-12 data-field-col">
-                                                    <label for="data-price">Price</label>
-                                                    <input type="text" class="form-control" id="data-price">
-                                                </div>
-                                                <div class="col-sm-12 data-field-col data-list-upload">
-                                                    <form action="#" class="dropzone dropzone-area" id="dataListUpload">
-                                                        <div class="dz-message">Upload Image</div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
-                                        <div class="add-data-btn">
-                                            <button class="btn btn-primary">Add Data</button>
-                                        </div>
-                                        <div class="cancel-data-btn">
-                                            <button class="btn btn-outline-danger">Cancel</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- add new sidebar ends -->
                         </section>
                         <!-- Data list view end -->
                     </div>
@@ -667,44 +598,47 @@
                                 </table>
                             </div>
                             <!-- DataTable ends -->
-
                             <!-- add new sidebar starts -->
                             <div class="add-new-data-sidebar">
-                                <div class="overlay-bg"></div>
-                                <div class="add-new-data">
+                                
+                                <div class="overlay-bg overlay-bg-add"></div>
+                                <div class="add-new-data add-new-data-add">
                                     <div class="div mt-2 px-2 d-flex new-data-title justify-content-between">
                                         <div>
-                                            <h4 class="text-uppercase">Пополнить баланс</h4>
+                                            <h4 class="text-uppercase"></h4>
                                         </div>
                                         <div class="hide-data-sidebar">
                                             <i class="feather icon-x"></i>
                                         </div>
                                     </div>
-                                    <div class="data-items pb-3">
+                                    <div class="data-items_3 pb-3">
                                         <div class="data-fields px-2 mt-3">
                                             <div class="row">
-                                                <h5>4149 6293 9393 0938</h5>
-                                                <p>после оплыты в примечаниях укажите время и дату оплаты</p>
                                                 <div class="col-sm-12 data-field-col">
-                                                    <label for="data-name">Сумма пополнения</label>
-                                                    <input type="text" class="form-control" id="data-name" placeholder="350 грн">
+                                                    <label for="data-name">Сумма</label>
+                                                    <input type="text-area" class="form-control" id="data-name" placeholder="11345" value="1234" >
                                                 </div>
+                                                
                                                 <div class="col-sm-12 data-field-col">
                                                     <label for="data-name">Примечание</label>
-                                                    <input type="text" class="form-control" id="data-name" placeholder="15 авнуста 15:36">
+                                                    <input type="text-area" class="form-control" id="data-name" placeholder="38" value="36" >
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="add-data-footer d-flex justify-content-around px-3 mt-2">
                                         <div class="add-data-btn">
-                                            <button class="btn btn-primary">Подтвердить</button>
+                                            <button class="btn btn-primary">ПОДТВЕРДИТЬ</button>
                                         </div>
                                         <div class="cancel-data-btn">
-                                            <button class="btn btn-outline-danger">Отменить</button>
+                                            <button class="btn btn-outline-danger">ОТМЕНИТЬ</button>
                                         </div>
                                     </div>
                                 </div>
+
+
+
+                                
                             </div>
                             <!-- add new sidebar ends -->
                         </section>
