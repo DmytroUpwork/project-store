@@ -3,10 +3,7 @@
 }
 @media screen and (max-width: 1200px) {
   .header-navbar.floating-nav {
-    background: transparent;
     width: 51px!important;
-    min-height: 51px;
-    border: 1px solid;
   }
 }
 .navbar-expand-lg .navbar-collapse {
@@ -199,6 +196,68 @@ section.ready-start-partnership h1 {
   section.ready-start-partnership h1 {
     margin-bottom: 60px;
   }
+}
+
+
+section.about-us {
+  padding: 284px 40px 284px 85px;
+}
+
+section.about-us a {
+  color: #A254A2;
+}
+
+
+
+section.contacts {
+  padding: 222px 40px 222px 172px;
+} 
+@media screen and (max-width: 992px) {
+  section.contacts {
+    padding: 222px 40px 222px 40px;
+  }
+}
+section.contacts .social-icon {
+  width: auto;
+  margin-top: 9px;
+}
+.title-link div {
+  font-size: 28px;
+}
+.title-link a {
+  font-size: 22px;
+  color: #404040;
+}
+.title-link a:hover {
+  color: #A254A2;
+}
+section.contacts form {
+  padding: 0 40px 30px;
+}
+section.contacts .form-control {
+  border: none;
+  border-bottom: 2px solid #A254A2;
+  border-radius: 0;
+}
+textarea.form-control {
+  resize: none;
+}
+.card-forms:hover {
+  transform: none !important;
+}
+.card-forms h1 {
+  margin: 17px 45px 25px 45px;
+}
+.btn-form-submit {
+  background: #A254A2;
+  border-radius: 3px;
+  color: #fff;
+  width: 100%;
+  margin-top: 80px;
+}
+.btn-form-submit:hover {
+  color: #fff;
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.33);
 }
 
 
