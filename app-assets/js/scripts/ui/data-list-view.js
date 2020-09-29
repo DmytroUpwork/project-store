@@ -498,7 +498,19 @@ function formatExchange() {
     $(".overlay-bg").removeClass("show")
     $("#data-name, #data-price").val("")
     $("#data-category, #data-status").prop("selectedIndex", 0)
-  })
+  });
+
+
+ 
+
+  // function componentDidMount() {
+  //   const container_3 = document.querySelector(".data-items_3");
+  //   const ps_3 = new PerfectScrollbar(container_3);
+  //   const container = document.querySelector(".data-items");
+  //   const ps = new PerfectScrollbar(container);
+  //   const container_1 = document.querySelector(".data-items_1");
+  //   const ps_1 = new PerfectScrollbar(container_1);
+  // }
 
 
   new PerfectScrollbar(".data-items_3");
@@ -519,24 +531,6 @@ function formatExchange() {
     e.stopPropagation();
     $(this).closest('td').parent('tr').fadeOut();
   });
-
-  // // dropzone init
-  // Dropzone.options.dataListUpload = {
-  //   complete: function(files) {
-  //     var _this = this
-  //     // checks files in class dropzone and remove that files
-  //     $(".hide-data-sidebar, .cancel-data-btn, .actions .dt-buttons").on(
-  //       "click",
-  //       function() {
-  //         $(".dropzone")[0].dropzone.files.forEach(function(file) {
-  //           file.previewElement.remove()
-  //         })
-  //         $(".dropzone").removeClass("dz-started")
-  //       }
-  //     )
-  //   }
-  // }
-  // Dropzone.options.dataListUpload.complete()
 
   // mac chrome checkbox fix
   if (navigator.userAgent.indexOf("Mac OS X") != -1) {

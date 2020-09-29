@@ -81,7 +81,7 @@ function Selected(a) {
   document.getElementById(a.value).style.display = "block";
 }
 
-$(".phone").mask("+38(999)999-99-99");
+// $(".phone").mask("+38(999)999-99-99");
 
 
 // var $new_template_add = $(".template_clone").clone(true);
@@ -95,22 +95,22 @@ $(".phone").mask("+38(999)999-99-99");
 
 
 // определение кнопки добавления
-var button_add = document.querySelector( '.dynamic_fields .js-add' );
+// var button_add = document.querySelector( '.dynamic_fields .js-add' );
 
 // ожидание клика на кнопку .add
-button_add.addEventListener( 'click', function () {
+// button_add.addEventListener( 'click', function () {
 
-  var students = document.querySelector( '.dynamic_fields .link-internet-platform' );
+//   var students = document.querySelector( '.dynamic_fields .link-internet-platform' );
 
-  var element = document.querySelector( '.box-link-internet-platform' ).cloneNode( true );
+//   var element = document.querySelector( '.box-link-internet-platform' ).cloneNode( true );
 
-  element.classList.add( 'link-internet-platform-add' );
+//   element.classList.add( 'link-internet-platform-add' );
 
-  element.classList.remove("box-link-internet-platform");
+//   element.classList.remove("box-link-internet-platform");
 
-  students.appendChild( element );
+//   students.appendChild( element );
   
-} );
+// } );
 
 // ожидание клика по документу
 document.addEventListener( 'click', function ( el ) {

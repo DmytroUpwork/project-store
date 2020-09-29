@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html class="loading" lang="ru">
 <!-- BEGIN: Head-->
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
-    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
-    <meta name="author" content="PIXINVENT">
     <title>Kondi-shop | WEB магазин обуви</title>
     <link rel="shortcut icon" type="image/x-icon" href="./app-assets/images/favicon.ico">
 
@@ -16,39 +12,29 @@
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/forms/spinner/jquery.bootstrap-touchspin.css">
-    <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/extensions/toastr.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="./app-assets/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="./app-assets/css/bootstrap-extended.css">
-    <link rel="stylesheet" type="text/css" href="./app-assets/css/colors.css">
     <link rel="stylesheet" type="text/css" href="./app-assets/css/components.css">
-    <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/dark-layout.css">
-    <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/semi-dark-layout.css">
 
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="./app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <link rel="stylesheet" type="text/css" href="./app-assets/css/core/colors/palette-gradient.css">
     <link rel="stylesheet" type="text/css" href="./app-assets/css/pages/app-ecommerce-shop.css">
     <link rel="stylesheet" type="text/css" href="./app-assets/css/plugins/forms/wizard.css">
     <link rel="stylesheet" type="text/css" href="./app-assets/css/pages/app-ecommerce-details.css">
-    <link rel="stylesheet" type="text/css" href="./app-assets/css/plugins/extensions/toastr.css">
-    
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <!-- END: Custom CSS-->
-
 </head>
 <!-- END: Head-->
 
 <!-- BEGIN: Body-->
 
 <body class="vertical-layout vertical-menu-modern 2-columns ecommerce-application navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
-
     <!-- BEGIN: Header-->
     <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu floating-nav navbar-light navbar-shadow">
         <div class="navbar-wrapper">
@@ -71,7 +57,6 @@
                     </div>
                     <ul class="nav navbar-nav float-right">
                         <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><img src="./app-assets\images\my-images\icon-checkout.svg" width="75" alt="Cart Item" class="img-checkout">
-                            <!-- <span class="badge badge-pill badge-primary badge-up cart-item-count">6</span> -->
                         </a>
                             <ul class="dropdown-menu dropdown-menu-media dropdown-cart dropdown-menu-right">
                                 <li class="dropdown-menu-header">
@@ -100,7 +85,6 @@
                         </li>
 
                         <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><img src="./app-assets\images\my-images\icon-bell.svg" alt="Bell">
-                            <!-- <span class="badge badge-pill badge-primary badge-up">5</span> -->
                         </a>
                             <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
                                 <li class="dropdown-menu-header">
@@ -128,7 +112,6 @@
                                 <li class="dropdown-menu-footer"><a class="dropdown-item p-1 text-center" href="javascript:void(0)">Просмотреть все уведомления</a></li>
                             </ul>
                         </li>
-                        
                         <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
                             <div class="user-nav d-sm-flex d-none"><span class="user-name text-bold-600">Женя Фомин</span><span class="user-status">Онлайн</span></div><span><img class="round" src="./app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"></span>
                             </a>
@@ -142,8 +125,7 @@
         </div>
     </nav>
     <!-- END: Header-->
-
-
+    
     <!-- BEGIN: Main Menu-->
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
         <div class="navbar-header">
@@ -190,10 +172,8 @@
         <div class="content-overlay"></div>
         <div class="header-navbar-shadow"></div>
         <div class="content-wrapper">
-            
             <div class="content-body">
                 <h1>Корзина</h1>
-                
                 <form action="#" class="icons-tab-steps checkout-tab-steps wizard-circle">
                     <!-- Checkout Place order starts -->
                     <h6><i class="step-icon step feather icon-shopping-cart"></i>Карточка</h6>
@@ -201,7 +181,6 @@
                         <section id="place-order" class="list-view product-checkout">
                             <div class="checkout-items">
                                 <button type="button" class='btn btn-primary ml-50 mb-50 waves-effect waves-light blank-template' data-toggle="modal" data-target="#default">Добавить товар</button>
-
                                 <div class="card ecommerce-card">
                                     <div class="card-content">
                                         <div class="item-img text-center">
@@ -213,9 +192,7 @@
                                                 </h3>
                                                 <h6 class='mb-0 ml-0'>Зимняя обувь</h6>
                                                 <p class="mb-25"><span class="mr-2">254758</span></p>
-
                                                 <h6 class="stock-status-in ml-0">В наличии</h6>
-
                                                 <h6 class="mb-50 ml-0">Размер обуви:</h6>
                                                     <div class="select-wrapper mb-1 mt-0">
                                                         <select class="form-control selectpicker" id="ecommerce-price-options">
@@ -231,14 +208,13 @@
                                                             <option value="9">45</option>
                                                         </select>
                                                     </div>
-                                                
-                                                <div>
-                                                    <h6 class="mb-0 ml-0">Описание:</h6>
-                                                    <p>
-                                                        Цвет: красный. Материал: Кожа. <br>
-                                                        Производитель: Украина.  
-                                                    </p>
-                                                </div>
+                                                    <div>
+                                                        <h6 class="mb-0 ml-0">Описание:</h6>
+                                                        <p>
+                                                            Цвет: красный. Материал: Кожа. <br>
+                                                            Производитель: Украина.  
+                                                        </p>
+                                                    </div>
                                                 <div class="box-shoe-size">
                                                     <span class="mr-2">36 - 24,5 см</span><span>36 - 24,5 см </span> 
                                                     <br>
@@ -396,7 +372,6 @@
                             </div>
                         </section>
                     </fieldset>
-
                     <!-- Checkout Customer Address Ends -->
 
                     <!-- Checkout Payment Starts -->
@@ -409,11 +384,6 @@
                                         <h4 class="card-title">Варианты оплаты</h4>
                                         <p class="text-muted mt-25">Обязательно выберите правильный вариант оплаты</p>
                                     </div>
-
-
-
-
-
                                     <div class="card-content">
                                         <div class="card-body">
                                             <div class="d-flex justify-content-between flex-wrap">
@@ -435,9 +405,7 @@
                                                     Средств на личном счете: 200грн
                                                 </div>
                                             </div>
-
                                             <hr class="my-2">
-
                                             <div class="d-flex justify-content-between flex-wrap">
                                                 <div class="vs-radio-con vs-radio-primary">
                                                     <input type="radio" name="vueradio" value="false" class='box-payment-information-show'>
@@ -456,12 +424,6 @@
                                                     0000 0000 0000 0000
                                                 </div>
                                             </div>
-                                            
-
-
-
-
-                                            
                                             <div class="customer-cvv mt-1">
                                                 <div class="form-inline">
                                                     <label class="mb-50" for="card-holder-cvv">Информация платежа:</label>
@@ -470,23 +432,10 @@
                                                     <input type="number" class="form-control ml-75 mb-50 input-cvv" placeholder="Последние 4 цифры карты">
                                                 </div>
                                             </div>
-
-
-
-
-
-
-
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-
-
-
-
                             <div class="amount-payable checkout-options">
                                 <div class="card">
                                     <div class="card-header">
@@ -524,10 +473,8 @@
                             </div>
                         </section>
                     </fieldset>
-
                     <!-- Checkout Payment Starts -->
                 </form>
-
             </div>
         </div>
     </div>
@@ -567,10 +514,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
 
     <!-- BEGIN: Page Vendor JS-->
-    <script src="./app-assets/vendors/js/forms/spinner/jquery.bootstrap-touchspin.js"></script>
     <script src="./app-assets/vendors/js/extensions/jquery.steps.min.js"></script>
     <script src="./app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
-    <script src="./app-assets/vendors/js/extensions/toastr.min.js"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->

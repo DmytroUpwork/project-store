@@ -1,36 +1,24 @@
 <!DOCTYPE html>
 <html class="loading" lang="ru">
 <!-- BEGIN: Head-->
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta name="description" content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
-    <meta name="keywords" content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
-    <meta name="author" content="PIXINVENT">
     <title>Kondi-shop | WEB магазин обуви</title>
     <link rel="shortcut icon" type="image/x-icon" href="./app-assets/images/favicon.ico">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/extensions/nouislider.min.css">
-    <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/ui/prism.min.css">
-    <!-- <link rel="stylesheet" type="text/css" href="./app-assets/vendors/css/forms/select/select2.min.css"> -->
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
     <link rel="stylesheet" type="text/css" href="./app-assets/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="./app-assets/css/bootstrap-extended.css">
-    <!-- <link rel="stylesheet" type="text/css" href="./app-assets/css/colors.css"> -->
     <link rel="stylesheet" type="text/css" href="./app-assets/css/components.css">
-    <!-- <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/dark-layout.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="./app-assets/css/themes/semi-dark-layout.css"> -->
 
     <!-- BEGIN: Page CSS-->
     <link rel="stylesheet" type="text/css" href="./app-assets/css/core/menu/menu-types/vertical-menu.css">
-    <!-- <link rel="stylesheet" type="text/css" href="./app-assets/css/core/colors/palette-gradient.css"> -->
-    <link rel="stylesheet" type="text/css" href="./app-assets/css/plugins/extensions/noui-slider.min.css">
     <link rel="stylesheet" type="text/css" href="./app-assets\css\pages\page-delivery.css">
     <link rel="stylesheet" type="text/css" href="./app-assets/css/pages/data-list-view.css">
     <!-- END: Page CSS-->
@@ -105,11 +93,10 @@
     
     <!-- BEGIN: Content-->
     <div class="app-content content">
-
       <section class="contacts">
         <div class="row justify-content-between">
-          <div class="col-lg-5 col-xl-4 mt-5">
-            <div class="d-flex justify-content-between mb-3">
+          <div class="col-lg-12 col-xl-6 mt-5 d-flex flex-column justify-content-center">
+            <div class="d-flex justify-content-between mb-3 box-social-link">
               <div class="d-flex">
                 <div class="social-icon"><img src="./app-assets\images\my-images\tel-contacts.svg" alt=""></div>
                 <div class="title-link d-block ml-2">
@@ -122,7 +109,7 @@
                 <img src="./app-assets\images\my-images\icon-telegram.svg" alt="">
               </div>
             </div>
-            <div class="d-flex justify-content-between mb-3">
+            <div class="d-flex justify-content-between mb-3 box-social-link">
               <div class="d-flex">
                 <div class="social-icon"><img src="./app-assets\images\my-images\img-instagram.svg" alt=""></div>
                 <div class="title-link d-block ml-2">
@@ -135,13 +122,24 @@
                 <img src="./app-assets\images\my-images\icon-telegram.svg" alt="">
               </div>
             </div>
+            <div class="d-flex justify-content-between mb-3 box-social-link">
+              <div class="d-flex">
+                <div class="social-icon"><img src="./app-assets\images\my-images\img-instagram.svg" alt=""></div>
+                <div class="title-link d-block ml-2">
+                  <div>ПОЧТА</div>
+                  <a href ="mailto:kondishop@gmail.com">kondishop@gmail.com</a>
+                </div>
+              </div>
+              <div class="d-flex social-link">
+                <img src="./app-assets\images\my-images\icon-viber.svg" alt="">
+                <img src="./app-assets\images\my-images\icon-telegram.svg" alt="">
+              </div>
+            </div>
           </div>
-          <div class="col-lg-5 col-xl-4">
+          <div class="col-lg-12 col-xl-5 mt-5">
             <div class="card card-forms">
               <div class="card-body p-0">
-
                 <h1 class="text-center">Не можете определиться?</h1>
-
                 <form>
                   <div class="form-group">
                     <input type="text" class="form-control" placeholder="ФИО">
@@ -150,22 +148,15 @@
                     <input type="tel" class="form-control" name="tel" pattern="2[0-9]{3}-[0-9]{3}" placeholder="Номер телефона">
                   </div>
                   <div class="form-group">
-                    <input type="number" class="form-control" placeholder="Размер ноги">
-                  </div>
-
-                  <div class="form-group">
                     <textarea class="form-control" rows="3" placeholder="Опишите ваши предпочтения... (красные кросовки)"></textarea>
                   </div>
-
                   <button type="submit" class="btn btn-form-submit text-uppercase">Отправить</button>
                 </form>
-                
               </div>
             </div>
           </div>
         </div>
       </section>
-    
     </div>
     <!-- END: Content-->
     
@@ -180,8 +171,6 @@
     <script src="./app-assets/js/core/app-menu.js"></script>
     <script src="./app-assets/js/core/app.js"></script>
     <!-- END: Theme JS-->
-
 </body>
 <!-- END: Body-->
-
 </html>

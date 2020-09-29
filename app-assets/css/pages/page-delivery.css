@@ -1,11 +1,6 @@
 .header-navbar {
   background: transparent;
 }
-@media screen and (max-width: 1200px) {
-  .header-navbar.floating-nav {
-    width: 51px!important;
-  }
-}
 .navbar-expand-lg .navbar-collapse {
   padding: 0 11px 0 6.5px;
 }
@@ -88,6 +83,9 @@
 .app-content .card-body {
   overflow: hidden;
 }
+.card-body {
+  padding: 33px 14px 16px 18px;
+}
 
 section.what-is-dropshipping {
   padding: 250px 48px 250px 143px;
@@ -102,20 +100,37 @@ section.what-is-dropshipping {
   section.what-is-dropshipping {
     padding: 80px 48px 60px 48px;
   }
+  section.what-is-dropshipping p {
+    text-align: center;
+  }
+  
+  .box-link-dropshipping {
+    justify-content: center;
+  }
 }
 
 section.work-with-us {
   padding: 250px 48px 250px 48px;
   background: #fff;
 }
+
+section.work-with-us h1 {
+  margin: 0;
+  position: absolute;
+  top: 0;
+}
+
 @media screen and (max-width: 992px) {
   section.work-with-us {
-    padding: 60px 48px 60px 48px;
+    padding: 60px 30px 60px 30px;
     background: #fff;
   }
   section.work-with-us .row .col-lg-6:first-of-type {
     order: 1;
     margin-top: 50px;
+  }
+  section.work-with-us h1 {
+    position: relative;
   }
 }
 .work-with-us p {
@@ -123,6 +138,11 @@ section.work-with-us {
 }
 .work-with-us .label-color {
   margin: 0 28px 0 17px;
+}
+@media screen and (max-width: 992px) {
+  .work-with-us .label-color {
+    margin: 0 28px 0 0;
+  }
 }
 
 section.account-features {
@@ -134,12 +154,8 @@ section.account-features {
     padding: 60px 0;
   }
 }
-section.account-features .col-lg-4 {
-  margin-bottom: 30px;
-}
 section.account-features .card {
-  height: 100%;
-  margin-bottom: 30px;
+  height: calc(100% - 30px);
 }
 section.account-features .label-color {
   width: 55px;
@@ -164,17 +180,27 @@ section.terms-of-cooperation {
   padding: 122px 40px 122px 60px;
   background: #fff;
 }
+section.terms-of-cooperation h1 {
+  margin: 17px 0 25px 61px;
+}
+
+section.terms-of-cooperation p {
+  margin-top: 10px;
+}
 @media screen and (max-width: 992px) {
   section.terms-of-cooperation {
     padding: 60px 40px 60px 60px;
   }
 }
-section.terms-of-cooperation h1 {
-  margin: 17px 0 25px 61px;
+@media screen and (max-width: 768px) {
+  section.terms-of-cooperation {
+    padding: 60px 20px 60px 20px;
+  }
+  section.terms-of-cooperation h1 {
+    margin: 17px 0 25px;
+  }
 }
-section.terms-of-cooperation p {
-  margin-top: 10px;
-}
+
 
 section.ready-start-partnership {
   padding: 72px 40px 83px 40px;
@@ -188,6 +214,9 @@ section.ready-start-partnership h1 {
   line-height: 42px;
   margin: 0;
 }
+section.ready-start-partnership .link-dropshipping {
+  margin-left: 50px;
+}
 @media screen and (max-width: 760px) {
   section.ready-start-partnership div {
     display: block;
@@ -195,6 +224,9 @@ section.ready-start-partnership h1 {
   }
   section.ready-start-partnership h1 {
     margin-bottom: 60px;
+  }
+  section.ready-start-partnership .link-dropshipping {
+    margin: 0;
   }
 }
 
@@ -206,11 +238,24 @@ section.about-us {
 section.about-us a {
   color: #A254A2;
 }
+@media screen and (max-width: 992px) {
+  section.about-us {
+    padding: 284px 40px 284px 40px;
+  }
+  section.about-us p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 425px) {
+  section.about-us {
+    padding: 284px 15px 284px 15px;
+  }
+}
 
 
 
 section.contacts {
-  padding: 222px 40px 222px 172px;
+  padding: 222px 40px 222px 102px;
 } 
 @media screen and (max-width: 992px) {
   section.contacts {
@@ -218,9 +263,29 @@ section.contacts {
   }
 }
 section.contacts .social-icon {
-  width: auto;
+  width: 47px;
   margin-top: 9px;
 }
+@media screen and (min-width: 1364px) {
+  section.contacts .box-social-link{
+    padding-right: 40px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  section.contacts .box-social-link {
+    padding-right: 170px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section.contacts .box-social-link a {
+    font-size: 13px;
+  }
+  section.contacts {
+    padding: 222px 15px 222px 15px;
+  }
+}
+
+
 .title-link div {
   font-size: 28px;
 }
@@ -259,6 +324,20 @@ textarea.form-control {
   color: #fff;
   box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.33);
 }
+
+@media screen and (max-width: 992px) {
+  h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    font-size: 11px;
+  }
+}
+
+
 
 
 

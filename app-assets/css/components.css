@@ -4221,3 +4221,97 @@ tr.group {
     justify-content: center;
   }
 }
+
+
+.chip-danger {
+  background-color: #EA5455 !important;
+}
+
+.chip-danger .chip-body {
+  color: #FFFFFF !important;
+}
+
+.chip-warning {
+  background-color: #FF9F43 !important;
+}
+
+.chip-warning .chip-body {
+  color: #FFFFFF !important;
+}
+
+.chip-success {
+  background-color: #28C76F !important;
+}
+
+.chip-success .chip-body {
+  color: #FFFFFF !important;
+}
+
+.chip-primary {
+  background-color: #A254A2 !important;
+}
+
+.chip-primary .chip-body {
+  color: #FFFFFF !important;
+}
+
+.btn-outline-primary {
+  border: 1px solid #A254A2;
+  background-color: transparent;
+  color: #A254A2;
+}
+
+.btn-outline-primary:hover {
+  background-color: rgba(115, 103, 240, 0.08);
+  color: #A254A2;
+}
+
+.btn-outline-primary:active {
+  color: #FFFFFF !important;
+}
+
+.btn-outline-danger {
+  border: 1px solid #EA5455;
+  background-color: transparent;
+  color: #EA5455;
+}
+
+.btn-outline-danger:hover {
+  background-color: rgba(234, 84, 85, 0.08);
+  color: #EA5455;
+}
+
+.btn-outline-danger:active {
+  color: #FFFFFF !important;
+}
+
+.btn-primary {
+  border-color: #4839EB !important;
+  background-color: #A254A2 !important;
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  border-color: #5E50EE !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 8px 25px -8px #A254A2;
+}
+
+.btn-primary:focus, .btn-primary:active {
+  color: #FFFFFF !important;
+}
+
+.btn-outline-warning {
+  border: 1px solid #FF9F43;
+  background-color: transparent;
+  color: #FF9F43;
+}
+
+.btn-outline-warning:hover {
+  background-color: rgba(255, 159, 67, 0.08);
+  color: #FF9F43;
+}
+
+.btn-outline-warning:active {
+  color: #FFFFFF !important;
+}
